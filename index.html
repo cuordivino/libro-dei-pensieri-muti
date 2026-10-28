@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="chiaroscuro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IL LIBRO DEI PENSIERI MUTI | @refuso_di.verso</title>
+  <meta name="description" content="Opera poetica in chiaroscuro di @refuso_di.verso (Cuordivino). 48 poesie con fotografie in bianco e nero, colonna sonora dedicata e stati d'animo.">
+  <link rel="canonical" href="https://cuordivino.github.io/libro-dei-pensieri-muti/">
+  <meta name="theme-color" content="#121212">
+  <meta name="author" content="Cuordivino">
+  <meta property="og:type" content="book">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Il Libro dei Pensieri Muti">
+  <meta property="og:title" content="IL LIBRO DEI PENSIERI MUTI · Cuordivino">
+  <meta property="og:description" content="48 poesie in chiaroscuro, con fotografie in bianco e nero e stati d'animo. Un libro aperto da sfogliare.">
+  <meta property="og:url" content="https://cuordivino.github.io/libro-dei-pensieri-muti/">
+  <meta property="og:image" content="https://cuordivino.github.io/libro-dei-pensieri-muti/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="IL LIBRO DEI PENSIERI MUTI · Cuordivino">
+  <meta name="twitter:description" content="48 poesie in chiaroscuro, con fotografie in bianco e nero e stati d'animo.">
+  <meta name="twitter:image" content="https://cuordivino.github.io/libro-dei-pensieri-muti/og-image.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <noscript><p style="padding:2rem;text-align:center;font-family:serif">Il Libro dei Pensieri Muti richiede JavaScript. In alternativa leggi il <a href="LIBRO_DEI_PENSIERI_MUTI.md">manoscritto completo</a>.</p></noscript>
+  <!-- Header / Navigation Bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand" id="btn-go-cover">
+        <span class="brand-monogram">☩</span>
+        <div class="brand-titles">
+          <span class="brand-title">IL LIBRO DEI PENSIERI MUTI</span>
+          <span class="brand-author">di <a href="https://www.instagram.com/refuso_di.verso/" target="_blank" rel="noopener" class="ig-link">@refuso_di.verso</a> · Cuordivino</span>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <button class="nav-btn active" id="btn-view-book" title="Vista Libro Aperto">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span class="nav-label">Libro Aperto</span>
+        </button>
+        <button class="nav-btn" id="btn-view-gallery" title="Galleria Chiaroscuro & Musica">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          <span class="nav-label">Galleria & Musica</span>
+        </button>
+        <button class="nav-btn" id="btn-view-moods" title="Esplora per Stati d'Animo">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+          <span class="nav-label">Stati d'Animo</span>
+        </button>
+        <button class="nav-btn" id="btn-view-index" title="Sommario e Ricerca">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          <span class="nav-label">Indice</span>
+        </button>
+        <button class="nav-btn highlight" id="btn-open-add-modal" title="Aggiungi una nuova poesia con foto e musica da Instagram">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <span class="nav-label">+ Aggiungi Poesia</span>
+        </button>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Master Sound Toggle -->
+        <button class="ctrl-btn" id="btn-global-sound" title="Attiva/Disattiva Colonna Sonora">
+          <span class="audio-wave-icon" id="global-sound-icon">🔈</span>
+          <span class="audio-text" id="global-sound-text">Musica</span>
+        </button>
+
+        <!-- Instagram Direct Link -->
+        <a href="https://www.instagram.com/refuso_di.verso/" target="_blank" rel="noopener" class="ig-noir-badge" title="Profilo Ufficiale Instagram @refuso_di.verso">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          <span>@refuso_di.verso</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-stage">
+
+    <!-- VIEW 1: COPERTINA CHIAROSCURO -->
+    <section class="view-panel" id="view-cover">
+      <div class="cover-wrapper">
+        <div class="cover-noir-tome">
+          <div class="cover-grain-overlay"></div>
+          <div class="cover-frame-outer">
+            <div class="cover-frame-inner">
+              <span class="cover-symbol">☩</span>
+              <span class="cover-pretitle">OPERA DI OMBRE E LUCE</span>
+              <h1 class="cover-main-title">IL LIBRO DEI PENSIERI MUTI</h1>
+              <div class="cover-separator"></div>
+              
+              <p class="cover-quote">
+                «impeto desueto e riverso<br>
+                un uomo che nel verbo ha affilato la spada<br>
+                assopito, in animo distorto<br>
+                con i capelli arruffati e nervo ribelle»
+              </p>
+
+              <div class="cover-credits">
+                <span class="cover-author-sub">AUTORE & FOTOGRAFIA</span>
+                <span class="cover-author-name">CUORDIVINO</span>
+                <span class="cover-handle">@refuso_di.verso</span>
+              </div>
+
+              <div class="cover-features-bar">
+                <span>Fotografie in Bianco e Nero</span>
+                <span>·</span>
+                <span>Colonne Sonore Dedicate</span>
+                <span>·</span>
+                <span>Stati d'Animo</span>
+              </div>
+
+              <div class="cover-actions">
+                <button class="btn-noir primary" id="btn-start-reading">
+                  <span>Apri il Libro Chiaroscuro</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
+                </button>
+                <button class="btn-noir secondary" id="btn-explore-gallery-cover">
+                  <span>Galleria Foto & Brani</span>
+                </button>
+              </div>
+
+              <div class="cover-footnote">
+                Dall'universo poetico di <em>Il vilipendio bramoso</em> e dai post di <em>refuso_di.verso</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: LIBRO APERTO (CHIAROSCURO SPREAD: B&W PHOTO + MUSIC + POEM) -->
+    <section class="view-panel active" id="view-book">
+      <!-- Quick Mood Filter Strip -->
+      <div class="mood-strip-bar">
+        <span class="mood-strip-label">Stati d'animo:</span>
+        <div class="mood-pills-container" id="book-mood-pills">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+
+      <div class="book-viewport">
+        <div class="book-container-noir" id="book-element">
+          
+          <!-- Bookmark Ribbon (Fine silver-ash ribbon) -->
+          <div class="bookmark-ribbon" id="bookmark-ribbon" title="Segnalibro"></div>
+
+          <!-- LEFT SPREAD: FOTO IN BIANCO E NERO + MUSIC PLAYER -->
+          <div class="spread-side spread-left">
+            <div class="photo-card-wrapper">
+              <div class="photo-frame" id="photo-frame-element">
+                <img src="images/poesia_1.jpg" alt="Fotografia Chiaroscuro" id="pl-photo-img" class="photo-bw">
+                <div class="photo-grain"></div>
+                <div class="photo-vignette"></div>
+
+                <!-- Floating Change Photo Button -->
+                <label class="btn-change-photo" title="Sostituisci con una tua foto da Instagram o dal PC">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                  <span>Sostituisci Foto</span>
+                  <input type="file" id="input-replace-photo" accept="image/*" class="hidden-input">
+                </label>
+
+                <!-- Photo Tag Overlay -->
+                <div class="photo-overlay-tag">
+                  <span id="pl-photo-index">FOTOGRAFIA 1 / 48</span>
+                  <span class="photo-author-tag">@refuso_di.verso</span>
+                </div>
+              </div>
+
+              <!-- Dedicated Music Player for this Poem -->
+              <div class="poem-music-player" id="poem-music-player">
+                <button class="btn-play-track" id="btn-play-poem-track" title="Riproduci traccia musicale corrispondente">
+                  <span class="play-icon" id="play-track-icon">▶</span>
+                </button>
+
+                <div class="track-details">
+                  <div class="track-title-row">
+                    <span class="track-label">Traccia musicale:</span>
+                    <strong class="track-title" id="pl-track-title">On the Nature of Daylight</strong>
+                  </div>
+                  <div class="track-artist-row">
+                    <span class="track-artist" id="pl-track-artist">Max Richter</span>
+                    <span class="track-duration" id="pl-track-timer">00:00 / 02:40</span>
+                  </div>
+                  <!-- Audio visualizer waveform -->
+                  <div class="waveform-visualizer" id="waveform-visualizer">
+                    <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                    <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                    <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                    <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+                  </div>
+                </div>
+
+                <label class="btn-change-audio" title="Seleziona un tuo file audio MP3 dal PC">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                  <input type="file" id="input-replace-audio" accept="audio/*" class="hidden-input">
+                </label>
+              </div>
+
+              <!-- Emotional sense reflection -->
+              <div class="photo-mood-reflection">
+                <span class="reflection-label">IL SENSO DELLO STATO D'ANIMO:</span>
+                <p class="reflection-quote" id="pl-mood-sense">
+                  Tuffarsi nell'indifferenza del proprio io per scoprire che nel fondo del dolore più cupo germoglia l'unico verso capace di durare.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Center Crease (Chiaroscuro shadow) -->
+          <div class="book-spine-crease-noir"></div>
+
+          <!-- RIGHT SPREAD: I VERSI DELLA POESIA -->
+          <div class="spread-side spread-right">
+            <div class="poem-sheet">
+              <div class="sheet-header">
+                <div class="sheet-meta-group">
+                  <span class="sheet-section" id="pr-section">SEZIONE I · IL POZZO DI PECE</span>
+                  <span class="sheet-mood-badge" id="pr-mood-badge">
+                    <span id="pr-mood-icon">🌑</span>
+                    <span id="pr-mood-text">Abisso Catartico & Cura del Silenzio</span>
+                  </span>
+                </div>
+                <span class="sheet-page-num" id="pr-page-num">1</span>
+              </div>
+
+              <div class="sheet-body" id="pr-sheet-scroll">
+                <h2 class="poem-main-title" id="pr-poem-title">I. NEL FONDO</h2>
+                <div class="poem-title-rule"></div>
+
+                <div class="poem-stanzas-text" id="pr-poem-verses">
+                  <!-- Stanzas populated by JS -->
+                </div>
+              </div>
+
+              <div class="sheet-footer">
+                <div class="sheet-actions">
+                  <button class="sheet-action-btn" id="btn-copy-verses" title="Copia versi">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span>Copia Testo</span>
+                  </button>
+                  <button class="sheet-action-btn" id="btn-copy-link" title="Copia il link diretto a questa poesia">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    <span>Copia Link</span>
+                  </button>
+                  <button class="sheet-action-btn primary" id="btn-share-card" title="Genera card Chiaroscuro per Instagram">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <span>Card Instagram</span>
+                  </button>
+                </div>
+                <span class="sheet-index-label" id="pr-index-counter">Poesia 1 di 48</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Navigation Scrubber Bar -->
+        <div class="noir-nav-bar">
+          <button class="nav-control-btn prev" id="btn-prev-page" title="Precedente (←)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"></path></svg>
+            <span>Precedente</span>
+          </button>
+
+          <div class="nav-slider-wrap">
+            <span class="nav-counter" id="scrubber-counter">1 / 48</span>
+            <input type="range" min="1" max="48" value="1" class="noir-slider" id="book-slider">
+            <span class="nav-hint">Scorri o usa i tasti freccia ← →</span>
+          </div>
+
+          <button class="nav-control-btn next" id="btn-next-page" title="Successiva (→)">
+            <span>Successiva</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"></path></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: GALLERIA CHIAROSCURO & MUSICA (INSTAGRAM-STYLE FEED) -->
+    <section class="view-panel" id="view-gallery">
+      <div class="gallery-view-container">
+        <div class="view-intro">
+          <span class="intro-kicker">Galleria d'Autore</span>
+          <h2 class="view-title">Ombre di Luce & Musica</h2>
+          <p class="view-subtitle">
+            Ogni poesia abbinata alla sua fotografia in bianco e nero e alla colonna sonora che ne accende l'eco interiore.
+          </p>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: STATI D'ANIMO (MOOD EXPLORER) -->
+    <section class="view-panel" id="view-moods">
+      <div class="moods-view-container">
+        <div class="view-intro">
+          <span class="intro-kicker">Mappa Emozionale</span>
+          <h2 class="view-title">I Moti dell'Anima</h2>
+          <p class="view-subtitle">
+            Il chiaroscuro delle emozioni umane: seleziona uno stato d'animo per esplorare le poesie, le immagini e i brani corrispondenti.
+          </p>
+        </div>
+
+        <div class="macro-cards-grid" id="macro-cards-grid">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="mood-active-indicator" id="mood-filter-banner">
+          <div class="banner-content">
+            <span class="banner-title" id="filter-banner-title">Tutte le poesie</span>
+            <span class="banner-count" id="filter-banner-count">48 componimenti</span>
+          </div>
+          <button class="btn-clear-filter hidden" id="btn-clear-filter">Mostra tutte</button>
+        </div>
+
+        <div class="mood-poems-grid" id="mood-poems-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: INDICE & RICERCA -->
+    <section class="view-panel" id="view-index">
+      <div class="index-view-container">
+        <div class="view-intro">
+          <span class="intro-kicker">Catalogo dei Versi</span>
+          <h2 class="view-title">Indice dei Pensieri Muti</h2>
+          <p class="view-subtitle">Cerca per titolo, verso o traccia musicale.</p>
+          
+          <div class="index-search-bar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="index-search-input" placeholder="Cerca parole (es. moka, bramo, pece, carne, silenzio, Richter...)" autocomplete="off">
+            <button class="clear-search hidden" id="btn-clear-search">&times;</button>
+          </div>
+        </div>
+
+        <div class="toc-container" id="toc-container">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- MODAL: AGGIUNGI NUOVA POESIA DA INSTAGRAM -->
+  <div class="modal-overlay hidden" id="modal-add-poem">
+    <div class="modal-dialog">
+      <div class="modal-dialog-header">
+        <h3>+ Aggiungi Poesia da Instagram</h3>
+        <button class="btn-close-modal" id="btn-close-add-modal">&times;</button>
+      </div>
+      <div class="modal-dialog-body">
+        <p class="modal-intro-text">
+          Incolla qui qualsiasi altra poesia dal tuo profilo <strong>@refuso_di.verso</strong> per integrarla nel libro con la sua fotografia in bianco e nero e la traccia musicale.
+        </p>
+
+        <form id="form-add-poem" class="add-poem-form">
+          <div class="form-row">
+            <div class="form-group flex-2">
+              <label>Titolo della Poesia:</label>
+              <input type="text" id="add-title" placeholder="Es. L'ombra del mattino" required>
+            </div>
+            <div class="form-group flex-1">
+              <label>Stato d'Animo:</label>
+              <input type="text" id="add-mood" placeholder="Es. Nostalgia Silente" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Macro-Categoria Emotiva:</label>
+            <select id="add-macro-mood">
+              <option value="ombra">🌑 L'Ombra e il Pozzo</option>
+              <option value="ardore">🔥 L'Ardore e la Carne</option>
+              <option value="maschera">🎭 La Maschera e il Fango</option>
+              <option value="quiete">🕯️ La Quiete e il Ritrovo</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Il Senso dello Stato d'Animo (1-2 frasi introspettive):</label>
+            <input type="text" id="add-sense" placeholder="Es. Il risveglio della memoria tra i chiaroscuri della stanza..." required>
+          </div>
+
+          <div class="form-group">
+            <label>I Versi della Poesia:</label>
+            <textarea id="add-verses" rows="8" placeholder="Scrivi o incolla qui i versi della poesia..." required></textarea>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label>Traccia Musicale (Titolo brano):</label>
+              <input type="text" id="add-track-title" placeholder="Es. Nuvole Bianche" required>
+            </div>
+            <div class="form-group flex-1">
+              <label>Artista / Compositore:</label>
+              <input type="text" id="add-track-artist" placeholder="Es. Ludovico Einaudi" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Fotografia in Bianco e Nero (opzionale):</label>
+            <input type="file" id="add-photo-file" accept="image/*">
+            <span class="file-hint">Se non selezioni un'immagine, verrà generata una composizione in chiaroscuro.</span>
+          </div>
+
+          <div class="modal-form-actions">
+            <button type="button" class="btn-noir secondary" id="btn-cancel-add">Annulla</button>
+            <button type="submit" class="btn-noir primary">Aggiungi al Libro</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: INSTAGRAM CARD GENERATOR -->
+  <div class="modal-overlay hidden" id="modal-card">
+    <div class="modal-dialog">
+      <div class="modal-dialog-header">
+        <h3>Card Chiaroscuro per Instagram</h3>
+        <button class="btn-close-modal" id="btn-close-modal">&times;</button>
+      </div>
+      <div class="modal-dialog-body card-gen-body">
+        <div class="canvas-preview-wrapper">
+          <canvas id="ig-canvas" width="1080" height="1350"></canvas>
+        </div>
+
+        <div class="modal-card-sidebar">
+          <div class="form-group">
+            <label>Stile Chiaroscuro:</label>
+            <div class="card-style-pills">
+              <button class="style-pill active" data-style="chiaroscuro_noir">Noir Intenso</button>
+              <button class="style-pill" data-style="chiaroscuro_silver">Argento & Ombra</button>
+              <button class="style-pill" data-style="chiaroscuro_candle">Luce Calda</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Brano associato:</label>
+            <div class="card-track-info" id="modal-track-info">Max Richter — On the Nature of Daylight</div>
+          </div>
+
+          <div class="modal-card-actions">
+            <button class="btn-noir primary full" id="btn-download-card">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Scarica Immagine HD (1080x1350)</span>
+            </button>
+            <button class="btn-noir secondary full" id="btn-copy-ig-caption">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copia Testo per Post Instagram</span>
+            </button>
+          </div>
+          <p class="ig-hint-text">
+            Ottimizzata per Instagram Post e Storie con il tag <strong>@refuso_di.verso</strong> e colonna sonora.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification hidden" id="toast-notification">
+    <span id="toast-text">Testo copiato con successo!</span>
+  </div>
+
+  <!-- Audio element for local/custom MP3s -->
+  <audio id="real-audio-player" class="hidden"></audio>
+
+  <!-- Data and Application Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator && window.isSecureContext) {
+      window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });
+    }
+  </script>
+</body>
+</html>

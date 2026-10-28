@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.7z
+.DS_Store
+Thumbs.db
+node_modules/
+_site/
