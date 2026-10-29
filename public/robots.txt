@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cuordivino.github.io/libro-dei-pensieri-muti/sitemap-index.xml

@@ -1,0 +1,2888 @@
+{
+ "meta": {
+  "titolo": "Il Libro dei Pensieri Muti",
+  "sottotitolo": "Nel riverbero dei versi, il riscatto di ogni stato d'animo",
+  "autore": "Cuordivino",
+  "instagram": "https://www.instagram.com/refuso_di.verso/",
+  "handle": "@refuso_di.verso",
+  "opera": "Il vilipendio bramoso — Poesie dell'Ardore, del Sacrilegio e della Quiete",
+  "prefazione": "Fin dalle prime pagine, il lettore si trova immerso in un universo poetico governato da un ossimoro assoluto: la profanazione intesa come atto d'amore supremo. Se compie un vilipendio scuotendo il pennone della libertà blasfema sul banco di una cappella o strappando la tonaca della morale, lo fa perché è bramoso di assoluto. Cerca Dio nell'inferno della carne, convinto che solo toccando il fondo del 'pozzo di pece' sia possibile scorgere un miraggio di luce autentica. Nel Libro dei Pensieri Muti, ogni verso diventa specchio di uno specifico moto dell'anima: dall'abisso claustrofobico all'ardore sacrilego, dalla rabbia contro le convenzioni fino alla catarsi solenne del caffè all'alba.",
+  "notaAutore": "Cuordivino è lo pseudonimo letterario di una voce rimasta a lungo nell'ombra dei riti consueti del quotidiano, prima di esplodere nel panorama della poesia contemporanea. Il nome d'arte fonde la sacralità del sangue con la fragilità e l'ardimento dell'organo cardiaco. Cresciuto in un ambiente intriso di liturgie e silenzi, l'autore ha sviluppato una sensibilità unica nel cogliere le crepe della morale comune. Funambolo dell'anima, vive da ramingo tra la tempesta dei sensi e la solennità della memoria, custode di un pensiero mai morto che continua a fare della parola scritta il proprio sabba privato.",
+  "moods": [
+   {
+    "key": "ombra",
+    "name": "L'Ombra e il Pozzo",
+    "icon": "🌑",
+    "color": "#7a7d85",
+    "desc": "L'abisso dell'indifferenza, l'apatia, il fardello assillante, la serpe del dubbio e il silenzio."
+   },
+   {
+    "key": "ardore",
+    "name": "L'Ardore e la Carne",
+    "icon": "🔥",
+    "color": "#c4a373",
+    "desc": "La bramosia profanatrice, il banco sacro violato, l'estasi dei corpi e il furore della mente."
+   },
+   {
+    "key": "maschera",
+    "name": "La Maschera e il Fango",
+    "icon": "🎭",
+    "color": "#94949e",
+    "desc": "Il disprezzo del perbenismo, il riso beffardo, la foglia che cade senza pudore e il grido di ribellione."
+   },
+   {
+    "key": "quiete",
+    "name": "La Quiete e il Ritrovo",
+    "icon": "🕯️",
+    "color": "#e8d8be",
+    "desc": "La moka del mattino, la brace che riarde, il paco e solenne pensare lungo il sentiero lineare."
+   }
+  ],
+  "temi": {
+   "memoria": "Memoria",
+   "amore": "Amore",
+   "perdita": "Perdita",
+   "silenzio": "Silenzio",
+   "assenza": "Assenza",
+   "tempo": "Tempo",
+   "mare": "Mare",
+   "notte": "Notte",
+   "attesa": "Attesa",
+   "rinascita": "Rinascita"
+  }
+ },
+ "poems": [
+  {
+   "id": 1,
+   "slug": "01-nel-fondo",
+   "numero": "I",
+   "titolo": "Nel fondo",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Abisso Catartico & Cura del Silenzio",
+   "senso": "Tuffarsi nell'indifferenza del proprio io per scoprire che nel fondo del dolore più cupo germoglia l'unico verso capace di durare.",
+   "testo": "vago, volo,\nmi tuffo ed annego,\nimmerso nel ventre del mio io indifferente\nritrovo il piacere per un pugno indecente\n\nriaffiorano versi e luci profonde\ndell’attimo esatto\ndel mio vagare irriverente\ntra nuvole dense e fiamma viva ardente\n\nvivendo tra pensieri abbaglianti\ne colori indifferenti,\nsuoni lenti e lontani che avvolgono la mente,\nridonano pace e leniscono il niente\n\noso, come bimbo intrepido ed imprudente,\ntra mille tormenti e gesti indecenti.\nriassaporo quel filo che taglia il sorriso\ne ridona pace del tiepido nido.\n\nin un delicato ed impavido gesto\ntrovo tutto il senso del mio vivere mesto.\n\nla mente divampa, lenisce e guarisce\nritrova la via nella morte apparente.\nriagguanto nel grigio di un nebbia che avvolge\nil mio impeto verbo, che lesina la sorte.\n\nnel fondo del mio silenzio che cura,\nritrovo il piacere per un verso che dura.",
+   "immagine": "ig/01.jpg",
+   "data": "2026-01-25",
+   "temi": [
+    "rinascita",
+    "assenza",
+    "mare"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "ritrovo",
+    "piacere",
+    "mente",
+    "tuffo",
+    "annego"
+   ],
+   "citazione": "immerso nel ventre del mio io indifferente",
+   "musica": {
+    "brano": "On the Nature of Daylight",
+    "artista": "Max Richter",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+    "youtube": "https://music.youtube.com/search?q=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+    "apple": "https://music.apple.com/it/search?term=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+    "soundcloud": "https://soundcloud.com/search?q=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\n… vago, volo, \nmi tuffo ed annego,\nimmerso nel ventre del mio io indifferente \nritrovo il piacere per un pugno indecente \n\nriaffiorano versi e luci profonde \ndell’attimo esatto \ndel mio vagare irriverente \ntra nuvole dense e fiamma viva ardente\n\nvivendo tra pensieri abbagliant"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/01-800.webp",
+   "correlate": [
+    42,
+    40,
+    43
+   ]
+  },
+  {
+   "id": 2,
+   "slug": "02-imprigionato-nel-desio",
+   "numero": "II",
+   "titolo": "Imprigionato nel desio",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Prigionia Erotica & Brivido Incosciente",
+   "senso": "La mente serrata nella cruna di un desiderio ossessivo, dove la bestia interiore preferisce le spine e il sangue all'antidoto della ragione.",
+   "testo": "imprigionato nel desio\nche sconvolge le mie membra\navvolto nella cruna di un ago\nche trasonda nel desueto\n\ncammino nelle nebbie del persuaso\ntrasognando ebbrezza e leggerezza\ncon nel palmo della mano\nil lume dell’incoscienza\n\nla bestia,\naffamata ed assetata\nvagherà nelle tenebre\nodorando il profumo del miele\ntra rovi di spine\ne pulviscolo di imene\n\nrinnegherò l’antidoto\nper lacrime di sangue\nin uno specchio\ndalle porte senza stanze",
+   "immagine": "ig/02.jpg",
+   "data": "2026-05-26",
+   "temi": [
+    "notte"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "imprigionato",
+    "desio",
+    "sconvolge",
+    "membra",
+    "avvolto"
+   ],
+   "citazione": "cammino nelle nebbie del persuaso",
+   "musica": {
+    "brano": "Nuvole Bianche",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Nuvole%20Bianche%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Nuvole%20Bianche%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Nuvole%20Bianche%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Nuvole%20Bianche%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nimprigionato nel desio\nche sconvolge le mie membra \navvolto nella cruna di un ago\nche trasonda nel desueto\n\ncammino nelle nebbie del persuaso\ntrasognando ebbrezza e leggerezza \ncon nel palmo della mano \nil lume dell’incoscienza\n\nla bestia, \naffamata ed assetata \nvagherà nelle "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/02-800.webp",
+   "correlate": [
+    8,
+    40,
+    6
+   ]
+  },
+  {
+   "id": 3,
+   "slug": "03-pigmento-sottile",
+   "numero": "III",
+   "titolo": "Pigmento sottile",
+   "sezione": "Il pozzo di pece",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Bramosia Feconda & Furore Mistico",
+   "senso": "La scintilla che accende l'anima: profanare la stasi dell'ostia morta per inseguire il salto ardito del funambolo e la danza delle belve.",
+   "testo": "pigmento sottile\ndi desiderio e furore\ndi bramosia che arde\ne rinnova l’ardore\n\nessenza di voglie,\nardite, e profuse\ndi aghi appuntiti con crune,\nsottili\ne troppo socchiuse\n\ndove l’ostia già morta\nridisegna le sorta\ndove la mente si tuffa, veloce,\nsempre oltre le gesta\ndove il crepuscolo ridisegna\nsolo il richiamo della foresta\n\nil mendicante\nor stanco\nsempre vivo e mai parco\ndà acqua alle funi di un circo ambulante\ntra gesta di artisti\ne belve in danze\n\nonorando l’onore per un balzo\nprestante",
+   "immagine": "ig/03.jpg",
+   "data": "2026-06-02",
+   "temi": [
+    "amore",
+    "perdita",
+    "mare"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "ridisegna",
+    "sempre",
+    "gesta",
+    "pigmento",
+    "sottile"
+   ],
+   "citazione": "dà acqua alle funi di un circo ambulante",
+   "musica": {
+    "brano": "Apocalypse",
+    "artista": "Cigarettes After Sex",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Apocalypse%20Cigarettes%20After%20Sex",
+    "youtube": "https://music.youtube.com/search?q=Apocalypse%20Cigarettes%20After%20Sex",
+    "apple": "https://music.apple.com/it/search?term=Apocalypse%20Cigarettes%20After%20Sex",
+    "soundcloud": "https://soundcloud.com/search?q=Apocalypse%20Cigarettes%20After%20Sex",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\npigmento sottile \ndi desiderio e furore \ndi bramosia che arde \ne rinnova l’ardore \n\nessenza di voglie,\nardite, e profuse\ndi aghi appuntiti con crune,\nsottili \ne troppo socchiuse \n\ndove l’ostia già morta \nridisegna le sorta \ndove la mente si tuffa, veloce, \nsempre oltre le gest"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/03-800.webp",
+   "correlate": [
+    29,
+    39,
+    47
+   ]
+  },
+  {
+   "id": 4,
+   "slug": "04-serpe",
+   "numero": "IV",
+   "titolo": "Serpe",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Tentazione, Peccato & Disillusione",
+   "senso": "Il confronto viscerale con la serpe del peccato e il finto pentimento: l'uomo che scorge l'inganno e calpesta la voce che l'ha sedotto.",
+   "testo": "indomita serpe,\nche strisci e sibili\nin un irruente impeto di fredda\ne consumata misericordia apparente\n\ntentatrice in un vorace\ne stridente scivolare\ndi calma impertinente\n\ntu tendesti la mano\ninfuocata di diletto\nper mietere ogni rigetto\ndi scostumato sospetto\n\nsì, tu fosti il peccato,\ne l’ardore,\nil fremito immondo che stride\ne confonde ogni umore\n\ntu,\nche bruciasti\nnelle fiamme dell’inferno\noggi già gridi, in un putrido\npentimento di reliquiario\neccetto\n\nl’uomo,\nimmolato per pietà rigetta\nscorse il tuo volto\ne ti rinnegò la festa\n\nl’uomo,\ninchiodato all’oblio\numanamente\nbruciò la tua lingua\ne calpestò il tuo brusio\n\nla croce che pria era morte\nora scostò la tomba\nper aprire ogni sorte",
+   "immagine": "ig/04.jpg",
+   "data": "2026-04-04",
+   "temi": [
+    "perdita",
+    "tempo"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "indomita",
+    "serpe",
+    "strisci",
+    "sibili",
+    "irruente"
+   ],
+   "citazione": "la croce che pria era morte",
+   "musica": {
+    "brano": "Written on the Sky",
+    "artista": "Max Richter",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Written%20on%20the%20Sky%20Max%20Richter",
+    "youtube": "https://music.youtube.com/search?q=Written%20on%20the%20Sky%20Max%20Richter",
+    "apple": "https://music.apple.com/it/search?term=Written%20on%20the%20Sky%20Max%20Richter",
+    "soundcloud": "https://soundcloud.com/search?q=Written%20on%20the%20Sky%20Max%20Richter",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nSerpe \n\nindomita serpe, \nche strisci e sibili\nin un irruente impeto di fredda\ne consumata misericordia apparente\n\ntentatrice in un vorace \ne stridente scivolare\ndi calma impertinente \n\ntu tendesti la mano \ninfuocata di diletto \nper mietere ogni rigetto \ndi scostumato sospetto "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/04-800.webp",
+   "correlate": [
+    7,
+    40,
+    22
+   ]
+  },
+  {
+   "id": 5,
+   "slug": "05-indaco-di-un-d",
+   "numero": "V",
+   "titolo": "Indaco di un dí",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Sospensione Malinconica & Lama del Vespro",
+   "senso": "Quel bagliore che sembrava un refuso nel destino: la consapevolezza che la bellezza del crepuscolo nasconde il taglio vivo di una lama nuda.",
+   "testo": "indaco di un dí\nche sembrava refuso\nmiraggio di un divenire\ndal sapore alquanto profuso\n\nil pallore lontano\ndi luci sommesse\ndestavan solo il pensiero\nper il piacere del\nniente\n\nun mondo contorto e confuso\nche segna il suo tempo\ncon il semplice desiderio\ndel sole\nogni giorno recluso\n\nla vita, attorno,\nresta viva\nma il vespro dell’esistenza\na volte luccica come\nlama nuda",
+   "immagine": "ig/05.jpg",
+   "data": "2026-05-20",
+   "temi": [
+    "assenza",
+    "tempo",
+    "amore"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "indaco",
+    "sembrava",
+    "refuso",
+    "miraggio",
+    "divenire"
+   ],
+   "citazione": "con il semplice desiderio",
+   "musica": {
+    "brano": "Near Light",
+    "artista": "Ólafur Arnalds",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Near%20Light%20%C3%93lafur%20Arnalds",
+    "youtube": "https://music.youtube.com/search?q=Near%20Light%20%C3%93lafur%20Arnalds",
+    "apple": "https://music.apple.com/it/search?term=Near%20Light%20%C3%93lafur%20Arnalds",
+    "soundcloud": "https://soundcloud.com/search?q=Near%20Light%20%C3%93lafur%20Arnalds",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nindaco di un dí \nche sembrava refuso\nmiraggio in un divenire\ndal sapore alquanto profuso\n\nil pallore lontano \ndi luci sommesse \ndestavan sono il pensiero \nper il piacere del \nniente \n\nun mondo contorto e confuso \nsegna il suo tempo \ncon il semplice desiderio \ndel sole \nogni gi"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/05-800.webp",
+   "correlate": [
+    44,
+    40,
+    43
+   ]
+  },
+  {
+   "id": 6,
+   "slug": "06-inquieto-lenir",
+   "numero": "—",
+   "titolo": "Inquieto lenir",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Sonnambulismo della Coscienza & Risveglio Rosso",
+   "senso": "La nebbia dell'ebbrezza che cerca requie, fino a quando un raggio di rubino non risveglia all'improvviso la carne intorpidita.",
+   "testo": "inquieto lenir\nper vista di un ebbro\nannebbiata e confusa\nin un rosso di cembro\n\necco …,\nriverso la mesta risacca\nche bagna la sorte\ne inganna la mazza\n\nl’ardor del mattino\nresta fisso nel rosso rubino\nmentre un raggio di stupore\nridesta la carne e lo spirito\ndel puro ardore",
+   "immagine": "ig/06.jpg",
+   "data": "2026-05-24",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "rosso",
+    "inquieto",
+    "lenir",
+    "vista",
+    "ebbro"
+   ],
+   "citazione": "ridesta la carne e lo spirito",
+   "musica": {
+    "brano": "Una Mattina",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Una%20Mattina%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Una%20Mattina%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Una%20Mattina%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Una%20Mattina%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ninquieto lenir \nper vista di un ebbro\nannebbiata e confusa \nin un rosso di cembro \n\necco …, \nriverso la mesta risacca \nche bagna la sorte \ne inganna la mazza\n\nl’ardor del mattino \nresta fisso nel rosso rubino \nmentre un raggio di stupore \nridesta la carne e lo spirito \ndel pur"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/06-800.webp",
+   "correlate": [
+    43,
+    36,
+    8
+   ]
+  },
+  {
+   "id": 7,
+   "slug": "07-un-sasso",
+   "numero": "—",
+   "titolo": "Un sasso",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Apatia Prosciugata & Rassegnazione Raminga",
+   "senso": "Rotolare solitari e senza altare in un canale svuotato d'ipocrisia, dove non restano che rovi e un sordo silenzio minerale.",
+   "testo": "un sasso,\ncome residuo\no come distacco\n\nun impetuoso rotolare,\no un ramingo scorrere\nsenza altare\n\nscava,\nin una paziente\nriserva di rigurgito,\nun indugio\n\nsi dilava\nnello scorrere lento\ndi un letto di ipocrisia\ne di rimpianto\n\nbagnato e non risolto\nin un prosciugato\ncanale quasi morto\n\nora dove cresce solo\nsteppa di canneto\ne apatia\ndal sapore di roveto",
+   "immagine": "ig/07.jpg",
+   "data": "2026-04-13",
+   "temi": [
+    "perdita",
+    "tempo"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "scorrere",
+    "sasso",
+    "residuo",
+    "distacco",
+    "impetuoso"
+   ],
+   "citazione": "dal sapore di roveto",
+   "musica": {
+    "brano": "Nocturne in C-Sharp Minor",
+    "artista": "Frédéric Chopin",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+    "youtube": "https://music.youtube.com/search?q=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+    "apple": "https://music.apple.com/it/search?term=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+    "soundcloud": "https://soundcloud.com/search?q=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nun sasso, \ncome residuo\no come distacco \n\nun impetuoso rotolare,\no un ramingo scorrere \nsenza altare \n\nscava, \nin una paziente \nriserva di rigurgito,\nun indugio \n\nsi dilava \nnello scorrere lento \ndi un letto di ipocrisia \ne di rimpianto \n\nbagnato e non risolto\nin un prosciugat"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/07-800.webp",
+   "correlate": [
+    4,
+    40,
+    22
+   ]
+  },
+  {
+   "id": 8,
+   "slug": "08-apatia-in-un-mondo-irrequieto",
+   "numero": "—",
+   "titolo": "Apatia in un mondo irrequieto",
+   "sezione": "Il pozzo di pece",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Claustrofobia del Rumore & Desiderio di Rifugio",
+   "senso": "Il contrasto lacerante tra il clamore del mondo e l'immobilismo del cuore; fuggire tra le spine alla ricerca dell'alcova del silenzio.",
+   "testo": "apatia in un mondo irrequieto\npulsante immobilismo\ndi una mente\nche sfugge i miraggi\ndel rumore assordante\n\nmi vedo,\nnudo tra rovi di spine,\nbramoso di aculei profondi\ne di sangue colante.\n\nvedo con gli occhi,\nil fardello di un peso assillante\ne supporto la mia nebbia\ndal velo coprente\n\nIl cuore rifugge,\nla mano ritrae\ncerco l’alcova ed il rifugio\nper pensieri fumanti,\nbramo il silenzio\ned annuso\nil mio respiro ansimante.",
+   "immagine": "ig/08.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "amore",
+    "silenzio",
+    "notte"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "apatia",
+    "mondo",
+    "irrequieto",
+    "pulsante",
+    "immobilismo"
+   ],
+   "citazione": "bramoso di aculei profondi",
+   "musica": {
+    "brano": "Experience",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Experience%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Experience%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Experience%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Experience%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\napatia in un mondo irrequieto \npulsante immobilismo \ndi una mente \nche sfugge i miraggi \ndel rumore assordante \n\nmi vedo, \nnudo tra rovi di spine,\nbramoso di aculei profondi \ne di sangue colante.\nvedo con gli occhi, \nil fardello di un peso assillante \ne supporto la mia nebbia "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/08-800.webp",
+   "correlate": [
+    36,
+    6,
+    2
+   ]
+  },
+  {
+   "id": 9,
+   "slug": "09-riflessi",
+   "numero": "VI",
+   "titolo": "Riflessi",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Estasi Carnale & Furore dello Specchio",
+   "senso": "Lo specchio che cattura corpi madidi di sudore e bramosia, trasformando l'amplesso in un duello di lame di luce fendente.",
+   "testo": "immortalati respiri\nin un delirio dai riflessi sudati\npensieri ambigui\ndai desideri consumati\n\nfurore, rumore ed ardore\nsguardi che riprendono le membra\narroventandone la scena\noltre l'oblio del piacere senza flemma\n\nl'alcova del diletto\na volte lascia spazio\nal più perverso\ned ardente riflesso\n\nlo specchio dona riverberi\ndi luce fendente\nsguardi che scuotono la mente\ne pensieri che sfuggono il presente\nscivolando nel piacere\npiù tagliente",
+   "immagine": "ig/09.jpg",
+   "data": "2026-01-17",
+   "temi": [
+    "amore",
+    "rinascita"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "pensieri",
+    "sguardi",
+    "piacere",
+    "immortalati",
+    "respiri"
+   ],
+   "citazione": "oltre l'oblio del piacere senza flemma",
+   "musica": {
+    "brano": "Familiar",
+    "artista": "Agnes Obel",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Familiar%20Agnes%20Obel",
+    "youtube": "https://music.youtube.com/search?q=Familiar%20Agnes%20Obel",
+    "apple": "https://music.apple.com/it/search?term=Familiar%20Agnes%20Obel",
+    "soundcloud": "https://soundcloud.com/search?q=Familiar%20Agnes%20Obel",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nriflessi \n\nimmortalati respiri \nin un delirio dai riflessi sudati\npensieri ambigui \ndai desideri consumati \n\nfurore, rumore ed ardore\nsguardi che riprendono le membra\narroventandone la scena \noltre l’oblio del piacere senza flemma \n\nl’alcova del diletto  \na volte lascia spazio"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/09-800.webp",
+   "correlate": [
+    47,
+    13,
+    16
+   ]
+  },
+  {
+   "id": 10,
+   "slug": "10-s-inerpica-ragione",
+   "numero": "VII",
+   "titolo": "S’inerpica ragione",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Sacrilegio Erotico & Spoliazione Mistica",
+   "senso": "La ragione che cade dinanzi allo svelamento della carne: la suora dal volto gelato che si fa profumo inebriante di miele e rose rosse.",
+   "testo": "s’inerpica ragione\ne sconforto,\nignominia\ne dissapore contorto\n\nil vento che sale la china\nscuote la chioma\ne si ridesta,\nnel fremito,\ndi una nuova cima\n\nogni velo\nche riveste il veleno\ndistilla supplizio\ne ricami di pizzo nero\n\nla monaca dal volto gelato\nha tolto la gonna in un\ngesto disincantato\nsvelando nel cespuglio\ndi rose rosse\nil profumo inebriante di miele\ne mimose intonse\n\ndistillerò l’essenza\nper pazienza e cupidigia\nricamando nell’ardore ardito\nil pizzo del desiderio\nnel silenzio della mia franchigia",
+   "immagine": "ig/10.jpg",
+   "data": "2026-06-01",
+   "temi": [
+    "amore",
+    "silenzio"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "pizzo",
+    "inerpica",
+    "ragione",
+    "sconforto",
+    "ignominia"
+   ],
+   "citazione": "nel silenzio della mia franchigia",
+   "musica": {
+    "brano": "Gymnopédie No. 1",
+    "artista": "Erik Satie",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+    "youtube": "https://music.youtube.com/search?q=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+    "apple": "https://music.apple.com/it/search?term=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+    "soundcloud": "https://soundcloud.com/search?q=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ns’inerpica ragione \ne sconforto,\nignominia \ne dissapore contorto \n\nil vento che sale la china \nscuote la chioma \ne si ridesta, \nnel fremito,\ndi una nuova cima \n\nogni velo \nche riveste il veleno \ndistilla supplizio \ne ricami di pizzo nero \n\nla monaca dal volto gelato\nha tolto l"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/10-800.webp",
+   "correlate": [
+    39,
+    11,
+    47
+   ]
+  },
+  {
+   "id": 11,
+   "slug": "11-il-banco",
+   "numero": "VIII",
+   "titolo": "Il banco",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Ribellione Blasfema & Sabba dell'Anima",
+   "senso": "Il ricordo furente di un'infanzia che rompe le catene del dogma: il banco della cappella trasformato nel teatro di una libertà ardente e indomita.",
+   "testo": "ossequio vibrante e furente\nrecondita scure in un divenire\nche fui gracile, giovane\nma già porco e ribelle\n\nin un crepitio\ndi ossequi e madonne\nmi ritrovai lì, in ginocchio\ncon la mente in fiamme\ne arditi pensieri che\nbagnavano la mente\n\ndel montante in legno\nio fui preda furente\nin un sabba\nche bruciava la mente\n\nla fiamma ardeva nella cappella\ninondata di parole non dette,\ndi desideri furenti\ned occhi che scrutavano\ncandelabri fumanti e lucenti\n\nil muto baluardo, ritto\ndel pennone già alto\nscuoteva la bandiera\ndi perfida libertà manifesta\ne ardente miraggio\ndi possessione blasfema e possente\n\nnulla mutò … tutto si evolse…",
+   "immagine": "ig/11.jpg",
+   "data": "2026-01-05",
+   "temi": [
+    "rinascita",
+    "amore",
+    "silenzio"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "mente",
+    "furente",
+    "ossequio",
+    "vibrante",
+    "recondita"
+   ],
+   "citazione": "mi ritrovai lì, in ginocchio",
+   "musica": {
+    "brano": "Says",
+    "artista": "Nils Frahm",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Says%20Nils%20Frahm",
+    "youtube": "https://music.youtube.com/search?q=Says%20Nils%20Frahm",
+    "apple": "https://music.apple.com/it/search?term=Says%20Nils%20Frahm",
+    "soundcloud": "https://soundcloud.com/search?q=Says%20Nils%20Frahm",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nil banco \n\nossequio vibrante e furente\nrecondita scure in un divenire \nche fui gracile, giovane\nma già porco e ribelle \n\nin un crepitio \ndi ossequi e madonne \nmi ritrovai lì, in ginocchio \ncon la mente in fiamme \ne arditi pensieri che \nbagnavano la mente \n\ndel montante in legn"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/11-800.webp",
+   "correlate": [
+    36,
+    29,
+    13
+   ]
+  },
+  {
+   "id": 12,
+   "slug": "12-io-bramo",
+   "numero": "IX",
+   "titolo": "Io bramo",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Lussuria Viscerale & Sete Inesausta",
+   "senso": "Una preghiera rovesciata: invocare la lussuria e la bestia primordiale per placare l'inquietudine e vincere ogni falsa compostezza.",
+   "testo": "anima mia persa,\nriversa e confusa\naperta al più\nflebile rigurgito nel vento\ntu soffi tempesta\ne cirri nel tempo\n\nbramo la carne\nche nel pieno armento\nsappia ecclissare\nil mio cupo ardimento\n\nbramo la bestia\nche a dismisura\nconfonde la veste\ncon la tonaca su misura\n\nbramo il piacere\nche nel divin sgomento\nscorga il perverso\ne carnale\namplesso di giovamento\n\ned infine,\nbramo te, mia amica lussuria\nche tu possa placare la mia sete\nd’inumana postura",
+   "immagine": "ig/12.jpg",
+   "data": "2026-01-03",
+   "temi": [
+    "amore",
+    "tempo"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "bramo",
+    "anima",
+    "persa",
+    "riversa",
+    "confusa"
+   ],
+   "citazione": "bramo te, mia amica lussuria",
+   "musica": {
+    "brano": "Saman",
+    "artista": "Ólafur Arnalds",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Saman%20%C3%93lafur%20Arnalds",
+    "youtube": "https://music.youtube.com/search?q=Saman%20%C3%93lafur%20Arnalds",
+    "apple": "https://music.apple.com/it/search?term=Saman%20%C3%93lafur%20Arnalds",
+    "soundcloud": "https://soundcloud.com/search?q=Saman%20%C3%93lafur%20Arnalds",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIo bramo \r\n\r\nanima mia persa, \r\nriversa e confusa \r\naperta al più \r\nflebile rigurgito nel vento\r\ntu soffi tempesta \r\ne cirri nel tempo \r\n\r\nbramo la carne\r\nche nel pieno armento \r\nsappia ecclissare \r\nil mio cupo ardimento \r\n\r\nbramo la bestia \r\nche a dismisura \r\nconfonde la vest"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/12-800.webp",
+   "correlate": [
+    47,
+    17,
+    16
+   ]
+  },
+  {
+   "id": 13,
+   "slug": "13-ritornero-come-unguento",
+   "numero": "X",
+   "titolo": "Ritornerò come unguento",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Vendetta Sensuale & Sfida al Fato",
+   "senso": "Tornare sulla pelle altrui come unguento pungente e irriverente, leccando l'infamia del bene rinnegato per scuotere ogni comodo tepore.",
+   "testo": "ritornerò come unguento\ninfame e sgomento\nnell’apologia irriverente\ndi un innaturale corpo ardente\n\nnell’acume del desiderio più indecente,\nirriderò il fato che ha rinnegato ogni misfatto\n\nnel più impreciso ed immondo\naffondo impertinente,\ncon l’acidula lingua, che mi sono ritrovato\nio, leccherò l’infamia,\ndi un bene rinnegato\n\ndal risveglio di un sonno mal curato,\nil piacere è sempre, un piacere ritrovato\n\ncalpesterò il ristoro\nodioso ed irriverente\nper non trovare pace\nnel tumulto di un sussulto\nimpertinente",
+   "immagine": "ig/13.jpg",
+   "data": "2026-01-20",
+   "temi": [
+    "rinascita",
+    "amore"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "irriverente",
+    "rinnegato",
+    "impertinente",
+    "ritrovato",
+    "piacere"
+   ],
+   "citazione": "con l’acidula lingua, che mi sono ritrovato",
+   "musica": {
+    "brano": "Divenire",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Divenire%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Divenire%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Divenire%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Divenire%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nritornerò come unguento \ninfame e sgomento \nnell’apologia irriverente \ndi un innaturale corpo ardente \n\nnell’acume del desiderio più indecente, \nirriderò il fato che ha rinnegato ogni misfatto\n\nnel più impreciso ed immondo \naffondo impertinente, \ncon l’acidula lingua, che mi s"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/13-800.webp",
+   "correlate": [
+    9,
+    47,
+    16
+   ]
+  },
+  {
+   "id": 14,
+   "slug": "14-tu-donna-perversa",
+   "numero": "—",
+   "titolo": "Tu donna perversa",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Dolore Estatico & Redenzione della Passione",
+   "senso": "L'amplesso come liturgia di espiazione: unire le mani nel dolore e nel piacere per trasformare la ferita in bramosia redentrice.",
+   "testo": "tu donna perversa\ndal velo turbato\ne dall’unguento ricamato\n\nrammenda col filo torbido\ndella tua misericordia\nla veste strappata\nnell’impeto irruento del\nnostro blasfemo peccato\n\navvolgi nel tuo ritorto tormento\nle nostre iraconda\nbramosia di redenzione\nnell’estasi di un orgasmo senza seme\nma bagnato dal colare della passione\n\npiega al piacere e al dolore\nil vilipendio bramoso del nostro ardore\ne donaci il dolore tra le mani",
+   "immagine": "ig/14.jpg",
+   "data": "2026-03-10",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "nostro",
+    "dolore",
+    "donna",
+    "perversa",
+    "turbato"
+   ],
+   "citazione": "il vilipendio bramoso del nostro ardore",
+   "musica": {
+    "brano": "Spiegel im Spiegel",
+    "artista": "Arvo Pärt",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+    "youtube": "https://music.youtube.com/search?q=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+    "apple": "https://music.apple.com/it/search?term=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+    "soundcloud": "https://soundcloud.com/search?q=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 0.96,
+    "stato": "sicuro",
+    "didascalia": ".\n\nmadonna perversa \ndal velo turbato \ne dall’unguento ricamato \n\nrammenda col filo torbido \ndella tua misericordia\n\nla veste strappata \nnell’impeto irruento del \nnostro blasfemo peccato \n\navvolgi nel tuo ritorto tormento\nle nostra iraconda\nbramosia di redenzione \nnell’estasi di "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/14-800.webp",
+   "correlate": [
+    47,
+    16,
+    15
+   ]
+  },
+  {
+   "id": 15,
+   "slug": "15-sii-tu-donna",
+   "numero": "—",
+   "titolo": "Sii tu donna",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Provocazione Sfrontata & Femminino Selvaggio",
+   "senso": "Il rifiuto del moralismo d'accatto: esaltare la donna nella sua carica erotica totale, nel riscatto beffardo del suo potere dirompente.",
+   "testo": "sii tu donna\nardita ed impetuosa\nche scuoti le vesti\ne fai girare le lenzuola\n\nsii tu donna...\nsuccosa e gustosa\nche coli pensieri in rivoli di mona\n\nsotto la veste tieni lo scrigno\ncome di una profanata suora\n\nsii tu troia...\nantica cantoniera dal profumo di monaca\nprostrata nella mente dal canto del tacco\ne che attizzi le gesta\nin un gioco beffardo pieno\ndi riscatto",
+   "immagine": "ig/15.jpg",
+   "data": "2026-01-21",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "donna",
+    "ardita",
+    "impetuosa",
+    "scuoti",
+    "vesti"
+   ],
+   "citazione": "prostrata nella mente dal canto del tacco",
+   "musica": {
+    "brano": "Komorebi",
+    "artista": "Fabrizio Paterlini",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Komorebi%20Fabrizio%20Paterlini",
+    "youtube": "https://music.youtube.com/search?q=Komorebi%20Fabrizio%20Paterlini",
+    "apple": "https://music.apple.com/it/search?term=Komorebi%20Fabrizio%20Paterlini",
+    "soundcloud": "https://soundcloud.com/search?q=Komorebi%20Fabrizio%20Paterlini",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nsii tu donna \nardita ed impetuosa \nche scuoti le vesti \ne fai girare le lenzuola\n\nsii tu donna...\nsuccosa e gustosa \nche coli pensieri in rivoli di mona\n\nsotto la veste tieni lo scrigno \ncome di una profanata suora\n\nsii tu troia...\nantica cantoniera dal profumo di monaca \npros"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/15-800.webp",
+   "correlate": [
+    14,
+    10,
+    39
+   ]
+  },
+  {
+   "id": 16,
+   "slug": "16-ridestero-il-mio-morso",
+   "numero": "—",
+   "titolo": "Ridesterò il mio morso",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Furore Incontenibile & Pazzia Liberatoria",
+   "senso": "Slegare il morso della bramosia al barlume d'una candela, consegnandosi senza difese al vento di una folle ebbrezza.",
+   "testo": "ridesterò il mio morso\narguto e profuso\nnel piacere del desiderio\ntroverà spazio nel languido respiro,\nsommesso\n\nal barlume della candela\nogni diaframma darà fiato alla fiamma,\nogni sospiro, al più impavido ed ardito\nsgomento\n\nnel sibilo del vento il mio pennone\nsarà immolato al furente ed ardente\nstupore\n\nogni follia, lascerà libera\nla più incontenibile ed irrefrenabile\npazzia",
+   "immagine": "ig/16.jpg",
+   "data": "2026-02-14",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "ridesterò",
+    "morso",
+    "arguto",
+    "profuso",
+    "piacere"
+   ],
+   "citazione": "nel piacere del desiderio",
+   "musica": {
+    "brano": "Riverside",
+    "artista": "Agnes Obel",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Riverside%20Agnes%20Obel",
+    "youtube": "https://music.youtube.com/search?q=Riverside%20Agnes%20Obel",
+    "apple": "https://music.apple.com/it/search?term=Riverside%20Agnes%20Obel",
+    "soundcloud": "https://soundcloud.com/search?q=Riverside%20Agnes%20Obel",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nridesterò il mio morso \narguto e profuso \nnel piacere del desiderio \ntroverà spazio nel languido respiro, \nsommesso\n\nal barlume della candela \nogni diaframma darà fiato alla fiamma,\nogni sospiro, al più impavido ed ardito\nsgomento\n\nnel sibilo del vento il mio pennone \nsarà imm"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/16-800.webp",
+   "correlate": [
+    47,
+    13,
+    9
+   ]
+  },
+  {
+   "id": 17,
+   "slug": "17-vagavano-i-pensieri",
+   "numero": "—",
+   "titolo": "Vagavano i pensieri",
+   "sezione": "Il sabba della carne",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Disconnessione Estatica tra Corpo e Anima",
+   "senso": "Il corpo che corre nell'amplesso al ritmo dolce della viola, mentre la mente si distacca e vaga solitaria in un altrove inafferrabile.",
+   "testo": "vagavano i pensieri nel pieno ardimento\nnell'impeto irruento di un amplesso perverso,\nil membro pulsante batteva il tempo\nma dello spartito si smarriva il senso\n\nla viola gioiva con musica lieve\ned il tempo batteva a suon di miele\ncomo fiamma lambiva e bruciava ogni cosa\nuna lingua feriva e leniva gioiosa\n\nl'incastro donava pensieri spersi\nmentre il corpo rincorreva il più dolce dei versi,\nil tempo fuggiva e non leniva\nla mente vagava e non seguiva",
+   "immagine": "ig/17.jpg",
+   "data": "2025-12-22",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "tempo",
+    "pensieri",
+    "batteva",
+    "leniva",
+    "vagavano"
+   ],
+   "citazione": "il membro pulsante batteva il tempo",
+   "musica": {
+    "brano": "Sunset Lover",
+    "artista": "Petit Biscuit",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Sunset%20Lover%20Petit%20Biscuit",
+    "youtube": "https://music.youtube.com/search?q=Sunset%20Lover%20Petit%20Biscuit",
+    "apple": "https://music.apple.com/it/search?term=Sunset%20Lover%20Petit%20Biscuit",
+    "soundcloud": "https://soundcloud.com/search?q=Sunset%20Lover%20Petit%20Biscuit",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nvagavano i pensieri nel pieno ardimento\nnell'impeto irruento di un amplesso perverso,\nil membro pulsante batteva il tempo\nma dello spartito si smarriva il senso\n\nla viola gioiva con musica lieve \n\ned il tempo batteva a suon di miele \ncome fiamma lambiva e bruciava ogni cosa\nun"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/17-800.webp",
+   "correlate": [
+    47,
+    46,
+    45
+   ]
+  },
+  {
+   "id": 18,
+   "slug": "18-sei-solo-una-foglia",
+   "numero": "XI",
+   "titolo": "Sei solo una foglia",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Fragilità Esistenziale & Inevitabilità della Caduta",
+   "senso": "La parabola dell'uomo: credersi libellula nella luce della festa per poi cadere spogliati a terra senza pudore, sotto gli occhi distratti dei passanti.",
+   "testo": "Sei solo una foglia\n\nalgida foglia che segue il respiro\nche muta e si dimena al più lieve sospiro\nnel tuo essere mutevole e fragile\nrifletti la luce nel mattino che ti scorge agile\n\nal soffiare del vento tu volgi il saluto\nallo scorrere del tempo il tuo flebile rito\ncome libellula ti libri nell’aria che scalda\nma con le catene ti trovi ogni sera\nche riporta la calma\n\nrisplende il tuo palmo, lucente ed ammiccante\nnel tentennare muto a cui presti ogni istante\nsei nata dal grigio torpore\nche il freddo lascia al cambiare lento\ndi ogni stagione\n\nverrà il tempo delle feste e degli inchini\ndelle sgrondanti sieste e dei taccuini\nma, le catene cadranno\ne con esse il tuo volare stanco\n\nassisterai al mutare del tuo umore\ne a terra cadrai un giorno qualunque\nsenza pudore\nsenza rispetto, allora....\nil primo passante cercherà\n… un nuovo fiore",
+   "immagine": "ig/18.jpg",
+   "data": "2025-12-28",
+   "temi": [
+    "tempo",
+    "silenzio",
+    "rinascita"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "foglia",
+    "tempo",
+    "catene",
+    "algida",
+    "segue"
+   ],
+   "citazione": "nel tentennare muto a cui presti ogni istante",
+   "musica": {
+    "brano": "Leaves",
+    "artista": "Ben Lukas Boysen",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Leaves%20Ben%20Lukas%20Boysen",
+    "youtube": "https://music.youtube.com/search?q=Leaves%20Ben%20Lukas%20Boysen",
+    "apple": "https://music.apple.com/it/search?term=Leaves%20Ben%20Lukas%20Boysen",
+    "soundcloud": "https://soundcloud.com/search?q=Leaves%20Ben%20Lukas%20Boysen",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nSei solo una foglia \n\nalgida foglia che segue il respiro\nche muta e si dimena al più lieve sospiro \nnel tuo essere mutevole e fragile \nrifletti la luce nel mattino che ti scorge agile \n\nal soffiare del vento tu volgi il saluto\nallo scorrere del tempo il tuo flebile rito \ncome "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/18-800.webp",
+   "correlate": [
+    45,
+    25,
+    23
+   ]
+  },
+  {
+   "id": 19,
+   "slug": "19-la-corsa-del-bianco-coniglio",
+   "numero": "XII",
+   "titolo": "La corsa del bianco coniglio",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Isolamento Fiero & Ruggito nel Silenzio",
+   "senso": "I pensieri muti che rompono il proprio lacero bavaglio: risvegliare le membra in un bramito lacerante che squarcia il buio del conformismo.",
+   "testo": "a volte mi appendo al\nfilo sottile della mia solitudine,\nall’idioma confuso del mio silenzio\nconsumando il tempo nel\ncrepuscolo del mio tormento\n\nnel riverbero dei pensieri muti\nrisuona il lacero bavaglio\ndel mio sussulto\n\nla corsa del bianco coniglio\nresta celata agli occhi del mondo\nin un attonito vilipendio\nIo m’inchino come cervo\nal suo risveglio\n\nridesterò le membra\nin un bramito lacerante e scontroso\ngridando l’ira e il richiamo più amoroso\nsolcherò le terre che scorrono nei fiumi\nper cercare luce oltre i riflessi più bui",
+   "immagine": "ig/19.jpg",
+   "data": "2026-01-19",
+   "temi": [
+    "amore",
+    "silenzio",
+    "tempo"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "volte",
+    "appendo",
+    "sottile",
+    "solitudine",
+    "idioma"
+   ],
+   "citazione": "gridando l’ira e il richiamo più amoroso",
+   "musica": {
+    "brano": "Time",
+    "artista": "Hans Zimmer",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Time%20Hans%20Zimmer",
+    "youtube": "https://music.youtube.com/search?q=Time%20Hans%20Zimmer",
+    "apple": "https://music.apple.com/it/search?term=Time%20Hans%20Zimmer",
+    "soundcloud": "https://soundcloud.com/search?q=Time%20Hans%20Zimmer",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 0.86,
+    "stato": "sicuro",
+    "didascalia": ".\n\nla corsa del bianco coniglio \n\na volte mi appendo al \nfilo sottile della mia solitudine, \nall’idioma confuso del mio silenzio \nconsumando il tempo nel \ncrepuscolo del mio tormento \n\nnel riverbero dei pensieri muti\nrisuona il lacero bavaglio \ndel mio sussulto \n\nla corsa del bia"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/19-800.webp",
+   "correlate": [
+    25,
+    24,
+    23
+   ]
+  },
+  {
+   "id": 20,
+   "slug": "20-la-maschera",
+   "numero": "XIII",
+   "titolo": "La maschera",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Ira Catartica & Verità Senza Finzione",
+   "senso": "Ricomporre la maschera delle proprie ire e vomitare versi di ribellione per purificare la mente e ritrovare il candore perduto.",
+   "testo": "acqua e fango, dolore e tango\ninvero verso per un pensiero perso\nardente pudore per un immondo stupore\nalzando la testa rivedo l’ardore\n\nnell’occhio del vento ho scorto,\nil fendente pensiero per un gesto mai morto\ninquieto nel vivere e nel lenire\nricompongo la forma della mia maschera di ire\n\nil verbo non dice quello che la mente consuma\nnella tempesta la mia vera fortuna\nvomitare versi di ribellione per una mente\nche cerca il più puro candore",
+   "immagine": "ig/20.jpg",
+   "data": "2025-12-21",
+   "temi": [
+    "perdita",
+    "mare"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "pensiero",
+    "mente",
+    "acqua",
+    "fango",
+    "dolore"
+   ],
+   "citazione": "il fendente pensiero per un gesto mai morto",
+   "musica": {
+    "brano": "Daylight",
+    "artista": "David Kushner",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Daylight%20David%20Kushner",
+    "youtube": "https://music.youtube.com/search?q=Daylight%20David%20Kushner",
+    "apple": "https://music.apple.com/it/search?term=Daylight%20David%20Kushner",
+    "soundcloud": "https://soundcloud.com/search?q=Daylight%20David%20Kushner",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nacqua e fango, dolore e tango\ninvero verso per un pensiero perso\nardente pudore per un immondo stupore\nalzando la testa rivedo l’ardore \n\nnell’occhio del vento ho scorto,\nil fendente pensiero per un gesto mai morto \ninquieto nel vivere e nel lenire \nricompongo la forma della m"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/20-800.webp",
+   "correlate": [
+    21,
+    22,
+    42
+   ]
+  },
+  {
+   "id": 21,
+   "slug": "21-persuaso-esita-il-tempo",
+   "numero": "XIV",
+   "titolo": "Persuaso esita il tempo",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Attesa Sospesa & Tempesta Sottotraccia",
+   "senso": "L'ancora che affonda nella melma del porto: sotto l'apparente stasi delle convenzioni, brucia inestinguibile il pensiero mai morto.",
+   "testo": "persuaso esita il tempo\nin un amplesso mai morto\nvolgare agli occhi del volgo\nun pensiero che odora di fiele\n\ndove il mare racchiude segreti\ndove l'ancora si attacca alla melma\nsinuoso e nascosto\ndivampa un pensiero mai morto\n\nil tempo non regna\nla notte non desta\nl'effimero ridona tempesta.",
+   "immagine": "ig/21.jpg",
+   "data": "2025-12-16",
+   "temi": [
+    "perdita",
+    "tempo",
+    "mare"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "tempo",
+    "morto",
+    "pensiero",
+    "persuaso",
+    "esita"
+   ],
+   "citazione": "dove il mare racchiude segreti",
+   "musica": {
+    "brano": "I'll Keep Coming",
+    "artista": "Low Roar",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/I%27ll%20Keep%20Coming%20Low%20Roar",
+    "youtube": "https://music.youtube.com/search?q=I%27ll%20Keep%20Coming%20Low%20Roar",
+    "apple": "https://music.apple.com/it/search?term=I%27ll%20Keep%20Coming%20Low%20Roar",
+    "soundcloud": "https://soundcloud.com/search?q=I%27ll%20Keep%20Coming%20Low%20Roar",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\npersuaso esita il tempo\nin un amplesso mai morto\nvolgare agli occhi del volgo \nun pensiero che odora di fiele \n\ndove il mare racchiude segreti\ndove l’ancora si attacca alla melma \nsinuoso e nascosto \ndivampa un pensiero mai morto\n\nil tempo non regna \nla notte non desta \nl’effi"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/21-800.webp",
+   "correlate": [
+    20,
+    45,
+    22
+   ]
+  },
+  {
+   "id": 22,
+   "slug": "22-io-rido",
+   "numero": "XV",
+   "titolo": "Io rido",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Scherno Sovrano & Solitudine Superiore",
+   "senso": "Ridere dell'ipocrisia altrui, della mediocrità e dei viaggi mai intrapresi, costruendo con il sarcasmo la propria fortezza di pace.",
+   "testo": "io rido all’ignara perfidia,\nal dolore mai scorto,\nal volere recondito\ndi un pensiero mai morto.\n\nrido, all’ignoranza della gente,\nal coraggio rivendicato\ne a quello dimenticato\ndi un viaggio mai fatto\n\nrido, nel mentre di un tempo\nche sfugge e rinnega,\ncercando una pace\nche doni conforto.",
+   "immagine": "ig/22.jpg",
+   "data": "2025-12-16",
+   "temi": [
+    "perdita",
+    "tempo"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "ignara",
+    "perfidia",
+    "dolore",
+    "scorto",
+    "volere"
+   ],
+   "citazione": "rido, nel mentre di un tempo",
+   "musica": {
+    "brano": "Svefn-g-englar",
+    "artista": "Sigur Rós",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Svefn-g-englar%20Sigur%20R%C3%B3s",
+    "youtube": "https://music.youtube.com/search?q=Svefn-g-englar%20Sigur%20R%C3%B3s",
+    "apple": "https://music.apple.com/it/search?term=Svefn-g-englar%20Sigur%20R%C3%B3s",
+    "soundcloud": "https://soundcloud.com/search?q=Svefn-g-englar%20Sigur%20R%C3%B3s",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nio rido\n\nio rido all’ignara perfidia,\nal dolore mai scorto,\nal volere recondito \ndi un pensiero mai morto.\n\nrido, all’ignoranza della gente, \nal coraggio rivendicato\ne a quello dimenticato \ndi un viaggio mai fatto\n\nrido, nel mentre di un tempo \nche sfugge e rinnega,\ncercando u"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/22-800.webp",
+   "correlate": [
+    20,
+    21,
+    45
+   ]
+  },
+  {
+   "id": 23,
+   "slug": "23-nuvola-nera",
+   "numero": "—",
+   "titolo": "Nuvola nera",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Furia Naturale & Amara Generosità",
+   "senso": "Essere come la tempesta feconda che disseta la terra ma viene maledetta: donare la propria pioggia accettando l'ingratitudine del mondo.",
+   "testo": "mi ergo,\nsul filo invisibile del mio sopruso\nrigurgito l’ira e il vilipendio\nche la rabbia muta del tormento\ndà la mano\nall’indomito mutare del tempo\n\nnuvola nera,\nattonita e carica di canto\nattendi solo il verso per piangere il tuo\nincanto\n\ntu bagni la terra,\nche fu feconda e rigogliosa\nma spesso scateni l’ira di chi ti maledice\nsenza rimpianto per il tuo essere\nmeretrice in un passito di mimosa\n\nil vento soffia forte,\nscompiglia i capelli e il riso\ndilania il lavoro di una vita\nriversando senza misericordia\nla passione e la fatica",
+   "immagine": "ig/23.jpg",
+   "data": "2026-03-22",
+   "temi": [
+    "silenzio",
+    "tempo",
+    "attesa"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "invisibile",
+    "sopruso",
+    "rigurgito",
+    "vilipendio",
+    "rabbia"
+   ],
+   "citazione": "attendi solo il verso per piangere il tuo",
+   "musica": {
+    "brano": "Weightless",
+    "artista": "Marconi Union",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Weightless%20Marconi%20Union",
+    "youtube": "https://music.youtube.com/search?q=Weightless%20Marconi%20Union",
+    "apple": "https://music.apple.com/it/search?term=Weightless%20Marconi%20Union",
+    "soundcloud": "https://soundcloud.com/search?q=Weightless%20Marconi%20Union",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nnuvola nera\n\nmi ergo, \nsul filo invisibile del mio sopruso \nrigurgito l’ira e il vilipendio \nche la rabbia muta del tormento \ndà la mano \nall’indomito mutare del tempo\n\nnuvola nera, \nattonita e carica di canto\nattendi solo il verso per piangere il tuo\nincanto \n\ntu bagni la ter"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/23-800.webp",
+   "correlate": [
+    25,
+    24,
+    19
+   ]
+  },
+  {
+   "id": 24,
+   "slug": "24-giallo",
+   "numero": "—",
+   "titolo": "Giallo",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Denuncia del Simbolo & Ipocrisia dei Riti",
+   "senso": "Il ramo di mimosa reciso per un giorno di festa e gettato via subito dopo: il disprezzo delle celebrazioni di facciata e del pudore ipocrita.",
+   "testo": "giallo,\ndalla pianta reciso\nstrappato al fiorire nel vento\nper colmare l’impeto\ncurioso e distratto\ndel maschio d’unguento\nche rinnega il ricatto\n\nardevi mimosa,\nal luccicare del sole\nma oggi divenni pretesto\nper un vile pudore\n\nbaluardo di diritti e doveri\nfiorisci un sol giorno\ntra baci ed auguri\nche già domani\nfiniranno nel cesto\ntra liti e soprusi\n\nin questo giorno\ntu fosti\ndedicata alla donna\nma fu solo pretesto\nper rivendicarne la gonna\n\nio posso solo…\naspettando il prossimo fiorire\naugurarti che resti\nalmeno il piacere del divenire",
+   "immagine": "ig/24.jpg",
+   "data": "2026-03-08",
+   "temi": [
+    "tempo",
+    "amore",
+    "attesa"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "fiorire",
+    "pretesto",
+    "giorno",
+    "giallo",
+    "dalla"
+   ],
+   "citazione": "aspettando il prossimo fiorire",
+   "musica": {
+    "brano": "Petricor",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Petricor%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Petricor%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Petricor%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Petricor%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ngiallo, \n\ndalla pianta reciso \nstrappato al fiorire nel vento \nper colmare l’impeto \ncurioso e distratto \ndel maschio d’unguento \nche rinnega il ricatto \n\nardevi mimosa, \nal luccicare del sole \nma oggi divenni pretesto \nper un vile pudore \n\nbaluardo di diritti e doveri \nfioris"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/24-800.webp",
+   "correlate": [
+    23,
+    19,
+    45
+   ]
+  },
+  {
+   "id": 25,
+   "slug": "25-in-un-muto-campionario",
+   "numero": "—",
+   "titolo": "In un muto campionario",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Nausea del Perbenismo & Disincanto",
+   "senso": "Camminare tra le luci e gli addobbi di convenienza, scorgendo il vuoto desolante di una società ricca di promesse e priva di certezze.",
+   "testo": "in un muto\ncampionario di perbenismo\nconfuso e disadorno\n\nvagabondando in un palese riserbo\ntra pensieri arditi ed irriverenti,\ncammino in un mare di luci irritanti\ne palle a penzoloni luccicanti\n\nscruto con fare disincantato\ne falsamente compiacente\nil non senso comune\ndi un bieco e cinico\nossequio contornato da inchini\n\naddobbati con gemiti di\nreliquato senza tempo\nristagnano sospiri confusi\ne alberi sacrificati\nal rito dell’addobbo\nricco di promesse\ne vuoto di certezze",
+   "immagine": "ig/25.jpg",
+   "data": "2025-12-23",
+   "temi": [
+    "silenzio",
+    "assenza",
+    "tempo"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "campionario",
+    "perbenismo",
+    "confuso",
+    "disadorno",
+    "vagabondando"
+   ],
+   "citazione": "cammino in un mare di luci irritanti",
+   "musica": {
+    "brano": "Comptine d'un autre été",
+    "artista": "Yann Tiersen",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+    "youtube": "https://music.youtube.com/search?q=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+    "apple": "https://music.apple.com/it/search?term=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+    "soundcloud": "https://soundcloud.com/search?q=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nin un muto\ncampionario di perbenismo \nconfuso e disadorno \n\nvagabondando in un palese riserbo \ntra pensieri arditi ed irriverenti,\ncammino in un mare di luci irritanti \ne palle a penzoloni luccicanti \n\nscruto con fare disincantato \ne falsamente compiacente \nil non senso comune"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/25-800.webp",
+   "correlate": [
+    34,
+    23,
+    19
+   ]
+  },
+  {
+   "id": 26,
+   "slug": "26-affogo",
+   "numero": "—",
+   "titolo": "Affogo",
+   "sezione": "La maschera e il fango",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Naufragio Senza Vergogna & Caduta delle Illusioni",
+   "senso": "Affondare nella palude della propria anima senza paura: scordare il miraggio della rosa per toccare la verità nuda delle proprie radici.",
+   "testo": "affogo,\nnella mia anima il mio tremore ritorto\ncomo tralcio di vite\nl’ingiuria di un mondo che sento\nmorto\n\nnel raggio che segue il risveglio\nle mute si ridestano al pianto\nil conforto per parche rovine\nlascia sgomento anche il vento\n\ninfuria, muta e sconnessa\nla veste che affonda ogni lembo\nnel desio\nsenza vergogna\nin una palude umida e ombrosa\nscorderò il miraggio della rosa",
+   "immagine": "ig/26.jpg",
+   "data": "2025-12-09",
+   "temi": [
+    "perdita",
+    "silenzio"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "affogo",
+    "anima",
+    "tremore",
+    "ritorto",
+    "tralcio"
+   ],
+   "citazione": "infuria, muta e sconnessa",
+   "musica": {
+    "brano": "River Flows in You",
+    "artista": "Yiruma",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/River%20Flows%20in%20You%20Yiruma",
+    "youtube": "https://music.youtube.com/search?q=River%20Flows%20in%20You%20Yiruma",
+    "apple": "https://music.apple.com/it/search?term=River%20Flows%20in%20You%20Yiruma",
+    "soundcloud": "https://soundcloud.com/search?q=River%20Flows%20in%20You%20Yiruma",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\naffogo, \nnella mia anima il mio tremore ritorto\ncome tralcio di vite\nl’ingiuria di un mondo che sento \nmorto \n\nnel raggio che segue il risveglio \nle mute si ridestano al pianto \nil conforto per parche rovine \nlascia sgomento anche il vento\n\ninfuria, muta e sconnessa\nla veste c"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/26-800.webp",
+   "correlate": [
+    48,
+    43,
+    22
+   ]
+  },
+  {
+   "id": 27,
+   "slug": "27-riassaporo-nel-lento-divenire-del-giorno",
+   "numero": "XVI",
+   "titolo": "Riassaporo, nel lento divenire del giorno",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Sacralità del Quotidiano & Riconciliazione",
+   "senso": "Il borbottio antico della moka usurata che cura le ferite: riscoprire che la pace più autentica risiede nei gesti lenti e dimenticati del mattino.",
+   "testo": "riassaporo, nel lento divenire del giorno\nil piacere sottile dei riti consueti\nuna moka usurata e piena di ricordi\nridona sapori che sentivo persi\n\nil gorgoglio profondo\ne dal sapore antico\naccompagna un borbottio\nche pensavo sparito\n\nsale veloce tra pensieri e ricordi\nun caffè nero dai pieni contorni\nriapare prepotente il pieno sentore\nper riti d’amore e dal pieno sapore\n\nun filo di vapore contorto e lieve\naccompagna l’aroma\nche resta nelle vene\n\namaro tormento viaggia lento nel vento\ndel sorriso dolce e dal pieno stupore\nresta nel cuore il più vivo sentore.",
+   "immagine": "ig/27.jpg",
+   "data": "2025-12-18",
+   "temi": [
+    "memoria",
+    "amore",
+    "tempo"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "pieno",
+    "lento",
+    "ricordi",
+    "sapore",
+    "accompagna"
+   ],
+   "citazione": "riassaporo, nel lento divenire del giorno",
+   "musica": {
+    "brano": "The Night",
+    "artista": "Fabrizio Paterlini",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/The%20Night%20Fabrizio%20Paterlini",
+    "youtube": "https://music.youtube.com/search?q=The%20Night%20Fabrizio%20Paterlini",
+    "apple": "https://music.apple.com/it/search?term=The%20Night%20Fabrizio%20Paterlini",
+    "soundcloud": "https://soundcloud.com/search?q=The%20Night%20Fabrizio%20Paterlini",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nriassaporo, nel lento divenire del giorno \nil piacere sottile dei riti consueti\nuna moka usurata e piena di ricordi \nridona sapori che sentivo persi \n\nil gorgoglio profondo \ne dal sapore antico\naccompagna un borbottio \nche pensavo sparito\n\nsale veloce tra pensieri e ricordi\nun"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/27-800.webp",
+   "correlate": [
+    38,
+    41,
+    30
+   ]
+  },
+  {
+   "id": 28,
+   "slug": "28-sul-filo",
+   "numero": "XVII",
+   "titolo": "Sul filo",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Equilibrio sul Precipizio & Ebbrezza Lucida",
+   "senso": "Danzare sul filo sottile tra follia e ardore: il battito freddo di lame taglienti che convive con la quieta consapevolezza di chi sa guardare oltre la finzione.",
+   "testo": "vorrei legare il piacere del tempo,\nassaporare il tormento fendente\ndel gelido brivido che inonda la mente\n\noserei, tra gemiti e lamenti,\nrileggere le rime del vento che ride\nil battito freddo di lame taglienti\nrituona nell'aria e lascia sgomenti\n\nsul filo sottile, tra follia ed ardore\nadoro seguire il mio falso pudore\nignara la gente di tanto sgomento\nrilegge il mio amplesso e il mio vivo\nsgomento.",
+   "immagine": "ig/28.jpg",
+   "data": "2025-12-21",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "sgomento",
+    "vorrei",
+    "legare",
+    "piacere",
+    "tempo"
+   ],
+   "citazione": "vorrei legare il piacere del tempo,",
+   "musica": {
+    "brano": "Breathe",
+    "artista": "Télépopmusik",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Breathe%20T%C3%A9l%C3%A9popmusik",
+    "youtube": "https://music.youtube.com/search?q=Breathe%20T%C3%A9l%C3%A9popmusik",
+    "apple": "https://music.apple.com/it/search?term=Breathe%20T%C3%A9l%C3%A9popmusik",
+    "soundcloud": "https://soundcloud.com/search?q=Breathe%20T%C3%A9l%C3%A9popmusik",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nvorrei legare il piacere del tempo,\nassaporare il tormento fendente\ndel gelido brivido che inonda la mente\n\noserei, tra gemiti e lamenti,\nrileggere le rime del vento che ride\nil battito freddo di lame taglienti \nrituona nell’aria e lascia sgomenti\n\nsul filo sottile, tra follia"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/28-800.webp",
+   "correlate": [
+    44,
+    38,
+    46
+   ]
+  },
+  {
+   "id": 29,
+   "slug": "29-pensiero",
+   "numero": "XVIII",
+   "titolo": "Pensiero",
+   "sezione": "Il sentiero lineare",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Vigore Istintivo & Fame di Vita",
+   "senso": "Il rifiuto del digiuno: lasciare che i desideri carnali divampino senza remore, celebrando la materia vivente contro ogni ipocrisia.",
+   "testo": "ardente e furente\nalcova di mille pensieri\ne brama socchiusa\nper innati desideri\n\nil miraggio nel piacere confuso\nridesta le membra\ne divampa nel muso\n\nriverso nel letto del porco\nogni pudore svanisce nel canto,\nche lodan le gesta, per un richiamo\nmai vanto\n\nnel lembo, ripieno e profuso\nnon voglio dar tregua al sofferto digiuno",
+   "immagine": "ig/29.jpg",
+   "data": "2026-01-13",
+   "temi": [
+    "amore",
+    "perdita"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "ardente",
+    "furente",
+    "alcova",
+    "mille",
+    "pensieri"
+   ],
+   "citazione": "ogni pudore svanisce nel canto,",
+   "musica": {
+    "brano": "Elegy for the Arctic",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 0.97,
+    "stato": "sicuro",
+    "didascalia": ".\n\nardente e furente\n\nalcova di mille pensieri\ne brama socchiusa\nper innati desideri\n\nil miraggio nel piacere confuso\nridesta le membra\ne divampa nel muso\n\nriverso nel letto del porco\nogni pudore svanisce nel canto,\nche lodan le gesta, per un richiamo\nmai vanto\n\nnel lebo, ripieno"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/29-800.webp",
+   "correlate": [
+    47,
+    9,
+    39
+   ]
+  },
+  {
+   "id": 30,
+   "slug": "30-il-respiro-del-tempo",
+   "numero": "XIX",
+   "titolo": "Il respiro del tempo",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Saggezza Ciclica & Compassione Universale",
+   "senso": "Il tempo non perde mai il senno: dopo le tempeste il cuore ferito rimette la veste, ascoltando con pietà il dolore del mondo intero.",
+   "testo": "ho mescolato preludio e futuro\ncolei che nel ventre soggiace\nridona la via e rilascia la pace\n\nnel ciclo perenne di vento e tempeste\nun cuore ferito rimette sempre la veste\nil cammino del tempo non perde mai il senno\nqualunque tormento sia degno di pegno\n\nse del mare vedessi il lamento\nse dal vento carpissi la via\nil piacere del canto non lascerebbe più incanto\n\nio sento comunque e ovunque\nil lamento dei ciechi e il dolore dei morti.",
+   "immagine": "ig/30.jpg",
+   "data": "2025-12-29",
+   "temi": [
+    "perdita",
+    "amore",
+    "tempo"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "vento",
+    "lamento",
+    "mescolato",
+    "preludio",
+    "futuro"
+   ],
+   "citazione": "il cammino del tempo non perde mai il senno",
+   "musica": {
+    "brano": "Particles",
+    "artista": "Ólafur Arnalds",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Particles%20%C3%93lafur%20Arnalds",
+    "youtube": "https://music.youtube.com/search?q=Particles%20%C3%93lafur%20Arnalds",
+    "apple": "https://music.apple.com/it/search?term=Particles%20%C3%93lafur%20Arnalds",
+    "soundcloud": "https://soundcloud.com/search?q=Particles%20%C3%93lafur%20Arnalds",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl respiro del tempo\n\nho mescolato preludio e futuro \ncolei che nel ventre soggiace \nridona la vita e rilascia la pace\n\nnel ciclo perenne di vento e tempeste \nun cuore ferito rimette sempre la veste\nil cammino del tempo non perde mai il senno\nqualunque tormento sia degno di pe"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/30-800.webp",
+   "correlate": [
+    38,
+    32,
+    27
+   ]
+  },
+  {
+   "id": 31,
+   "slug": "31-io-sento",
+   "numero": "XX",
+   "titolo": "Io sento",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Pace Solenne & Rivelazione del Cammino",
+   "senso": "L'approdo supremo della raccolta: trovare la luce anche nel pozzo di pece e scoprire che l'ardente viaggiare conduce finalmente al sentiero lineare.",
+   "testo": "l’odore del vento\nil sapore del mare\nil dolce piacere di un cielo serale\n\nio sento ...\nnel vortice della tempesta,\nl’audacia perversa che guida la festa\n\nio sento ...\nnell’ardente e furente viaggiare\nil paco e solenne pensare.\n\nun miraggio di luce\nin un pozzo di pece,\nun ramingo passeggiare,\nin un sentiero lineare.",
+   "immagine": "ig/31.jpg",
+   "data": "2025-12-15",
+   "temi": [
+    "mare",
+    "rinascita"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "sento",
+    "odore",
+    "vento",
+    "sapore",
+    "dolce"
+   ],
+   "citazione": "l’audacia perversa che guida la festa",
+   "musica": {
+    "brano": "Avril 14th",
+    "artista": "Aphex Twin",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Avril%2014th%20Aphex%20Twin",
+    "youtube": "https://music.youtube.com/search?q=Avril%2014th%20Aphex%20Twin",
+    "apple": "https://music.apple.com/it/search?term=Avril%2014th%20Aphex%20Twin",
+    "soundcloud": "https://soundcloud.com/search?q=Avril%2014th%20Aphex%20Twin",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nio sento\n\nl’odore del vento\nil sapore del mare\nil dolce piacere di un cielo serale\n\nio sento ...\nnel vortice della tempesta, \nl’audacia perversa che guida la festa\n\nio sento ...\nnell’ardente e furente viaggiare\nil paco e solenne pensare. \n\nun miraggio di luce \nin un pozzo di p"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/31-800.webp",
+   "correlate": [
+    42,
+    41,
+    35
+   ]
+  },
+  {
+   "id": 32,
+   "slug": "32-la-soglia",
+   "numero": "XXI",
+   "titolo": "La soglia",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Attesa Liminale & Peso delle Memorie",
+   "senso": "La soglia della casa antica come varco tra ciò che fu e ciò che viene, testimone muta di passi stanchi e rimpianti sepolti.",
+   "testo": "soglia muta di casa socchiusa\nsolcata e mai profusa\ncalpestata nel rito di incedere\ncome segnatempo nello\nscorrere del credere\n\ntu raccogli gli sguardi assorti\ne i rimpianti che restan morti\ntu rifuggi il pegno e i risi\ncome varco per i campi elisi\n\nnon muti, non gridi, non sudi\nristagni come il ventre\ndi un nido stanco\nche rigurgita passi\nnel tuo desiderato varco\n\nmiraggio e pena\nagonia e lena\napofisi di una vita intera\nche aspetta ogni dí\nper ogni nuova sera",
+   "immagine": "ig/32.jpg",
+   "data": "2026-06-04",
+   "temi": [
+    "silenzio",
+    "amore",
+    "perdita"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "varco",
+    "soglia",
+    "socchiusa",
+    "solcata",
+    "profusa"
+   ],
+   "citazione": "e i rimpianti che restan morti",
+   "musica": {
+    "brano": "Light of the Seven",
+    "artista": "Ramin Djawadi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Light%20of%20the%20Seven%20Ramin%20Djawadi",
+    "youtube": "https://music.youtube.com/search?q=Light%20of%20the%20Seven%20Ramin%20Djawadi",
+    "apple": "https://music.apple.com/it/search?term=Light%20of%20the%20Seven%20Ramin%20Djawadi",
+    "soundcloud": "https://soundcloud.com/search?q=Light%20of%20the%20Seven%20Ramin%20Djawadi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nsoglia muta di casa socchiusa \nsolcata e mai profusa \ncalpestata nel rito di incedere\ncome segnatempo nello \nscorrere del credere\n\ntu raccogli gli sguardi assorti\ne i rimpianti che restan morti \ntu rifuggi il pegno e i risi \ncome varco per i campi elisi \n\nnon muti, non gridi, "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/32-800.webp",
+   "correlate": [
+    30,
+    38,
+    36
+   ]
+  },
+  {
+   "id": 33,
+   "slug": "33-ritrovo",
+   "numero": "XXII",
+   "titolo": "Ritrovo",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Braci Riacese & Nostalgia Riconoscente",
+   "senso": "Dalle ceneri del passato risale il calore della brace: i pensieri creduti perduti tornano a parlare con voce intima e fraterna.",
+   "testo": "ritrovo,\nnel filo artefatto del tempo\nun pensiero che pensavo perduto,\nin quel ricordo sbiadito e svanito\nnel vento\n\ninvero, come dalle ceneri\nche ancora odorano di brace\nritrovo il piacere per pensieri lontani,\ne desideri ancora vicini",
+   "immagine": "ig/33.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "attesa",
+    "rinascita",
+    "memoria"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "ritrovo",
+    "artefatto",
+    "tempo",
+    "pensiero",
+    "pensavo"
+   ],
+   "citazione": "ritrovo il piacere per pensieri lontani,",
+   "musica": {
+    "brano": "Tomorrow's Song",
+    "artista": "Ólafur Arnalds",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+    "youtube": "https://music.youtube.com/search?q=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+    "apple": "https://music.apple.com/it/search?term=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+    "soundcloud": "https://soundcloud.com/search?q=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nritrovo, \nnel filo artefatto del tempo \nun pensiero che pensavo perduto,\nin quel ricordo sbiadito e svanito\nnel vento\n\ninvero, come dalle ceneri \nche ancora odorano di brace\nritrovo il piacere per pensieri lontani,\ne desideri ancora vicini"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/33-800.webp",
+   "correlate": [
+    41,
+    44,
+    28
+   ]
+  },
+  {
+   "id": 34,
+   "slug": "34-restai",
+   "numero": "—",
+   "titolo": "Restai...",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Attesa Vigilante & Rifiorire del Fuoco",
+   "senso": "Il poeta-refuso rimasto immoto nel silenzio: il momento esatto in cui la cenere si scuote per rialzare il pennone della passione.",
+   "testo": "restai...\nimmoto, deluso, sornione e refuso\n\nin un tempo lontano,\nquesto\nfu fuoco,\ne fumo...\nardore, stupore\npassione e remissione.\n\nin un lungo silenzio\ntutto restò sopito.\n\nche sia il giorno, ...\nora\na ridestar il mito\ndi alzar pennone\ne schizzi di pudore\n\ndi render lode ..\nal dio della passione.",
+   "immagine": "ig/34.jpg",
+   "data": "2026-04-24",
+   "temi": [
+    "tempo",
+    "silenzio",
+    "assenza"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "passione",
+    "restai",
+    "immoto",
+    "deluso",
+    "sornione"
+   ],
+   "citazione": "immoto, deluso, sornione e refuso",
+   "musica": {
+    "brano": "Flora",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Flora%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Flora%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Flora%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Flora%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nrestai...\nimmoto, deluso, sornione e refuso \n\nin un tempo lontano, \nquesto\nfu fuoco, \ne fumo... \nardore, stupore\npassione e remissione.\n\nin un lungo silenzio \ntutto restò sopito.\n\nche sia il giorno, ... \nora\na ridestar il mito\ndi alzar pennone \ne schizzi di pudore \n\ndi render "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/34-800.webp",
+   "correlate": [
+    35,
+    25,
+    46
+   ]
+  },
+  {
+   "id": 35,
+   "slug": "35-nel-preludio-del-giorno",
+   "numero": "—",
+   "titolo": "Nel preludio del giorno",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Crepuscolo dell'Alba & Pazienza del Tempo",
+   "senso": "Nel chiarore prima del sole, mentre la mente si risveglia sola: attendere che le campane lontane e lo scorrere delle ore leniscano il tormento.",
+   "testo": "nel preludio del giorno\nquando la mente incontra la pace\nquando la sete incontra l’arsura\nl’ignara coerenza per la sola esistenza\nripropone metodica la sua dolce sofferenza\n\nnel buio fecondo un lume in fondo\nla mente già sveglia, le membra in mesta.\n\nnel vagare di ombre prima del giorno\nun corpo stanco e ricurvo\nimplora lento il dolce ritorno.\n\nnel letto già freddo di parole lontane\nil canto del gallo riporta il senso\nper le dolci campane lontane del tempo.\n\nla vedo, la sento.\nnell’indifferenza assordante del suo invero lamento\ninerme mi trovo per tanto sgomento\nsperando che il tempo possa lenire il tormento.",
+   "immagine": "ig/35.jpg",
+   "data": "2026-02-10",
+   "temi": [
+    "tempo",
+    "assenza",
+    "notte"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "giorno",
+    "mente",
+    "incontra",
+    "dolce",
+    "lontane"
+   ],
+   "citazione": "per le dolci campane lontane del tempo.",
+   "musica": {
+    "brano": "Golden Hour",
+    "artista": "JVKE",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Golden%20Hour%20JVKE",
+    "youtube": "https://music.youtube.com/search?q=Golden%20Hour%20JVKE",
+    "apple": "https://music.apple.com/it/search?term=Golden%20Hour%20JVKE",
+    "soundcloud": "https://soundcloud.com/search?q=Golden%20Hour%20JVKE",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nnel preludio del giorno \nquanto la mente incontra la pace\nquando la sete incontra l’arsura\nl’ignara coerenza per la sola esistenza\nripropone metodica la sua dolce sofferenza\n\nnel buio fecondo un lume in fondo\nla mente già sveglia, le membra in mesta.\n\nnel vagare di ombre prima"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/35-800.webp",
+   "correlate": [
+    41,
+    34,
+    46
+   ]
+  },
+  {
+   "id": 36,
+   "slug": "36-attimo-sfuggente",
+   "numero": "—",
+   "titolo": "Attimo sfuggente",
+   "sezione": "Il sentiero lineare",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Interrogazione Muta & Sete d'Assoluto",
+   "senso": "Cosa vedono i pensieri che le parole tacciono? Guardare le rughe e le foto altrui per ribellarsi alla voracità fugace della vita.",
+   "testo": "arde la mente in un corpo muto\nbaluardo di un gesto\nche resta pretesto cupo\n\ncosa cercano le tue mani ?\ncosa cercano le mie dita ?\n\nvorrei vedere in ogni tua foto\nil cuore pulsante che genera il gesto\nvorrei possedere il pennone più alto\nper cogliere quel vento\npiù lieve e più cupo.\n\nCosa vedono i pensieri,\nche le parole non dicono ?\nCosa leggono le labbra,\nche le rughe non scrivono?\n\nI miei pensieri\nmutano e si ribellano,\nall’invidia gratuita,\nalla voracità della vita.",
+   "immagine": "poesia_36.jpg",
+   "data": null,
+   "temi": [
+    "amore",
+    "silenzio"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "gesto",
+    "cercano",
+    "vorrei",
+    "pensieri",
+    "mente"
+   ],
+   "citazione": "il cuore pulsante che genera il gesto",
+   "musica": {
+    "brano": "To Build a Home",
+    "artista": "The Cinematic Orchestra",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+    "youtube": "https://music.youtube.com/search?q=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+    "apple": "https://music.apple.com/it/search?term=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+    "soundcloud": "https://soundcloud.com/search?q=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": null,
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "poesia_36.jpg",
+   "correlate": [
+    40,
+    39,
+    11
+   ]
+  },
+  {
+   "id": 37,
+   "slug": "37-faive",
+   "numero": "—",
+   "titolo": "Faive",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Radici Popolari & Calore della Terra",
+   "senso": "Le faville del fuoco arcaico, i detti dialettali della terra veneta e una tazza di brûlé: il ritorno rassicurante alla genuinità del focolare.",
+   "testo": "giocai con la sorte\nardendo come favilla fumante\nin un salire turbolento e scoppiettante\n\ntra schiamazzi\ndi occhi persuasi e mendicanti\nscrutai il divenire del tempo\nin un giro di giostra del vento\n\nla vidi contorcersi e bruciare\nsorretta solo dal presagio\nche rimanda\nal più cupo compimento\n\n“ faive verso sera, polenta pien caliera;\nfaive verso matina, poenta molesina;\nfaive a meodi poenta tre olte al dí\nfun a bassa poenta pien cassa “\n\nmagari ora …, mi faccio un brûlé",
+   "immagine": "ig/37.jpg",
+   "data": "2026-01-05",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "faive",
+    "poenta",
+    "giocai",
+    "sorte",
+    "ardendo"
+   ],
+   "citazione": "“ faive verso sera, polenta pien caliera;",
+   "musica": {
+    "brano": "Oltremare",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Oltremare%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Oltremare%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Oltremare%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Oltremare%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nfaive \n\ngiocai con la sorte \nardendo come favilla fumante \nin un salire turbolento e scoppiettante \n\ntra schiamazzi \ndi occhi persuasi e mendicanti \nscrutai il divenire del tempo \nin un giro di giostra del vento \n\nla vidi contorcersi e bruciare \nsorretta solo dal presagio \nche"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/37-800.webp",
+   "correlate": [
+    46,
+    44,
+    28
+   ]
+  },
+  {
+   "id": 38,
+   "slug": "38-del-nuovo-anno",
+   "numero": "—",
+   "titolo": "Del nuovo anno",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Rinascita d'Inverno & Solchi nel Vento",
+   "senso": "Il nuovo inizio che non si piega a formalismi: un uomo maturo che, libero da inchini, continua a scolpire la propria verità nel gelo.",
+   "testo": "grigio il tempo di inizio anno\nardente il pensiero che insegue la mente\ndivampa il desiderio di primer mattino\nsentendo il corpo privo d’inchino\n\nrivedo, nello scorrere lento dei giorni\nil ritmo imperterrito di sensazioni\nche si ripetono nel tempo\n\nnell’ardente frangente di un momento rubato\nil fuoco divampa nel piacere\ndi un uomo ormai consumato\n\nnegli attimi più puri e veri,\ni piaceri di liberi pensieri\n\nnel colare lento e gelido del tempo\nscolpisco solchi, profondi\ne liberi nel vento.",
+   "immagine": "ig/38.jpg",
+   "data": "2026-01-01",
+   "temi": [
+    "tempo",
+    "amore"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "tempo",
+    "ardente",
+    "divampa",
+    "lento",
+    "liberi"
+   ],
+   "citazione": "rivedo, nello scorrere lento dei giorni",
+   "musica": {
+    "brano": "Vivaldi Recomposed: Spring 1",
+    "artista": "Max Richter",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+    "youtube": "https://music.youtube.com/search?q=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+    "apple": "https://music.apple.com/it/search?term=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+    "soundcloud": "https://soundcloud.com/search?q=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 0.83,
+    "stato": "sicuro",
+    "didascalia": ".\n\nDel nuovo Anno \n\ngrigio il tempo di inizio anno\nardente il pensiero che insegue la mente\ndivampa il desiderio di primo mattino\nsentendo il corpo privo d’inchino\n\nrivedo, nello scorrere lento dei giorni\nil ritmo imperterrito di sensazioni\nche si ripetono nel tempo\n\nnell’ardente"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/38-800.webp",
+   "correlate": [
+    27,
+    44,
+    28
+   ]
+  },
+  {
+   "id": 39,
+   "slug": "39-parole-ardenti",
+   "numero": "—",
+   "titolo": "Parole ardenti",
+   "sezione": "Il sentiero lineare",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Nuotare nell'Assurdo & Brace Poetica",
+   "senso": "Le parole che bruciano feconde: accettare il paradosso dell'esistenza e immergersi con coraggio nel mare profondo dell'assurdo.",
+   "testo": "nel mentre di un giorno qualunque\nviaggiano desideri in cerca di quiete\nvagano pensieri arsi di sete\n\nnel vagare irrequieto e profondo\nil mio sottobosco profuma ardente\ne la mente cerca emozioni nel niente\n\nI pensieri volano e seguono l’onda\nle parole ardono nella brace feconda\ntoccando il cielo con il pegno dell’urlo\nnuoto come sempre nel mare dell’assurdo.",
+   "immagine": "ig/39.jpg",
+   "data": "2025-12-30",
+   "temi": [
+    "mare",
+    "amore",
+    "silenzio"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "cerca",
+    "pensieri",
+    "giorno",
+    "qualunque",
+    "viaggiano"
+   ],
+   "citazione": "viaggiano desideri in cerca di quiete",
+   "musica": {
+    "brano": "Midnight City (Acoustic)",
+    "artista": "M83",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Midnight%20City%20%28Acoustic%29%20M83",
+    "youtube": "https://music.youtube.com/search?q=Midnight%20City%20%28Acoustic%29%20M83",
+    "apple": "https://music.apple.com/it/search?term=Midnight%20City%20%28Acoustic%29%20M83",
+    "soundcloud": "https://soundcloud.com/search?q=Midnight%20City%20%28Acoustic%29%20M83",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nparole ardenti\n\nnel mentre di un giorno qualunque\nviaggiano desideri in cerca di quiete\nvagano pensieri arsi di sete \n\nnel vagare irrequieto e profondo \nil mio sottobosco profuma ardente\ne la mente cerca emozioni nel niente\n\nI pensieri volano e seguono l’onda\nle parole ardono "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/39-800.webp",
+   "correlate": [
+    47,
+    36,
+    29
+   ]
+  },
+  {
+   "id": 40,
+   "slug": "40-anime-perse",
+   "numero": "—",
+   "titolo": "Anime perse",
+   "sezione": "Il sentiero lineare",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Lutto Improvviso & Chiusura del Libro",
+   "senso": "Lo sgomento per il respiro spezzato di una persona cara: il libro della vita che si richiude di schianto lasciando una ferita aperta.",
+   "testo": "vago nell’oblio di pensieri confusi\nvaganti presenze invadono la mente\n\nall’uomo che donava respiro\nil tempo del fiato ha rotto il suo inchino\nalla mente che cercava conforto\nil libro della vita si è richiuso d’un botto",
+   "immagine": "ig/40.jpg",
+   "data": "2025-12-18",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "mente",
+    "oblio",
+    "pensieri",
+    "confusi",
+    "vaganti"
+   ],
+   "citazione": "il tempo del fiato ha rotto il suo inchino",
+   "musica": {
+    "brano": "Sleeping at Last",
+    "artista": "Saturn",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Sleeping%20at%20Last%20Saturn",
+    "youtube": "https://music.youtube.com/search?q=Sleeping%20at%20Last%20Saturn",
+    "apple": "https://music.apple.com/it/search?term=Sleeping%20at%20Last%20Saturn",
+    "soundcloud": "https://soundcloud.com/search?q=Sleeping%20at%20Last%20Saturn",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nAnime perse \n\nvago nell’oblio di pensieri confusi \nvaganti presenze invadono la mente \n\nall’uomo che donava respiro \nil tempo del fiato ha rotto il suo inchino \nalla mente che cercava conforto \nil libro della vita si è richiuso d’un botto"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/40-800.webp",
+   "correlate": [
+    36,
+    46,
+    17
+   ]
+  },
+  {
+   "id": 41,
+   "slug": "41-un-pensiero-profondo-e-leggero",
+   "numero": "—",
+   "titolo": "Un pensiero profondo e leggero",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Elaborazione del Dolore & Luce di Chi Resta",
+   "senso": "Il magone duro nel petto che non si tramuta in disperazione cieca: l'onore del ricordo e la consapevolezza che la vita deve continuare.",
+   "testo": "un pensiero profondo e leggero, avvolge la mente,\ndi bianco la carne s’é tinta in un immobile e freddo tormento\n\nricordi e parole avvolgon la mente,\nimpetuosa la falce che miete le teste\npassando leggera ha lasciato il presente.\n\nun magone fendente e duro nel petto\nlascia sconvolto, nel più nero risveglio\n\nnon piango e non parlo, racchiuso nel petto un dolore profondo,\nil giorno è già nuovo e la luce riappare, la vita di chi resta rimane presente.",
+   "immagine": "ig/41.jpg",
+   "data": "2025-12-14",
+   "temi": [
+    "memoria",
+    "tempo",
+    "rinascita"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "profondo",
+    "mente",
+    "presente",
+    "petto",
+    "pensiero"
+   ],
+   "citazione": "il giorno è già nuovo e la luce riappare, la vita di chi resta rimane presente.",
+   "musica": {
+    "brano": "A Walk",
+    "artista": "Tycho",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/A%20Walk%20Tycho",
+    "youtube": "https://music.youtube.com/search?q=A%20Walk%20Tycho",
+    "apple": "https://music.apple.com/it/search?term=A%20Walk%20Tycho",
+    "soundcloud": "https://soundcloud.com/search?q=A%20Walk%20Tycho",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nun pensiero profondo e leggero, avvolge la mente,\ndi bianco la carne s’é tinta in un immobile e freddo tormento \n\nricordi e parole avvolgon la mente,\nimpetuosa la falce che miete le teste \npassando leggera ha lasciato il presente.\nun magone fendente e duro nel petto \nlascia sc"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/41-800.webp",
+   "correlate": [
+    33,
+    35,
+    27
+   ]
+  },
+  {
+   "id": 42,
+   "slug": "42-assaporo-il-piacere-del-vento",
+   "numero": "—",
+   "titolo": "Assaporo il piacere del vento",
+   "sezione": "Il sentiero lineare",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Turbamento Sensoriale & Mente Libera",
+   "senso": "Il lampo che squarcia il cielo e l'anima: abbandonarsi alla pioggia e al vento di primo mattino senza confini e senza gabbie.",
+   "testo": "assaporo il piacere del vento\npolvere scura ravviva il timore\nun eccesso ardore nel tuo stupore\nvorace e contorto si annida nel cesto\nil vorticoso amplesso di un gesto lesto\n\nvedo negli occhi il tuo turbamento\nun lampo accende il cielo e la mente\npresagio fecondo di un gesto immondo\nl’acqua penetra, dilaga e sconvolge\ncapelli di pece e ricci di vento\n\nvola la mente di primo mattino\nsenza confini e libera nel tempo",
+   "immagine": "ig/42.jpg",
+   "data": "2025-12-12",
+   "temi": [
+    "tempo",
+    "mare"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "vento",
+    "gesto",
+    "mente",
+    "assaporo",
+    "piacere"
+   ],
+   "citazione": "l’acqua penetra, dilaga e sconvolge",
+   "musica": {
+    "brano": "Fly",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Fly%20Ludovico%20Einaudi",
+    "youtube": "https://music.youtube.com/search?q=Fly%20Ludovico%20Einaudi",
+    "apple": "https://music.apple.com/it/search?term=Fly%20Ludovico%20Einaudi",
+    "soundcloud": "https://soundcloud.com/search?q=Fly%20Ludovico%20Einaudi",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nassaporo il piacere del vento \npolvere scura ravviva il timore \nun eccesso ardore nel tuo stupore\nvorace e contorto si annida nel cesto\nil vorticoso amplesso di un gesto lesto\n\nvedo negli occhi il tuo turbamento \nun lampo accende il cielo e la mente \npresagio fecondo di un ges"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/42-800.webp",
+   "correlate": [
+    1,
+    47,
+    44
+   ]
+  },
+  {
+   "id": 43,
+   "slug": "43-assaporo-il-colore-del-silenzio",
+   "numero": "—",
+   "titolo": "Assaporo il colore del silenzio",
+   "sezione": "Il sentiero lineare",
+   "mood": "ombra",
+   "moodNome": "L'Ombra e il Pozzo",
+   "statoAnimo": "Raccoglimento Solitario & Sapore di Menta",
+   "senso": "Leccare una foglia di menta per risvegliare i sensi inariditi: il silenzio non come vuoto, ma come sostanza viva da assaporare goccia a goccia.",
+   "testo": "assaporo il colore del silenzio\nil vagare ramingo di erranti nuvole sparse\ndivoro la mia anima e percuoto\nil mio assopito lenire\n\ncolgo il tintinnio leggero e caotico di gocce perverse, aculei che fendono una terra arsa di\npensieri e timorosa di futuro\n\nimpeto lento di un’anima in pena\nscuoto il capo leccando una foglia di menta\ntra barlumi di luci lontane",
+   "immagine": "ig/43.jpg",
+   "data": "2025-12-12",
+   "temi": [
+    "silenzio",
+    "assenza"
+   ],
+   "emozioni": [
+    "malinconia",
+    "apatia",
+    "abisso"
+   ],
+   "parole": [
+    "anima",
+    "assaporo",
+    "colore",
+    "silenzio",
+    "vagare"
+   ],
+   "citazione": "assaporo il colore del silenzio",
+   "musica": {
+    "brano": "Silence",
+    "artista": "Beethoven (Arr. Piano Noir)",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+    "youtube": "https://music.youtube.com/search?q=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+    "apple": "https://music.apple.com/it/search?term=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+    "soundcloud": "https://soundcloud.com/search?q=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nassaporo il colore del silenzio \nil vagare ramingo di erranti nuvole sparse \ndivoro la mia anima e percuoto\nil mio assopito lenire \n\ncolgo il tintinnio leggero e caotico di gocce perverse, aculei che fendono una terra arsa di pensieri e timorosa di futuro \n\nimpeto lento di un’"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/43-800.webp",
+   "correlate": [
+    6,
+    36,
+    26
+   ]
+  },
+  {
+   "id": 44,
+   "slug": "44-adoro-nel-divenire-del-tempo",
+   "numero": "—",
+   "titolo": "Adoro nel divenire del tempo",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Fugacità dell'Incontro & Dolcezza Imprevista",
+   "senso": "Entrare negli eventi della vita d'impeto e chiedere permesso solo dopo: il gusto impagabile delle sorprese che il tempo riserva a chi sa coglierle.",
+   "testo": "adoro nel divenire del tempo\nil piacere sottile\ndi un fugace ed imprevisto...\nincontro\n\npervade nella brezza mattutina\nil profumo che dona\nardore e fermento\n\nil piacere del viaggio, il tempo\nl’assaporare ogni singolo evento\n\nsenza motivo e senza rispetto,\nentrare nel mentre\ne, solo dopo\nchiedere\npermesso.....",
+   "immagine": "ig/44.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "tempo",
+    "piacere",
+    "adoro",
+    "divenire",
+    "sottile"
+   ],
+   "citazione": "il piacere del viaggio, il tempo",
+   "musica": {
+    "brano": "Solemn Path",
+    "artista": "Cuordivino Soundtrack",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Solemn%20Path%20Cuordivino%20Soundtrack",
+    "youtube": "https://music.youtube.com/search?q=Solemn%20Path%20Cuordivino%20Soundtrack",
+    "apple": "https://music.apple.com/it/search?term=Solemn%20Path%20Cuordivino%20Soundtrack",
+    "soundcloud": "https://soundcloud.com/search?q=Solemn%20Path%20Cuordivino%20Soundtrack",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nadoro nel divenire del tempo \nil piacere sottile \ndi un fugace ed imprevisto...\nincontro\n\npervade nella brezza mattutina\nil profumo che dona \nardore e fermento \n\nil piace del viaggio, il tempo\nl’assaporare ogni singolo evento\n\nsenza motivo e senza rispetto,\nentrare nel mentre\n"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/44-800.webp",
+   "correlate": [
+    28,
+    38,
+    46
+   ]
+  },
+  {
+   "id": 45,
+   "slug": "45-dono-il-mio-tempo",
+   "numero": "—",
+   "titolo": "Dono il mio tempo",
+   "sezione": "Il sentiero lineare",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Fedeltà a Se Stessi & Dono Selettivo",
+   "senso": "Non concedersi a tutti, ma solo a chi possiede occhi capaci di scorgere la profondità nelle pieghe dei dettagli e nel silenzio.",
+   "testo": "dono il mio tempo\ne la mia follia\ndono la mia fantasia\ne la mia lealtà\n\nNon sono per tutti\nnon sono per molti\nsono per quelli\nche sanno vedere\nnelle pieghe i dettagli\nche mi fanno … pensare",
+   "immagine": "ig/45.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "tempo",
+    "follia",
+    "fantasia",
+    "lealtà",
+    "molti"
+   ],
+   "citazione": "che mi fanno … pensare",
+   "musica": {
+    "brano": "The Winner Is",
+    "artista": "Mychael Danna",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/The%20Winner%20Is%20Mychael%20Danna",
+    "youtube": "https://music.youtube.com/search?q=The%20Winner%20Is%20Mychael%20Danna",
+    "apple": "https://music.apple.com/it/search?term=The%20Winner%20Is%20Mychael%20Danna",
+    "soundcloud": "https://soundcloud.com/search?q=The%20Winner%20Is%20Mychael%20Danna",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nDono il mio tempo \ne la mia follia \ndono la mia fantasia \ne la mia lealtà \n\nNon sono per tutti\nnon sono per molti \nsono per quelli \nche sanno vedere\nnelle pieghe i dettagli \nche mi fanno … pensare"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/45-800.webp",
+   "correlate": [
+    21,
+    18,
+    44
+   ]
+  },
+  {
+   "id": 46,
+   "slug": "46-immagini-pensieri-emozioni",
+   "numero": "—",
+   "titolo": "Immagini, pensieri, emozioni",
+   "sezione": "Il sentiero lineare",
+   "mood": "quiete",
+   "moodNome": "La Quiete e il Ritrovo",
+   "statoAnimo": "Il Caos come Motore & Fame di Verità",
+   "senso": "Un viaggio senza meta e senza orologio, dove il caos vitale è il vero carburante contro ogni rassicurante banalità quotidiana.",
+   "testo": "immagini,\npensieri,\nemozioni,\nsono il motore di questo mio viaggio,\nun viaggio senza meta\nuna meta senza tempo\n\nIl caos\nè il mio motore\n\ntocchi e rimbalzi\nanimano le mie giornate\nsono alla ricerca di vita\ndi verità\ne non banalità",
+   "immagine": "ig/46.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [
+    "pace",
+    "ritrovo",
+    "consolazione"
+   ],
+   "parole": [
+    "motore",
+    "viaggio",
+    "immagini",
+    "pensieri",
+    "emozioni"
+   ],
+   "citazione": "sono il motore di questo mio viaggio,",
+   "musica": {
+    "brano": "An Ending (Ascent)",
+    "artista": "Brian Eno",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/An%20Ending%20%28Ascent%29%20Brian%20Eno",
+    "youtube": "https://music.youtube.com/search?q=An%20Ending%20%28Ascent%29%20Brian%20Eno",
+    "apple": "https://music.apple.com/it/search?term=An%20Ending%20%28Ascent%29%20Brian%20Eno",
+    "soundcloud": "https://soundcloud.com/search?q=An%20Ending%20%28Ascent%29%20Brian%20Eno",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nimmagini, \npensieri, \nemozioni,\nsono il motore di questo mio viaggio, \nun viaggio senza meta\nuna meta senza tempo\nIl caos \nè il mio motore\n\ntocchi e rimbalzi \nanimano le mie giornate \nsono alla ricerca di vita \ndi verità \ne non banalità"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/46-800.webp",
+   "correlate": [
+    44,
+    40,
+    37
+   ]
+  },
+  {
+   "id": 47,
+   "slug": "47-ho-disegnato-pensieri",
+   "numero": "—",
+   "titolo": "Ho disegnato pensieri",
+   "sezione": "Il sentiero lineare",
+   "mood": "ardore",
+   "moodNome": "L'Ardore e la Carne",
+   "statoAnimo": "Vendemmia del Cuore & Vino di Follia",
+   "senso": "Dipingere sensazioni intingendo le dita nella passione: un vino sincero e rosso che travolge l'anima come brezza estiva.",
+   "testo": "ho disegnato pensieri\nin una tela di sensazioni,\nnel piacere\nil mio dito si è intriso di passione.\n\nho vendemmiato con il mio cuore\nun vino rosso e sincero\nun vino amabile che odora\ndi follia\n\nla passione è un raggio di sole\nche trasmette sensazioni piacevoli\nil vento un sentimento\nche travolge e penetra ogni dove",
+   "immagine": "ig/47.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [
+    "desiderio",
+    "furore",
+    "estasi"
+   ],
+   "parole": [
+    "sensazioni",
+    "passione",
+    "disegnato",
+    "pensieri",
+    "piacere"
+   ],
+   "citazione": "ho vendemmiato con il mio cuore",
+   "musica": {
+    "brano": "Redemption",
+    "artista": "Zack Hemsey",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Redemption%20Zack%20Hemsey",
+    "youtube": "https://music.youtube.com/search?q=Redemption%20Zack%20Hemsey",
+    "apple": "https://music.apple.com/it/search?term=Redemption%20Zack%20Hemsey",
+    "soundcloud": "https://soundcloud.com/search?q=Redemption%20Zack%20Hemsey",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nho disegnato pensieri \nin una tela di sensazioni, \nnel piacere \nil mio dito si è intriso di passione.\n\nho vendemmiato con il mio cuore \nun vino rosso e sincero\nun vino amabile che odora \ndi follia\n\nla passione è un raggio di sole \nche trasmette sensazioni piacevoli \nil vento u"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/47-800.webp",
+   "correlate": [
+    9,
+    16,
+    29
+   ]
+  },
+  {
+   "id": 48,
+   "slug": "48-ho-versato",
+   "numero": "—",
+   "titolo": "Ho versato",
+   "sezione": "Il sentiero lineare",
+   "mood": "maschera",
+   "moodNome": "La Maschera e il Fango",
+   "statoAnimo": "Liberazione Finale & Rito del Grido Silenzioso",
+   "senso": "Il sigillo finale: aver versato l'angusto tarlo del proprio umore, trasformando il grido represso in un rito sacro di libertà assoluta.",
+   "testo": "ho versato,\nnel mio irriverente stupore\nl’angusto tarlo del mio umore\nho liberato il mio cielo mutante\ndal blasfemo tormento\nper l’ingombrante\n\nvorrei calpestare il mio ardore\nper rinnegare il mio rigetto\nvorrei urlare in silenzio,\nil mio grido\nelogiando il tutto\nin un rito",
+   "immagine": "ig/48.jpg",
+   "data": "2025-12-08",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [
+    "disprezzo",
+    "ribellione",
+    "ironia"
+   ],
+   "parole": [
+    "vorrei",
+    "versato",
+    "irriverente",
+    "stupore",
+    "angusto"
+   ],
+   "citazione": "vorrei urlare in silenzio,",
+   "musica": {
+    "brano": "Versi Muti",
+    "artista": "Refuso di Verso Theme",
+    "verificato": false,
+    "spotify": "https://open.spotify.com/search/Versi%20Muti%20Refuso%20di%20Verso%20Theme",
+    "youtube": "https://music.youtube.com/search?q=Versi%20Muti%20Refuso%20di%20Verso%20Theme",
+    "apple": "https://music.apple.com/it/search?term=Versi%20Muti%20Refuso%20di%20Verso%20Theme",
+    "soundcloud": "https://soundcloud.com/search?q=Versi%20Muti%20Refuso%20di%20Verso%20Theme",
+    "audio": null,
+    "perche": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nho versato, \nnel mio irriverente stupore \nI’angusto tarlo del mio umore \nho liberato il mio cielo mutante \ndal blasfemo tormento \nper l’ingombrante \n\nvorrei calpestare il mio ardore \nper rinnegare il mio rigetto \nvorrei urlare in silenzio, \nil mio grido \nelogiando il tutto \nin"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/48-800.webp",
+   "correlate": [
+    36,
+    26,
+    25
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { poems, u } from '../lib/data';
+---
+<Base title="Galleria" description="Le fotografie in chiaroscuro associate alle poesie del Libro dei Pensieri Muti." current="galleria/">
+  <h1>Galleria</h1>
+  <p class="muted">Ogni immagine accompagna una poesia. Selezionala per ingrandirla.</p>
+  <div class="masonry">
+    {poems.map((p, i) => <button type="button" data-i={i} aria-label={`Ingrandisci l’immagine di ${p.titolo}`}><img src={u(`images/${p.miniatura}`)} width="800" height="1000" alt="" loading="lazy" decoding="async" style={`aspect-ratio:4/${i % 3 === 0 ? 5 : i % 3 === 1 ? 4.4 : 5.6}`} /></button>)}
+  </div>
+  <dialog id="dlg" aria-label="Immagine ingrandita"><img id="big" alt="" /><p id="cap" class="ui"></p><p class="ui"><a id="go" class="btn" href="#">Leggi la poesia</a> <a id="igl" class="btn" href="#" target="_blank" rel="noopener" hidden>Apri su Instagram</a> <button class="btn" id="x" type="button">Chiudi</button></p></dialog>
+  <script is:inline define:vars={{ P: poems.map((p) => ({ t: p.titolo, i: u(`images/${p.immagine}`), ig: p.instagram?.url ?? '', h: u(`poesie/${p.slug}/`) })) }}>
+    (function () {
+      var d = document.getElementById('dlg');
+      document.querySelector('.masonry').addEventListener('click', function (e) {
+        var b = e.target.closest('button'); if (!b) return; var p = P[b.dataset.i];
+        big.src = p.i; big.alt = 'Fotografia della poesia ' + p.t; cap.textContent = p.t; go.href = p.h; igl.hidden = !p.ig; igl.href = p.ig || '#'; d.showModal();
+      });
+      x.addEventListener('click', function () { d.close(); });
+      d.addEventListener('click', function (e) { if (e.target === d) d.close(); });
+    })();
+  </script>
+</Base>

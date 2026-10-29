@@ -1,0 +1,80 @@
+---
+import Base from '../../layouts/Base.astro';
+import Card from '../../components/Card.astro';
+import { poems, meta, themeCounts } from '../../lib/data';
+---
+<Base title="Archivio delle poesie" description="Tutte le 48 poesie del Libro dei Pensieri Muti: cerca per parola o sentimento, filtra per stato d’animo e tema." current="poesie/">
+  <h1>Archivio</h1>
+  <div class="tools">
+    <div>
+      <label for="s" class="ui muted">Cerca una parola o un sentimento (ad es. nostalgia, attesa, mare)</label><br />
+      <input id="s" class="search" type="search" autocomplete="off" />
+    </div>
+    <div role="group" aria-label="Stato d’animo"><ul class="chips" id="moods">
+      <li><button class="chip" data-mood="" aria-pressed="true">Tutti</button></li>
+      {meta.moods.map((m) => <li><button class="chip" data-mood={m.key} aria-pressed="false">{m.name}</button></li>)}
+    </ul></div>
+    <div role="group" aria-label="Tema"><ul class="chips" id="temi">
+      {themeCounts.map((t) => <li><button class="chip" data-tema={t.key} aria-pressed="false">{t.label}</button></li>)}
+    </ul></div>
+    <div class="views" role="group" aria-label="Modo di visualizzazione">
+      <button class="chip" data-view="" aria-pressed="true">Griglia</button>
+      <button class="chip" data-view="indice" aria-pressed="false">Indice</button>
+      <button class="chip" data-view="mood" aria-pressed="false">Per stato d’animo</button>
+    </div>
+    <p class="count ui" id="count" role="status" aria-live="polite"></p>
+  </div>
+  <ul class="list" id="list">{poems.map((p, i) => <Card p={p} eager={i < 4} />)}</ul>
+  <p id="vuoto" class="muted" hidden>Nessuna poesia corrisponde. Prova una parola più semplice o togli un filtro.</p>
+
+  <script is:inline define:vars={{ moods: meta.moods }}>
+    (function () {
+      var list = document.getElementById('list'), items = [].slice.call(list.children);
+      // ricerca per significato: il termine cercato si espande in temi ed emozioni affini
+      var SYN = { nostalgia: ['memoria', 'passato', 'tempo', 'assenza'], tristezza: ['malinconia', 'perdita', 'assenza', 'silenzio'], malinconia: ['perdita', 'silenzio', 'notte'],
+        solitudine: ['assenza', 'silenzio', 'notte'], dolore: ['perdita', 'abisso', 'malinconia'], speranza: ['attesa', 'rinascita', 'pace'], desiderio: ['amore', 'ardore', 'estasi'],
+        passione: ['amore', 'desiderio', 'furore'], morte: ['perdita', 'notte'], buio: ['notte', 'ombra', 'abisso'], oceano: ['mare'], onda: ['mare'], ricordo: ['memoria'], ricordi: ['memoria'],
+        rabbia: ['furore', 'ribellione', 'disprezzo'], calma: ['pace', 'silenzio', 'quiete'], rinascere: ['rinascita'], aspettare: ['attesa'], amare: ['amore'] };
+      var norm = function (s) { return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); };
+      items.forEach(function (li) { li.h = norm(li.dataset.hay); });
+      var st = { q: '', mood: '', tema: '', view: '' };
+      function match(li) {
+        if (st.mood && li.dataset.mood !== st.mood) return false;
+        if (st.tema && li.dataset.temi.split(' ').indexOf(st.tema) < 0) return false;
+        if (!st.q) return true;
+        return st.q.split(/\s+/).every(function (w) {
+          if (li.h.indexOf(w) >= 0) return true;
+          return (SYN[w] || []).some(function (s) { return li.h.indexOf(s) >= 0; });
+        });
+      }
+      function render() {
+        var n = 0;
+        items.forEach(function (li) { var ok = match(li); li.hidden = !ok; if (ok) n++; });
+        list.className = 'list' + (st.view === 'indice' ? ' indice' : '');
+        [].slice.call(list.querySelectorAll('.group')).forEach(function (g) { g.remove(); });
+        var ord = items.slice().sort(function (a, b) {
+          if (st.view !== 'mood') return a.dataset.id - b.dataset.id;
+          return moods.findIndex(function (m) { return m.key === a.dataset.mood; }) - moods.findIndex(function (m) { return m.key === b.dataset.mood; }) || a.dataset.id - b.dataset.id;
+        });
+        var last = '';
+        ord.forEach(function (li) {
+          if (st.view === 'mood' && !li.hidden && li.dataset.mood !== last) {
+            last = li.dataset.mood; var m = moods.find(function (x) { return x.key === last; });
+            var g = document.createElement('li'); g.className = 'group'; g.style.setProperty('--c', m.color); g.innerHTML = '<h2></h2>'; g.firstChild.textContent = m.name; list.appendChild(g);
+          }
+          list.appendChild(li);
+        });
+        document.getElementById('count').textContent = n + (n === 1 ? ' poesia' : ' poesie');
+        document.getElementById('vuoto').hidden = n > 0;
+      }
+      function press(sel, attr, key) {
+        document.querySelectorAll(sel + ' button, ' + sel + '[data-view]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset[attr] === st[key] && (st[key] !== '' || b.dataset[attr] === ''))); });
+      }
+      document.getElementById('s').addEventListener('input', function (e) { st.q = norm(e.target.value.trim()); render(); });
+      document.getElementById('moods').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; st.mood = b.dataset.mood; press('#moods', 'mood', 'mood'); render(); });
+      document.getElementById('temi').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; st.tema = st.tema === b.dataset.tema ? '' : b.dataset.tema; press('#temi', 'tema', 'tema'); document.querySelectorAll('#temi button').forEach(function (x) { x.setAttribute('aria-pressed', String(x.dataset.tema === st.tema)); }); render(); });
+      document.querySelector('.views').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; st.view = b.dataset.view; document.querySelectorAll('.views button').forEach(function (x) { x.setAttribute('aria-pressed', String(x.dataset.view === st.view)); }); render(); });
+      render();
+    })();
+  </script>
+</Base>

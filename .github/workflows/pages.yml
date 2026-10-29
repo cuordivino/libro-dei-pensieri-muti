@@ -1,38 +1,26 @@
 name: Pubblica su GitHub Pages
-
 on:
-  push:
-    branches: [main]
+  push: { branches: [main] }
   workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
+permissions: { contents: read, pages: write, id-token: write }
+concurrency: { group: pages, cancel-in-progress: true }
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Prepara i file del sito
-        run: |
-          mkdir _site
-          cp index.html 404.html app.js data.js styles.css sw.js manifest.webmanifest favicon.svg \
-             og-image.jpg icon-192.png icon-512.png apple-touch-icon.png \
-             poems.json LIBRO_DEI_PENSIERI_MUTI.md _site/
-          cp -r images _site/images
-          touch _site/.nojekyll
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Controllo prima della pubblicazione
+        run: npm run check
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
+        with: { path: dist }
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: { name: github-pages, url: '${{ steps.deployment.outputs.page_url }}' }
+    steps:
       - id: deployment
         uses: actions/deploy-pages@v4

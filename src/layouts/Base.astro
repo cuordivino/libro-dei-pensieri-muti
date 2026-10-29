@@ -1,0 +1,81 @@
+---
+import '@fontsource/cormorant-garamond/400.css';
+import '@fontsource/cormorant-garamond/400-italic.css';
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource-variable/jost';
+import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import { u, meta, SITE } from '../lib/data';
+
+interface Props { title?: string; description?: string; image?: string; type?: string; jsonld?: object; current?: string }
+const { title, description = 'Quarantotto poesie di Cuordivino, un suono per ognuna, un’immagine che resta accesa. Ciò che non si dice, si ascolta.', image = 'og-image.jpg', type = 'website', jsonld, current = '' } = Astro.props;
+const full = title ? `${title} — Il Libro dei Pensieri Muti` : 'Il Libro dei Pensieri Muti — poesie di Cuordivino';
+const canonical = new URL(Astro.url.pathname, SITE).href;
+const img = new URL(u(image), SITE).href;
+const nav = [['poesie/', 'Archivio'], ['percorsi/', 'Percorsi'], ['galleria/', 'Galleria'], ['autore/', 'Autore']];
+const site = { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Il Libro dei Pensieri Muti', url: new URL(u(), SITE).href, inLanguage: 'it', author: { '@type': 'Person', name: 'Cuordivino', sameAs: [meta.instagram] } };
+---
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{full}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonical} />
+  <meta name="theme-color" content="#121110" />
+  <meta name="author" content="Cuordivino" />
+  <meta property="og:type" content={type} /><meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Il Libro dei Pensieri Muti" /><meta property="og:title" content={full} />
+  <meta property="og:description" content={description} /><meta property="og:url" content={canonical} />
+  <meta property="og:image" content={img} />
+  <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={full} />
+  <meta name="twitter:description" content={description} /><meta name="twitter:image" content={img} />
+  <link rel="icon" href={u('favicon.svg')} type="image/svg+xml" />
+  <link rel="apple-touch-icon" href={u('apple-touch-icon.png')} />
+  <link rel="manifest" href={u('manifest.webmanifest')} />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonld ?? site)} />
+  <slot name="head" />
+  <ClientRouter />
+</head>
+<body>
+  <a class="skip" href="#main">Vai al contenuto</a>
+  <header class="top"><div class="top-in">
+    <a class="brand" href={u()}>Il Libro dei Pensieri Muti</a>
+    <nav aria-label="Principale">
+      {nav.map(([h, l]) => <a href={u(h)} aria-current={current === h ? 'page' : undefined}>{l}</a>)}
+    </nav>
+  </div></header>
+  <main id="main" tabindex="-1"><slot /></main>
+  <footer class="ui"><div>
+    <span>Testi e immagini © Cuordivino. Tutti i diritti riservati. <a href={u("privacy/")}>Privacy</a> · <a href={u("instagram/")}>Instagram</a></span>
+    <a href={meta.instagram} rel="noopener" target="_blank">{meta.handle} su Instagram</a>
+  </div></footer>
+  <script is:inline define:vars={{ sw: u('sw.js'), scope: u('') }}>
+    // luce che segue il puntatore (solo dove c'è un puntatore preciso)
+    function bindLume() {
+      document.querySelectorAll('.lume').forEach((el) => {
+        if (el.dataset.bound) return; el.dataset.bound = 1;
+        el.addEventListener('pointermove', (e) => {
+          const r = el.getBoundingClientRect();
+          el.style.setProperty('--x', e.clientX - r.left + 'px');
+          el.style.setProperty('--y', e.clientY - r.top + 'px');
+        });
+      });
+    }
+    // su touch la luce segue la lettura: resta all'altezza dello sguardo mentre si scorre
+    var touch = matchMedia('(hover:none)').matches, tick = false;
+    function follow() {
+      tick = false;
+      document.querySelectorAll('.lume').forEach((el) => {
+        var r = el.getBoundingClientRect();
+        el.style.setProperty('--x', '50%');
+        el.style.setProperty('--y', innerHeight * 0.42 - r.top + 'px');
+      });
+    }
+    if (touch) { addEventListener('scroll', () => { if (!tick) { tick = true; requestAnimationFrame(follow); } }, { passive: true }); }
+    document.addEventListener('astro:page-load', () => { bindLume(); if (touch) follow(); document.getElementById('main')?.focus({ preventScroll: true }); });
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register(sw, { scope }).catch(() => {});
+  </script>
+</body>
+</html>

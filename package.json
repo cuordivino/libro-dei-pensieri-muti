@@ -1,0 +1,22 @@
+{
+  "name": "libro-dei-pensieri-muti",
+  "type": "module",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "data": "python3 scripts/enrich.py",
+    "musica": "python3 scripts/musica.py",
+    "instagram": "python3 scripts/import_instagram.py",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro build && node scripts/check.mjs",
+    "pubblica:check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "@fontsource/cormorant-garamond": "^5.1.0",
+    "@fontsource-variable/jost": "^5.1.0",
+    "astro": "^5.1.0"
+  }
+}

@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import { poems, meta, u, themeCounts, THEME_INTRO } from '../../lib/data';
+export function getStaticPaths() {
+  const mo = meta.moods.map((m) => ({ params: { slug: m.key }, props: { titolo: m.name, intro: m.desc, list: poems.filter((p) => p.mood === m.key), q: `?p=${m.key}` } }));
+  const th = themeCounts.map((t) => ({ params: { slug: t.key }, props: { titolo: t.label, intro: THEME_INTRO[t.key], list: poems.filter((p) => p.temi.includes(t.key)), q: `?p=${t.key}` } }));
+  return [...mo, ...th];
+}
+const { titolo, intro, list } = Astro.props;
+---
+<Base title={`Percorso: ${titolo}`} description={intro} current="percorsi/">
+  <p class="ui"><a href={u('percorsi/')}>Tutti i percorsi</a></p>
+  <h1>{titolo}</h1>
+  <p>{intro}</p>
+  <p><a class="btn solid" href={u(`poesie/${list[0].slug}/?p=${Astro.params.slug}`)}>Inizia la lettura</a></p>
+  <ol style="padding-left:1.4rem;max-width:44rem">
+    {list.map((p) => <li style="margin-bottom:1.2rem"><a href={u(`poesie/${p.slug}/?p=${Astro.params.slug}`)}><strong style="font-weight:500;font-size:1.4rem">{p.titolo}</strong></a><br /><span class="muted">{p.citazione}</span></li>)}
+  </ol>
+</Base>

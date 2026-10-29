@@ -1,0 +1,13 @@
+---
+import { u, meta, type Poem } from '../lib/data';
+const { p, eager = false } = Astro.props as { p: Poem; eager?: boolean };
+const c = meta.moods.find((m) => m.key === p.mood)!.color;
+const hay = [p.titolo, p.statoAnimo, p.moodNome, ...p.temi, ...p.emozioni, ...p.parole, p.testo].join(' ').toLowerCase();
+---
+<li data-id={p.id} data-mood={p.mood} data-temi={p.temi.join(' ')} data-hay={hay} style={`--c:${c}`}>
+  <a class="card" href={u(`poesie/${p.slug}/`)}>
+    <img src={u(`images/${p.miniatura}`)} width="800" height="1000" alt="" loading={eager ? 'eager' : 'lazy'} decoding="async" />
+    <h3><span class="num">{p.numero}.</span> {p.titolo}</h3>
+    <span class="ui">{p.moodNome}</span>
+  </a>
+</li>

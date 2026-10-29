@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { poems, meta, u } from '../lib/data';
+import postsRaw from '../data/instagram-posts.json';
+const liberi = (postsRaw as any[]).filter((x) => x.poesia === null && x.immagine).slice(0, 12);
+const con = poems.filter((p) => p.instagram?.stato);
+---
+<Base title="Da Instagram alle poesie" description="Ogni post di @refuso_di.verso e la poesia corrispondente: entra da un’immagine e leggi il testo intero." current="">
+  <h1>Da Instagram alle poesie</h1>
+  <p>Ogni immagine del profilo <a href={meta.instagram} rel="noopener" target="_blank">{meta.handle}</a> porta alla poesia intera, con il suo brano e le poesie vicine. Il link breve di ogni poesia è <code class="ui">/p/numero/</code>: usalo nelle didascalie e nel link in bio.</p>
+  <p class="muted ui">{con.length} poesie su {poems.length} sono già collegate a un post.</p>
+  <ul class="list">
+    {poems.map((p) => <li style={`--c:${meta.moods.find((m) => m.key === p.mood)!.color}`}>
+      <a class="card" href={u(`poesie/${p.slug}/`)}><img src={u(`images/${p.miniatura}`)} width="800" height="1000" alt="" loading="lazy" decoding="async" /><h3>{p.titolo}</h3><span class="ui">{p.instagram?.url ? 'Post collegato' : p.instagram ? 'Immagine del post' : 'Da collegare'}</span></a>
+      {p.instagram?.url && <p class="ui"><a href={p.instagram.url} rel="noopener" target="_blank">Apri su Instagram</a></p>}
+    </li>)}
+  </ul>
+  {liberi.length > 0 && <>
+    <h2 style="margin-top:3rem">Ultimi post su Instagram</h2>
+    <p class="muted ui">Post recenti non ancora trasformati in una pagina del libro.</p>
+    <ul class="list">{liberi.map((x) => <li><a class="card" href={x.url} target="_blank" rel="noopener"><img src={u(`images/${x.immagine}`)} width="800" height="1000" alt="" loading="lazy" decoding="async" /><h3>{(x.didascalia || 'Post').split('\n')[0].slice(0, 60)}</h3><span class="ui">{new Date(x.data).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' })} · apri su Instagram</span></a></li>)}</ul>
+  </>}
+</Base>

@@ -1,0 +1,33 @@
+name: Sincronizza Instagram
+on:
+  schedule: [{ cron: '17 5 * * *' }]   # ogni giorno alle 05:17 UTC
+  workflow_dispatch:
+permissions: { contents: write, actions: write }
+concurrency: { group: instagram-sync, cancel-in-progress: false }
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      IG_TOKEN: ${{ secrets.IG_TOKEN }}
+      GH_PAT: ${{ secrets.GH_PAT }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install pillow
+      - name: Importa i nuovi post
+        run: python3 scripts/sync_instagram.py && python3 scripts/enrich.py
+      - name: Pubblica se ci sono novità
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          git config user.name "sincronizza-instagram"; git config user.email "actions@users.noreply.github.com"
+          git add -A src/data public/images scripts/instagram-links.csv
+          if git diff --cached --quiet; then echo "Nessuna novità."; else
+            git commit -m "Sincronizza Instagram"; git push; gh workflow run pages.yml
+          fi
+      - name: Rinnova il token (60 giorni)
+        if: env.GH_PAT != '' && env.IG_TOKEN != ''
+        env: { GH_TOKEN: '${{ secrets.GH_PAT }}' }
+        run: |
+          NEW=$(curl -fsS "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=$IG_TOKEN" | python3 -c "import sys,json;print(json.load(sys.stdin)['access_token'])") || { echo "Rinnovo non riuscito (token troppo recente?)"; exit 0; }
+          echo "::add-mask::$NEW"; gh secret set IG_TOKEN --body "$NEW" --repo "${{ github.repository }}"

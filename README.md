@@ -1,61 +1,44 @@
-# IL LIBRO DEI PENSIERI MUTI
+# Il Libro dei Pensieri Muti — v2
 
-> Opera poetica interattiva di [@refuso_di.verso](https://www.instagram.com/refuso_di.verso/) (Cuordivino)
+Sito statico Astro (48 poesie, archivio, percorsi, galleria, pagina Instagram, commenti, PWA offline).
 
-48 poesie in chiaroscuro, ciascuna con la sua fotografia in bianco e nero e il suo stato d'animo, da sfogliare come un libro aperto.
+    npm install
+    npm run dev       # anteprima locale
+    npm run build     # genera dist/
+    npm run data      # rigenera src/data/poems.json (da eseguire dopo ogni modifica ai file sotto)
 
-**Sito:** https://cuordivino.github.io/libro-dei-pensieri-muti/
+## 1. Instagram: collegamento continuo (consigliato)
+Ogni giorno il sito controlla il profilo, importa i post nuovi (immagine, data e **indirizzo del post**), li abbina alle poesie con un punteggio di affidabilita' e si ripubblica da solo. Gli abbinamenti gia' fatti non cambiano; le correzioni a mano in `scripts/instagram-links.csv` (colonna `url` = indirizzo del post) hanno la precedenza. I post che non assomigliano a nessuna poesia compaiono in `/instagram/` come "Ultimi post" con il link a Instagram.
 
----
+Una tantum:
+1. Il profilo @refuso_di.verso deve essere **professionale** (Creator o Business: si cambia gratis da Impostazioni > Tipo di account).
+2. Su https://developers.facebook.com crea un'app di tipo Business, aggiungi il prodotto **Instagram** > "API setup with Instagram login", aggiungi il tuo profilo come tester e genera il token con il permesso `instagram_business_basic`; scambialo con un token a lunga durata (60 giorni).
+3. Nel repository GitHub: Settings > Secrets and variables > Actions > crea il segreto `IG_TOKEN` con quel token.
+4. Facoltativo ma consigliato: crea un token personale GitHub (permesso sui segreti del repository) e salvalo come segreto `GH_PAT`: cosi' il token Instagram si rinnova da solo ogni giorno. Senza, va rigenerato ogni 60 giorni.
+5. Actions > "Sincronizza Instagram" > Run workflow. La prima volta importa tutto lo storico (non serve l'esportazione).
+Prova in locale: `IG_TOKEN=... python3 scripts/sync_instagram.py && npm run data`.
 
-## Cosa c'è nel sito
+### In alternativa: esportazione una tantum
+1. Instagram → Impostazioni → Centro gestione account → Le tue informazioni e autorizzazioni → Scarica le tue informazioni → **Post**, formato **JSON**, qualità massima.
+2. Decomprimi lo zip e lancia:  `npm run instagram -- /percorso/della/cartella`
+   Lo script abbina ogni post alla poesia con un punteggio di affidabilità (sicuro / da verificare / non abbinato), copia le immagini in `public/images/ig/` e scrive `src/data/instagram-map.json`.
+3. Apri `scripts/instagram-links.csv`, incolla l'indirizzo di ogni post (l'esportazione non lo contiene) e correggi gli abbinamenti dubbi. Poi `npm run data`.
+Ogni poesia mostra il suo post e il pulsante "Copia didascalia con link"; la pagina `/instagram/` porta da ogni immagine alla poesia; `/p/NUMERO/` è il link breve da usare in bio e didascalie.
 
-- **Libro aperto** a doppia pagina: a sinistra fotografia, traccia e senso dello stato d'animo; a destra i versi. Navigazione con frecce a schermo, tastiera (`←` `→`), cursore o swipe.
-- **Galleria & Musica**, **Stati d'animo** (4 movimenti: *L'Ombra e il Pozzo*, *L'Ardore e la Carne*, *La Maschera e il Fango*, *La Quiete e il Ritrovo*) e **Indice** con ricerca.
-- **Card per Instagram** (1080×1350) in tre stili, generata direttamente nel browser.
-- **Atmosfera sonora** generata dal browser (pioggia, focolare, arpeggi), senza file audio.
-- **Link diretti** a ogni poesia: `…/#poesia-12`, e alle sezioni `#galleria`, `#stati`, `#indice`, `#copertina`.
-- **Funziona offline** dopo la prima visita e si può installare come app (PWA).
+## 2. I brani
+`npm run musica` crea `scripts/musica.csv`: un brano per poesia con il suo stato d'animo accanto. Compila `spotify` / `youtube` con l'indirizzo **diretto** del brano (attiva il lettore integrato), scrivi in `perche` il legame con la poesia e metti `si` in `verificato`. Poi `npm run data`. I brani attuali sono quelli del sito v1, non ancora verificati uno per uno.
 
-## Struttura
+## 3. Commenti e note
+- **Note private**: funzionano già, restano nel browser del lettore.
+- **Commenti pubblici**: servono un piccolo servizio (cartella `worker/`, Cloudflare Worker + D1, gratuito per questi volumi) e un servizio di posta (Resend).
+  1. `cd worker && npx wrangler d1 create pensieri-muti` → incolla l'id in `wrangler.toml`
+  2. `npx wrangler d1 execute pensieri-muti --remote --file=schema.sql`
+  3. segreti: `npx wrangler secret put ADMIN_TOKEN` (codice per la moderazione), `RESEND_API_KEY`, `OWNER_EMAIL`, `IP_SALT`
+  4. `npx wrangler deploy` → copia l'indirizzo in `src/data/config.json` (`api`), `email` è già impostata su lamenteardente@gmail.com; usala anche come `OWNER_EMAIL` per ricevere le notifiche. Per le risposte automatiche via e-mail Resend richiede un mittente su un dominio tuo verificato (un indirizzo Gmail non può fare da mittente): in alternativa rispondi dal tuo Gmail con il pulsante "Scrivi un'e-mail" di `/admin/`
+  5. moderazione e risposte: `/admin/` sul sito.
+- Il lettore sceglie come essere ricontattato (e-mail, cellulare, Instagram, altro social); non è obbligatorio. Risposta via e-mail: inviata dal sistema. Cellulare e social: `/admin/` apre WhatsApp, SMS, chiamata o messaggio Instagram.
+- Prima di attivarlo: completa e fai rivedere `/privacy/` (è una bozza).
+- Senza `api` ma con `email` il modulo apre il programma di posta del lettore.
 
-| File | Ruolo |
-| --- | --- |
-| `index.html`, `styles.css`, `app.js` | Pagina, stile e logica |
-| `data.js` / `poems.json` | Le 48 poesie e i metadati (stessa fonte, due formati) |
-| `images/` | Le 48 fotografie |
-| `LIBRO_DEI_PENSIERI_MUTI.md` | Manoscritto completo in Markdown |
-| `sw.js`, `manifest.webmanifest` | Offline e installazione |
-| `404.html`, `og-image.jpg`, icone | Pagina di errore e anteprime social |
-| `tools/` | Script Python per rigenerare dati, immagini e manoscritto |
-| `.github/workflows/pages.yml` | Pubblicazione automatica su GitHub Pages |
-
-## Pubblicare su GitHub Pages
-
-1. Crea su github.com un repository **pubblico** chiamato `libro-dei-pensieri-muti` (vuoto: senza README né licenza).
-2. Dalla cartella del progetto, in PowerShell: `.\pubblica.ps1`
-   (oppure a mano: `git init -b main`, `git add .`, `git commit -m "Il Libro dei Pensieri Muti"`, `git remote add origin https://github.com/cuordivino/libro-dei-pensieri-muti.git`, `git push -u origin main`).
-3. Nel repository: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-4. Al primo push parte il workflow; dopo circa un minuto il sito è online all'indirizzo qui sopra. Ogni push successivo su `main` lo aggiorna.
-
-Se cambi nome del repository o dell'account, aggiorna l'indirizzo in `index.html` (tag `canonical` e `og:`) e in questo file.
-
-## Modificare i contenuti
-
-- **Testi e stati d'animo:** modifica `tools/build_data.py` e lancia `python tools/build_data.py` (rigenera `data.js` e `poems.json`), poi `python tools/generate_md.py` per il manoscritto.
-- **Foto:** sostituisci i file in `images/` (800×1000, `poesia_N.jpg`) oppure rigenerale con `python tools/generate_photos.py`.
-- **Dopo ogni modifica** cambia `VERSION` in `sw.js` (ad es. `v2`) perché chi ha già visitato il sito riceva i contenuti nuovi.
-- **Strumenti di modifica nel browser:** aggiungere poesie, sostituire foto o audio dal sito funziona solo sul tuo browser (i dati restano nel `localStorage`, non sul sito pubblico). Si attivano aprendo il sito con `?edit=1` e si disattivano con `?edit=0`; i visitatori non li vedono.
-
-## Prova in locale
-
-```bash
-python -m http.server 8000
-# poi apri http://localhost:8000
-```
-
-Il service worker e la copia negli appunti richiedono `http://localhost` o `https`; aprendo `index.html` con doppio clic il libro funziona, ma senza offline.
-
-## Licenza
-
-Testi e fotografie © Cuordivino, tutti i diritti riservati. Il codice è con licenza MIT. Dettagli in [`LICENSE`](LICENSE).
+## Pubblicazione
+Settings → Pages → Source: GitHub Actions; ogni push su `main` pubblica.

@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import { config, meta } from '../lib/data';
+---
+<Base title="Informativa privacy" description="Come vengono trattati i dati di chi lascia un commento sul Libro dei Pensieri Muti.">
+  <h1>Informativa privacy</h1>
+  <p class="muted ui">Bozza da far rivedere prima della pubblicazione: completa i dati del titolare e fai controllare il testo da un professionista.</p>
+  <h2>Titolare</h2>
+  <p>{meta.autore}{config.email ? `, contatto: ${config.email}` : ''}. Completa qui nome, cognome e indirizzo e-mail del titolare del trattamento.</p>
+  <h2>Quali dati raccogliamo</h2>
+  <p>Quando lasci un commento: nome, testo del messaggio e, solo se desideri una risposta, un recapito (e-mail, cellulare o profilo social). L’indirizzo IP viene usato solo in forma non leggibile (hash) per limitare i messaggi automatici.</p>
+  <h2>Perché e su quale base</h2>
+  <p>Per pubblicare il commento, dopo verifica, e per risponderti sul canale che hai scelto. La base è il tuo consenso, che puoi revocare in qualsiasi momento.</p>
+  <h2>Cosa è pubblico</h2>
+  <p>Solo nome e testo del commento, se hai acconsentito alla pubblicazione, e l’eventuale risposta dell’autore. Il recapito non è mai pubblico.</p>
+  <h2>Per quanto tempo</h2>
+  <p>Il recapito viene cancellato dopo la risposta o, in ogni caso, entro 12 mesi. I commenti pubblicati restano finché non ne chiedi la rimozione.</p>
+  <h2>Chi li tratta</h2>
+  <p>I dati sono conservati su un servizio di hosting (Cloudflare) e, se scegli la risposta via e-mail, inviati con un servizio di posta (Resend). Le note personali restano sul tuo dispositivo e non vengono trasmesse.</p>
+  <h2>I tuoi diritti</h2>
+  <p>Puoi chiedere accesso, correzione, cancellazione o limitazione scrivendo al titolare, e proporre reclamo al Garante per la protezione dei dati personali.</p>
+</Base>

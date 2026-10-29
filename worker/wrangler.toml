@@ -1,0 +1,17 @@
+name = "pensieri-muti-commenti"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "pensieri-muti"
+database_id = "INCOLLA-QUI-L-ID"   # lo stampa: npx wrangler d1 create pensieri-muti
+
+[vars]
+SITE_ORIGIN = "https://cuordivino.github.io"
+SITE_URL = "https://cuordivino.github.io/libro-dei-pensieri-muti"
+MAIL_FROM = "Pensieri Muti <commenti@tuodominio.it>"   # dominio verificato su Resend
+
+[triggers]
+crons = ["0 3 * * *"]
+# Segreti (non vanno nel file): npx wrangler secret put ADMIN_TOKEN | RESEND_API_KEY | OWNER_EMAIL | IP_SALT

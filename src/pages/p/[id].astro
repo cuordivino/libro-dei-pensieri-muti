@@ -1,0 +1,10 @@
+---
+import { poems, u, SITE } from '../../lib/data';
+export const getStaticPaths = () => poems.map((p) => ({ params: { id: String(p.id) }, props: { p } }));
+const { p } = Astro.props;
+const to = u(`poesie/${p.slug}/`);
+const canon = new URL(to, SITE).href;
+---
+<!doctype html><html lang="it"><head><meta charset="utf-8" /><title>{p.titolo} — Il Libro dei Pensieri Muti</title>
+<link rel="canonical" href={canon} /><meta http-equiv="refresh" content={`0; url=${to}`} /><meta name="robots" content="noindex" /></head>
+<body><p><a href={to}>Vai alla poesia «{p.titolo}»</a></p></body></html>

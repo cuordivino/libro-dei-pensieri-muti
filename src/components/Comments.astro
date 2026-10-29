@@ -1,0 +1,107 @@
+---
+import { config, u } from '../lib/data';
+const { id, titolo } = Astro.props as { id: number; titolo: string };
+---
+<section class="box wide" aria-labelledby="com" data-poem={id}>
+  <h2 id="com">Commenti e note</h2>
+
+  <div class="tabs" role="group" aria-label="Commenti o note">
+    <button class="chip" type="button" data-tab="pub" aria-pressed="true">Commenti</button>
+    <button class="chip" type="button" data-tab="priv" aria-pressed="false">Le mie note</button>
+  </div>
+
+  <div data-panel="pub">
+    <ul class="comlist" id="comlist" aria-live="polite"><li class="muted ui">Caricamento dei commenti…</li></ul>
+    <form id="comform" class="form" novalidate>
+      <h3>Lascia un commento</h3>
+      <label>Nome<input name="name" required maxlength="60" autocomplete="name" /></label>
+      <label>Messaggio<textarea name="message" required maxlength="1200" rows="4"></textarea></label>
+      <label>Come vuoi ricevere la risposta?
+        <select name="ctype">
+          <option value="none">Non voglio una risposta</option>
+          <option value="email">E-mail</option>
+          <option value="phone">Cellulare (WhatsApp o SMS)</option>
+          <option value="instagram">Instagram</option>
+          <option value="social">Altro social</option>
+        </select>
+      </label>
+      <label id="clabel" hidden><span id="ctext">Contatto</span><input name="contact" maxlength="120" /></label>
+      <label class="check"><input type="checkbox" name="public" checked /> <span>Il commento può essere pubblicato con il mio nome, dopo verifica. Il contatto non sarà mai pubblico.</span></label>
+      <label class="check"><input type="checkbox" name="consent" required /> <span>Ho letto l’<a href={u('privacy/')}>informativa</a> e acconsento al trattamento dei dati per ricevere risposta.</span></label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button class="btn solid" type="submit">Invia il commento</button>
+      <p id="comfb" class="ui" role="status"></p>
+    </form>
+  </div>
+
+  <div data-panel="priv" hidden>
+    <p class="ui muted">Appunti privati su questa poesia. Restano solo su questo dispositivo e non vengono inviati a nessuno.</p>
+    <label class="sr" for="nota">Le mie note su {titolo}</label>
+    <textarea id="nota" class="note" rows="6" maxlength="5000" placeholder="Cosa ti ha lasciato questa poesia?"></textarea>
+    <p class="ui"><span id="notafb" class="muted"></span> <button class="btn" type="button" id="notaexp">Scarica tutte le mie note</button></p>
+  </div>
+</section>
+
+<script is:inline define:vars={{ api: config.api, email: config.email, pid: id, ptitle: titolo }}>
+  (function () {
+    var root = document.querySelector('[data-poem="' + pid + '"]'); if (!root) return;
+    var $ = function (s) { return root.querySelector(s); };
+    root.querySelectorAll('[data-tab]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        root.querySelectorAll('[data-tab]').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+        root.querySelectorAll('[data-panel]').forEach(function (p) { p.hidden = p.dataset.panel !== b.dataset.tab; });
+      });
+    });
+    // commenti approvati
+    var list = $('#comlist');
+    function esc(t) { var d = document.createElement('div'); d.textContent = t; return d; }
+    if (!api) list.innerHTML = '<li class="muted ui">I commenti saranno visibili qui dopo la verifica.</li>';
+    else fetch(api + '/comments?poem=' + pid).then(function (r) { return r.json(); }).then(function (d) {
+      list.innerHTML = '';
+      if (!d.comments.length) { list.innerHTML = '<li class="muted ui">Ancora nessun commento. Scrivi tu il primo.</li>'; return; }
+      d.comments.forEach(function (c) {
+        var li = document.createElement('li'); li.className = 'com';
+        var h = document.createElement('p'); h.className = 'ui'; h.append(Object.assign(document.createElement('strong'), { textContent: c.name }), ' · ' + new Date(c.created_at).toLocaleDateString('it-IT'));
+        var m = document.createElement('p'); m.textContent = c.message; li.append(h, m);
+        if (c.reply) { var r = document.createElement('p'); r.className = 'reply'; r.append(Object.assign(document.createElement('strong'), { textContent: 'Risposta dell’autore: ' }), c.reply); li.append(r); }
+        list.append(li);
+      });
+    }).catch(function () { list.innerHTML = '<li class="muted ui">Non riesco a caricare i commenti in questo momento.</li>'; });
+    // campo contatto in base al canale
+    var form = $('#comform'), sel = form.ctype, lab = $('#clabel');
+    var T = { email: ['La tua e-mail', 'email', 'nome@esempio.it'], phone: ['Il tuo numero di cellulare', 'tel', '+39 333 1234567'], instagram: ['Il tuo nome utente Instagram', 'text', '@nomeutente'], social: ['Social e nome utente', 'text', 'es. Facebook: Mario Rossi'] };
+    sel.addEventListener('change', function () {
+      var t = T[sel.value]; lab.hidden = !t; form.contact.required = !!t;
+      if (t) { $('#ctext').textContent = t[0]; form.contact.type = t[1]; form.contact.placeholder = t[2]; }
+    });
+    // invio
+    var fb = $('#comfb');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); fb.textContent = '';
+      if (!form.reportValidity()) return;
+      var data = { poem: pid, title: ptitle, name: form.name.value.trim(), message: form.message.value.trim(), ctype: sel.value,
+        contact: form.contact.value.trim(), public: form.public.checked, consent: form.consent.checked, website: form.website.value };
+      if (api) {
+        form.querySelector('button[type=submit]').disabled = true; fb.textContent = 'Invio in corso…';
+        fetch(api + '/comments', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) })
+          .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+          .then(function (x) { if (!x.ok) throw new Error(x.j.error || 'Errore'); form.reset(); lab.hidden = true; fb.textContent = 'Grazie. Il commento è stato inviato e comparirà dopo la verifica.'; })
+          .catch(function (er) { fb.textContent = 'Invio non riuscito: ' + er.message.replace(/\.$/, '') + '.'; })
+          .finally(function () { form.querySelector('button[type=submit]').disabled = false; });
+      } else if (email) {
+        var body = data.message + '\n\n— ' + data.name + (data.contact ? '\nContatto (' + data.ctype + '): ' + data.contact : '');
+        location.href = 'mailto:' + email + '?subject=' + encodeURIComponent('Commento su «' + ptitle + '»') + '&body=' + encodeURIComponent(body);
+        fb.textContent = 'Si apre il tuo programma di posta: invia il messaggio per completare.';
+      } else fb.textContent = 'Il modulo non è ancora attivo. Scrivi su Instagram a @refuso_di.verso.';
+    });
+    // note private
+    var key = 'pm-nota-' + pid, n = $('#nota'), nf = $('#notafb'), tm;
+    try { n.value = localStorage.getItem(key) || ''; } catch (e) { nf.textContent = 'Le note non possono essere salvate in questo browser.'; }
+    n.addEventListener('input', function () { clearTimeout(tm); tm = setTimeout(function () { try { if (n.value) localStorage.setItem(key, n.value); else localStorage.removeItem(key); nf.textContent = 'Salvato su questo dispositivo.'; } catch (e) {} }, 400); });
+    $('#notaexp').addEventListener('click', function () {
+      var out = []; try { for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i); if (k.indexOf('pm-nota-') === 0) out.push('Poesia ' + k.slice(8) + '\n' + localStorage.getItem(k)); } } catch (e) {}
+      if (!out.length) { nf.textContent = 'Non hai ancora scritto note.'; return; }
+      var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([out.join('\n\n———\n\n')], { type: 'text/plain' })); a.download = 'le-mie-note.txt'; a.click();
+    });
+  })();
+</script>

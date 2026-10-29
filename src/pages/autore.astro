@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { meta, u } from '../lib/data';
+const paras = (t: string | null) => (t ?? '').split(/\n\s*\n/).filter(Boolean);
+---
+<Base title="L’autore" description="Cuordivino, la voce dietro @refuso_di.verso: nota dell’autore e prefazione al Libro dei Pensieri Muti." current="autore/">
+  <h1>Cuordivino</h1>
+  <p class="muted">Poesie pubblicate su <a href={meta.instagram} rel="noopener" target="_blank">{meta.handle}</a>. Opera di riferimento: <em>{meta.opera}</em>.</p>
+  <h2>Nota dell’autore</h2>
+  {paras(meta.notaAutore).map((t) => <p>{t}</p>)}
+  <h2>Prefazione</h2>
+  {paras(meta.prefazione).map((t) => <p>{t}</p>)}
+  <p><a class="btn" href={u('poesie/')}>Leggi le poesie</a></p>
+</Base>

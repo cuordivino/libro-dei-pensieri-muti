@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { config } from '../lib/data';
+---
+<Base title="Moderazione" description="Area riservata all’autore per moderare i commenti e rispondere ai lettori."><meta slot="head" name="robots" content="noindex" />
+  <h1>Moderazione</h1>
+  <p class="muted ui">Area riservata all’autore. Il codice di accesso resta solo in questa scheda del browser.</p>
+  <form id="login" class="form" style="max-width:24rem"><label>Codice di accesso<input type="password" id="tok" autocomplete="current-password" /></label><button class="btn solid" type="submit">Entra</button></form>
+  <div id="app" hidden>
+    <div class="chips"><button class="chip" data-s="pending" aria-pressed="true">Da approvare</button><button class="chip" data-s="approved" aria-pressed="false">Approvati</button><button class="chip" data-s="all" aria-pressed="false">Tutti</button></div>
+    <div id="items" aria-live="polite"></div>
+  </div>
+  <script is:inline define:vars={{ api: config.api, ig: config.instagram }}>
+    (function () {
+      var tok = sessionStorage.getItem('pm-admin') || '', st = 'pending', items = document.getElementById('items');
+      if (!api) { document.getElementById('login').outerHTML = '<p>Il servizio dei commenti non è ancora collegato: imposta <code>api</code> in src/data/config.json.</p>'; return; }
+      function call(path, opt) { opt = opt || {}; opt.headers = Object.assign({ authorization: 'Bearer ' + tok, 'content-type': 'application/json' }, opt.headers); return fetch(api + path, opt).then(function (r) { if (r.status === 401) throw new Error('auth'); return r.json(); }); }
+      function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x) e.textContent = x; return e; }
+      function link(label, href) { var a = el('a', 'btn', label); a.href = href; a.target = '_blank'; a.rel = 'noopener'; return a; }
+      function contact(c) {
+        var box = el('div', 'platforms'); if (!c.contact) return box; var v = c.contact, d = v.replace(/[^\d+]/g, '');
+        if (c.contact_type === 'email') box.append(link('Scrivi un’e-mail', 'mailto:' + v + '?subject=' + encodeURIComponent('Risposta al tuo commento')));
+        if (c.contact_type === 'phone') { box.append(link('WhatsApp', 'https://wa.me/' + d.replace('+', ''))); box.append(link('SMS', 'sms:' + d)); box.append(link('Chiama', 'tel:' + d)); }
+        if (c.contact_type === 'instagram') box.append(link('Apri su Instagram', 'https://ig.me/m/' + v.replace('@', '')));
+        if (c.contact_type === 'social') box.append(el('span', 'ui muted', 'Social: ' + v));
+        return box;
+      }
+      function render(list) {
+        items.replaceChildren(); if (!list.length) { items.append(el('p', 'muted', 'Nessun commento.')); return; }
+        list.forEach(function (c) {
+          var b = el('article', 'admin-item');
+          b.append(el('p', 'ui muted', '«' + c.poem_title + '» · ' + new Date(c.created_at).toLocaleString('it-IT') + ' · ' + c.status + (c.public ? ' · pubblicabile' : ' · privato')));
+          b.append(el('p', '', c.name + ': ' + c.message)); if (c.contact) b.append(el('p', 'ui', 'Contatto (' + c.contact_type + '): ' + c.contact));
+          b.append(contact(c));
+          if (c.reply) b.append(el('p', 'reply', 'Risposta: ' + c.reply));
+          var ta = el('textarea', 'note'); ta.rows = 3; ta.placeholder = 'Scrivi una risposta'; ta.setAttribute('aria-label', 'Risposta a ' + c.name); b.append(ta);
+          var row = el('div', 'platforms');
+          function act(a, label) { var x = el('button', 'btn', label); x.type = 'button'; x.addEventListener('click', function () { x.disabled = true; call('/admin/comments/' + c.id, { method: 'POST', body: JSON.stringify({ action: a, reply: ta.value, sendEmail: c.contact_type === 'email' && a === 'reply' }) }).then(load).catch(function () { x.disabled = false; }); }); row.append(x); }
+          act('approve', 'Approva'); act('reject', 'Rifiuta'); act('reply', c.contact_type === 'email' ? 'Rispondi (anche per e-mail)' : 'Salva risposta'); act('delete', 'Elimina');
+          b.append(row); items.append(b);
+        });
+      }
+      function load() { call('/admin/comments?status=' + st).then(function (d) { render(d.comments); }).catch(function (e) { sessionStorage.removeItem('pm-admin'); document.getElementById('app').hidden = true; document.getElementById('login').hidden = false; }); }
+      function enter() { document.getElementById('login').hidden = true; document.getElementById('app').hidden = false; load(); }
+      document.getElementById('login').addEventListener('submit', function (e) { e.preventDefault(); tok = document.getElementById('tok').value; sessionStorage.setItem('pm-admin', tok); enter(); });
+      document.querySelector('.chips').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; st = b.dataset.s; document.querySelectorAll('.chips button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); load(); });
+      if (tok) enter();
+    })();
+  </script>
+</Base>

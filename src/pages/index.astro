@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import { poems, meta, u, themeCounts } from '../lib/data';
+const first = poems[11];
+const pick = poems.map((p) => ({ q: p.citazione, t: p.titolo, h: u(`poesie/${p.slug}/`) }));
+const slugs = Object.fromEntries(poems.map((p) => [p.id, u(`poesie/${p.slug}/`)]));
+---
+<Base current="">
+  <section class="hero" aria-labelledby="t">
+    <p class="eyebrow ui">Il Libro dei Pensieri Muti</p>
+    <h1 id="t">Ciò che non si dice, si ascolta.</h1>
+    <p class="sub">Quarantotto poesie, un suono per ognuna, un’immagine che resta accesa. Leggile con le cuffie.</p>
+    <p class="quote lume" id="q">{first.citazione}</p>
+    <p class="src"><a id="qa" href={u(`poesie/${first.slug}/`)}>{first.titolo}</a> · {meta.autore}</p>
+    <div class="cta">
+      <a class="btn solid" data-rand id="rand" href={u(`poesie/${first.slug}/`)}>Entra a luce bassa</a>
+      <a class="btn" href={u('poesie/')}>Sfoglia l’archivio</a>
+    </div>
+    <p class="micro ui">Versi senza filtri: lettura per adulti.</p>
+  </section>
+
+  <section class="concept" aria-labelledby="c">
+    <h2 id="c">Un refuso di verso</h2>
+    <p>Un refuso è un errore di battitura. Qui è un verso che ha sbagliato strada ed è arrivato dove doveva.</p>
+    <p>Questo non è un libro che si sfoglia. È una cappella con la luce bassa. Prima l’immagine, a fare da altare. Poi la musica, che entra come l’organo anche dove non c’è chiesa. Poi i versi: la carne, la tonaca, la moka all’alba, la bestemmia detta a denti stretti come una preghiera.</p>
+    <p>Sono pensieri muti, quelli che di giorno si ingoiano e di notte si presentano uno per uno. Gli occhi leggono. Le orecchie tengono il tempo. Il resto, quello che non ha nome, risponde da solo.</p>
+  </section>
+
+  <section class="guida" aria-labelledby="g">
+    <h2 id="g">Come si legge</h2>
+    <div class="passi">
+      <div class="passo"><h3>Cuffie.</h3><p>Il suono sta dentro la poesia come l’incenso dentro la chiesa: dagli altoparlanti si perde. Cuffie, luce bassa.</p></div>
+      <div class="passo"><h3>Una alla volta.</h3><p>Non c’è fretta e non c’è fine. Leggine una e fermati. Se ti brucia, restaci; se ti scivola addosso, vai avanti.</p></div>
+      <div class="passo"><h3>Quattro porte.</h3><p>L’Ombra e il Pozzo. L’Ardore e la Carne. La Maschera e il Fango. La Quiete e il Ritrovo. Scegli da dove cadere, oppure lascia decidere al caso.</p><p><a class="btn" data-rand href={u(`poesie/${first.slug}/`)}>Lascia decidere al caso</a></p></div>
+    </div>
+  </section>
+
+  <h2>Le quattro porte</h2>
+  <div class="moods">
+    {meta.moods.map((m) => <a class="mood" style={`--c:${m.color}`} href={u(`percorsi/${m.key}/`)}><h3>{m.name}</h3><p>{m.desc}</p></a>)}
+  </div>
+
+  <h2>Percorsi per tema</h2>
+  <ul class="chips">{themeCounts.map((t) => <li><a class="chip" href={u(`percorsi/${t.key}/`)}>{t.label} · {t.n}</a></li>)}</ul>
+  <p class="muted ui">Ogni percorso è una lettura guidata: si entra da una poesia e si prosegue a quella successiva dello stesso tema.</p>
+
+  <script type="application/json" id="pick" set:html={JSON.stringify(pick)} />
+  <script type="application/json" id="slugs" set:html={JSON.stringify(slugs)} />
+  <script is:inline>
+    (function () {
+      var m = location.hash.match(/^#poesia-(\d+)/); // vecchi link del sito v1
+      if (m) { var s = JSON.parse(document.getElementById('slugs').textContent)[m[1]]; if (s) { location.replace(s); return; } }
+      var pick = JSON.parse(document.getElementById('pick').textContent);
+      var cur = pick[Math.floor(Math.random() * pick.length)];
+      var q = document.getElementById('q'), qa = document.getElementById('qa'), rands = document.querySelectorAll('[data-rand]');
+      q.textContent = cur.q; qa.textContent = cur.t; qa.href = cur.h;
+      rands.forEach(function (r) {
+        r.href = cur.h;
+        r.addEventListener('click', function (e) {
+          if (e.shiftKey || e.metaKey || e.ctrlKey) return;
+          r.href = pick[Math.floor(Math.random() * pick.length)].h;
+        });
+      });
+    })();
+  </script>
+</Base>

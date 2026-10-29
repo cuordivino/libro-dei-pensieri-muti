@@ -1,0 +1,109 @@
+---
+import Base from '../../layouts/Base.astro';
+import { poems, meta, u, byId, stanzas, SITE, embedUrl } from '../../lib/data';
+import Comments from '../../components/Comments.astro';
+export function getStaticPaths() {
+  return poems.map((p, i) => ({ params: { slug: p.slug }, props: { p, prev: poems[i - 1], next: poems[i + 1] } }));
+}
+const { p, prev, next } = Astro.props;
+const mood = meta.moods.find((m) => m.key === p.mood)!;
+const rel = p.correlate.map(byId);
+// prossima poesia nello stesso tema (per la lettura guidata)
+const nextTheme = Object.fromEntries(p.temi.map((t) => {
+  const s = poems.filter((x) => x.temi.includes(t)); const n = s[(s.findIndex((x) => x.id === p.id) + 1) % s.length];
+  return [t, n.id === p.id ? null : { slug: n.slug, titolo: n.titolo }];
+}));
+let n = 0;
+const jsonld = { '@context': 'https://schema.org', '@type': 'CreativeWork', genre: 'Poesia', name: p.titolo, text: p.testo, inLanguage: 'it',
+  author: { '@type': 'Person', name: meta.autore }, keywords: [...p.temi, ...p.emozioni, ...p.parole].join(', '),
+  image: new URL(u(`images/${p.immagine}`), SITE).href, url: new URL(u(`poesie/${p.slug}/`), SITE).href,
+  isPartOf: { '@type': 'Book', name: 'Il Libro dei Pensieri Muti', author: { '@type': 'Person', name: meta.autore } } };
+const emb = embedUrl(p.musica);
+const short = new URL(u(`p/${p.id}/`), SITE).href;
+const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'Apple Music'], ['soundcloud', 'SoundCloud']] as const;
+---
+<Base title={`${p.titolo}`} description={p.senso} image={`images/${p.immagine}`} type="article" jsonld={jsonld} current="poesie/">
+  <article class="poem" style={`--c:${mood.color}`}>
+    <aside>
+      <img src={u(`images/${p.immagine}`)} width="800" height="1000" alt={`Fotografia in bianco e nero associata alla poesia ${p.titolo}`} />
+      <p class="senso">{p.senso}</p>
+      <p class="ui muted">{p.sezione} · <a href={u(`percorsi/${p.mood}/`)}>{mood.name}</a></p>
+    </aside>
+    <div>
+      <p class="ui muted">{p.numero} · {mood.name}</p>
+      <h1 style="font-size:clamp(2.4rem,1.6rem + 4vw,4.6rem)">{p.titolo}</h1>
+      <div class="meta-row">
+        <ul class="chips" style="margin:0">{p.temi.map((t) => <li><a class="chip" href={u(`percorsi/${t}/`)}>{(meta.temi as any)[t]}</a></li>)}{p.emozioni.map((e) => <li><span class="chip">{e}</span></li>)}</ul>
+      </div>
+      <p class="ui"><button class="chip" id="modo" aria-pressed="false">Leggi in silenzio</button></p>
+
+      <div class="versi lume">
+        {stanzas(p.testo).map((s) => <p>{s.map((l) => <span class="v" style={`--i:${Math.min(n++, 28)}`}>{l}</span>)}</p>)}
+      </div>
+
+      <blockquote class="est">{p.citazione}</blockquote>
+      <p class="ui"><button class="btn" id="share" data-t={p.titolo} data-q={p.citazione}>Condividi questo verso</button> <span id="fb" class="muted" role="status"></span></p>
+
+      {Object.entries(nextTheme).map(([t, x]) => x && <p data-percorso={t} class="box"><span class="ui muted">Percorso {(meta.temi as any)[t]}</span><br /><a href={u(`poesie/${x.slug}/?p=${t}`)}>Prosegui con «{x.titolo}»</a></p>)}
+
+      <section class="box musica" aria-labelledby="mus">
+        <h2 id="mus">La traccia</h2>
+        <p>Il brano scelto è <em>{p.musica.brano}</em> di {p.musica.artista}: lascialo suonare sotto i versi.</p>
+        <p class="ui muted">Cuffie · luce bassa</p>
+        {p.musica.perche && <p class="ui muted">{p.musica.perche}</p>}
+        {emb && <div class="embed" data-url={emb.url} data-h={emb.h}><button class="btn" type="button">Accendi la traccia</button><span class="ui muted"> Caricando il lettore accetti i cookie di {emb.kind}.</span></div>}
+        {p.musica.audio && <audio controls preload="none" src={u(p.musica.audio)}></audio>}
+        <div class="platforms">{plat.map(([k, l]) => <a class="btn" rel="noopener" target="_blank" href={(p.musica as any)[k]}>{l}</a>)}</div>
+        <p class="ui muted" style="margin-top:.8rem">{emb ? 'Oppure aprilo sulla tua piattaforma.' : 'I link aprono la ricerca del brano sulla piattaforma scelta.'} Il silenzio dopo la musica fa parte della poesia.</p>
+      </section>
+
+      <section class="box" aria-labelledby="ig">
+        <h2 id="ig">Su Instagram</h2>
+        {p.instagram?.url
+          ? <p>Questa poesia è anche un post di <strong>{meta.handle}</strong>{p.data ? ` del ${new Date(p.data).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' })}` : ''}.</p>
+          : <p>Segui le nuove poesie su <strong>{meta.handle}</strong>.</p>}
+        <div class="platforms">
+          <a class="btn" rel="noopener" target="_blank" href={p.instagram?.url ?? meta.instagram}>{p.instagram?.url ? 'Apri il post' : 'Apri il profilo'}</a>
+          <button class="btn" type="button" id="cap" data-t={`«${p.citazione}»\n— ${p.titolo}, ${meta.autore}\nLeggi la poesia intera: ${short}`}>Copia didascalia con link</button>
+        </div>
+        <p class="ui muted" style="margin-top:.8rem" id="capfb" role="status">Il link breve {short.replace('https://', '')} riporta a questa pagina.</p>
+      </section>
+
+      <Comments id={p.id} titolo={p.titolo} />
+
+      <nav class="correlate" aria-labelledby="rel">
+        <h2 id="rel">Resta nel buio ancora un po’</h2>
+        <ul class="chips">{rel.map((r) => <li><a class="chip" href={u(`poesie/${r.slug}/`)}>{r.titolo}</a></li>)}</ul>
+      </nav>
+      <nav class="pager ui" aria-label="Poesia precedente e successiva">
+        {prev ? <a href={u(`poesie/${prev.slug}/`)} rel="prev">← {prev.titolo}</a> : <span></span>}
+        {next ? <a href={u(`poesie/${next.slug}/`)} rel="next">{next.titolo} →</a> : <span></span>}
+      </nav>
+    </div>
+  </article>
+  <script is:inline>
+    (function () {
+      var sp = new URLSearchParams(location.search).get('p');
+      if (sp) { var e = document.querySelector('[data-percorso="' + sp + '"]'); if (e) e.classList.add('on'); }
+      var m = document.getElementById('modo'), on = false;
+      try { on = localStorage.getItem('pm-solo') === '1'; } catch (e) {}
+      function set(v) { document.body.classList.toggle('solo-testo', v); m.setAttribute('aria-pressed', String(v)); try { localStorage.setItem('pm-solo', v ? '1' : '0'); } catch (e) {} }
+      set(on); m.addEventListener('click', function () { set(!document.body.classList.contains('solo-testo')); });
+      document.addEventListener('astro:before-swap', function () { document.body.classList.remove('solo-testo'); }, { once: true });
+      var cp = document.getElementById('cap');
+      cp.addEventListener('click', function () { navigator.clipboard.writeText(cp.dataset.t).then(function () { document.getElementById('capfb').textContent = 'Didascalia copiata: incollala nel post.'; }); });
+      document.querySelectorAll('.embed').forEach(function (b) {
+        b.querySelector('button').addEventListener('click', function () {
+          var f = document.createElement('iframe'); f.src = b.dataset.url; f.height = b.dataset.h; f.width = '100%'; f.loading = 'lazy'; f.title = 'Lettore del brano';
+          f.allow = 'encrypted-media; autoplay; fullscreen'; f.style.border = '0'; b.replaceChildren(f);
+        });
+      });
+      var s = document.getElementById('share');
+      s.addEventListener('click', function () {
+        var txt = '«' + s.dataset.q + '» — ' + s.dataset.t + ', Cuordivino';
+        if (navigator.share) navigator.share({ title: s.dataset.t, text: txt, url: location.href.split('?')[0] }).catch(function () {});
+        else navigator.clipboard.writeText(txt + ' ' + location.href.split('?')[0]).then(function () { document.getElementById('fb').textContent = 'Copiato negli appunti.'; });
+      });
+    })();
+  </script>
+</Base>
