@@ -5,14 +5,14 @@ import '@fontsource/cormorant-garamond/500.css';
 import '@fontsource-variable/jost';
 import '../styles/global.css';
 import { ClientRouter } from 'astro:transitions';
-import { u, meta, SITE } from '../lib/data';
+import { u, meta, SITE, poems } from '../lib/data';
 
 interface Props { title?: string; description?: string; image?: string; type?: string; jsonld?: object; current?: string }
-const { title, description = 'Quarantotto poesie di Cuordivino, un suono per ognuna, un’immagine che resta accesa. Ciò che non si dice, si ascolta.', image = 'og-image.jpg', type = 'website', jsonld, current = '' } = Astro.props;
+const { title, description = `${poems.length} poesie di Cuordivino, un suono per ognuna, un’immagine che resta accesa. Ciò che non si dice, si ascolta.`, image = 'og-image.jpg', type = 'website', jsonld, current = '' } = Astro.props;
 const full = title ? `${title} — Il Libro dei Pensieri Muti` : 'Il Libro dei Pensieri Muti — poesie di Cuordivino';
 const canonical = new URL(Astro.url.pathname, SITE).href;
 const img = new URL(u(image), SITE).href;
-const nav = [['poesie/', 'Archivio'], ['percorsi/', 'Percorsi'], ['galleria/', 'Galleria'], ['autore/', 'Autore']];
+const nav = [['poesie/', 'Archivio'], ['percorsi/', 'Percorsi'], ['mappa/', 'Mappa'], ['galleria/', 'Galleria'], ['autore/', 'Autore']];
 const site = { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Il Libro dei Pensieri Muti', url: new URL(u(), SITE).href, inLanguage: 'it', author: { '@type': 'Person', name: 'Cuordivino', sameAs: [meta.instagram] } };
 ---
 <!doctype html>

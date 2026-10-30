@@ -7,6 +7,12 @@ Sito statico Astro (48 poesie, archivio, percorsi, galleria, pagina Instagram, c
     npm run build     # genera dist/
     npm run data      # rigenera src/data/poems.json (da eseguire dopo ogni modifica ai file sotto)
 
+## La mappa
+La pagina `/mappa/` mostra le poesie come una costellazione: ogni punto e' una poesia (colore = movimento), ogni cerchio dorato un tema. Si aggiorna da sola con i dati; c'e' anche la versione in elenco per chi usa la tastiera o uno screen reader.
+
+## 0. Le poesie del profilo (99 in totale)
+Il libro ha 48 poesie; sul profilo ce ne sono altre 51 tue, ora nel sito come **I Versi Nuovi**. `scripts/nuove_poesie.py <cartella-esportazione>` le importa dall'esportazione di Instagram e **separa da solo** i post che non sono tuoi (poesie firmate da altri autori, citazioni, doppioni): finiscono in `src/data/escluse.json` e non vengono pubblicati. Titoli, temi e citazioni dei versi nuovi sono proposte automatiche: correggile in `src/data/overrides.json`.
+
 ## 1. Instagram: collegamento continuo (consigliato)
 Ogni giorno il sito controlla il profilo, importa i post nuovi (immagine, data e **indirizzo del post**), li abbina alle poesie con un punteggio di affidabilita' e si ripubblica da solo. Gli abbinamenti gia' fatti non cambiano; le correzioni a mano in `scripts/instagram-links.csv` (colonna `url` = indirizzo del post) hanno la precedenza. I post che non assomigliano a nessuna poesia compaiono in `/instagram/` come "Ultimi post" con il link a Instagram.
 
@@ -25,8 +31,13 @@ Prova in locale: `IG_TOKEN=... python3 scripts/sync_instagram.py && npm run data
 3. Apri `scripts/instagram-links.csv`, incolla l'indirizzo di ogni post (l'esportazione non lo contiene) e correggi gli abbinamenti dubbi. Poi `npm run data`.
 Ogni poesia mostra il suo post e il pulsante "Copia didascalia con link"; la pagina `/instagram/` porta da ogni immagine alla poesia; `/p/NUMERO/` è il link breve da usare in bio e didascalie.
 
-## 2. I brani
-`npm run musica` crea `scripts/musica.csv`: un brano per poesia con il suo stato d'animo accanto. Compila `spotify` / `youtube` con l'indirizzo **diretto** del brano (attiva il lettore integrato), scrivi in `perche` il legame con la poesia e metti `si` in `verificato`. Poi `npm run data`. I brani attuali sono quelli del sito v1, non ancora verificati uno per uno.
+## 2. I brani: partono da soli dentro la pagina
+- Ogni poesia con un indirizzo YouTube **diretto** in `scripts/musica.csv` (colonna `youtube`) mostra un lettore nella pagina: il brano parte da solo, con dissolvenza, e ci sono i tasti **Pausa**, **Volume** e **Spegni la musica** (la scelta resta anche nelle altre poesie). Con "Leggi in silenzio" la musica si ferma.
+- **Limite dei browser:** l'audio parte da solo solo dopo che il lettore ha toccato qualcosa nel sito (per esempio entrando da una poesia all'altra). Se qualcuno apre direttamente la pagina di una poesia, il brano parte senza audio e compare "Attiva l'audio".
+- I **link di ricerca** (Spotify, YouTube Music, Apple Music, SoundCloud) restano sempre sotto il lettore.
+- `python3 scripts/proponi_brani.py` propone un brano per ogni poesia che ne e' priva, partendo dal testo (sono 50 proposte su 53 poesie, da ascoltare e confermare o cambiare in `musica.csv`; 3 poesie restano senza proposta).
+- **Trovare gli indirizzi:** a mano (colonna `cerca_youtube` del foglio) oppure in automatico con una chiave gratuita YouTube Data API v3 salvata come segreto `YT_API_KEY` (Settings > Secrets and variables > Actions), poi Actions > "Trova i brani su YouTube" > Run workflow. Scarta cover, dal vivo e tutorial; i casi incerti restano vuoti.
+- La musica non si puo' esportare da Instagram (non e' un file ed e' su licenza): il lettore usa i video ufficiali.
 
 ## 3. Commenti e note
 - **Note private**: funzionano già, restano nel browser del lettore.
@@ -42,3 +53,6 @@ Ogni poesia mostra il suo post e il pulsante "Copia didascalia con link"; la pag
 
 ## Pubblicazione
 Settings → Pages → Source: GitHub Actions; ogni push su `main` pubblica.
+
+## Aggiornare il sito con GitHub Desktop
+1. Sostituisci i file nella cartella del repository (tieni `.git`). 2. In GitHub Desktop scrivi un titolo e premi Commit to main. 3. Premi Push origin. 4. Controlla Actions: verde = online.

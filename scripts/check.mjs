@@ -11,7 +11,7 @@ if (!fs.existsSync(DIST)) { console.error('Cartella dist mancante: esegui prima 
 
 // 1) dati
 const D = JSON.parse(read(path.join(ROOT, 'src/data/poems.json'))), P = D.poems;
-if (P.length !== 48) warn(`Le poesie sono ${P.length}, non 48.`);
+if (P.length < 48) warn(`Le poesie sono solo ${P.length}.`);
 const seen = new Set();
 for (const p of P) { if (seen.has(p.slug)) err(`Indirizzo duplicato: ${p.slug}`); seen.add(p.slug); if (!p.testo?.trim() || !p.titolo?.trim()) err(`Poesia ${p.id} senza titolo o testo.`); }
 

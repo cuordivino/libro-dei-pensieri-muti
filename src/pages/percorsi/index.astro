@@ -2,10 +2,10 @@
 import Base from '../../layouts/Base.astro';
 import { meta, u, themeCounts, THEME_INTRO } from '../../lib/data';
 ---
-<Base title="Percorsi di lettura" description="Letture guidate attraverso le poesie: quattro movimenti e percorsi per tema, dalla memoria alla rinascita." current="percorsi/">
+<Base title="Percorsi di lettura" description="Letture guidate attraverso le poesie: i movimenti e i percorsi per tema, dalla memoria alla rinascita." current="percorsi/">
   <h1>Percorsi</h1>
   <p>Un percorso mette in fila le poesie che parlano della stessa cosa. Si comincia da una e si prosegue, come in un sentiero.</p>
-  <h2>I quattro movimenti</h2>
+  <h2>I movimenti</h2>
   <div class="moods">{meta.moods.map((m) => <a class="mood" style={`--c:${m.color}`} href={u(`percorsi/${m.key}/`)}><h3>{m.name}</h3><p>{m.desc}</p></a>)}</div>
   <h2>Per tema</h2>
   <div class="moods" style="--c:var(--bronze)">{themeCounts.map((t) => <a class="mood" href={u(`percorsi/${t.key}/`)}><h3>{t.label}</h3><p>{THEME_INTRO[t.key]}</p><p class="ui" style="margin-top:.6rem">{t.n} poesie</p></a>)}</div>

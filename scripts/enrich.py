@@ -14,14 +14,14 @@ THEMES = {
  'perdita': r'\bperdu|\bperd[oe]|\blutto|\bmort|\baddio|\bsvanis|\bcadut|\bcade',
  'silenzio': r'\bsilenz|\bmut[oai]\b|\btaci|\bquiet|\bzitt',
  'assenza': r'\bassenz|\bvuot|\bniente|\bnulla\b|\bmanc|\blontan|\bindifferen',
- 'tempo': r'\btemp[oi]\b|\battim|\bgiorn|\banni\b|\bsera\b|\beterno|\bistante|\bora\b',
+ 'tempo': r'\btemp[oi]\b|\battim|\banni\b|\bsera\b|\beterno|\bistante',
  'mare': r'\bmare\b|\bond[ae]\b|\bacqua|\briva\b|\bnaufrag|\bannego|\bmarin|\bimmers',
  'notte': r'\bnott|\bbuio|\bombra|\bluna\b|\bstell|\btenebr|\boscur|\bnebbia',
  'attesa': r'\battend|\battes|\baspett|\bsperan|\bancora\b',
  'rinascita': r'\brinasc|\briaffior|\brisorg|\balba\b|\bgermogl|\britrov|\briassapor|\bluce|\blevigh',
 }
 THEME_LABEL = {k: k.capitalize() for k in THEMES}
-EMO = {'ombra': ['malinconia','apatia','abisso'], 'ardore': ['desiderio','furore','estasi'],
+EMO = {'nuovi': [], 'ombra': ['malinconia','apatia','abisso'], 'ardore': ['desiderio','furore','estasi'],
        'maschera': ['disprezzo','ribellione','ironia'], 'quiete': ['pace','ritrovo','consolazione']}
 STOP = set('come sono nella nelle degli delle dello della tutti tutto questo questa quello quella ancora anche senza dentro verso quando mentre perché poi così dove ogni molto altro altra altri sotto sopra fino tra fra più mio mia miei mie suo sua loro cosa solo ormai'.split())
 slug = lambda s: re.sub(r'[^a-z0-9]+','-', s.lower().replace('à','a').replace('è','e').replace('é','e').replace('ì','i').replace('ò','o').replace('ù','u')).strip('-')
@@ -38,8 +38,17 @@ if not os.path.exists(csvp):
 mcsv = f'{HERE}/musica.csv'
 mus = {r['id']: r for r in csv.DictReader(open(mcsv, encoding='utf-8'))} if os.path.exists(mcsv) else {}
 
+def roman(n):
+    out = ''
+    for v, r in [(1000,'M'),(900,'CM'),(500,'D'),(400,'CD'),(100,'C'),(90,'XC'),(50,'L'),(40,'XL'),(10,'X'),(9,'IX'),(5,'V'),(4,'IV'),(1,'I')]:
+        while n >= v: out += r; n -= v
+    return out
+nup = f'{ROOT}/src/data/nuove-poesie.json'
+nuove = json.load(open(nup, encoding='utf-8')) if os.path.exists(nup) else []
+all_src = list(src['poems']) + [{'id': n['id'], 'title': n['titolo'], 'number': roman(n['id']), 'sectionTitle': 'Versi nuovi', 'macroMoodKey': 'nuovi',
+    'macroMood': 'I Versi Nuovi', 'moodPrimary': '', 'moodSense': '', 'text': n['testo'], 'image': 'images/poesia_1.jpg', 'musicTrack': '', 'musicArtist': ''} for n in nuove]
 poems = []
-for p in src['poems']:
+for p in all_src:
     t = p['text']; low = t.lower()
     sc = {k: len(re.findall(rx, low)) for k, rx in THEMES.items()}
     themes = [k for k, v in sorted(sc.items(), key=lambda x: -x[1]) if v][:3] or ['silenzio']
@@ -50,12 +59,13 @@ for p in src['poems']:
     d = {
       'id': p['id'], 'slug': f"{p['id']:02d}-{slug(p['title'])}", 'numero': p['number'], 'titolo': p['title'].lower().capitalize(),
       'sezione': p['sectionTitle'].capitalize(), 'mood': p['macroMoodKey'], 'moodNome': p['macroMood'],
-      'statoAnimo': p['moodPrimary'], 'senso': p['moodSense'], 'testo': t,
+      'statoAnimo': p['moodPrimary'], 'senso': p['moodSense'] or None, 'testo': t,
       'immagine': p['image'].split('/')[-1], 'data': None,
       'temi': themes, 'emozioni': EMO[p['macroMoodKey']], 'parole': kw, 'citazione': quote.strip(),
-      'musica': {'brano': p['musicTrack'], 'artista': p['musicArtist'], 'verificato': False,
+      'musica': ({'brano': p['musicTrack'], 'artista': p['musicArtist'], 'verificato': False,
                  'spotify': f'https://open.spotify.com/search/{q}', 'youtube': f'https://music.youtube.com/search?q={q}',
-                 'apple': f'https://music.apple.com/it/search?term={q}', 'soundcloud': f'https://soundcloud.com/search?q={q}', 'audio': None},
+                 'apple': f'https://music.apple.com/it/search?term={q}', 'soundcloud': f'https://soundcloud.com/search?q={q}', 'audio': None}
+                 if p['musicTrack'] else {'brano': '', 'artista': '', 'verificato': False, 'spotify': '', 'youtube': '', 'apple': '', 'soundcloud': '', 'audio': None}),
       'instagram': None, 'auto': ['temi','parole','citazione'],
     }
     ig = igmap.get(str(p['id']))
@@ -74,6 +84,9 @@ for p in src['poems']:
         d['musica']['verificato'] = m.get('verificato', '').strip().lower() in ('si', 'sì', 'x', '1')
         d['musica']['perche'] = m.get('perche', '').strip() or None
     d.update(ovr.get(str(p['id']), {}))
+    mm = d['musica']; qq = up.quote(f"{mm['brano']} {mm['artista']}".strip())
+    mm['cerca'] = ({'spotify': f'https://open.spotify.com/search/{qq}', 'youtube': f'https://music.youtube.com/search?q={qq}',
+                    'apple': f'https://music.apple.com/it/search?term={qq}', 'soundcloud': f'https://soundcloud.com/search?q={qq}'} if mm['brano'] else None)
     poems.append(d)
 
 feat = lambda p: {'t:'+x for x in p['temi']} | {'t:'+x for x in p['temi']} | set(p['parole']) | {p['mood']}
@@ -86,6 +99,6 @@ m = src['meta']
 meta = {'titolo': m['title'].title().replace('Dei','dei'), 'sottotitolo': m['subtitle'], 'autore': m['authorPseudonym'],
         'instagram': m['instagramUrl'], 'handle': m['instagramHandle'], 'opera': m['originalWork'],
         'prefazione': m.get('preface'), 'notaAutore': m.get('authorNote'),
-        'moods': [x for x in m['macroMoods'] if x['key'] != 'all'], 'temi': THEME_LABEL}
+        'moods': [x for x in m['macroMoods'] if x['key'] != 'all'] + ([{'key': 'nuovi', 'name': 'I Versi Nuovi', 'desc': 'Le poesie nate dopo il libro e pubblicate su Instagram: ancora senza stanza, ancora calde.', 'color': '#8fa6a0'}] if nuove else []), 'temi': THEME_LABEL}
 json.dump({'meta': meta, 'poems': poems}, open(f'{ROOT}/src/data/poems.json','w',encoding='utf-8'), ensure_ascii=False, indent=1)
 print(len(poems), 'poesie;', Counter(t for p in poems for t in p['temi']))

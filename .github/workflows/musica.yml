@@ -1,0 +1,20 @@
+name: Trova i brani su YouTube
+on: workflow_dispatch
+permissions: { contents: write, actions: write }
+jobs:
+  brani:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - run: pip install pillow
+      - name: Cerca i video
+        env: { YT_API_KEY: '${{ secrets.YT_API_KEY }}' }
+        run: python3 scripts/musica_risolvi.py && python3 scripts/enrich.py
+      - name: Salva e pubblica
+        env: { GH_TOKEN: '${{ github.token }}' }
+        run: |
+          git config user.name "trova-brani"; git config user.email "actions@users.noreply.github.com"
+          git add -A scripts/musica.csv src/data
+          if git diff --cached --quiet; then echo "Nessuna novità."; else git commit -m "Collegamenti ai brani"; git push; gh workflow run pages.yml; fi

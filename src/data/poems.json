@@ -36,6 +36,12 @@
     "icon": "🕯️",
     "color": "#e8d8be",
     "desc": "La moka del mattino, la brace che riarde, il paco e solenne pensare lungo il sentiero lineare."
+   },
+   {
+    "key": "nuovi",
+    "name": "I Versi Nuovi",
+    "desc": "Le poesie nate dopo il libro e pubblicate su Instagram: ancora senza stanza, ancora calde.",
+    "color": "#8fa6a0"
    }
   ],
   "temi": {
@@ -92,7 +98,13 @@
     "apple": "https://music.apple.com/it/search?term=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
     "soundcloud": "https://soundcloud.com/search?q=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+     "youtube": "https://music.youtube.com/search?q=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+     "apple": "https://music.apple.com/it/search?term=On%20the%20Nature%20of%20Daylight%20Max%20Richter",
+     "soundcloud": "https://soundcloud.com/search?q=On%20the%20Nature%20of%20Daylight%20Max%20Richter"
+    }
    },
    "instagram": {
     "url": null,
@@ -108,8 +120,8 @@
    "miniatura": "ig/01-800.webp",
    "correlate": [
     42,
-    40,
-    43
+    90,
+    40
    ]
   },
   {
@@ -150,7 +162,13 @@
     "apple": "https://music.apple.com/it/search?term=Nuvole%20Bianche%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Nuvole%20Bianche%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Nuvole%20Bianche%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Nuvole%20Bianche%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Nuvole%20Bianche%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Nuvole%20Bianche%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -165,9 +183,9 @@
    ],
    "miniatura": "ig/02-800.webp",
    "correlate": [
+    69,
     8,
-    40,
-    6
+    40
    ]
   },
   {
@@ -210,7 +228,13 @@
     "apple": "https://music.apple.com/it/search?term=Apocalypse%20Cigarettes%20After%20Sex",
     "soundcloud": "https://soundcloud.com/search?q=Apocalypse%20Cigarettes%20After%20Sex",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Apocalypse%20Cigarettes%20After%20Sex",
+     "youtube": "https://music.youtube.com/search?q=Apocalypse%20Cigarettes%20After%20Sex",
+     "apple": "https://music.apple.com/it/search?term=Apocalypse%20Cigarettes%20After%20Sex",
+     "soundcloud": "https://soundcloud.com/search?q=Apocalypse%20Cigarettes%20After%20Sex"
+    }
    },
    "instagram": {
     "url": null,
@@ -225,9 +249,9 @@
    ],
    "miniatura": "ig/03-800.webp",
    "correlate": [
+    65,
     29,
-    39,
-    47
+    39
    ]
   },
   {
@@ -244,8 +268,7 @@
    "immagine": "ig/04.jpg",
    "data": "2026-04-04",
    "temi": [
-    "perdita",
-    "tempo"
+    "perdita"
    ],
    "emozioni": [
     "malinconia",
@@ -269,7 +292,13 @@
     "apple": "https://music.apple.com/it/search?term=Written%20on%20the%20Sky%20Max%20Richter",
     "soundcloud": "https://soundcloud.com/search?q=Written%20on%20the%20Sky%20Max%20Richter",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Written%20on%20the%20Sky%20Max%20Richter",
+     "youtube": "https://music.youtube.com/search?q=Written%20on%20the%20Sky%20Max%20Richter",
+     "apple": "https://music.apple.com/it/search?term=Written%20on%20the%20Sky%20Max%20Richter",
+     "soundcloud": "https://soundcloud.com/search?q=Written%20on%20the%20Sky%20Max%20Richter"
+    }
    },
    "instagram": {
     "url": null,
@@ -285,8 +314,8 @@
    "miniatura": "ig/04-800.webp",
    "correlate": [
     7,
-    40,
-    22
+    69,
+    40
    ]
   },
   {
@@ -304,8 +333,8 @@
    "data": "2026-05-20",
    "temi": [
     "assenza",
-    "tempo",
-    "amore"
+    "amore",
+    "tempo"
    ],
    "emozioni": [
     "malinconia",
@@ -329,7 +358,13 @@
     "apple": "https://music.apple.com/it/search?term=Near%20Light%20%C3%93lafur%20Arnalds",
     "soundcloud": "https://soundcloud.com/search?q=Near%20Light%20%C3%93lafur%20Arnalds",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Near%20Light%20%C3%93lafur%20Arnalds",
+     "youtube": "https://music.youtube.com/search?q=Near%20Light%20%C3%93lafur%20Arnalds",
+     "apple": "https://music.apple.com/it/search?term=Near%20Light%20%C3%93lafur%20Arnalds",
+     "soundcloud": "https://soundcloud.com/search?q=Near%20Light%20%C3%93lafur%20Arnalds"
+    }
    },
    "instagram": {
     "url": null,
@@ -344,9 +379,9 @@
    ],
    "miniatura": "ig/05-800.webp",
    "correlate": [
-    44,
-    40,
-    43
+    67,
+    62,
+    44
    ]
   },
   {
@@ -387,7 +422,13 @@
     "apple": "https://music.apple.com/it/search?term=Una%20Mattina%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Una%20Mattina%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Una%20Mattina%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Una%20Mattina%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Una%20Mattina%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Una%20Mattina%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -402,9 +443,9 @@
    ],
    "miniatura": "ig/06-800.webp",
    "correlate": [
+    71,
     43,
-    36,
-    8
+    36
    ]
   },
   {
@@ -421,8 +462,7 @@
    "immagine": "ig/07.jpg",
    "data": "2026-04-13",
    "temi": [
-    "perdita",
-    "tempo"
+    "perdita"
    ],
    "emozioni": [
     "malinconia",
@@ -446,7 +486,13 @@
     "apple": "https://music.apple.com/it/search?term=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
     "soundcloud": "https://soundcloud.com/search?q=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+     "youtube": "https://music.youtube.com/search?q=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+     "apple": "https://music.apple.com/it/search?term=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin",
+     "soundcloud": "https://soundcloud.com/search?q=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin"
+    }
    },
    "instagram": {
     "url": null,
@@ -461,9 +507,9 @@
    ],
    "miniatura": "ig/07-800.webp",
    "correlate": [
+    90,
     4,
-    40,
-    22
+    69
    ]
   },
   {
@@ -506,7 +552,13 @@
     "apple": "https://music.apple.com/it/search?term=Experience%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Experience%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Experience%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Experience%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Experience%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Experience%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -522,8 +574,8 @@
    "miniatura": "ig/08-800.webp",
    "correlate": [
     36,
-    6,
-    2
+    59,
+    69
    ]
   },
   {
@@ -565,7 +617,13 @@
     "apple": "https://music.apple.com/it/search?term=Familiar%20Agnes%20Obel",
     "soundcloud": "https://soundcloud.com/search?q=Familiar%20Agnes%20Obel",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Familiar%20Agnes%20Obel",
+     "youtube": "https://music.youtube.com/search?q=Familiar%20Agnes%20Obel",
+     "apple": "https://music.apple.com/it/search?term=Familiar%20Agnes%20Obel",
+     "soundcloud": "https://soundcloud.com/search?q=Familiar%20Agnes%20Obel"
+    }
    },
    "instagram": {
     "url": null,
@@ -624,7 +682,13 @@
     "apple": "https://music.apple.com/it/search?term=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
     "soundcloud": "https://soundcloud.com/search?q=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+     "youtube": "https://music.youtube.com/search?q=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+     "apple": "https://music.apple.com/it/search?term=Gymnop%C3%A9die%20No.%201%20Erik%20Satie",
+     "soundcloud": "https://soundcloud.com/search?q=Gymnop%C3%A9die%20No.%201%20Erik%20Satie"
+    }
    },
    "instagram": {
     "url": null,
@@ -684,7 +748,13 @@
     "apple": "https://music.apple.com/it/search?term=Says%20Nils%20Frahm",
     "soundcloud": "https://soundcloud.com/search?q=Says%20Nils%20Frahm",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Says%20Nils%20Frahm",
+     "youtube": "https://music.youtube.com/search?q=Says%20Nils%20Frahm",
+     "apple": "https://music.apple.com/it/search?term=Says%20Nils%20Frahm",
+     "soundcloud": "https://soundcloud.com/search?q=Says%20Nils%20Frahm"
+    }
    },
    "instagram": {
     "url": null,
@@ -699,9 +769,9 @@
    ],
    "miniatura": "ig/11-800.webp",
    "correlate": [
+    59,
     36,
-    29,
-    13
+    29
    ]
   },
   {
@@ -743,7 +813,13 @@
     "apple": "https://music.apple.com/it/search?term=Saman%20%C3%93lafur%20Arnalds",
     "soundcloud": "https://soundcloud.com/search?q=Saman%20%C3%93lafur%20Arnalds",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Saman%20%C3%93lafur%20Arnalds",
+     "youtube": "https://music.youtube.com/search?q=Saman%20%C3%93lafur%20Arnalds",
+     "apple": "https://music.apple.com/it/search?term=Saman%20%C3%93lafur%20Arnalds",
+     "soundcloud": "https://soundcloud.com/search?q=Saman%20%C3%93lafur%20Arnalds"
+    }
    },
    "instagram": {
     "url": null,
@@ -802,7 +878,13 @@
     "apple": "https://music.apple.com/it/search?term=Divenire%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Divenire%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Divenire%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Divenire%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Divenire%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Divenire%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -860,7 +942,13 @@
     "apple": "https://music.apple.com/it/search?term=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
     "soundcloud": "https://soundcloud.com/search?q=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+     "youtube": "https://music.youtube.com/search?q=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+     "apple": "https://music.apple.com/it/search?term=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt",
+     "soundcloud": "https://soundcloud.com/search?q=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt"
+    }
    },
    "instagram": {
     "url": null,
@@ -918,7 +1006,13 @@
     "apple": "https://music.apple.com/it/search?term=Komorebi%20Fabrizio%20Paterlini",
     "soundcloud": "https://soundcloud.com/search?q=Komorebi%20Fabrizio%20Paterlini",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Komorebi%20Fabrizio%20Paterlini",
+     "youtube": "https://music.youtube.com/search?q=Komorebi%20Fabrizio%20Paterlini",
+     "apple": "https://music.apple.com/it/search?term=Komorebi%20Fabrizio%20Paterlini",
+     "soundcloud": "https://soundcloud.com/search?q=Komorebi%20Fabrizio%20Paterlini"
+    }
    },
    "instagram": {
     "url": null,
@@ -976,7 +1070,13 @@
     "apple": "https://music.apple.com/it/search?term=Riverside%20Agnes%20Obel",
     "soundcloud": "https://soundcloud.com/search?q=Riverside%20Agnes%20Obel",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Riverside%20Agnes%20Obel",
+     "youtube": "https://music.youtube.com/search?q=Riverside%20Agnes%20Obel",
+     "apple": "https://music.apple.com/it/search?term=Riverside%20Agnes%20Obel",
+     "soundcloud": "https://soundcloud.com/search?q=Riverside%20Agnes%20Obel"
+    }
    },
    "instagram": {
     "url": null,
@@ -1034,7 +1134,13 @@
     "apple": "https://music.apple.com/it/search?term=Sunset%20Lover%20Petit%20Biscuit",
     "soundcloud": "https://soundcloud.com/search?q=Sunset%20Lover%20Petit%20Biscuit",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Sunset%20Lover%20Petit%20Biscuit",
+     "youtube": "https://music.youtube.com/search?q=Sunset%20Lover%20Petit%20Biscuit",
+     "apple": "https://music.apple.com/it/search?term=Sunset%20Lover%20Petit%20Biscuit",
+     "soundcloud": "https://soundcloud.com/search?q=Sunset%20Lover%20Petit%20Biscuit"
+    }
    },
    "instagram": {
     "url": null,
@@ -1049,9 +1155,9 @@
    ],
    "miniatura": "ig/17-800.webp",
    "correlate": [
-    47,
-    46,
-    45
+    58,
+    57,
+    47
    ]
   },
   {
@@ -1094,7 +1200,13 @@
     "apple": "https://music.apple.com/it/search?term=Leaves%20Ben%20Lukas%20Boysen",
     "soundcloud": "https://soundcloud.com/search?q=Leaves%20Ben%20Lukas%20Boysen",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Leaves%20Ben%20Lukas%20Boysen",
+     "youtube": "https://music.youtube.com/search?q=Leaves%20Ben%20Lukas%20Boysen",
+     "apple": "https://music.apple.com/it/search?term=Leaves%20Ben%20Lukas%20Boysen",
+     "soundcloud": "https://soundcloud.com/search?q=Leaves%20Ben%20Lukas%20Boysen"
+    }
    },
    "instagram": {
     "url": null,
@@ -1109,9 +1221,9 @@
    ],
    "miniatura": "ig/18-800.webp",
    "correlate": [
+    81,
     45,
-    25,
-    23
+    25
    ]
   },
   {
@@ -1154,7 +1266,13 @@
     "apple": "https://music.apple.com/it/search?term=Time%20Hans%20Zimmer",
     "soundcloud": "https://soundcloud.com/search?q=Time%20Hans%20Zimmer",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Time%20Hans%20Zimmer",
+     "youtube": "https://music.youtube.com/search?q=Time%20Hans%20Zimmer",
+     "apple": "https://music.apple.com/it/search?term=Time%20Hans%20Zimmer",
+     "soundcloud": "https://soundcloud.com/search?q=Time%20Hans%20Zimmer"
+    }
    },
    "instagram": {
     "url": null,
@@ -1169,8 +1287,8 @@
    ],
    "miniatura": "ig/19-800.webp",
    "correlate": [
+    81,
     25,
-    24,
     23
    ]
   },
@@ -1213,7 +1331,13 @@
     "apple": "https://music.apple.com/it/search?term=Daylight%20David%20Kushner",
     "soundcloud": "https://soundcloud.com/search?q=Daylight%20David%20Kushner",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Daylight%20David%20Kushner",
+     "youtube": "https://music.youtube.com/search?q=Daylight%20David%20Kushner",
+     "apple": "https://music.apple.com/it/search?term=Daylight%20David%20Kushner",
+     "soundcloud": "https://soundcloud.com/search?q=Daylight%20David%20Kushner"
+    }
    },
    "instagram": {
     "url": null,
@@ -1229,8 +1353,8 @@
    "miniatura": "ig/20-800.webp",
    "correlate": [
     21,
-    22,
-    42
+    63,
+    22
    ]
   },
   {
@@ -1273,7 +1397,13 @@
     "apple": "https://music.apple.com/it/search?term=I%27ll%20Keep%20Coming%20Low%20Roar",
     "soundcloud": "https://soundcloud.com/search?q=I%27ll%20Keep%20Coming%20Low%20Roar",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/I%27ll%20Keep%20Coming%20Low%20Roar",
+     "youtube": "https://music.youtube.com/search?q=I%27ll%20Keep%20Coming%20Low%20Roar",
+     "apple": "https://music.apple.com/it/search?term=I%27ll%20Keep%20Coming%20Low%20Roar",
+     "soundcloud": "https://soundcloud.com/search?q=I%27ll%20Keep%20Coming%20Low%20Roar"
+    }
    },
    "instagram": {
     "url": null,
@@ -1289,8 +1419,8 @@
    "miniatura": "ig/21-800.webp",
    "correlate": [
     20,
-    45,
-    22
+    49,
+    45
    ]
   },
   {
@@ -1332,7 +1462,13 @@
     "apple": "https://music.apple.com/it/search?term=Svefn-g-englar%20Sigur%20R%C3%B3s",
     "soundcloud": "https://soundcloud.com/search?q=Svefn-g-englar%20Sigur%20R%C3%B3s",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Svefn-g-englar%20Sigur%20R%C3%B3s",
+     "youtube": "https://music.youtube.com/search?q=Svefn-g-englar%20Sigur%20R%C3%B3s",
+     "apple": "https://music.apple.com/it/search?term=Svefn-g-englar%20Sigur%20R%C3%B3s",
+     "soundcloud": "https://soundcloud.com/search?q=Svefn-g-englar%20Sigur%20R%C3%B3s"
+    }
    },
    "instagram": {
     "url": null,
@@ -1392,7 +1528,13 @@
     "apple": "https://music.apple.com/it/search?term=Weightless%20Marconi%20Union",
     "soundcloud": "https://soundcloud.com/search?q=Weightless%20Marconi%20Union",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Weightless%20Marconi%20Union",
+     "youtube": "https://music.youtube.com/search?q=Weightless%20Marconi%20Union",
+     "apple": "https://music.apple.com/it/search?term=Weightless%20Marconi%20Union",
+     "soundcloud": "https://soundcloud.com/search?q=Weightless%20Marconi%20Union"
+    }
    },
    "instagram": {
     "url": null,
@@ -1407,8 +1549,8 @@
    ],
    "miniatura": "ig/23-800.webp",
    "correlate": [
+    78,
     25,
-    24,
     19
    ]
   },
@@ -1426,7 +1568,6 @@
    "immagine": "ig/24.jpg",
    "data": "2026-03-08",
    "temi": [
-    "tempo",
     "amore",
     "attesa"
    ],
@@ -1452,7 +1593,13 @@
     "apple": "https://music.apple.com/it/search?term=Petricor%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Petricor%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Petricor%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Petricor%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Petricor%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Petricor%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -1467,9 +1614,9 @@
    ],
    "miniatura": "ig/24-800.webp",
    "correlate": [
+    39,
     23,
-    19,
-    45
+    19
    ]
   },
   {
@@ -1512,7 +1659,13 @@
     "apple": "https://music.apple.com/it/search?term=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
     "soundcloud": "https://soundcloud.com/search?q=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+     "youtube": "https://music.youtube.com/search?q=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+     "apple": "https://music.apple.com/it/search?term=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen",
+     "soundcloud": "https://soundcloud.com/search?q=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen"
+    }
    },
    "instagram": {
     "url": null,
@@ -1527,9 +1680,9 @@
    ],
    "miniatura": "ig/25-800.webp",
    "correlate": [
+    51,
     34,
-    23,
-    19
+    23
    ]
   },
   {
@@ -1571,7 +1724,13 @@
     "apple": "https://music.apple.com/it/search?term=River%20Flows%20in%20You%20Yiruma",
     "soundcloud": "https://soundcloud.com/search?q=River%20Flows%20in%20You%20Yiruma",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/River%20Flows%20in%20You%20Yiruma",
+     "youtube": "https://music.youtube.com/search?q=River%20Flows%20in%20You%20Yiruma",
+     "apple": "https://music.apple.com/it/search?term=River%20Flows%20in%20You%20Yiruma",
+     "soundcloud": "https://soundcloud.com/search?q=River%20Flows%20in%20You%20Yiruma"
+    }
    },
    "instagram": {
     "url": null,
@@ -1607,7 +1766,7 @@
    "temi": [
     "memoria",
     "amore",
-    "tempo"
+    "rinascita"
    ],
    "emozioni": [
     "pace",
@@ -1631,7 +1790,13 @@
     "apple": "https://music.apple.com/it/search?term=The%20Night%20Fabrizio%20Paterlini",
     "soundcloud": "https://soundcloud.com/search?q=The%20Night%20Fabrizio%20Paterlini",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/The%20Night%20Fabrizio%20Paterlini",
+     "youtube": "https://music.youtube.com/search?q=The%20Night%20Fabrizio%20Paterlini",
+     "apple": "https://music.apple.com/it/search?term=The%20Night%20Fabrizio%20Paterlini",
+     "soundcloud": "https://soundcloud.com/search?q=The%20Night%20Fabrizio%20Paterlini"
+    }
    },
    "instagram": {
     "url": null,
@@ -1646,9 +1811,9 @@
    ],
    "miniatura": "ig/27-800.webp",
    "correlate": [
-    38,
     41,
-    30
+    38,
+    31
    ]
   },
   {
@@ -1689,7 +1854,13 @@
     "apple": "https://music.apple.com/it/search?term=Breathe%20T%C3%A9l%C3%A9popmusik",
     "soundcloud": "https://soundcloud.com/search?q=Breathe%20T%C3%A9l%C3%A9popmusik",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Breathe%20T%C3%A9l%C3%A9popmusik",
+     "youtube": "https://music.youtube.com/search?q=Breathe%20T%C3%A9l%C3%A9popmusik",
+     "apple": "https://music.apple.com/it/search?term=Breathe%20T%C3%A9l%C3%A9popmusik",
+     "soundcloud": "https://soundcloud.com/search?q=Breathe%20T%C3%A9l%C3%A9popmusik"
+    }
    },
    "instagram": {
     "url": null,
@@ -1706,7 +1877,7 @@
    "correlate": [
     44,
     38,
-    46
+    58
    ]
   },
   {
@@ -1748,7 +1919,13 @@
     "apple": "https://music.apple.com/it/search?term=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -1765,7 +1942,7 @@
    "correlate": [
     47,
     9,
-    39
+    49
    ]
   },
   {
@@ -1808,7 +1985,13 @@
     "apple": "https://music.apple.com/it/search?term=Particles%20%C3%93lafur%20Arnalds",
     "soundcloud": "https://soundcloud.com/search?q=Particles%20%C3%93lafur%20Arnalds",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Particles%20%C3%93lafur%20Arnalds",
+     "youtube": "https://music.youtube.com/search?q=Particles%20%C3%93lafur%20Arnalds",
+     "apple": "https://music.apple.com/it/search?term=Particles%20%C3%93lafur%20Arnalds",
+     "soundcloud": "https://soundcloud.com/search?q=Particles%20%C3%93lafur%20Arnalds"
+    }
    },
    "instagram": {
     "url": null,
@@ -1824,8 +2007,8 @@
    "miniatura": "ig/30-800.webp",
    "correlate": [
     38,
-    32,
-    27
+    66,
+    32
    ]
   },
   {
@@ -1867,7 +2050,13 @@
     "apple": "https://music.apple.com/it/search?term=Avril%2014th%20Aphex%20Twin",
     "soundcloud": "https://soundcloud.com/search?q=Avril%2014th%20Aphex%20Twin",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Avril%2014th%20Aphex%20Twin",
+     "youtube": "https://music.youtube.com/search?q=Avril%2014th%20Aphex%20Twin",
+     "apple": "https://music.apple.com/it/search?term=Avril%2014th%20Aphex%20Twin",
+     "soundcloud": "https://soundcloud.com/search?q=Avril%2014th%20Aphex%20Twin"
+    }
    },
    "instagram": {
     "url": null,
@@ -1882,9 +2071,9 @@
    ],
    "miniatura": "ig/31-800.webp",
    "correlate": [
-    42,
-    41,
-    35
+    27,
+    55,
+    42
    ]
   },
   {
@@ -1927,7 +2116,13 @@
     "apple": "https://music.apple.com/it/search?term=Light%20of%20the%20Seven%20Ramin%20Djawadi",
     "soundcloud": "https://soundcloud.com/search?q=Light%20of%20the%20Seven%20Ramin%20Djawadi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Light%20of%20the%20Seven%20Ramin%20Djawadi",
+     "youtube": "https://music.youtube.com/search?q=Light%20of%20the%20Seven%20Ramin%20Djawadi",
+     "apple": "https://music.apple.com/it/search?term=Light%20of%20the%20Seven%20Ramin%20Djawadi",
+     "soundcloud": "https://soundcloud.com/search?q=Light%20of%20the%20Seven%20Ramin%20Djawadi"
+    }
    },
    "instagram": {
     "url": null,
@@ -1943,8 +2138,8 @@
    "miniatura": "ig/32-800.webp",
    "correlate": [
     30,
-    38,
-    36
+    89,
+    38
    ]
   },
   {
@@ -1987,7 +2182,13 @@
     "apple": "https://music.apple.com/it/search?term=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
     "soundcloud": "https://soundcloud.com/search?q=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+     "youtube": "https://music.youtube.com/search?q=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+     "apple": "https://music.apple.com/it/search?term=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds",
+     "soundcloud": "https://soundcloud.com/search?q=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds"
+    }
    },
    "instagram": {
     "url": null,
@@ -2003,8 +2204,8 @@
    "miniatura": "ig/33-800.webp",
    "correlate": [
     41,
-    44,
-    28
+    50,
+    27
    ]
   },
   {
@@ -2021,9 +2222,9 @@
    "immagine": "ig/34.jpg",
    "data": "2026-04-24",
    "temi": [
-    "tempo",
     "silenzio",
-    "assenza"
+    "assenza",
+    "tempo"
    ],
    "emozioni": [
     "pace",
@@ -2047,7 +2248,13 @@
     "apple": "https://music.apple.com/it/search?term=Flora%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Flora%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Flora%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Flora%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Flora%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Flora%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -2062,9 +2269,9 @@
    ],
    "miniatura": "ig/34-800.webp",
    "correlate": [
+    51,
     35,
-    25,
-    46
+    25
    ]
   },
   {
@@ -2081,8 +2288,8 @@
    "immagine": "ig/35.jpg",
    "data": "2026-02-10",
    "temi": [
-    "tempo",
     "assenza",
+    "tempo",
     "notte"
    ],
    "emozioni": [
@@ -2107,7 +2314,13 @@
     "apple": "https://music.apple.com/it/search?term=Golden%20Hour%20JVKE",
     "soundcloud": "https://soundcloud.com/search?q=Golden%20Hour%20JVKE",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Golden%20Hour%20JVKE",
+     "youtube": "https://music.youtube.com/search?q=Golden%20Hour%20JVKE",
+     "apple": "https://music.apple.com/it/search?term=Golden%20Hour%20JVKE",
+     "soundcloud": "https://soundcloud.com/search?q=Golden%20Hour%20JVKE"
+    }
    },
    "instagram": {
     "url": null,
@@ -2122,8 +2335,8 @@
    ],
    "miniatura": "ig/35-800.webp",
    "correlate": [
-    41,
     34,
+    94,
     46
    ]
   },
@@ -2166,7 +2379,13 @@
     "apple": "https://music.apple.com/it/search?term=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
     "soundcloud": "https://soundcloud.com/search?q=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+     "youtube": "https://music.youtube.com/search?q=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+     "apple": "https://music.apple.com/it/search?term=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra",
+     "soundcloud": "https://soundcloud.com/search?q=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra"
+    }
    },
    "instagram": null,
    "auto": [
@@ -2177,8 +2396,8 @@
    "miniatura": "poesia_36.jpg",
    "correlate": [
     40,
-    39,
-    11
+    59,
+    39
    ]
   },
   {
@@ -2219,7 +2438,13 @@
     "apple": "https://music.apple.com/it/search?term=Oltremare%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Oltremare%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Oltremare%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Oltremare%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Oltremare%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Oltremare%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -2268,7 +2493,7 @@
     "lento",
     "liberi"
    ],
-   "citazione": "rivedo, nello scorrere lento dei giorni",
+   "citazione": "divampa il desiderio di primer mattino",
    "musica": {
     "brano": "Vivaldi Recomposed: Spring 1",
     "artista": "Max Richter",
@@ -2278,7 +2503,13 @@
     "apple": "https://music.apple.com/it/search?term=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
     "soundcloud": "https://soundcloud.com/search?q=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+     "youtube": "https://music.youtube.com/search?q=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+     "apple": "https://music.apple.com/it/search?term=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter",
+     "soundcloud": "https://soundcloud.com/search?q=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter"
+    }
    },
    "instagram": {
     "url": null,
@@ -2293,9 +2524,9 @@
    ],
    "miniatura": "ig/38-800.webp",
    "correlate": [
-    27,
     44,
-    28
+    28,
+    81
    ]
   },
   {
@@ -2338,7 +2569,13 @@
     "apple": "https://music.apple.com/it/search?term=Midnight%20City%20%28Acoustic%29%20M83",
     "soundcloud": "https://soundcloud.com/search?q=Midnight%20City%20%28Acoustic%29%20M83",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Midnight%20City%20%28Acoustic%29%20M83",
+     "youtube": "https://music.youtube.com/search?q=Midnight%20City%20%28Acoustic%29%20M83",
+     "apple": "https://music.apple.com/it/search?term=Midnight%20City%20%28Acoustic%29%20M83",
+     "soundcloud": "https://soundcloud.com/search?q=Midnight%20City%20%28Acoustic%29%20M83"
+    }
    },
    "instagram": {
     "url": null,
@@ -2354,8 +2591,8 @@
    "miniatura": "ig/39-800.webp",
    "correlate": [
     47,
-    36,
-    29
+    65,
+    36
    ]
   },
   {
@@ -2388,15 +2625,21 @@
    ],
    "citazione": "il tempo del fiato ha rotto il suo inchino",
    "musica": {
-    "brano": "Sleeping at Last",
-    "artista": "Saturn",
+    "brano": "Saturn",
+    "artista": "Sleeping At Last",
     "verificato": false,
     "spotify": "https://open.spotify.com/search/Sleeping%20at%20Last%20Saturn",
     "youtube": "https://music.youtube.com/search?q=Sleeping%20at%20Last%20Saturn",
     "apple": "https://music.apple.com/it/search?term=Sleeping%20at%20Last%20Saturn",
     "soundcloud": "https://soundcloud.com/search?q=Sleeping%20at%20Last%20Saturn",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Saturn%20Sleeping%20At%20Last",
+     "youtube": "https://music.youtube.com/search?q=Saturn%20Sleeping%20At%20Last",
+     "apple": "https://music.apple.com/it/search?term=Saturn%20Sleeping%20At%20Last",
+     "soundcloud": "https://soundcloud.com/search?q=Saturn%20Sleeping%20At%20Last"
+    }
    },
    "instagram": {
     "url": null,
@@ -2431,7 +2674,6 @@
    "data": "2025-12-14",
    "temi": [
     "memoria",
-    "tempo",
     "rinascita"
    ],
    "emozioni": [
@@ -2456,7 +2698,13 @@
     "apple": "https://music.apple.com/it/search?term=A%20Walk%20Tycho",
     "soundcloud": "https://soundcloud.com/search?q=A%20Walk%20Tycho",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/A%20Walk%20Tycho",
+     "youtube": "https://music.youtube.com/search?q=A%20Walk%20Tycho",
+     "apple": "https://music.apple.com/it/search?term=A%20Walk%20Tycho",
+     "soundcloud": "https://soundcloud.com/search?q=A%20Walk%20Tycho"
+    }
    },
    "instagram": {
     "url": null,
@@ -2471,8 +2719,8 @@
    ],
    "miniatura": "ig/41-800.webp",
    "correlate": [
+    50,
     33,
-    35,
     27
    ]
   },
@@ -2515,7 +2763,13 @@
     "apple": "https://music.apple.com/it/search?term=Fly%20Ludovico%20Einaudi",
     "soundcloud": "https://soundcloud.com/search?q=Fly%20Ludovico%20Einaudi",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Fly%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Fly%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Fly%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Fly%20Ludovico%20Einaudi"
+    }
    },
    "instagram": {
     "url": null,
@@ -2530,9 +2784,9 @@
    ],
    "miniatura": "ig/42-800.webp",
    "correlate": [
+    76,
     1,
-    47,
-    44
+    90
    ]
   },
   {
@@ -2574,7 +2828,13 @@
     "apple": "https://music.apple.com/it/search?term=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
     "soundcloud": "https://soundcloud.com/search?q=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+     "youtube": "https://music.youtube.com/search?q=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+     "apple": "https://music.apple.com/it/search?term=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29",
+     "soundcloud": "https://soundcloud.com/search?q=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29"
+    }
    },
    "instagram": {
     "url": null,
@@ -2589,9 +2849,9 @@
    ],
    "miniatura": "ig/43-800.webp",
    "correlate": [
+    51,
     6,
-    36,
-    26
+    36
    ]
   },
   {
@@ -2624,15 +2884,15 @@
    ],
    "citazione": "il piacere del viaggio, il tempo",
    "musica": {
-    "brano": "Solemn Path",
-    "artista": "Cuordivino Soundtrack",
+    "brano": "",
+    "artista": "",
     "verificato": false,
-    "spotify": "https://open.spotify.com/search/Solemn%20Path%20Cuordivino%20Soundtrack",
-    "youtube": "https://music.youtube.com/search?q=Solemn%20Path%20Cuordivino%20Soundtrack",
-    "apple": "https://music.apple.com/it/search?term=Solemn%20Path%20Cuordivino%20Soundtrack",
-    "soundcloud": "https://soundcloud.com/search?q=Solemn%20Path%20Cuordivino%20Soundtrack",
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
     "audio": null,
-    "perche": null
+    "cerca": null
    },
    "instagram": {
     "url": null,
@@ -2649,7 +2909,7 @@
    "correlate": [
     28,
     38,
-    46
+    58
    ]
   },
   {
@@ -2690,7 +2950,13 @@
     "apple": "https://music.apple.com/it/search?term=The%20Winner%20Is%20Mychael%20Danna",
     "soundcloud": "https://soundcloud.com/search?q=The%20Winner%20Is%20Mychael%20Danna",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/The%20Winner%20Is%20Mychael%20Danna",
+     "youtube": "https://music.youtube.com/search?q=The%20Winner%20Is%20Mychael%20Danna",
+     "apple": "https://music.apple.com/it/search?term=The%20Winner%20Is%20Mychael%20Danna",
+     "soundcloud": "https://soundcloud.com/search?q=The%20Winner%20Is%20Mychael%20Danna"
+    }
    },
    "instagram": {
     "url": null,
@@ -2705,9 +2971,9 @@
    ],
    "miniatura": "ig/45-800.webp",
    "correlate": [
+    58,
     21,
-    18,
-    44
+    18
    ]
   },
   {
@@ -2748,7 +3014,13 @@
     "apple": "https://music.apple.com/it/search?term=An%20Ending%20%28Ascent%29%20Brian%20Eno",
     "soundcloud": "https://soundcloud.com/search?q=An%20Ending%20%28Ascent%29%20Brian%20Eno",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/An%20Ending%20%28Ascent%29%20Brian%20Eno",
+     "youtube": "https://music.youtube.com/search?q=An%20Ending%20%28Ascent%29%20Brian%20Eno",
+     "apple": "https://music.apple.com/it/search?term=An%20Ending%20%28Ascent%29%20Brian%20Eno",
+     "soundcloud": "https://soundcloud.com/search?q=An%20Ending%20%28Ascent%29%20Brian%20Eno"
+    }
    },
    "instagram": {
     "url": null,
@@ -2806,7 +3078,13 @@
     "apple": "https://music.apple.com/it/search?term=Redemption%20Zack%20Hemsey",
     "soundcloud": "https://soundcloud.com/search?q=Redemption%20Zack%20Hemsey",
     "audio": null,
-    "perche": null
+    "perche": null,
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Redemption%20Zack%20Hemsey",
+     "youtube": "https://music.youtube.com/search?q=Redemption%20Zack%20Hemsey",
+     "apple": "https://music.apple.com/it/search?term=Redemption%20Zack%20Hemsey",
+     "soundcloud": "https://soundcloud.com/search?q=Redemption%20Zack%20Hemsey"
+    }
    },
    "instagram": {
     "url": null,
@@ -2823,7 +3101,7 @@
    "correlate": [
     9,
     16,
-    29
+    65
    ]
   },
   {
@@ -2856,15 +3134,15 @@
    ],
    "citazione": "vorrei urlare in silenzio,",
    "musica": {
-    "brano": "Versi Muti",
-    "artista": "Refuso di Verso Theme",
+    "brano": "",
+    "artista": "",
     "verificato": false,
-    "spotify": "https://open.spotify.com/search/Versi%20Muti%20Refuso%20di%20Verso%20Theme",
-    "youtube": "https://music.youtube.com/search?q=Versi%20Muti%20Refuso%20di%20Verso%20Theme",
-    "apple": "https://music.apple.com/it/search?term=Versi%20Muti%20Refuso%20di%20Verso%20Theme",
-    "soundcloud": "https://soundcloud.com/search?q=Versi%20Muti%20Refuso%20di%20Verso%20Theme",
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
     "audio": null,
-    "perche": null
+    "cerca": null
    },
    "instagram": {
     "url": null,
@@ -2882,6 +3160,3094 @@
     36,
     26,
     25
+   ]
+  },
+  {
+   "id": 49,
+   "slug": "49-pensiero",
+   "numero": "XLIX",
+   "titolo": "Pensiero",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "ardente e furente\nin ogni luogo del tempo\ne della mente,\npervade il mio senno\nad ogni tuo singolo cenno.\n\nl’occhio del mare\nridona piacere e sgomento\nil pensiero mai morto\nsi gonfia ad ogni singolo morso\n\nvorrei librare\ncome merlo ferito\nbeccando in quel nido\nnon ancora svanito",
+   "immagine": "ig/49.jpg",
+   "data": "2025-12-15",
+   "temi": [
+    "perdita",
+    "tempo",
+    "mare"
+   ],
+   "emozioni": [],
+   "parole": [
+    "singolo",
+    "ardente",
+    "furente",
+    "luogo",
+    "tempo"
+   ],
+   "citazione": "si gonfia ad ogni singolo morso",
+   "musica": {
+    "brano": "Sæglópur",
+    "artista": "Sigur Rós",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama mare, perdita.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/S%C3%A6gl%C3%B3pur%20Sigur%20R%C3%B3s",
+     "youtube": "https://music.youtube.com/search?q=S%C3%A6gl%C3%B3pur%20Sigur%20R%C3%B3s",
+     "apple": "https://music.apple.com/it/search?term=S%C3%A6gl%C3%B3pur%20Sigur%20R%C3%B3s",
+     "soundcloud": "https://soundcloud.com/search?q=S%C3%A6gl%C3%B3pur%20Sigur%20R%C3%B3s"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nPensiero\n\nardente e furente \nin ogni luogo del tempo \ne della mente, \npervade il mio senno\nad ogni tuo singolo cenno.\n\nl’occhio del mare \nridona piacere e sgomento\nil pensiero mai morto \nsi gonfia ad ogni singolo morso\n\nvorrei librare\ncome merlo ferito \nbeccando in quel nido \n"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/49-800.webp",
+   "correlate": [
+    21,
+    58,
+    57
+   ]
+  },
+  {
+   "id": 50,
+   "slug": "50-un-pensiero",
+   "numero": "L",
+   "titolo": "Un pensiero",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "un pensiero\nprofondo e leggero,\navvolge la mente\ndi bianco la carne s’é tinta\nin un immobile e freddo tormento\n\nricordi e parole avvolgon la mente,\nimpetuosa la falce che miete le teste\npassando leggera ha lasciato il presente.\n\nun magone fendente e duro nel petto\nlascia sconvolto, nel più nero risveglio\n\nnon piango e non parlo,\nracchiuso nel petto\nun dolore profondo\n\nil giorno è già nuovo\ne la luce riappare,\nla vita di chi resta\nrimane presente.",
+   "immagine": "ig/50.jpg",
+   "data": "2025-12-16",
+   "temi": [
+    "memoria",
+    "rinascita"
+   ],
+   "emozioni": [],
+   "parole": [
+    "profondo",
+    "mente",
+    "presente",
+    "petto",
+    "pensiero"
+   ],
+   "citazione": "ricordi e parole avvolgon la mente,",
+   "musica": {
+    "brano": "Famous Blue Raincoat",
+    "artista": "Leonard Cohen",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama perdita, memoria.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Famous%20Blue%20Raincoat%20Leonard%20Cohen",
+     "youtube": "https://music.youtube.com/search?q=Famous%20Blue%20Raincoat%20Leonard%20Cohen",
+     "apple": "https://music.apple.com/it/search?term=Famous%20Blue%20Raincoat%20Leonard%20Cohen",
+     "soundcloud": "https://soundcloud.com/search?q=Famous%20Blue%20Raincoat%20Leonard%20Cohen"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nun pensiero \nprofondo e leggero, \navvolge la mente\ndi bianco la carne s’é tinta \nin un immobile e freddo tormento \n\nricordi e parole avvolgon la mente,\nimpetuosa la falce che miete le teste \npassando leggera ha lasciato il presente.\n\nun magone fendente e duro nel petto \nlascia"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/50-800.webp",
+   "correlate": [
+    41,
+    76,
+    63
+   ]
+  },
+  {
+   "id": 51,
+   "slug": "51-non-placa-sete",
+   "numero": "LI",
+   "titolo": "Non placa sete",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "Non placa sete\nSovrumano silenzio\nD’inquieti sensi\n\nL’incedere del tempo\nIncrina ossa e certezze\nVoci spezzate\n\nS’insinuano nel vento\nTenaci e lievi\nNarrano d’ombre e luci\n\nDi parole lontane\n_mela e cannella_\nNel sentire il profumo\n\nRespiro_Attendo\nContemplando e amando(ti)\nIn uni(verso)\n\n_Sconosciuto_\n\ndeliartemisia",
+   "immagine": "ig/51.jpg",
+   "data": "2025-12-16",
+   "temi": [
+    "silenzio",
+    "assenza",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "placa",
+    "sovrumano",
+    "silenzio",
+    "inquieti",
+    "sensi"
+   ],
+   "citazione": "Contemplando e amando(ti)",
+   "musica": {
+    "brano": "Fuori dal mondo",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama assenza, silenzio.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Fuori%20dal%20mondo%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Fuori%20dal%20mondo%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Fuori%20dal%20mondo%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Fuori%20dal%20mondo%20Ludovico%20Einaudi"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nNon placa sete\nSovrumano silenzio\nD’inquieti sensi\n\nL’incedere del tempo\nIncrina ossa e certezze\nVoci spezzate\n\nS’insinuano nel vento\nTenaci e lievi\nNarrano d’ombre e luci\n\nDi parole lontane\n_mela e cannella_\nNel sentire il profumo\n\nRespiro_Attendo\nContemplando e amando(ti)\nIn"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/51-800.webp",
+   "correlate": [
+    43,
+    88,
+    87
+   ]
+  },
+  {
+   "id": 52,
+   "slug": "52-demoni-e-meraviglie",
+   "numero": "LII",
+   "titolo": "Demoni e meraviglie",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "Demoni e meraviglie\nVenti e maree\nLontano di già’ si e’ ritirato il mare\nE tu\nCome alga dolcemente accarezzata dal vento\nNella sabbia del tuo letto ti agiti sognando\n\nDemoni e meraviglie\nVenti e maree\nLontano di già si e’ ritirato il mare\nMa nei tuoi occhi socchiusi\nDue piccole onde son rimaste\n\nDemoni e meraviglie\nVenti e maree\nDue piccole onde per annegarmi.\n\n(Jacques Prévert )",
+   "immagine": "ig/52.jpg",
+   "data": "2025-12-19",
+   "temi": [
+    "mare",
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "demoni",
+    "meraviglie",
+    "venti",
+    "maree",
+    "lontano"
+   ],
+   "citazione": "Lontano di già’ si e’ ritirato il mare",
+   "musica": {
+    "brano": "Porz Goret",
+    "artista": "Yann Tiersen",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama mare, quiete.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Porz%20Goret%20Yann%20Tiersen",
+     "youtube": "https://music.youtube.com/search?q=Porz%20Goret%20Yann%20Tiersen",
+     "apple": "https://music.apple.com/it/search?term=Porz%20Goret%20Yann%20Tiersen",
+     "soundcloud": "https://soundcloud.com/search?q=Porz%20Goret%20Yann%20Tiersen"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nDemoni e meraviglie \nVenti e maree \nLontano di già’ si e’ ritirato il mare \nE tu \nCome alga dolcemente accarezzata dal vento \nNella sabbia del tuo letto ti agiti sognando\n\nDemoni e meraviglie \nVenti e maree \nLontano di già si e’ ritirato il mare \nMa nei tuoi occhi socchiusi \nD"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/52-800.webp",
+   "correlate": [
+    92,
+    77,
+    91
+   ]
+  },
+  {
+   "id": 53,
+   "slug": "53-nell-anima-immonda-di-un-uomo-imperfetto",
+   "numero": "LIII",
+   "titolo": "Nell’anima immonda di un uomo imperfetto",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "nell’anima immonda di un uomo imperfetto\nristagna maldestro un calore perverso\nnell’intimo cuore dal volto ferito\nritrova vigore il verro di rito\n\nardente passione per niente assopita\nrivede l’alba di della vita assopita\nsoggiace la brace che brucia dormiente,\nsotto la cenere ristagna e brucia la mente",
+   "immagine": "ig/53.jpg",
+   "data": "2025-12-19",
+   "temi": [
+    "rinascita",
+    "amore",
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "ristagna",
+    "assopita",
+    "brucia",
+    "anima",
+    "immonda"
+   ],
+   "citazione": "ardente passione per niente assopita",
+   "musica": {
+    "brano": "Your Hand in Mine",
+    "artista": "Explosions in the Sky",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama amore, rinascita.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Your%20Hand%20in%20Mine%20Explosions%20in%20the%20Sky",
+     "youtube": "https://music.youtube.com/search?q=Your%20Hand%20in%20Mine%20Explosions%20in%20the%20Sky",
+     "apple": "https://music.apple.com/it/search?term=Your%20Hand%20in%20Mine%20Explosions%20in%20the%20Sky",
+     "soundcloud": "https://soundcloud.com/search?q=Your%20Hand%20in%20Mine%20Explosions%20in%20the%20Sky"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nnell’anima immonda di un uomo imperfetto\nristagna maldestro un calore perverso \nnell’intimo cuore dal volto ferito \nritrova vigore il verro di rito\n\nardente passione per niente assopita\nrivede l’alba di della vita assopita\nsoggiace la brace che brucia dormiente,\nsotto la cener"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/53-800.webp",
+   "correlate": [
+    92,
+    63,
+    97
+   ]
+  },
+  {
+   "id": 54,
+   "slug": "54-la-mia-cappella-chiede-conforto",
+   "numero": "LIV",
+   "titolo": "La mia cappella chiede conforto",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "la mia cappella chiede conforto\nbrama la china\ne cerca la figa nell’orto\n\nla mia blasfemia, rigonfia di peccato,\nchiede a te la preghiera\ndella tonaca sul selciato,\nin un inchino perverso senza reato\n\nlode all’essenza\nlode all’ingiuria\nlode all’onore senza pudore\n\nlode a chi si inchina al verso\ne che gode nel piacere perverso\nmai rinnegando il senso dell’ardore\n\nlode a chi ritrova\nl’essenza della libertà\nnel vivere il peccato,\nsenza rinnegare ogni piacere\nin ogni gesto esagerato\n\nche tu sia tenebra o paradiso,\ntu porti sempre la passione\nIl un conforto di redenzione\n\nil peccato induce alla processione\ne io nella tua chiesa voglio peccare\ntrovando la via della follia\nnell’illusione\n\nora, …\nvorrei benedire ogni azione\nche stimola la nostra mente\ncon l’incenso\ned il gemito della passione\n\nora,…\nvorrei vederti con gli occhi in fiamme\nprima della mistificazione\nnell’oblio della penetrazione",
+   "immagine": "ig/54.jpg",
+   "data": "2025-12-27",
+   "temi": [
+    "amore",
+    "notte",
+    "rinascita"
+   ],
+   "emozioni": [],
+   "parole": [
+    "peccato",
+    "chiede",
+    "conforto",
+    "perverso",
+    "essenza"
+   ],
+   "citazione": "che tu sia tenebra o paradiso,",
+   "musica": {
+    "brano": "Requiem: In Paradisum",
+    "artista": "Gabriel Fauré",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama sacro, rinascita.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Requiem%3A%20In%20Paradisum%20Gabriel%20Faur%C3%A9",
+     "youtube": "https://music.youtube.com/search?q=Requiem%3A%20In%20Paradisum%20Gabriel%20Faur%C3%A9",
+     "apple": "https://music.apple.com/it/search?term=Requiem%3A%20In%20Paradisum%20Gabriel%20Faur%C3%A9",
+     "soundcloud": "https://soundcloud.com/search?q=Requiem%3A%20In%20Paradisum%20Gabriel%20Faur%C3%A9"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nla mia cappella chiede conforto \nbrama la china \ne cerca la figa nell’orto\n\nla mia blasfemia, rigonfia di peccato, \nchiede a te la preghiera\ndella tonaca sul selciato, \nin un inchino perverso senza reato \n\nlode all’essenza  \nlode all’ingiuria\nlode all’onore senza pudore \n \nlod"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/54-800.webp",
+   "correlate": [
+    66,
+    59,
+    53
+   ]
+  },
+  {
+   "id": 55,
+   "slug": "55-e-sento-e-vedo",
+   "numero": "LV",
+   "titolo": "E sento, e vedo",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "e sento, e vedo,\ne grido la mia rabbia al vento,\ne ansimo, e rido, e godo, e vivo.\n\nnel piacere perenne,\nnel mio mondo ribelle,\nio sento il fruscio del vento\nscivolare nel più dolce tormento.\n\nannuso l’odore del muschio\nil fetore della carne dormiente\nassaporo il perenne sorriso\ndi quel bimbo che mai grande divenne.\n\nnel piacere di un lento respiro, io … vivo.",
+   "immagine": "ig/55.jpg",
+   "data": "2026-01-16",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "sento",
+    "vento",
+    "piacere",
+    "perenne",
+    "grido"
+   ],
+   "citazione": "nel piacere di un lento respiro, io … vivo.",
+   "musica": {
+    "brano": "Povera patria",
+    "artista": "Franco Battiato",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Povera%20patria%20Franco%20Battiato",
+     "youtube": "https://music.youtube.com/search?q=Povera%20patria%20Franco%20Battiato",
+     "apple": "https://music.apple.com/it/search?term=Povera%20patria%20Franco%20Battiato",
+     "soundcloud": "https://soundcloud.com/search?q=Povera%20patria%20Franco%20Battiato"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ne sento, e vedo, \ne grido la mia rabbia al vento,\ne ansimo, e rido, e godo, e vivo.\n\nnel piacere perenne,\nnel mio mondo ribelle,\nio sento il fruscio del vento \nscivolare nel più dolce tormento.\n\nannuso l’odore del muschio \nil fetore della carne dormiente \nassaporo il perenne s"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/55-800.webp",
+   "correlate": [
+    96,
+    79,
+    87
+   ]
+  },
+  {
+   "id": 56,
+   "slug": "56-insisto-impavido-ed-indomito",
+   "numero": "LVI",
+   "titolo": "Insisto, impavido ed indomito",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "insisto, impavido ed indomito\nsull’incile del dirupo che porta alla follia\nlo vedo, e lo sento\nbramire e vezzeggiare\ndimenarsi e contorcersi\n\nnel fondo dei miei pensieri,\nlui grida e divampa\nretto e ferreo in ogni piccolo passo\nlentamente mi ha scorto\ned ora mi si porge innanzi\n\nil demone che finora avevo coccolato\nassopito e denigrato\nè in me, ora\nvivo e rinato\npresente e possente\n\nnello specchio dei miei desideri\nlui si è svegliato\nnella follia che segue il tormento\nlui ha spalancato anche l’ultimo\nripensamento\n\nbrucia e consuma\ndivampa e guaisce\nin me presente, viaggia e mai assopisce\n\nnel poeta che ha spalancato la sua mente\nla bestia, ha divorato il corpo ed ora …\nlo sente",
+   "immagine": "ig/56.jpg",
+   "data": "2026-02-06",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "follia",
+    "divampa",
+    "presente",
+    "spalancato",
+    "insisto"
+   ],
+   "citazione": "nello specchio dei miei desideri",
+   "musica": {
+    "brano": "Angel",
+    "artista": "Massive Attack",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama carne, abisso, rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Angel%20Massive%20Attack",
+     "youtube": "https://music.youtube.com/search?q=Angel%20Massive%20Attack",
+     "apple": "https://music.apple.com/it/search?term=Angel%20Massive%20Attack",
+     "soundcloud": "https://soundcloud.com/search?q=Angel%20Massive%20Attack"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ninsisto, impavido ed indomito \nsull’incile del dirupo che porta alla follia \nlo vedo, e lo sento\nbramire e vezzeggiare\ndimenarsi e contorcersi \n\nnel fondo dei miei pensieri, \nlui grida e divampa \nretto e ferreo in ogni piccolo passo\nlentamente mi ha scorto \ned ora mi si porge "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/56-800.webp",
+   "correlate": [
+    98,
+    89,
+    62
+   ]
+  },
+  {
+   "id": 57,
+   "slug": "57-rovinosamente",
+   "numero": "LVII",
+   "titolo": "Rovinosamente",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "ardo e remo\nsudo e mi dispero\nrigiro, rivolto e ramingo\nvago per il tempo\nnel rudere respiro\n\nannaspo, rigonfio e ritorto\ndel vento rigurgito\nil mio vivere distorto\n\nmordo come un cane\nil mio retaggio di rospo\nche dal nascere girino\nsi tramutò in porco\n\nnel perverso, lurido\ne rovinoso gesto\ndi rendere tutto\nrugiada e castrato di agnello.",
+   "immagine": "ig/57.jpg",
+   "data": "2026-02-16",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "dispero",
+    "rigiro",
+    "rivolto",
+    "ramingo",
+    "tempo"
+   ],
+   "citazione": "rugiada e castrato di agnello.",
+   "musica": {
+    "brano": "Pyramid Song",
+    "artista": "Radiohead",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Pyramid%20Song%20Radiohead",
+     "youtube": "https://music.youtube.com/search?q=Pyramid%20Song%20Radiohead",
+     "apple": "https://music.apple.com/it/search?term=Pyramid%20Song%20Radiohead",
+     "soundcloud": "https://soundcloud.com/search?q=Pyramid%20Song%20Radiohead"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nRovinosamente \n\nardo e remo \nsudo e mi dispero\nrigiro, rivolto e ramingo \nvago per il tempo\nnel rudere respiro \n\nannaspo, rigonfio e ritorto \ndel vento rigurgito \nil mio vivere distorto \n\nmordo come un cane \nil mio retaggio di rospo \nche dal nascere girino\nsi tramutò in porco "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/57-800.webp",
+   "correlate": [
+    58,
+    81,
+    49
+   ]
+  },
+  {
+   "id": 58,
+   "slug": "58-dono-il-mio-tempo",
+   "numero": "LVIII",
+   "titolo": "Dono il mio tempo",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "… dono il mio tempo\ne la mia follia,\ndono la mia fantasia\ne la mia lealtà\n\nnon sono per tutti,\nnon sono per molti\nsono per quelli\nche sanno vedere\nnelle pieghe i dettagli\nche mi fanno … pensare",
+   "immagine": "ig/58.jpg",
+   "data": "2026-02-18",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "tempo",
+    "follia",
+    "fantasia",
+    "lealtà",
+    "molti"
+   ],
+   "citazione": "che mi fanno … pensare",
+   "musica": {
+    "brano": "Life",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Life%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Life%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Life%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Life%20Ludovico%20Einaudi"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\n… dono il mio tempo \ne la mia follia,\ndono la mia fantasia \ne la mia lealtà \n\nnon sono per tutti,\nnon sono per molti \nsono per quelli \nche sanno vedere\nnelle pieghe i dettagli \nche mi fanno … pensare"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/58-800.webp",
+   "correlate": [
+    45,
+    57,
+    87
+   ]
+  },
+  {
+   "id": 59,
+   "slug": "59-pulsante-riverbero-di-una-mente",
+   "numero": "LIX",
+   "titolo": "Pulsante riverbero di una mente",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "pulsante riverbero di una mente\nche sfugge i miraggi\ndel rumore assordante\n\nnudo tra rovi di spine,\nbramoso di aculei profondi e\nfardelli in un peso disarmante\n\nIl cuore rifugge\nin un’alcova dai pensieri fumanti\nbramando silenzio,\nin un respiro\nansimante\n\nil mio impeto,\ndisadorno di perbenismo\ne compiacimento,\nribolle in un crogiolo di sensazioni\nesaltando solo la fiamma del rigetto\ne il torpore dell’inetto\n\nnel mentre, mi ritrovo…\nsolo,\nnel meticoloso e solitario\nlavoro di affilatura e molatura,\ndella lama tagliente",
+   "immagine": "ig/59.jpg",
+   "data": "2026-04-11",
+   "temi": [
+    "amore",
+    "silenzio",
+    "rinascita"
+   ],
+   "emozioni": [],
+   "parole": [
+    "pulsante",
+    "riverbero",
+    "mente",
+    "sfugge",
+    "miraggi"
+   ],
+   "citazione": "bramoso di aculei profondi e",
+   "musica": {
+    "brano": "Nothing's Gonna Hurt You Baby",
+    "artista": "Cigarettes After Sex",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama amore, carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Nothing%27s%20Gonna%20Hurt%20You%20Baby%20Cigarettes%20After%20Sex",
+     "youtube": "https://music.youtube.com/search?q=Nothing%27s%20Gonna%20Hurt%20You%20Baby%20Cigarettes%20After%20Sex",
+     "apple": "https://music.apple.com/it/search?term=Nothing%27s%20Gonna%20Hurt%20You%20Baby%20Cigarettes%20After%20Sex",
+     "soundcloud": "https://soundcloud.com/search?q=Nothing%27s%20Gonna%20Hurt%20You%20Baby%20Cigarettes%20After%20Sex"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\npulsante riverbero di una mente \nche sfugge i miraggi \ndel rumore assordante \n\nnudo tra rovi di spine,\nbramoso di aculei profondi e \nfardelli in un peso disarmante \n\nIl cuore rifugge \nin un’alcova dai pensieri fumanti\nbramando silenzio, \nin un respiro \nansimante \n\nil mio impet"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/59-800.webp",
+   "correlate": [
+    11,
+    94,
+    89
+   ]
+  },
+  {
+   "id": 60,
+   "slug": "60-si",
+   "numero": "LX",
+   "titolo": "Sì",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "sì …,\nsono il solito porco,\nio sono,\nil rozzo, il perverso,\n\nlo sporco bastardo che\ncerca in ogni situazione\ndi estrapolare dall’intimo\nil suo lato più bieco\ned animalesco\n\ncolui che non ha memore\ne vergogna,\ntimore o ritegno nell’osare\noltre il senso,\noltre il baluardo della ragione\ne del contegno\n\nsono io ..\nche esagera e chiede\nche propone ed indora\nche brucia ogni misericordia\nper un’ostia di peccato indecente\n\nsono io…\nsì, io porco\nche ogni mattina ti cerca e ti brama\nche loda le tue forme e le tue gesta\nche supplica un tozzo di pane\ndi lussuria per saziare almeno in parte\nl’indole immonda ed immorale\nin cui convivo\n\nsì, ebbene sì …\nsono io …\n\nil porco.",
+   "immagine": "ig/60.jpg",
+   "data": "2026-05-21",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "porco",
+    "cerca",
+    "oltre",
+    "solito",
+    "rozzo"
+   ],
+   "citazione": "che ogni mattina ti cerca e ti brama",
+   "musica": {
+    "brano": "",
+    "artista": "",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": null,
+    "cerca": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nsì …, \nsono il solito porco, \nio sono,\nil rozzo, il perverso,\n\nlo sporco bastardo che \ncerca in ogni situazione \ndi estrapolare dall’intimo \nil suo lato più bieco \ned animalesco \n\ncolui che non ha memore \ne vergogna,\ntimore o ritegno nell’osare \noltre il senso,\noltre il baluar"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/60-800.webp",
+   "correlate": [
+    98,
+    89,
+    79
+   ]
+  },
+  {
+   "id": 61,
+   "slug": "61-carne",
+   "numero": "LXI",
+   "titolo": "Carne",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "carne,\nche brama,\ndischiude ogni rosa\ne, dei petali\nrivendica il profumo\ned il velo della sposa\n\nche sgronda,\nin ogni impeto\ndi umana gloria,\nveleno profano e\nrosso della memoria\n\nvendemmia puritana\ne di vana storia\ntra schizzi rosso vermiglio\ne susine di coscia monaca\n\ntu, nuda\napocrifa e socchiusa\nridestasti in me\nil pensiero dell’ingiuria\n\nma nel baluardo\ndel rigurgito e delle pene\nrimasi per sempre\nil più intimo senno\ndel dolore e delle rese",
+   "immagine": "ig/61.jpg",
+   "data": "2026-06-12",
+   "temi": [
+    "memoria",
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "rosso",
+    "carne",
+    "brama",
+    "dischiude",
+    "petali"
+   ],
+   "citazione": "tra schizzi rosso vermiglio",
+   "musica": {
+    "brano": "Oblivion",
+    "artista": "Astor Piazzolla",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama perdita, carne, memoria.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Oblivion%20Astor%20Piazzolla",
+     "youtube": "https://music.youtube.com/search?q=Oblivion%20Astor%20Piazzolla",
+     "apple": "https://music.apple.com/it/search?term=Oblivion%20Astor%20Piazzolla",
+     "soundcloud": "https://soundcloud.com/search?q=Oblivion%20Astor%20Piazzolla"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ncarne, \nche brama, \ndischiude ogni rosa\ne, dei petali \nrivendica il profumo \ned il velo della sposa\n\nche sgronda,\nin ogni impeto \ndi umana gloria,\nveleno profano e \nrosso della memoria \n\nvendemmia puritana\ne di vana storia\ntra schizzi rosso vermiglio\ne susine di coscia monaca "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/61-800.webp",
+   "correlate": [
+    86,
+    98,
+    95
+   ]
+  },
+  {
+   "id": 62,
+   "slug": "62-rimase-reciso",
+   "numero": "LXII",
+   "titolo": "Rimase reciso",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "rimase reciso\ncome filo d’erba\nsul far del mattino\n\nstranito, confuso,\naccorto,\nnel suo fare indeciso\ne nei versi,\ndistorto\n\ninebriato nel miraggio\ndella mente\nche confonde le gesta\ne sveste la serpe\n\nil vespro\nche mendica pene,\nin un riverbero lene,\naffondò il desiderio\nsul giudizio del membro,\nconfondendo il respiro\ncon il veleno di cembro\n\nmiraggio consumato e profano\nche nel rito dello spargere incenso\ninebriò l’aria d’ardore ed unguento",
+   "immagine": "ig/62.jpg",
+   "data": "2026-06-15",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "miraggio",
+    "rimase",
+    "reciso",
+    "mattino",
+    "stranito"
+   ],
+   "citazione": "che nel rito dello spargere incenso",
+   "musica": {
+    "brano": "",
+    "artista": "",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": null,
+    "cerca": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nrimase reciso \ncome filo d’erba \nsul far del mattino \n\nstranito, confuso,\naccorto, \nnel suo fare indeciso\ne nei versi, \ndistorto \n\ninebriato nel miraggio \ndella mente \nche confonde le gesta\ne sveste la serpe \n\nil vespro \nche mendica pene,\nin un riverbero lene,\naffondò il desid"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/62-800.webp",
+   "correlate": [
+    67,
+    98,
+    89
+   ]
+  },
+  {
+   "id": 63,
+   "slug": "63-brucia-nella-mente",
+   "numero": "LXIII",
+   "titolo": "Brucia nella mente",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "brucia nella mente\nil riverbero\ndi un pensiero indecente\n\nl’acume\ndella follia più feconda\nha lasciato il porto\nper inseguire l’onda\n\ndi schiuma,\nin schiuma volante,\nil mio pensiero vola libero\ne distante\n\ndi desiderio,\nin desiderio pressante,\nsolo il mio contegno\nsarà baluardo\nmai prestante\n\nrivendicherò l’idioma\nper portare a spasso\nil mio assioma\n\ncavalcherò la china\nper oltraggiare\nchi non s’inchina\n\nsolo dopo\nlegherò l’ormeggio\ne, in chiave mesta,\nriporrò\nil mio arpeggio",
+   "immagine": "ig/63.jpg",
+   "data": "2026-06-16",
+   "temi": [
+    "amore",
+    "mare"
+   ],
+   "emozioni": [],
+   "parole": [
+    "pensiero",
+    "schiuma",
+    "desiderio",
+    "brucia",
+    "mente"
+   ],
+   "citazione": "il mio pensiero vola libero",
+   "musica": {
+    "brano": "Hammers",
+    "artista": "Nils Frahm",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama rabbia, carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Hammers%20Nils%20Frahm",
+     "youtube": "https://music.youtube.com/search?q=Hammers%20Nils%20Frahm",
+     "apple": "https://music.apple.com/it/search?term=Hammers%20Nils%20Frahm",
+     "soundcloud": "https://soundcloud.com/search?q=Hammers%20Nils%20Frahm"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nbrucia nella mente \nil riverbero \ndi un pensiero indecente\n\nl’acume \ndella follia più feconda \nha lasciato il porto \nper inseguire l’onda \n\ndi schiuma,\nin schiuma volante, \nil mio pensiero vola libero \ne distante \n\ndi desiderio,\nin desiderio pressante,\nsolo il mio contegno \nsa"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/63-800.webp",
+   "correlate": [
+    89,
+    99,
+    65
+   ]
+  },
+  {
+   "id": 64,
+   "slug": "64-me-tace",
+   "numero": "LXIV",
+   "titolo": "Me, tace",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "me, tace\ninvero riverbero\nin un dí\ndi fervore e pace\n\nacquitrino riverso\ndi pensieri rubati\nin un selciato di tarli\ndai giudizi scontati\n\nparco,\nsotto un cielo stellato\nscrutai una luna\ndall’allineamento mancato\n\ne,\ncome un grillo verace\nportai come sempre\nil pensiero in pace",
+   "immagine": "ig/64.jpg",
+   "data": "2026-06-19",
+   "temi": [
+    "notte",
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "invero",
+    "riverbero",
+    "fervore",
+    "acquitrino",
+    "riverso"
+   ],
+   "citazione": "dall’allineamento mancato",
+   "musica": {
+    "brano": "Dream 3 (in the midst of my life)",
+    "artista": "Max Richter",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama notte, quiete.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Dream%203%20%28in%20the%20midst%20of%20my%20life%29%20Max%20Richter",
+     "youtube": "https://music.youtube.com/search?q=Dream%203%20%28in%20the%20midst%20of%20my%20life%29%20Max%20Richter",
+     "apple": "https://music.apple.com/it/search?term=Dream%203%20%28in%20the%20midst%20of%20my%20life%29%20Max%20Richter",
+     "soundcloud": "https://soundcloud.com/search?q=Dream%203%20%28in%20the%20midst%20of%20my%20life%29%20Max%20Richter"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nme, tace \ninvero riverbero \nin un dí \ndi fervore e pace\n\nacquitrino riverso\ndi pensieri rubati\nin un selciato di tarli \ndai giudizi scontati \n\nparco, \nsotto un cielo stellato \nscrutai una luna \ndall’allineamento mancato \n\ne,\ncome un grillo verace \nportai come sempre \nil pensie"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/64-800.webp",
+   "correlate": [
+    91,
+    75,
+    70
+   ]
+  },
+  {
+   "id": 65,
+   "slug": "65-m-e-grata",
+   "numero": "LXV",
+   "titolo": "M’è grata",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "m’è grata\nmia sorte confusa\narguta in un andirivieni\ndi mera arsura\n\nm’è sciolta\nin un grido di rivolta\nla goccia calda\nche riempie il mare\ndi sbuffi, la mia sporta\n\nridesterò l’ardore\nin un vento caldo\ndi passione,\nmeditato inchino\nin un consumato grido\ndel mattino\n\ncavalcherò la chiglia\nin un impeto\nche non sottiglia\nsolcando onde\nin un mare mosso\nsenza fronde e senza griglia\n\nor dunque …\nm’è parca fune\ndi passione e desiderio\n\nche prende ardore\nin un nodo di lussuria\ne vilipendio zelo\n\nmolla gli ormeggi\nè il porto in mesta,\nper alzar le vele\nprima della tempesta",
+   "immagine": "ig/65.jpg",
+   "data": "2026-06-25",
+   "temi": [
+    "mare",
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "grido",
+    "ardore",
+    "passione",
+    "grata",
+    "sorte"
+   ],
+   "citazione": "senza fronde e senza griglia",
+   "musica": {
+    "brano": "Libertango",
+    "artista": "Astor Piazzolla",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama carne, rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Libertango%20Astor%20Piazzolla",
+     "youtube": "https://music.youtube.com/search?q=Libertango%20Astor%20Piazzolla",
+     "apple": "https://music.apple.com/it/search?term=Libertango%20Astor%20Piazzolla",
+     "soundcloud": "https://soundcloud.com/search?q=Libertango%20Astor%20Piazzolla"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nm’è grata \nmia sorte confusa \narguta in un andirivieni \ndi mera arsura \n\nm’è sciolta \nin un grido di rivolta\nla goccia calda \nche riempie il mare \ndi sbuffi, la mia sporta\n\nridesterò l’ardore \nin un vento caldo \ndi passione,\nmeditato inchino\nin un consumato grido\ndel mattino \n"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/65-800.webp",
+   "correlate": [
+    47,
+    63,
+    77
+   ]
+  },
+  {
+   "id": 66,
+   "slug": "66-divarichero",
+   "numero": "LXVI",
+   "titolo": "Divaricherò",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "divaricherò\nle tue ombre\ncon l’amplesso\nche non si nasconde\n\nnel divenire\ndi un vento leggiadro\nalzerò la testa\ncon la bramosia\ndi un segugio randagio\n\nsarò tempesta\nsarò stupore\nsarò il vento\nche travolge con l’ardore\n\nin un brodo di mezza estate\nalzerò il pennone\nnel riverbero che ricuce\ne non tace\n\nin un brivido indecente\nche riversa la flemma audace\nmi ritrovò mendace\ncon me stesso e con la pace\n\nl’impeto disumano e corrotto\nche vilipendia\nla bandiera del mio fondo\nscuoté il mozzo\nrompendo le cime\nprima dello sprofondo\n\ne,\nmi ritrovai infine\nvagabondo nel barlume oscuro\ndel mio pozzo\n\nm’è parca quindi\nla sorte\ne la lagna assorta e limpida\nche ridesta l’impeto\ne lascia aperta anche la morte\n\ncon il vilipendio arguto,\nnel senso di una danza\nsolitario,\nrestai quindi muto\nnel tabernacolo della mia stanza",
+   "immagine": "ig/66.jpg",
+   "data": "2026-06-28",
+   "temi": [
+    "rinascita",
+    "amore",
+    "perdita"
+   ],
+   "emozioni": [],
+   "parole": [
+    "vento",
+    "alzerò",
+    "impeto",
+    "quindi",
+    "divaricherò"
+   ],
+   "citazione": "e lascia aperta anche la morte",
+   "musica": {
+    "brano": "Atmosphere",
+    "artista": "Joy Division",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama perdita, abisso, silenzio.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Atmosphere%20Joy%20Division",
+     "youtube": "https://music.youtube.com/search?q=Atmosphere%20Joy%20Division",
+     "apple": "https://music.apple.com/it/search?term=Atmosphere%20Joy%20Division",
+     "soundcloud": "https://soundcloud.com/search?q=Atmosphere%20Joy%20Division"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ndivaricherò \nle tue ombre \ncon l’amplesso \nche non si nasconde \n\nnel divenire \ndi un vento leggiadro \nalzerò la testa\ncon la bramosia\ndi un segugio randagio \n\nsarò tempesta\nsarò stupore \nsarò il vento \nche travolge con l’ardore \n\nin un brodo di mezza estate \nalzerò il pennone "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/66-800.webp",
+   "correlate": [
+    84,
+    59,
+    54
+   ]
+  },
+  {
+   "id": 67,
+   "slug": "67-in-un-inchino",
+   "numero": "LXVII",
+   "titolo": "In un inchino",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "in un inchino\nsul banco del mio miraggio\ncerco misericordia e passione\nin un tempo caldo di passaggio\n\nche il vento sia\nporta\ndi un cuore ingrato\ne ragione di peccato\n\nimpetuoso,\nil mio essere recondito e confuso\nin un vilipendio di scure e di refuso\nsenza ritegno\ne senza mesta cura\nho cercato legna\nper la mia festa\noltre la clausola\n\nal di vin soggiace la gola arsura\nin un calice di sangue senza cura\ndi testa sempre pura\nsoggiacqui senza vergogna\nnella mia postura",
+   "immagine": "ig/67.jpg",
+   "data": "2026-06-30",
+   "temi": [
+    "amore",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "inchino",
+    "banco",
+    "miraggio",
+    "cerco",
+    "misericordia"
+   ],
+   "citazione": "in un tempo caldo di passaggio",
+   "musica": {
+    "brano": "The Heart Asks Pleasure First",
+    "artista": "Michael Nyman",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama amore, carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/The%20Heart%20Asks%20Pleasure%20First%20Michael%20Nyman",
+     "youtube": "https://music.youtube.com/search?q=The%20Heart%20Asks%20Pleasure%20First%20Michael%20Nyman",
+     "apple": "https://music.apple.com/it/search?term=The%20Heart%20Asks%20Pleasure%20First%20Michael%20Nyman",
+     "soundcloud": "https://soundcloud.com/search?q=The%20Heart%20Asks%20Pleasure%20First%20Michael%20Nyman"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nin un inchino \nsul banco del mio miraggio\ncerco misericordia e passione \nin un tempo caldo di passaggio \n\nche il vento sia \nporta \ndi un cuore ingrato \ne ragione di peccato \n\nimpetuoso, \nil mio essere recondito e confuso\nin un vilipendio di scure e di refuso \nsenza ritegno \ne "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/67-800.webp",
+   "correlate": [
+    86,
+    62,
+    99
+   ]
+  },
+  {
+   "id": 68,
+   "slug": "68-il-pane-e-la-pece",
+   "numero": "LXVIII",
+   "titolo": "Il pane e la pece",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "m’è parca siffatta\ne confusa\nl’indole ingorda\nche incontra l’arsura\n\nmaldestro\nun pensiero supino\nche rivoltò il verbo\nin un mesto inchino\n\nrivendico il diritto\nal pane dei preti\nintinto nella pece\no nel sale al vino dei retti\n\nin un rito confuso e trito\nmercenariamente\nalzai il viso\nridestando solo il senno\nin un atto di sgomento",
+   "immagine": "ig/68.jpg",
+   "data": "2026-07-02",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "parca",
+    "siffatta",
+    "confusa",
+    "indole",
+    "ingorda"
+   ],
+   "citazione": "o nel sale al vino dei retti",
+   "musica": {
+    "brano": "Miserere",
+    "artista": "Gregorio Allegri",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama sacro.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Miserere%20Gregorio%20Allegri",
+     "youtube": "https://music.youtube.com/search?q=Miserere%20Gregorio%20Allegri",
+     "apple": "https://music.apple.com/it/search?term=Miserere%20Gregorio%20Allegri",
+     "soundcloud": "https://soundcloud.com/search?q=Miserere%20Gregorio%20Allegri"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl pane e la pece \n\nm’è parca siffatta \ne confusa \nl’indole ingorda\nche incontra l’arsura\n\nmaldestro \nun pensiero supino \nche rivoltò il verbo \nin un mesto inchino \n\nrivendico il diritto \nal pane dei preti\nintinto nella pece \no nel sale al vino dei retti\n\nin un rito confuso e "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/68-800.webp",
+   "correlate": [
+    96,
+    94,
+    93
+   ]
+  },
+  {
+   "id": 69,
+   "slug": "69-volge-al-meriggio",
+   "numero": "LXIX",
+   "titolo": "Volge al meriggio",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "volge al meriggio\ntra cupidigia e miseria,\nin un vento caldo\ndi rettitudine e stupore,\nil volto calmo\ndi un uomo in fervore\n\nparca la via\ndi rettitudine e rimpianto\nsotto l’ombra di cipressi\ndall’incerto inciampo\n\nsolitudine inquieta\naccompagna tu\nle mie sorti nel divenire\nche di me restan solo\nmeste risposte\ne grigie melanconie\n\nm’è parca quindi\ne siffatta regina\nquell’ombra che dalla chioma s’inchina\nil vespro che del viale resta sovrano\nassottiglia la corsa\ndel mio cammino\nin una giostra da mai rinnegato,\ne puritano",
+   "immagine": "ig/69.jpg",
+   "data": "2026-07-04",
+   "temi": [
+    "notte"
+   ],
+   "emozioni": [],
+   "parole": [
+    "rettitudine",
+    "parca",
+    "ombra",
+    "volge",
+    "meriggio"
+   ],
+   "citazione": "quell’ombra che dalla chioma s’inchina",
+   "musica": {
+    "brano": "Red Right Hand",
+    "artista": "Nick Cave & The Bad Seeds",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama abisso, maschera.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Red%20Right%20Hand%20Nick%20Cave%20%26%20The%20Bad%20Seeds",
+     "youtube": "https://music.youtube.com/search?q=Red%20Right%20Hand%20Nick%20Cave%20%26%20The%20Bad%20Seeds",
+     "apple": "https://music.apple.com/it/search?term=Red%20Right%20Hand%20Nick%20Cave%20%26%20The%20Bad%20Seeds",
+     "soundcloud": "https://soundcloud.com/search?q=Red%20Right%20Hand%20Nick%20Cave%20%26%20The%20Bad%20Seeds"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nvolge al meriggio\ntra cupidigia e miseria,\nin un vento caldo\ndi rettitudine e stupore,\nil volto calmo \ndi un uomo in fervore \n\nparca la via \ndi rettitudine e rimpianto \nsotto l’ombra di cipressi \ndall’incerto inciampo \n\nsolitudine inquieta \naccompagna tu\nle mie sorti nel diven"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/69-800.webp",
+   "correlate": [
+    68,
+    2,
+    64
+   ]
+  },
+  {
+   "id": 70,
+   "slug": "70-di-ipocrisia-e-sibilo",
+   "numero": "LXX",
+   "titolo": "Di ipocrisia e sibilo",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "recondito sospiro\nin un filo di vento\ntu che scivoli nel nulla\nma lasci la mente\nin sgomento\n\nrivesti l’impeto\nnei miei pensieri\nin un mendicare ardito\ndi giubilo e veleni\n\nridesti il mio grido\ndi ipocrisia e sibilo\nmordendomi l’anima\nnell’apice di un ghigno",
+   "immagine": "ig/70.jpg",
+   "data": "2026-07-05",
+   "temi": [
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "recondito",
+    "sospiro",
+    "vento",
+    "scivoli",
+    "nulla"
+   ],
+   "citazione": "nell’apice di un ghigno",
+   "musica": {
+    "brano": "Bocca di rosa",
+    "artista": "Fabrizio De André",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama maschera.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Bocca%20di%20rosa%20Fabrizio%20De%20Andr%C3%A9",
+     "youtube": "https://music.youtube.com/search?q=Bocca%20di%20rosa%20Fabrizio%20De%20Andr%C3%A9",
+     "apple": "https://music.apple.com/it/search?term=Bocca%20di%20rosa%20Fabrizio%20De%20Andr%C3%A9",
+     "soundcloud": "https://soundcloud.com/search?q=Bocca%20di%20rosa%20Fabrizio%20De%20Andr%C3%A9"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ndi ipocrisia e sibilo \n\nrecondito sospiro \nin un filo di vento\ntu che scivoli nel nulla \nma lasci la mente \nin sgomento \n\nrivesti l’impeto \nnei miei pensieri \nin un mendicare ardito \ndi giubilo e veleni\n\nridesti il mio grido \ndi ipocrisia e sibilo \nmordendomi l’anima \nnell’api"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/70-800.webp",
+   "correlate": [
+    91,
+    97,
+    84
+   ]
+  },
+  {
+   "id": 71,
+   "slug": "71-inquieto-il-mio-lenir",
+   "numero": "LXXI",
+   "titolo": "Inquieto il mio lenir",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "inquieto il mio lenir\nin arsure smorte\ntra cicale immonde\ne storte fronde\n\nm’è lesto\nil rigurgito di mente\nche scova il riassopir\ncome passioni spente\n\nsolenne desta il riso\ndi un ghigno un po’ meschino\nche resta intriso\nnella polvere dei calzari\ndi un passo trino",
+   "immagine": "ig/71.jpg",
+   "data": "2026-07-10",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "inquieto",
+    "lenir",
+    "arsure",
+    "smorte",
+    "cicale"
+   ],
+   "citazione": "di un ghigno un po’ meschino",
+   "musica": {
+    "brano": "Lacrimosa",
+    "artista": "Wolfgang Amadeus Mozart",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama sacro.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Lacrimosa%20Wolfgang%20Amadeus%20Mozart",
+     "youtube": "https://music.youtube.com/search?q=Lacrimosa%20Wolfgang%20Amadeus%20Mozart",
+     "apple": "https://music.apple.com/it/search?term=Lacrimosa%20Wolfgang%20Amadeus%20Mozart",
+     "soundcloud": "https://soundcloud.com/search?q=Lacrimosa%20Wolfgang%20Amadeus%20Mozart"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\ninquieto il mio lenir \nin arsure smorte\ntra cicale immonde \ne storte fronde \n\nm’è lesto \nil rigurgito di mente\nche scova il riassopir \ncome passioni spente \n\nsolenne desta il riso \ndi un ghigno un po’ meschino\nche resta intriso \nnella polvere dei calzari\ndi un passo trino"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/71-800.webp",
+   "correlate": [
+    6,
+    96,
+    94
+   ]
+  },
+  {
+   "id": 72,
+   "slug": "72-musa",
+   "numero": "LXXII",
+   "titolo": "Musa",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "che nel tuo vagare metti impiglio\nhai rinchiuso il mio respiro\nnel sibilo del tuo gheriglio\n\nhai preso a morsi il mio veleno\nper sentirlo vibrare sul tuo seno\n\nin un vento caldo di reticenze e oblio\navvolgi il mio riverbero tra le tue gambe\nsenza appiglio\nlasciando scorrere il fiume del tuo umore\nin una tazza dal perverso e viscido\nstupore\n\nverrà il fuoco nel riserbo\nquello che sibila nel tempo\ne nel tormento\nquello che brucia le membra\ne il pensiero\nin un pulsare senza tregua\ne senza senno",
+   "immagine": "ig/72.jpg",
+   "data": "2026-07-12",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "vagare",
+    "metti",
+    "impiglio",
+    "rinchiuso",
+    "respiro"
+   ],
+   "citazione": "quello che sibila nel tempo",
+   "musica": {
+    "brano": "Avalanche",
+    "artista": "Leonard Cohen",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Avalanche%20Leonard%20Cohen",
+     "youtube": "https://music.youtube.com/search?q=Avalanche%20Leonard%20Cohen",
+     "apple": "https://music.apple.com/it/search?term=Avalanche%20Leonard%20Cohen",
+     "soundcloud": "https://soundcloud.com/search?q=Avalanche%20Leonard%20Cohen"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nmusa …\n\nche nel tuo vagare metti impiglio\nhai rinchiuso il mio respiro \nnel sibilo del tuo gheriglio \n\nhai preso a morsi il mio veleno\nper sentirlo vibrare sul tuo seno\n\nin un vento caldo di reticenze e oblio\navvolgi il mio riverbero tra le tue gambe \nsenza appiglio\nlasciando "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/72-800.webp",
+   "correlate": [
+    83,
+    58,
+    57
+   ]
+  },
+  {
+   "id": 73,
+   "slug": "73-respiri-alati",
+   "numero": "LXXIII",
+   "titolo": "Respiri alati",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "mi siedo,\nsul trono dell’ignominia\nin un rito che desta conforto\nassorto ed ancora confuso\nper un senno\nche è ancora contorto\n\nil capo chino medita fiamme\nche con il dito, diventan salme\nla mente vola\nnel seguire rime\nche, come ogni mattina\nrincorrono parole trite\n\nla gente non vede\nla gente non sa\nche il tempo del ritiro\nè per me un rito\nin un reliquiario dai minuti contati\nle mattina per me\ndiventan vespri alati",
+   "immagine": "ig/73.jpg",
+   "data": "2026-07-15",
+   "temi": [
+    "attesa",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "diventan",
+    "mattina",
+    "gente",
+    "siedo",
+    "trono"
+   ],
+   "citazione": "assorto ed ancora confuso",
+   "musica": {
+    "brano": "Spells",
+    "artista": "Nils Frahm",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama attesa, tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Spells%20Nils%20Frahm",
+     "youtube": "https://music.youtube.com/search?q=Spells%20Nils%20Frahm",
+     "apple": "https://music.apple.com/it/search?term=Spells%20Nils%20Frahm",
+     "soundcloud": "https://soundcloud.com/search?q=Spells%20Nils%20Frahm"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nrespiri alati \n\nmi siedo, \nsul trono dell’ignominia \nin un rito che desta conforto \nassorto ed ancora confuso \nper un senno \nche è ancora contorto\n\nil capo chino medita fiamme \nche con il dito, diventan salme \nla mente vola \nnel seguire rime \nche, come ogni mattina \nrincorrono"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/73-800.webp",
+   "correlate": [
+    74,
+    88,
+    85
+   ]
+  },
+  {
+   "id": 74,
+   "slug": "74-il-risveglio-coatto",
+   "numero": "LXXIV",
+   "titolo": "Il risveglio coatto",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "e … parco,\nridesto il mio lesinar comune\naccorto e scosso\ndal suono della menzogna,\ncolei che ogni mattina mette in riga\nsenza vergogna\n\nimpetuoso il suo grido\nche ritorna ad ogni giro\nin un meditato richiamo di ragione\nche porta la vita all’agonia\nsenza stagione\n\nebbro il mio ghigno\ne il rostro sospiro\ntra armi ancora dormienti\ne membra sempre dolenti\n\nma…, il dovere regna sovrano\ne il tempo sempre tiranno,\ndel buondì resta il richiamo\nsempre in ritardo e senza ragione",
+   "immagine": "ig/74.jpg",
+   "data": "2026-07-17",
+   "temi": [
+    "tempo",
+    "attesa"
+   ],
+   "emozioni": [],
+   "parole": [
+    "sempre",
+    "richiamo",
+    "ragione",
+    "parco",
+    "ridesto"
+   ],
+   "citazione": "e il tempo sempre tiranno,",
+   "musica": {
+    "brano": "Fade Into You",
+    "artista": "Mazzy Star",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama attesa.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Fade%20Into%20You%20Mazzy%20Star",
+     "youtube": "https://music.youtube.com/search?q=Fade%20Into%20You%20Mazzy%20Star",
+     "apple": "https://music.apple.com/it/search?term=Fade%20Into%20You%20Mazzy%20Star",
+     "soundcloud": "https://soundcloud.com/search?q=Fade%20Into%20You%20Mazzy%20Star"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl risveglio coatto \n\ne … parco, \nridesto il mio lesinar comune \naccorto e scosso \ndal suono della menzogna,\ncolei che ogni mattina mette in riga\nsenza vergogna \n\nimpetuoso il suo grido\nche ritorna ad ogni giro \nin un meditato richiamo di ragione\nche porta la vita all’agonia\ns"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/74-800.webp",
+   "correlate": [
+    80,
+    73,
+    85
+   ]
+  },
+  {
+   "id": 75,
+   "slug": "75-il-dio-che-grugnisce",
+   "numero": "LXXV",
+   "titolo": "Il dio che grugnisce",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "frusta fendente di un blasfemo riverso\nremore di un crudo e\ndesueto richiamo di bestia\nmorsi la carne e penetrai le membra\n\nsull’altare\nall’inno del dio che grugnisce\nriversai il mio impeto di porco\nsenza briglie e lacci all’ingiuria\n\nimmolai il trofeo di un seno rigonfio\nbagnando la gola con miele di mosto\n\nnel vagabondare del mio rigetto\nil lugubre e frenetico senso del rispetto\nrimase assopito\nnel seme della mia ingordigia\n\nassaporai il dispetto come liberazione\ne il respiro di demone\nin un vento caldo di reticenza\nche brucia  la mente\n\nsenza freni e senza pentimenti\ntutto scivolava nell’inferno\npiù nero e profondo\ntra fiamme che non bruciano",
+   "immagine": "ig/75.jpg",
+   "data": "2026-07-19",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "frusta",
+    "fendente",
+    "blasfemo",
+    "riverso",
+    "remore"
+   ],
+   "citazione": "il lugubre e frenetico senso del rispetto",
+   "musica": {
+    "brano": "Take Me to Church",
+    "artista": "Hozier",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama sacro, carne, rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Take%20Me%20to%20Church%20Hozier",
+     "youtube": "https://music.youtube.com/search?q=Take%20Me%20to%20Church%20Hozier",
+     "apple": "https://music.apple.com/it/search?term=Take%20Me%20to%20Church%20Hozier",
+     "soundcloud": "https://soundcloud.com/search?q=Take%20Me%20to%20Church%20Hozier"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl dio che grugnisce \n\nfrusta fendente di un blasfemo riverso \nremore di un crudo e \ndesueto richiamo di bestia \nmorsi la carne e penetrai le membra \n\nsull’altare\nall’inno del dio che grugnisce \nriversai il mio impeto di porco\nsenza briglie e lacci all’ingiuria \n\nimmolai il tr"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/75-800.webp",
+   "correlate": [
+    96,
+    94,
+    93
+   ]
+  },
+  {
+   "id": 76,
+   "slug": "76-neve-di-lava",
+   "numero": "LXXVI",
+   "titolo": "Neve di lava",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "rivesto con cirri di fumo\nla mia mente che odora di selce,\nalena la mia anima persa\nin un fuoco che lentamente\nmi consuma\n\nnel miraggio della mia redenzione\nio brucio come ceppo\nnel senno della mia ragione\n\ncosa resta di una gerla\ndal ventre sfondato?\n\ncosa resta di un vetro\nche il tempo ha annebbiato?\n\nil vomito delle mie parole\nscende come neve di lava fresca,\nardente e penetrante che brucia\ne dilava senza meta\n\nil piacere del divenire\nè un piacere che appaga\npiù del passato sconquassato\ne morente\n\nmi ridesto nell’oblio\ndel viaggio con il mio tormento\nattonito e confuso\nin un incedere che non vede passo\nma scorge sempre il piacere\ndietro il prossimo palazzo",
+   "immagine": "ig/76.jpg",
+   "data": "2026-07-28",
+   "temi": [
+    "memoria",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "piacere",
+    "resta",
+    "rivesto",
+    "cirri",
+    "mente"
+   ],
+   "citazione": "più del passato sconquassato",
+   "musica": {
+    "brano": "Ancora tu",
+    "artista": "Lucio Battisti",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Ancora%20tu%20Lucio%20Battisti",
+     "youtube": "https://music.youtube.com/search?q=Ancora%20tu%20Lucio%20Battisti",
+     "apple": "https://music.apple.com/it/search?term=Ancora%20tu%20Lucio%20Battisti",
+     "soundcloud": "https://soundcloud.com/search?q=Ancora%20tu%20Lucio%20Battisti"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nNeve di lava\n\nrivesto con cirri di fumo \nla mia mente che odora di selce,\nalena la mia anima persa\nin un fuoco che lentamente \nmi consuma \n\nnel miraggio della mia redenzione\nio brucio come ceppo \nnel senno della mia ragione \n\ncosa resta di una gerla \ndal ventre sfondato?\n\ncosa"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/76-800.webp",
+   "correlate": [
+    88,
+    99,
+    50
+   ]
+  },
+  {
+   "id": 77,
+   "slug": "77-fuorviante-scompiglio",
+   "numero": "LXXVII",
+   "titolo": "Fuorviante scompiglio",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "in un crepitio\ndi melanconico ristagno\nimmerso in un idioma\ndal colore di vento\n\nassaporo il dolce far nulla\nnella nebbia dell’arsura frustante\n\nrecondite le misure e le fatture\nin una bolla dal profumo di mosto\n\nnella postura del mio supino riverso\nho riempito il calice\ndi rosso vermiglio e il bramitico mugugno\n\nl’etere riversa miele di fiori\nin un vespaio di vespe frementi\nil temperare che porta stupore\nridesterà la ragione in un fuorviante\nscompiglio",
+   "immagine": "ig/77.jpg",
+   "data": "2026-08-11",
+   "temi": [
+    "amore",
+    "assenza",
+    "mare"
+   ],
+   "emozioni": [],
+   "parole": [
+    "crepitio",
+    "melanconico",
+    "ristagno",
+    "immerso",
+    "idioma"
+   ],
+   "citazione": "di rosso vermiglio e il bramitico mugugno",
+   "musica": {
+    "brano": "Laura Palmer's Theme",
+    "artista": "Angelo Badalamenti",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama notte, carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Laura%20Palmer%27s%20Theme%20Angelo%20Badalamenti",
+     "youtube": "https://music.youtube.com/search?q=Laura%20Palmer%27s%20Theme%20Angelo%20Badalamenti",
+     "apple": "https://music.apple.com/it/search?term=Laura%20Palmer%27s%20Theme%20Angelo%20Badalamenti",
+     "soundcloud": "https://soundcloud.com/search?q=Laura%20Palmer%27s%20Theme%20Angelo%20Badalamenti"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nfuorviante scompiglio \n\nin un crepitio \ndi melanconico ristagno \nimmerso in un idioma \ndal colore di vento \n\nassaporo il dolce far nulla \nnella nebbia dell’arsura frustante  \n\nrecondite le misure e le fatture \nin una bolla dal profumo di mosto \n\nnella postura del mio supino ri"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/77-800.webp",
+   "correlate": [
+    92,
+    65,
+    63
+   ]
+  },
+  {
+   "id": 78,
+   "slug": "78-religioso-disincantato",
+   "numero": "LXXVIII",
+   "titolo": "Religioso disincantato",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "mi sorreggo,\nappoggiato al bastone del riserbo,\ninquieto lenir maldestro\nin una ritrosia di pudore\n\nbarcollo,\nper scorgere solo l’attimo\ndi un ennesimo e vivido stupore,\nappeso solo al filo\ndel mio malumore\n\nla gente urla e si dimena\nin un’inconsulta preghiera\ne cantilena,\nio osservo in religioso disincanto\nil non senso comune dell’inganno\n\nil ferragosto che tutti portan in dote\nlascia a me\nsolo il silenzio delle mie strofe\n\nin un fuoco redento di mezz’estate\nbarcollo al calice dello spirito più audace\nattendendo solo l’iperbole del miraggio\ncon l’arrivo del prossimo retaggio\n\nhttps://youtu.be/e9dZQelULDk?is=aus3C1oTlH74d4FJ",
+   "immagine": "ig/78.jpg",
+   "data": "2026-08-15",
+   "temi": [
+    "silenzio",
+    "tempo",
+    "attesa"
+   ],
+   "emozioni": [],
+   "parole": [
+    "barcollo",
+    "sorreggo",
+    "appoggiato",
+    "bastone",
+    "riserbo"
+   ],
+   "citazione": "attendendo solo l’iperbole del miraggio",
+   "musica": {
+    "brano": "Lux Aeterna",
+    "artista": "Clint Mansell",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama rabbia, sacro.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Lux%20Aeterna%20Clint%20Mansell",
+     "youtube": "https://music.youtube.com/search?q=Lux%20Aeterna%20Clint%20Mansell",
+     "apple": "https://music.apple.com/it/search?term=Lux%20Aeterna%20Clint%20Mansell",
+     "soundcloud": "https://soundcloud.com/search?q=Lux%20Aeterna%20Clint%20Mansell"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nReligioso disincantato \n\nmi sorreggo, \nappoggiato al bastone del riserbo,\ninquieto lenir maldestro \nin una ritrosia di pudore \n\nbarcollo, \nper scorgere solo l’attimo \ndi un ennesimo e vivido stupore,\nappeso solo al filo \ndel mio malumore\n\nla gente urla e si dimena \nin un’incon"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/78-800.webp",
+   "correlate": [
+    93,
+    74,
+    73
+   ]
+  },
+  {
+   "id": 79,
+   "slug": "79-oltre-il-bardiglio",
+   "numero": "LXXIX",
+   "titolo": "Oltre il bardiglio",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "il vento mi sospirò in un retaggio di neve\nl’indole irrequieta in un brivido di pelle,\nmuta la via che porta al respiro\nnel pomeriggio assolato oltre il bardiglio\n\nin un crepuscolo di clausura e pensieri disadorni\nla mia lingua resta muta,\nin un frastuono di cicale danzanti\n\nil sabba che prima era richiamo di festa\nora resta rinchiuso oltre la finestra,\nscrostando l’eresia dei fardelli\ndal giubilo del mio supino travaglio\nsenza flemma\n\ningordo e assuefatto il mio vagare\ntra porte aperte di gemme\ne lugubri spine di pyracantha rinsecchite\n\ngiorni questi di mesto ristagno\nassuefatti al miraggio di balze festanti\nin un inchino ritroso di pressanti\nimpegni frustranti",
+   "immagine": "ig/79.jpg",
+   "data": "2026-08-19",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "oltre",
+    "resta",
+    "vento",
+    "sospirò",
+    "retaggio"
+   ],
+   "citazione": "muta la via che porta al respiro",
+   "musica": {
+    "brano": "Hotel Supramonte",
+    "artista": "Fabrizio De André",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama silenzio.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Hotel%20Supramonte%20Fabrizio%20De%20Andr%C3%A9",
+     "youtube": "https://music.youtube.com/search?q=Hotel%20Supramonte%20Fabrizio%20De%20Andr%C3%A9",
+     "apple": "https://music.apple.com/it/search?term=Hotel%20Supramonte%20Fabrizio%20De%20Andr%C3%A9",
+     "soundcloud": "https://soundcloud.com/search?q=Hotel%20Supramonte%20Fabrizio%20De%20Andr%C3%A9"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nOltre il bardiglio \n\nil vento mi sospirò in un retaggio di neve \nl’indole irrequieta in un brivido di pelle,\nmuta la via che porta al respiro \nnel pomeriggio assolato oltre il bardiglio \n\nin un crepuscolo di clausura e pensieri disadorni \nla mia lingua resta muta,\nin un frastu"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/79-800.webp",
+   "correlate": [
+    96,
+    55,
+    87
+   ]
+  },
+  {
+   "id": 80,
+   "slug": "80-tagliando-di-sudore",
+   "numero": "LXXX",
+   "titolo": "Tagliando di sudore",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "ristagna,\nnel fetido brusio\ndella mia melanconia\nun riverso richiamo\ndi stanchezza interiore\n\nquel corpo\nche quasi si ritrae\nal mio comando\nora mi segue\nin un ritroso oliare di ruota\nal richiamo del dovere\n\naspetterò la nuova ruggine\nnel lento consumare d’ingranaggi\nfino al prossimo tagliando di sudore",
+   "immagine": "ig/80.jpg",
+   "data": "2026-08-25",
+   "temi": [
+    "attesa"
+   ],
+   "emozioni": [],
+   "parole": [
+    "richiamo",
+    "ristagna",
+    "fetido",
+    "brusio",
+    "melanconia"
+   ],
+   "citazione": "aspetterò la nuova ruggine",
+   "musica": {
+    "brano": "Wild Is the Wind",
+    "artista": "Nina Simone",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama attesa, carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Wild%20Is%20the%20Wind%20Nina%20Simone",
+     "youtube": "https://music.youtube.com/search?q=Wild%20Is%20the%20Wind%20Nina%20Simone",
+     "apple": "https://music.apple.com/it/search?term=Wild%20Is%20the%20Wind%20Nina%20Simone",
+     "soundcloud": "https://soundcloud.com/search?q=Wild%20Is%20the%20Wind%20Nina%20Simone"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nTagliando di sudore \n\nristagna, \nnel fetido brusio \ndella mia melanconia \nun riverso richiamo \ndi stanchezza interiore \n\nquel corpo \nche quasi si ritrae \nal mio comando \nora mi segue \nin un ritroso oliare di ruota \nal richiamo del dovere \n\naspetterò la nuova ruggine \nnel lento"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/80-800.webp",
+   "correlate": [
+    74,
+    82,
+    73
+   ]
+  },
+  {
+   "id": 81,
+   "slug": "81-legno-di-cembro",
+   "numero": "LXXXI",
+   "titolo": "Legno di cembro",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "acqua cheta,\nche bagni la mia soglia\nche lucidi le strade\ne il palmo di una foglia\n\ndischiudi il mio risveglio\nin odori di muschio\ne legno di cembro\n\nraccolte le braccia\nin un brivido d’inverno\ntu abbracci la terra\nin un leggero mantello\n\nil vento resta muto\nin un silenzio rassegnato\nquasi aspettando\nil prossimo sobbalzo\n\nperò quella foglia\nche pria era solo palmo\nin un lucido ristagno\nora cadde a terra\nin disincanto bagno\n\nl’autunno è alle porte,\nin un richiamo di colori\nche accendono la mia sorte\nbaluardo che il tempo\nche prima era pria\nresta solo l’illusione\nnel tempo della nuova via",
+   "immagine": "ig/81.jpg",
+   "data": "2026-08-26",
+   "temi": [
+    "silenzio",
+    "tempo",
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "palmo",
+    "foglia",
+    "terra",
+    "resta",
+    "tempo"
+   ],
+   "citazione": "in un silenzio rassegnato",
+   "musica": {
+    "brano": "Music for Airports 1/1",
+    "artista": "Brian Eno",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama silenzio, tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Music%20for%20Airports%201/1%20Brian%20Eno",
+     "youtube": "https://music.youtube.com/search?q=Music%20for%20Airports%201/1%20Brian%20Eno",
+     "apple": "https://music.apple.com/it/search?term=Music%20for%20Airports%201/1%20Brian%20Eno",
+     "soundcloud": "https://soundcloud.com/search?q=Music%20for%20Airports%201/1%20Brian%20Eno"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nLegno di cembro \n\nacqua cheta, \nche bagni la mia soglia \nche lucidi le strade \ne il palmo di una foglia\n\ndischiudi il mio risveglio \nin odori di muschio \ne legno di cembro \n\nraccolte le braccia \nin un brivido d’inverno \ntu abbracci la terra \nin un leggero mantello \n\nil vento r"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/81-800.webp",
+   "correlate": [
+    18,
+    79,
+    58
+   ]
+  },
+  {
+   "id": 82,
+   "slug": "82-gelido-pentagramma",
+   "numero": "LXXXII",
+   "titolo": "Gelido pentagramma",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "resterà nella sorte\nil luccicante miraggio\ndelle candele accorte\n\nsul pentagramma gelido\ndel mio destino,\ngioco a dadi con la fortuna\ntra il verde speranza\ne il rosso rubino\n\nil crepitio continuo\ndi rumori lontani\naffanna la mente\nin abbagli irreali\n\nchi tenta, chi gioca\nchi mette in sorte\nle tonache della suocera\n\nio, ritroso e spavaldo\nagguanto la mia vita\ne la metto in saldo",
+   "immagine": "ig/82.jpg",
+   "data": "2026-08-27",
+   "temi": [
+    "assenza",
+    "attesa"
+   ],
+   "emozioni": [],
+   "parole": [
+    "sorte",
+    "resterà",
+    "luccicante",
+    "miraggio",
+    "candele"
+   ],
+   "citazione": "gioco a dadi con la fortuna",
+   "musica": {
+    "brano": "Gnossienne No. 1",
+    "artista": "Erik Satie",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama attesa, maschera.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Gnossienne%20No.%201%20Erik%20Satie",
+     "youtube": "https://music.youtube.com/search?q=Gnossienne%20No.%201%20Erik%20Satie",
+     "apple": "https://music.apple.com/it/search?term=Gnossienne%20No.%201%20Erik%20Satie",
+     "soundcloud": "https://soundcloud.com/search?q=Gnossienne%20No.%201%20Erik%20Satie"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nGelido pentagramma \n\nresterà nella sorte\nil luccicante miraggio \ndelle candele accorte \n\nsul pentagramma gelido \ndel mio destino, \ngioco a dadi con la fortuna \ntra il verde speranza\ne il rosso rubino\n\nil crepitio continuo \ndi rumori lontani\naffanna la mente \nin abbagli irreali"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/82-800.webp",
+   "correlate": [
+    94,
+    91,
+    80
+   ]
+  },
+  {
+   "id": 83,
+   "slug": "83-goti-mozzati",
+   "numero": "LXXXIII",
+   "titolo": "Goti mozzati",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "mi risvegliai\nsul filo del disincanto\nlegato al sospiro\ndel primo mattino\n\nle membra seguivano\nil mio alzarmi stanco,\n\ndall’otre della mia ritrosia\nio spillai l’essenza\ndella mia apatia\n\nrinvenni, nell’oblio\ndel distacco dei sensi\nconfuso e rintronato\nal salire del gorgoglio\ne profumo del caffè\na cui ora m’appiglio\n\nretaggi di goti mozzati\ne strappi ai richiami sgualciti\nscuotevano il mio sgolare\nancor sordo\nin un crepitio di miraggi presenti\ne parole al vento svanite\n\nse il tempo donasse il ripasso\ndal tino alla botte del nostro fermento\nio resto del pensiero che l’indomani\nresti sempre il pretesto\nper un nuovo viaggio nelle viscere\ndel nostro senso",
+   "immagine": "ig/83.jpg",
+   "data": "2026-08-30",
+   "temi": [
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "nostro",
+    "risvegliai",
+    "disincanto",
+    "legato",
+    "sospiro"
+   ],
+   "citazione": "se il tempo donasse il ripasso",
+   "musica": {
+    "brano": "Fratres",
+    "artista": "Arvo Pärt",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama sacro, tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Fratres%20Arvo%20P%C3%A4rt",
+     "youtube": "https://music.youtube.com/search?q=Fratres%20Arvo%20P%C3%A4rt",
+     "apple": "https://music.apple.com/it/search?term=Fratres%20Arvo%20P%C3%A4rt",
+     "soundcloud": "https://soundcloud.com/search?q=Fratres%20Arvo%20P%C3%A4rt"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nGoti mozzati\n\nmi risvegliai \nsul filo del disincanto\nlegato al sospiro \ndel primo mattino \n\nle membra seguivano \nil mio alzarmi stanco,\n\ndall’otre della mia ritrosia \nio spillai l’essenza \ndella mia apatia \n\nrinvenni, nell’oblio \ndel distacco dei sensi \nconfuso e rintronato \na"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/83-800.webp",
+   "correlate": [
+    95,
+    72,
+    70
+   ]
+  },
+  {
+   "id": 84,
+   "slug": "84-io-rendo-strada",
+   "numero": "LXXXIV",
+   "titolo": "Io rendo strada",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "legai le fronde\nal vento di fine estate\nsul palato ristagna\nl’ostia secca del mio peccato\n\nincrocerò le mie ombre\ncol filo del giorno che nasce\neretto,\nin un impavido gesto di stasi\ntra i ligustri e richiami lontani\n\nindomita la mia mente\nche nel vento\nil cuor s’arsura\nbramosa di erte sponde\ne lidi fecondi\nin un riluttante destino\nche incura\n\nmi ridestai in un trito confuso\ndi melassa e passito\navvolto nell’ingorgo\ndi pensieri oscuri\n\nma la vita m’è cara\ne di ogni pensiero muto\nio rendo strada",
+   "immagine": "ig/84.jpg",
+   "data": "2026-09-24",
+   "temi": [
+    "amore",
+    "silenzio",
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "vento",
+    "legai",
+    "fronde",
+    "estate",
+    "palato"
+   ],
+   "citazione": "tra i ligustri e richiami lontani",
+   "musica": {
+    "brano": "How to Disappear Completely",
+    "artista": "Radiohead",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama assenza, abisso, silenzio.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/How%20to%20Disappear%20Completely%20Radiohead",
+     "youtube": "https://music.youtube.com/search?q=How%20to%20Disappear%20Completely%20Radiohead",
+     "apple": "https://music.apple.com/it/search?term=How%20to%20Disappear%20Completely%20Radiohead",
+     "soundcloud": "https://soundcloud.com/search?q=How%20to%20Disappear%20Completely%20Radiohead"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nio rendo strada \n\nlegai le fronde\nal vento di fine estate \nsul palato ristagna \nl’ostia secca del mio peccato\n\nincrocerò le mie ombre \ncol filo del giorno che nasce \neretto, \nin un impavido gesto di stasi\ntra i ligustri e richiami lontani\n\nindomita la mia mente \nche nel vento "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/84-800.webp",
+   "correlate": [
+    96,
+    91,
+    79
+   ]
+  },
+  {
+   "id": 85,
+   "slug": "85-lo-scudo-e-l-aurora",
+   "numero": "LXXXV",
+   "titolo": "Lo scudo e l’aurora",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "mi ridestai\nin un riluttante anelito di vento\npassita e trita\nla veste della mia mente sgualcita\nsoffocato il grido di rivalsa\nche scuote senza tregua\nla melassa della mia ristagna stanca\n\navvolto\nda lidi di piacere,\nposavo i miei sogni in spavalde\nbattaglie roteanti\nin cuspidi di follia\nche caddero d’un tratto\nnella più sconsolante malinconia\n\nio vedo, non vedo\nil tetro non scuro\nl’alba già sazia alzava il suo scudo\ne le membra mie parche\nseguirono lo scalpo\ndel mio sopruso\n\nqual voglia la sorte\nmendicare un attimo ancora\nper restare aggrappati\nal sibilo dell’aurora\n\nma il tempo era giunto\ne del nuovo dí non resterà\nche memoria",
+   "immagine": "ig/85.jpg",
+   "data": "2026-09-25",
+   "temi": [
+    "tempo",
+    "memoria",
+    "attesa"
+   ],
+   "emozioni": [],
+   "parole": [
+    "ridestai",
+    "riluttante",
+    "anelito",
+    "vento",
+    "passita"
+   ],
+   "citazione": "mendicare un attimo ancora",
+   "musica": {
+    "brano": "Prospettiva Nevski",
+    "artista": "Franco Battiato",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama tempo, memoria, notte.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Prospettiva%20Nevski%20Franco%20Battiato",
+     "youtube": "https://music.youtube.com/search?q=Prospettiva%20Nevski%20Franco%20Battiato",
+     "apple": "https://music.apple.com/it/search?term=Prospettiva%20Nevski%20Franco%20Battiato",
+     "soundcloud": "https://soundcloud.com/search?q=Prospettiva%20Nevski%20Franco%20Battiato"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nlo scudo e l’aurora \n\nmi ridestai \nin un riluttante anelito di vento\npassita e trita \nla veste della mia mente sgualcita \nsoffocato il grido di rivalsa \nche scuote senza tregua\nla melassa della mia ristagna stanca \n\navvolto\nda lidi di piacere, \nposavo i miei sogni in spavalde "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/85-800.webp",
+   "correlate": [
+    87,
+    76,
+    74
+   ]
+  },
+  {
+   "id": 86,
+   "slug": "86-il-compito-mai-rinnegato",
+   "numero": "LXXXVI",
+   "titolo": "Il compito mai rinnegato",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "il crepuscolo\ndella tua misericordia\nha sviscerato la mia indole\ne il mio acuto riserbo\n\nparassita fu la veste che,\nsgualcita e lacera\naprì le porte della ridondanza\ntra mere rovine,\nancora conficcate\nlame della risonanza\n\nil cupo risveglio\nha lasciato l’animo inquieto\ntra tristi ricordi e parole mai dette\n\norecchie che mai ascoltarono\nrimasero sepolte\nsotto croci di parole\nin un trito brusio di neve assordante\n\npasseranno i giorni\ne gli anni\ne nel cuore mio\nlo squarcio della benevolenza\nnon troverà mai fondo\nse non nell’assoluto richiamo\nper il mio compito mai rinnegato",
+   "immagine": "ig/86.jpg",
+   "data": "2026-09-29",
+   "temi": [
+    "memoria",
+    "amore",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "parole",
+    "crepuscolo",
+    "misericordia",
+    "sviscerato",
+    "indole"
+   ],
+   "citazione": "tra tristi ricordi e parole mai dette",
+   "musica": {
+    "brano": "Metamorphosis Two",
+    "artista": "Philip Glass",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama tempo, memoria.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Metamorphosis%20Two%20Philip%20Glass",
+     "youtube": "https://music.youtube.com/search?q=Metamorphosis%20Two%20Philip%20Glass",
+     "apple": "https://music.apple.com/it/search?term=Metamorphosis%20Two%20Philip%20Glass",
+     "soundcloud": "https://soundcloud.com/search?q=Metamorphosis%20Two%20Philip%20Glass"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl compito mai rinnegato \n\nil crepuscolo \ndella tua misericordia \nha sviscerato la mia indole \ne il mio acuto riserbo \n\nparassita fu la veste che, \nsgualcita e lacera \naprì le porte della ridondanza\ntra mere rovine, \nancora conficcate \nlame della risonanza \n \nil cupo risveglio"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/86-800.webp",
+   "correlate": [
+    67,
+    99,
+    76
+   ]
+  },
+  {
+   "id": 87,
+   "slug": "87-io-rendo-lode",
+   "numero": "LXXXVII",
+   "titolo": "Io rendo lode",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "al vento,\nche spira sul filo di ogni lucida follia\nche sfrezza ramingo e beffardo\nin un mutante rimbalzo di voci\n\nal tempo,\nche corre veloce,\nche muta in corse e ristagni di croci,\nsupplicato e odiato,\nma bel rimpianto\nil suo mansueto soggiogo\n\nal senso,\nche di ogni dì, cerca il suo passo\nin un intriso e compianto ripasso\npassito e ritrito in mai parco\nvolo di falco\n\nio rendo lode,\nper le mie memorie di pece e limone\nscolpite in sabbie sull’arenile di\nbeffardo destino, che celò da sempre\nla mia penna e il mio sdegno",
+   "immagine": "ig/87.jpg",
+   "data": "2026-10-02",
+   "temi": [
+    "memoria",
+    "silenzio",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "beffardo",
+    "vento",
+    "spira",
+    "lucida",
+    "follia"
+   ],
+   "citazione": "che muta in corse e ristagni di croci,",
+   "musica": {
+    "brano": "Day One",
+    "artista": "Hans Zimmer",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama tempo, memoria.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Day%20One%20Hans%20Zimmer",
+     "youtube": "https://music.youtube.com/search?q=Day%20One%20Hans%20Zimmer",
+     "apple": "https://music.apple.com/it/search?term=Day%20One%20Hans%20Zimmer",
+     "soundcloud": "https://soundcloud.com/search?q=Day%20One%20Hans%20Zimmer"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIo rendo lode \n\nal vento,\nche spira sul filo di ogni lucida follia \nche sfrezza ramingo e beffardo\nin un mutante rimbalzo di voci \n\nal tempo,\nche corre veloce,\nche muta in corse e ristagni di croci,\nsupplicato e odiato,\nma bel rimpianto \nil suo mansueto soggiogo \n\nal senso,\nch"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/87-800.webp",
+   "correlate": [
+    85,
+    96,
+    95
+   ]
+  },
+  {
+   "id": 88,
+   "slug": "88-il-paladino-assolto",
+   "numero": "LXXXVIII",
+   "titolo": "Il paladino assolto",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "ricucire le ombre del proprio destino\nin un passato pieno di ombre,\ndi chine versate sulla cuspide\ndi ogni miraggio senza rimpianto\n\naleatoria resta,\ndopo una vita spesa\nalla ricerca del senso,\nuna girandola che segue solo il respiro\ndel tempo\n\ngiri e rigiri,\nin un sontuoso ricamo di gemme,\nin un trito ristagno di vuoti\nconsumati a ripercorrere i passi\nin un lento e paziente sentiero\ndi indifferenza\n\nla gente ti guarda con fare assorto\nrivede nelle tue ombre\nla veste del tuo mantello,\nle maschere del tuo successo\nquell’accaduto che per tutti è\npassato, ma che per te resta il peso\ndel presente\n\ndel vuoto\ndietro alle maschere della gente\nresta solo il baluardo nella mia mente\nin uno scherno tra il rigurgito\ne l’indifferente\n\nmi ribattezzerò paladino\nin un rito ardito ed impertinente\ndallo scherno facile\ne per nulla reticente\ne al cospetto del mio giudizio\nio resterò assolto,\nperché l‘immoralità del mio giudizio\nè nella mente",
+   "immagine": "ig/88.jpg",
+   "data": "2026-10-04",
+   "temi": [
+    "assenza",
+    "memoria",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "ombre",
+    "resta",
+    "passato",
+    "gente",
+    "maschere"
+   ],
+   "citazione": "passato, ma che per te resta il peso",
+   "musica": {
+    "brano": "I Giorni",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama memoria, tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/I%20Giorni%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=I%20Giorni%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=I%20Giorni%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=I%20Giorni%20Ludovico%20Einaudi"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl paladino assolto \n\nricucire le ombre del proprio destino \nin un passato pieno di ombre,\ndi chine versate sulla cuspide \ndi ogni miraggio senza rimpianto \n\naleatoria resta, \ndopo una vita spesa \nalla ricerca del senso,\nuna girandola che segue solo il respiro \ndel tempo \n\ngir"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/88-800.webp",
+   "correlate": [
+    76,
+    73,
+    97
+   ]
+  },
+  {
+   "id": 89,
+   "slug": "89-fremito-di-felce",
+   "numero": "LXXXIX",
+   "titolo": "Fremito di felce",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "libera mente\nche il cuor mio m’offende\ningorda e profusa\nin ventre di gemma\nmai socchiusa\n\nprofuma la gonna d’incenso\ne arsura\nin un mendicare assorto\nche il pensier già mio\nsi trovò distorto\n\naudace in un fremito di felce\nil desiderio non tace\nquandunque senza render vane\nle mani mie cercarono il pennone\nmai mendace",
+   "immagine": "ig/89.jpg",
+   "data": "2026-10-05",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "libera",
+    "mente",
+    "offende",
+    "ingorda",
+    "profusa"
+   ],
+   "citazione": "le mani mie cercarono il pennone",
+   "musica": {
+    "brano": "Sunset Mission",
+    "artista": "Bohren & der Club of Gore",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Sunset%20Mission%20Bohren%20%26%20der%20Club%20of%20Gore",
+     "youtube": "https://music.youtube.com/search?q=Sunset%20Mission%20Bohren%20%26%20der%20Club%20of%20Gore",
+     "apple": "https://music.apple.com/it/search?term=Sunset%20Mission%20Bohren%20%26%20der%20Club%20of%20Gore",
+     "soundcloud": "https://soundcloud.com/search?q=Sunset%20Mission%20Bohren%20%26%20der%20Club%20of%20Gore"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nFremito di felce \n\nlibera mente\nche il cuor mio m’offende\ningorda e profusa \nin ventre di gemma \nmai socchiusa\n\nprofuma la gonna d’incenso \ne arsura\nin un mendicare assorto \nche il pensier già mio \nsi trovò distorto \n\naudace in un fremito di felce \nil desiderio non tace \nquand"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/89-800.webp",
+   "correlate": [
+    63,
+    59,
+    98
+   ]
+  },
+  {
+   "id": 90,
+   "slug": "90-sotto-il-vento-di-maestrale",
+   "numero": "XC",
+   "titolo": "Sotto il vento di maestrale",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "rivendicherò il piacere\ncon lo scorrere impetuoso\ndel mio sangue\nnelle vene, senza pene\n\nimmollerò il mio riserbo\nsull’altare del perbenismo,\nportando in alto a mani giunte,\nil corpo del ritegno\ncome ostia senza nome\ne senza sdegno\n\ncol calice del piacere\nio sazierò la mia sete,\narsa di lussuria,\nannegando ogni pudore\nin un acquitrino di stupore\n\nil vento che pria era libeccio\nora rigonfia le vele\ncon un maestrale pompa,\nanche la schiuma d’onda\noltre l’arenale\n\ndei fasti,\nl’ardire mesto del supplizio,\nsgronda dalle vesti ed il giudizio,\nalzando da testa verso il rigore\nsfida ogni ripiego al disonore",
+   "immagine": "ig/90.jpg",
+   "data": "2026-10-06",
+   "temi": [
+    "mare"
+   ],
+   "emozioni": [],
+   "parole": [
+    "piacere",
+    "rivendicherò",
+    "scorrere",
+    "impetuoso",
+    "sangue"
+   ],
+   "citazione": "sgronda dalle vesti ed il giudizio,",
+   "musica": {
+    "brano": "Personal Jesus",
+    "artista": "Depeche Mode",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama sacro, carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Personal%20Jesus%20Depeche%20Mode",
+     "youtube": "https://music.youtube.com/search?q=Personal%20Jesus%20Depeche%20Mode",
+     "apple": "https://music.apple.com/it/search?term=Personal%20Jesus%20Depeche%20Mode",
+     "soundcloud": "https://soundcloud.com/search?q=Personal%20Jesus%20Depeche%20Mode"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nsotto il vento di maestrale \n\nrivendicherò il piacere \ncon lo scorrere impetuoso \ndel mio sangue \nnelle vene, senza pene \n\nimmollerò il mio riserbo \nsull’altare del perbenismo, \nportando in alto a mani giunte, \nil corpo del ritegno \ncome ostia senza nome \ne senza sdegno\n\ncol c"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/90-800.webp",
+   "correlate": [
+    55,
+    7,
+    99
+   ]
+  },
+  {
+   "id": 91,
+   "slug": "91-il-sibilo-del-vento",
+   "numero": "XCI",
+   "titolo": "Il sibilo del vento",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "parsimonia sfusa\nche riserbi il vento\nper la prossima smielatura,\nche spremi il riserbo\ncon la presunzione\ndi una corretta postura\n\nimmorale e pretestuoso\nfu il mio fardello d’ingiuria\nche mite come il tasso\nrestò parco fino al rabbocco\ndell’ultima frescura\n\nquell’io che mite e scontroso\nresse le catene del mio tormento\nscardinò gli ormeggi della nave\ncon la chiglia in un sussulto\ndi compiacimento\n\nprofano fu il verso\nin un mesto rito di stridore\nmaldestra la penna\nche vomitò sbeffarda il ringhio\nin un filo di candore\n\nla mente arde in un impeto sotteso\nche per nulla mesto\nrestò nel suo capestro dell’arco teso\n\nil sibilo del vento fischiò\nor dunque\nallo scoccare della freccia scossa\nsenza veder per ora\ndove il destino la spingerà\nsenza riscossa",
+   "immagine": "ig/91.jpg",
+   "data": "2026-10-07",
+   "temi": [
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "vento",
+    "restò",
+    "mesto",
+    "parsimonia",
+    "sfusa"
+   ],
+   "citazione": "restò nel suo capestro dell’arco teso",
+   "musica": {
+    "brano": "Vladimir's Blues",
+    "artista": "Max Richter",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama assenza.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Vladimir%27s%20Blues%20Max%20Richter",
+     "youtube": "https://music.youtube.com/search?q=Vladimir%27s%20Blues%20Max%20Richter",
+     "apple": "https://music.apple.com/it/search?term=Vladimir%27s%20Blues%20Max%20Richter",
+     "soundcloud": "https://soundcloud.com/search?q=Vladimir%27s%20Blues%20Max%20Richter"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl sibilo del vento \n\nparsimonia sfusa\nche riserbi il vento \nper la prossima smielatura, \nche spremi il riserbo \ncon la presunzione \ndi una corretta postura \n\nimmorale e pretestuoso \nfu il mio fardello d’ingiuria \nche mite come il tasso \nrestò parco fino al rabbocco \ndell’ulti"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/91-800.webp",
+   "correlate": [
+    70,
+    84,
+    96
+   ]
+  },
+  {
+   "id": 92,
+   "slug": "92-il-pennon-in-monta",
+   "numero": "XCII",
+   "titolo": "Il pennon in monta",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "un sibilo lontano ed irriverente\nha ridestato la mente ed il fermento,\ndella compagna accondiscendente\n\nun fremito, che cercava ripiego,\nin un sussulto di passione,\nbussò alla porta senza ritegno\n\nsenza parsimoniosa propensione\nor dunque, lui\nper impeto e senza velo,\nsguainò la spada,\nin un trito\ndi compartecipa ragione\nche il colar di fregna lasciò\nil pennon in monta\n\nmendicar non nuoce,\nse nell’ardir, il desiderar non truce\n\nquandunque il pensier perverso\nsi ridesta in brace\nper il banchettar foresto anche per noi\nnelle gesta audace\n\nparsimonia rinnegata\nresta sempre desiderata\nma nel gemito sussulto, il piacer comune\nvien di consulto",
+   "immagine": "ig/92.jpg",
+   "data": "2026-10-08",
+   "temi": [
+    "amore",
+    "assenza"
+   ],
+   "emozioni": [],
+   "parole": [
+    "sussulto",
+    "sibilo",
+    "lontano",
+    "irriverente",
+    "ridestato"
+   ],
+   "citazione": "se nell’ardir, il desiderar non truce",
+   "musica": {
+    "brano": "Glory Box",
+    "artista": "Portishead",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Glory%20Box%20Portishead",
+     "youtube": "https://music.youtube.com/search?q=Glory%20Box%20Portishead",
+     "apple": "https://music.apple.com/it/search?term=Glory%20Box%20Portishead",
+     "soundcloud": "https://soundcloud.com/search?q=Glory%20Box%20Portishead"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nil pennon in monta \n\nun sibilo lontano ed irriverente \nha ridestato la mente ed il fermento, \ndella compagna accondiscendente\n\nun fremito, che cercava ripiego,\nin un sussulto di passione,\nbussò alla porta senza ritegno \n\nsenza parsimoniosa propensione \nor dunque, lui \nper impe"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/92-800.webp",
+   "correlate": [
+    52,
+    84,
+    77
+   ]
+  },
+  {
+   "id": 93,
+   "slug": "93-vomitar-parole",
+   "numero": "XCIII",
+   "titolo": "Vomitar parole",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "mesto e avulso\nil mio scontato riserbo\n\nintrise sul filo di pene\nle mani restan\nnude nelle vene\n\ndella mia ingrata sorte\nla mia sete arsa\ndi mente vaga\nin un trito di mesto stupore\n\nal rigor di gente\nnon trovo pace\ningrato al comando\ne al pudor\nil mio cuor non tace\n\nriverso e confuso\nsteso il corpo\npria del dì soggiace\n\ne il mio pensier già resta\nin un pellegrinaggio rito\nvomitar parole\nmi tocca non negar\nle gesta",
+   "immagine": "ig/93.jpg",
+   "data": "2026-10-13",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "mesto",
+    "avulso",
+    "scontato",
+    "riserbo",
+    "intrise"
+   ],
+   "citazione": "in un trito di mesto stupore",
+   "musica": {
+    "brano": "Eros",
+    "artista": "Ludovico Einaudi",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama carne.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Eros%20Ludovico%20Einaudi",
+     "youtube": "https://music.youtube.com/search?q=Eros%20Ludovico%20Einaudi",
+     "apple": "https://music.apple.com/it/search?term=Eros%20Ludovico%20Einaudi",
+     "soundcloud": "https://soundcloud.com/search?q=Eros%20Ludovico%20Einaudi"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nvomitar parole \n\nmesto e avulso \nil mio scontato riserbo \n\nintrise sul filo di pene \nle mani restan\nnude nelle vene \n\ndella mia ingrata sorte \nla mia sete arsa \ndi mente vaga\nin un trito di mesto stupore \n\nal rigor di gente\nnon trovo pace\ningrato al comando \ne al pudor \nil mio"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/93-800.webp",
+   "correlate": [
+    78,
+    96,
+    94
+   ]
+  },
+  {
+   "id": 94,
+   "slug": "94-la-livella-non-mente",
+   "numero": "XCIV",
+   "titolo": "La livella non mente",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "almen la letizia rinnegar la sorte\nin un fremito di piume\nridestò la corte\n\nriverbero di curve nude\ndove il cuor soggiace\nin appuntite crune dure\nche il ridestar sottende\n\nardor di fiamma e risentimento\nche sul fil della lama\nlascia l’anima fuor di senno\n\npudore, ardore, passione\nil mentir non tace\nin un roveto\ndi fiammante brace\n\nm’è grata la mente socchiusa\nche in questo giorno\ndi ingrata sventura\nriposa in pace ogni più\nparsimoniosa frescura\n\nil corpo che in terra soggiace\nridesta in mente il pensier\nche la livella non mente\ne non da sorte ritrace\nin un plumbeo giorno di pace\nmentre tutto resta\ne tutto tace",
+   "immagine": "ig/94.jpg",
+   "data": "2026-10-17",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "mente",
+    "sorte",
+    "soggiace",
+    "giorno",
+    "almen"
+   ],
+   "citazione": "almen la letizia rinnegar la sorte",
+   "musica": {
+    "brano": "Esja",
+    "artista": "Hania Rani",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama quiete.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Esja%20Hania%20Rani",
+     "youtube": "https://music.youtube.com/search?q=Esja%20Hania%20Rani",
+     "apple": "https://music.apple.com/it/search?term=Esja%20Hania%20Rani",
+     "soundcloud": "https://soundcloud.com/search?q=Esja%20Hania%20Rani"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nLa livella non mente\n\nalmen la letizia rinnegar la sorte\nin un fremito di piume  \nridestò la corte \n\nriverbero di curve nude\ndove il cuor soggiace \nin appuntite crune dure \nche il ridestar sottende\n\nardor di fiamma e risentimento \nche sul fil della lama\nlascia l’anima fuor di "
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/94-800.webp",
+   "correlate": [
+    59,
+    96,
+    93
+   ]
+  },
+  {
+   "id": 95,
+   "slug": "95-il-viandar-di-maggio",
+   "numero": "XCV",
+   "titolo": "Il viandar di maggio",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "riso\nintriso,\ndel mio cuor sospiro\nbeffardo e bugiardo\nin un meschin retaggio\n\nbarlume,\nin un gesto\ndi approvazione piena\ntu mieti disprezzo\nin un fil di miraggio\n\nmendace la gente\nche del tuo riverbero\nsì fa bandiera\nin un perverso rigurgito\ndi piena lena\n\nin un trito e ritrito\npagar pedaggio\na suon di memoria\nio mi distacco dal\nviandar di maggio\n\ncol vessil del mio disgusto\nio preferisco il muso duro\nal villan disgusto",
+   "immagine": "ig/95.jpg",
+   "data": "2026-10-18",
+   "temi": [
+    "memoria"
+   ],
+   "emozioni": [],
+   "parole": [
+    "piena",
+    "disgusto",
+    "intriso",
+    "sospiro",
+    "beffardo"
+   ],
+   "citazione": "col vessil del mio disgusto",
+   "musica": {
+    "brano": "Tom Traubert's Blues",
+    "artista": "Tom Waits",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama maschera, memoria.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Tom%20Traubert%27s%20Blues%20Tom%20Waits",
+     "youtube": "https://music.youtube.com/search?q=Tom%20Traubert%27s%20Blues%20Tom%20Waits",
+     "apple": "https://music.apple.com/it/search?term=Tom%20Traubert%27s%20Blues%20Tom%20Waits",
+     "soundcloud": "https://soundcloud.com/search?q=Tom%20Traubert%27s%20Blues%20Tom%20Waits"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nIl viandar di maggio \n\nriso \nintriso, \ndel mio cuor sospiro \nbeffardo e bugiardo \nin un meschin retaggio \n\nbarlume,\nin un gesto \ndi approvazione piena \ntu mieti disprezzo \nin un fil di miraggio \n\nmendace la gente \nche del tuo riverbero \nsì fa bandiera \nin un perverso rigurgito"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/95-800.webp",
+   "correlate": [
+    87,
+    83,
+    70
+   ]
+  },
+  {
+   "id": 96,
+   "slug": "96-esile-fil-d-erba",
+   "numero": "XCVI",
+   "titolo": "Esile fil d’erba",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "arte che di flem disarca\nche vivi in flebile sibilo di vento,\ningorda di passion\ne stupor in arco,\ntu rinneghi il piacer\nper un fil d’onore\n\nin un bieco\nsubbuglio di mesta stanca\ntu vivesti d’oro\nchi non ti calpesta e sfianca\nin un crepitio di voce grama\nla pieta mia per te mi resta vana\n\nelogiar fu con orgoglio e lena\nquell’effimero mutar di testa e piega\nche in mezzo ad un colar di cera,\nil più esile fil d’erba\nper stupir ardor ancor mi strega",
+   "immagine": "ig/96.jpg",
+   "data": "2026-10-20",
+   "temi": [
+    "silenzio"
+   ],
+   "emozioni": [],
+   "parole": [
+    "disarca",
+    "flebile",
+    "sibilo",
+    "vento",
+    "ingorda"
+   ],
+   "citazione": "quell’effimero mutar di testa e piega",
+   "musica": {
+    "brano": "",
+    "artista": "",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": null,
+    "cerca": null
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nEsile fil d’erba\n\narte che di flem disarca\nche vivi in flebile sibilo di vento, \ningorda di passion\ne stupor in arco,\ntu rinneghi il piacer\nper un fil d’onore \n\nin un bieco \nsubbuglio di mesta stanca\ntu vivesti d’oro \nchi non ti calpesta e sfianca \nin un crepitio di voce grama"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/96-800.webp",
+   "correlate": [
+    79,
+    68,
+    55
+   ]
+  },
+  {
+   "id": 97,
+   "slug": "97-vivere-di-poco",
+   "numero": "XCVII",
+   "titolo": "Vivere di poco",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "mi accompagnano pensieri\nche scivolano nel tempo\nardori e riverberi\nche luoghi d’infanzia hanno solcato\nla sorte del mio esistere\n\nviottoli e sentieri rintracciati più volte\nin un innato spirito libero\nche cercava solo il filo oltre il consueto\n\nmai parco, mai sazio, mai stanco\ndi stimoli che il mondo in cui vivevo\nesondava per menti che sapevano solo\ncogliere e vivere\n\nvivere di poco, di nulla,\nvivere in fondo di un’inebriante\nscorrere leggiadro, senza catene e\nsenza rimpianti\nmai sazio e felice in un crepitio continuo\ndi stimoli e di meraviglie che ogni angolo\nrisvegliavano nuove trite\n\ncosì, oggi mi vedo\nnel letto dormiente del mio passato\nriassaporare il fremito\nche per nulla ancora si è posato,\nquel volare disincantato e libero\nche ora riaffiora nel mio\nsabato del villaggio",
+   "immagine": "ig/97.jpg",
+   "data": "2026-10-23",
+   "temi": [
+    "assenza",
+    "rinascita",
+    "memoria"
+   ],
+   "emozioni": [],
+   "parole": [
+    "vivere",
+    "libero",
+    "sazio",
+    "stimoli",
+    "nulla"
+   ],
+   "citazione": "nel letto dormiente del mio passato",
+   "musica": {
+    "brano": "Cornfield Chase",
+    "artista": "Hans Zimmer",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama rinascita, attesa, tempo.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Cornfield%20Chase%20Hans%20Zimmer",
+     "youtube": "https://music.youtube.com/search?q=Cornfield%20Chase%20Hans%20Zimmer",
+     "apple": "https://music.apple.com/it/search?term=Cornfield%20Chase%20Hans%20Zimmer",
+     "soundcloud": "https://soundcloud.com/search?q=Cornfield%20Chase%20Hans%20Zimmer"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nvivere di poco \n\nmi accompagnano pensieri \nche scivolano nel tempo\nardori e riverberi \nche luoghi d’infanzia hanno solcato \nla sorte del mio esistere \n\nviottoli e sentieri rintracciati più volte \nin un innato spirito libero \nche cercava solo il filo oltre il consueto \n\nmai par"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/97-800.webp",
+   "correlate": [
+    70,
+    50,
+    88
+   ]
+  },
+  {
+   "id": 98,
+   "slug": "98-il-pensier-mai-tace",
+   "numero": "XCVIII",
+   "titolo": "Il pensier mai tace",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "figlio, che preghi il tuo dio\nin un lessicar disgiunto\nanela la veste\nsul fil del dirupo\nin grigio di tempesta ruggente\n\nil cuor non grama\ne il pensier non coglie\nquel filo sottile che lega\nla sorte che non si distoglie\n\nin un crepitio di braci arse\nsol il vent dipana le roventi gesta\ndalle già consumate ceneri\nin mesta\n\ndel cuore mio\nil lesinar non sale\ncome fremito di ali senza vento\nil cercar comunque di volare\n\nin alto il pensier mai tace\ne le gesta altrui sembran sempre più\nsfuocate",
+   "immagine": "ig/98.jpg",
+   "data": "2026-10-25",
+   "temi": [
+    "amore"
+   ],
+   "emozioni": [],
+   "parole": [
+    "pensier",
+    "gesta",
+    "figlio",
+    "preghi",
+    "lessicar"
+   ],
+   "citazione": "e le gesta altrui sembran sempre più",
+   "musica": {
+    "brano": "La cura",
+    "artista": "Franco Battiato",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama amore, rinascita, sacro.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/La%20cura%20Franco%20Battiato",
+     "youtube": "https://music.youtube.com/search?q=La%20cura%20Franco%20Battiato",
+     "apple": "https://music.apple.com/it/search?term=La%20cura%20Franco%20Battiato",
+     "soundcloud": "https://soundcloud.com/search?q=La%20cura%20Franco%20Battiato"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nil pensier mai tace \n\nfiglio, che preghi il tuo dio \nin un lessicar disgiunto \nanela la veste \nsul fil del dirupo \nin grigio di tempesta ruggente \n\nil cuor non grama \ne il pensier non coglie \nquel filo sottile che lega \nla sorte che non si distoglie \n\nin un crepitio di braci a"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/98-800.webp",
+   "correlate": [
+    89,
+    62,
+    60
+   ]
+  },
+  {
+   "id": 99,
+   "slug": "99-ignaro-della-perfidia",
+   "numero": "XCIX",
+   "titolo": "Ignaro della perfidia",
+   "sezione": "Versi nuovi",
+   "mood": "nuovi",
+   "moodNome": "I Versi Nuovi",
+   "statoAnimo": "",
+   "senso": null,
+   "testo": "pensiero di aria rubata\ne cuori ribelli\nignaro nella perfidia\nil mio piacere\n\ncuore malato\nche penetra le menti\ne ossesso che segue\nun filo invisibile\ndella mia solitudine e follia\n\nho preso per mano\nil mio nuovo idioma\nho stretto il pugno\ne sentito il colare\ndi viscere ancor\ncalde di bile\ne candore.\n\nlascio sbiancare\nil tempo\nnel rigore del mio pensiero.\n\nignaro della perfidia\nil mio piacere,\ncuore malato\nche penetra le menti\nalcova in una pacata rovina\nla mia indole di consapevole\nfollia",
+   "immagine": "ig/99.jpg",
+   "data": "2026-10-28",
+   "temi": [
+    "amore",
+    "tempo"
+   ],
+   "emozioni": [],
+   "parole": [
+    "pensiero",
+    "ignaro",
+    "perfidia",
+    "piacere",
+    "cuore"
+   ],
+   "citazione": "della mia solitudine e follia",
+   "musica": {
+    "brano": "Love Will Tear Us Apart",
+    "artista": "Joy Division",
+    "verificato": false,
+    "spotify": "",
+    "youtube": "",
+    "apple": "",
+    "soundcloud": "",
+    "audio": null,
+    "perche": "Proposta dal testo: richiama amore, rabbia.",
+    "cerca": {
+     "spotify": "https://open.spotify.com/search/Love%20Will%20Tear%20Us%20Apart%20Joy%20Division",
+     "youtube": "https://music.youtube.com/search?q=Love%20Will%20Tear%20Us%20Apart%20Joy%20Division",
+     "apple": "https://music.apple.com/it/search?term=Love%20Will%20Tear%20Us%20Apart%20Joy%20Division",
+     "soundcloud": "https://soundcloud.com/search?q=Love%20Will%20Tear%20Us%20Apart%20Joy%20Division"
+    }
+   },
+   "instagram": {
+    "url": null,
+    "punteggio": 1.0,
+    "stato": "sicuro",
+    "didascalia": ".\n\nignaro della perfidia \n\npensiero di aria rubata \ne cuori ribelli\nignaro nella perfidia \nil mio piacere\n\ncuore malato \nche penetra le menti\ne ossesso che segue \nun filo invisibile \ndella mia solitudine e follia\n\nho preso per mano\nil mio nuovo idioma\nho stretto il pugno \ne senti"
+   },
+   "auto": [
+    "temi",
+    "parole",
+    "citazione"
+   ],
+   "miniatura": "ig/99-800.webp",
+   "correlate": [
+    76,
+    67,
+    63
    ]
   }
  ]

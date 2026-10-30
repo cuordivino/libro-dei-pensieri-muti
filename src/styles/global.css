@@ -86,7 +86,8 @@ footer div{width:var(--wrap);margin-inline:auto;display:flex;flex-wrap:wrap;gap:
 
 /* poesia */
 .poem{display:grid;grid-template-columns:minmax(0,22rem) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:start}
-.poem aside{position:sticky;top:5rem}
+.side{position:sticky;top:5rem;align-self:start}
+.poem aside{position:static}
 .poem aside img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block}
 .poem .senso{font-style:italic;color:var(--ash);margin-top:1rem}
 .versi{animation:rise 1.2s cubic-bezier(.2,.7,.2,1) both;font-size:clamp(1.25rem,1.1rem + .6vw,1.55rem);line-height:1.55;padding-block:.5rem}
@@ -99,7 +100,7 @@ footer div{width:var(--wrap);margin-inline:auto;display:flex;flex-wrap:wrap;gap:
 blockquote.est{margin:2rem 0;padding-left:1.2rem;border-left:2px solid var(--bronze);font-size:1.5rem;font-style:italic;max-width:30ch}
 .pager{display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line);margin-top:3rem;padding-top:1.2rem}
 .pager a{max-width:45%}
-body.solo-testo aside,body.solo-testo .box.musica{display:none}
+
 body.solo-testo .poem{grid-template-columns:minmax(0,40rem)}
 .correlate{margin-top:3rem}
 [data-percorso]{display:none}[data-percorso].on{display:block}
@@ -190,3 +191,29 @@ dialog img{max-height:70vh;max-width:100%;display:block;margin:0 auto 1rem}
 .passo h3{font-size:1.6rem;font-style:italic}
 .passo p{color:var(--ash)}
 @media (max-width:760px){.passi{grid-template-columns:1fr;gap:1.4rem}.concept{margin:3rem 0}}
+
+/* lettore musicale */
+.player{border:1px solid var(--line);padding:1rem;margin-top:1.2rem;background:var(--ink-2)}
+.player .tr{margin:0 0 .6rem;line-height:1.35}
+.player .why{margin:0 0 .6rem;font-size:.82rem}
+.stage{width:100%;height:200px;background:#000;display:grid;place-items:center;overflow:hidden}
+.stage iframe{width:100%;height:100%;min-height:200px;border:0;display:block}
+.ctl{display:flex;flex-wrap:wrap;gap:.5rem .8rem;align-items:center;margin-top:.7rem}
+.vol{display:flex;gap:.5rem;align-items:center;color:var(--ash)}
+.vol input{width:6.5rem;accent-color:var(--bronze)}
+.cerca{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;margin-top:.7rem}
+.cerca .chip{padding:.25rem .65rem}
+body.solo-testo .side{display:none}
+@media (max-width:760px){.side{position:static}}
+
+/* mappa */
+.mappa{position:relative;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,#1b1a18,#121110);margin:1rem 0}
+.mappa canvas{display:block;touch-action:manipulation}
+.pannello{max-width:none;min-height:7rem}
+.pannello h2{margin:.2rem 0 .4rem}
+.pannello .qq{font-style:italic;font-size:1.25rem;margin:0 0 .8rem}
+.lista{margin-top:2rem}
+.lista summary{cursor:pointer;color:var(--ash)}
+.lista section{margin-top:1rem}
+.lista h2{font-size:1.2rem}
+.lista ul{columns:2 14rem;padding-left:1.1rem}

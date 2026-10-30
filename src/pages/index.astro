@@ -9,7 +9,7 @@ const slugs = Object.fromEntries(poems.map((p) => [p.id, u(`poesie/${p.slug}/`)]
   <section class="hero" aria-labelledby="t">
     <p class="eyebrow ui">Il Libro dei Pensieri Muti</p>
     <h1 id="t">Ciò che non si dice, si ascolta.</h1>
-    <p class="sub">Quarantotto poesie, un suono per ognuna, un’immagine che resta accesa. Leggile con le cuffie.</p>
+    <p class="sub">{poems.length} poesie, un suono per ognuna, un’immagine che resta accesa. Leggile con le cuffie.</p>
     <p class="quote lume" id="q">{first.citazione}</p>
     <p class="src"><a id="qa" href={u(`poesie/${first.slug}/`)}>{first.titolo}</a> · {meta.autore}</p>
     <div class="cta">
@@ -31,11 +31,11 @@ const slugs = Object.fromEntries(poems.map((p) => [p.id, u(`poesie/${p.slug}/`)]
     <div class="passi">
       <div class="passo"><h3>Cuffie.</h3><p>Il suono sta dentro la poesia come l’incenso dentro la chiesa: dagli altoparlanti si perde. Cuffie, luce bassa.</p></div>
       <div class="passo"><h3>Una alla volta.</h3><p>Non c’è fretta e non c’è fine. Leggine una e fermati. Se ti brucia, restaci; se ti scivola addosso, vai avanti.</p></div>
-      <div class="passo"><h3>Quattro porte.</h3><p>L’Ombra e il Pozzo. L’Ardore e la Carne. La Maschera e il Fango. La Quiete e il Ritrovo. Scegli da dove cadere, oppure lascia decidere al caso.</p><p><a class="btn" data-rand href={u(`poesie/${first.slug}/`)}>Lascia decidere al caso</a></p></div>
+      <div class="passo"><h3>Cinque porte.</h3><p>L’Ombra e il Pozzo. L’Ardore e la Carne. La Maschera e il Fango. La Quiete e il Ritrovo. E i Versi Nuovi, ancora caldi. Scegli da dove cadere, oppure lascia decidere al caso.</p><p><a class="btn" data-rand href={u(`poesie/${first.slug}/`)}>Lascia decidere al caso</a></p></div>
     </div>
   </section>
 
-  <h2>Le quattro porte</h2>
+  <h2>Le cinque porte</h2>
   <div class="moods">
     {meta.moods.map((m) => <a class="mood" style={`--c:${m.color}`} href={u(`percorsi/${m.key}/`)}><h3>{m.name}</h3><p>{m.desc}</p></a>)}
   </div>

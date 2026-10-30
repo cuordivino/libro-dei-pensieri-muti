@@ -37,3 +37,6 @@ export function embedUrl(m: Record<string, any>) {
   if (yt) return { kind: 'YouTube', url: `https://www.youtube-nocookie.com/embed/${yt[1]}`, h: 200 };
   return null;
 }
+
+/** ID del video YouTube, se il brano ha un indirizzo diretto. */
+export const ytId = (m: Record<string, any>) => /(?:v=|youtu\.be\/)([A-Za-z0-9_-]{11})/.exec(m.youtube ?? '')?.[1] ?? null;

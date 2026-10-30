@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import { poems, meta, u } from '../lib/data';
+const themes = Object.keys(meta.temi).filter((t) => poems.some((p) => p.temi.includes(t)));
+const data = {
+  moods: meta.moods.map((m) => ({ k: m.key, n: m.name, c: m.color })),
+  themes: themes.map((t) => ({ k: t, n: (meta.temi as any)[t] })),
+  poems: poems.map((p) => ({ i: p.id, t: p.titolo, m: p.mood, th: p.temi, q: p.citazione, h: u(`poesie/${p.slug}/`) })),
+};
+---
+<Base title="La mappa" description={`Le ${poems.length} poesie come una costellazione: ogni punto è una poesia, ogni nodo un tema. Scegli un punto e segui i fili.`} current="mappa/">
+  <h1>La mappa</h1>
+  <p class="muted">Ogni punto è una poesia, ogni cerchio dorato un tema. I fili legano una poesia ai temi che attraversa: dove si addensano, c’è un nodo da leggere. Tocca un punto per aprirla.</p>
+  <div class="chips" id="legenda" role="group" aria-label="Filtra per movimento"></div>
+  <div class="mappa" id="wrap"><canvas id="cv" aria-hidden="true"></canvas></div>
+  <div class="pannello box" id="pan" role="status" aria-live="polite"><span class="muted ui">Passa su un punto o su un tema.</span></div>
+  <details class="lista">
+    <summary class="ui">Versione in elenco</summary>
+    {themes.map((t) => <section><h2>{(meta.temi as any)[t]}</h2><ul>{poems.filter((p) => p.temi.includes(t)).map((p) => <li><a href={u(`poesie/${p.slug}/`)}>{p.titolo}</a></li>)}</ul></section>)}
+  </details>
+  <script type="application/json" id="mdata" set:html={JSON.stringify(data)} />
+  <script is:inline>
+    (function () {
+      var D = JSON.parse(document.getElementById('mdata').textContent), cv = document.getElementById('cv'), wrap = document.getElementById('wrap'), ctx = cv.getContext('2d'), pan = document.getElementById('pan');
+      var touch = matchMedia('(hover:none)').matches, reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+      var col = {}; D.moods.forEach(function (m) { col[m.k] = m.c; });
+      var nodes = [], edges = [], byTheme = {};
+      D.themes.forEach(function (t, i) { var a = i / D.themes.length * Math.PI * 2; var n = { type: 'theme', id: t.k, label: t.n, r: 9, x: Math.cos(a) * 160, y: Math.sin(a) * 160, vx: 0, vy: 0 }; nodes.push(n); byTheme[t.k] = n; });
+      D.poems.forEach(function (p, i) {
+        var f = byTheme[p.th[0]], a = i * 2.399;
+        var n = { type: 'poem', id: p.i, label: p.t, m: p.m, r: 4, x: f.x + Math.cos(a) * 40, y: f.y + Math.sin(a) * 40, vx: 0, vy: 0, d: p }; nodes.push(n);
+        p.th.forEach(function (t) { edges.push([n, byTheme[t]]); });
+      });
+      var deg = new Map(); edges.forEach(function (e) { e[0].nb = (e[0].nb || []).concat(e[1]); e[1].nb = (e[1].nb || []).concat(e[0]); });
+      function simulate(steps) {
+        for (var s = 0; s < steps; s++) {
+          var al = 1 - s / steps;
+          for (var i = 0; i < nodes.length; i++) for (var j = i + 1; j < nodes.length; j++) {
+            var a = nodes[i], b = nodes[j], dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy + 0.5;
+            var k = (a.type === 'theme' && b.type === 'theme') ? 26000 : (a.type === 'theme' || b.type === 'theme') ? 2600 : 260;
+            var f = k / d2 * al; a.vx += dx * f / Math.sqrt(d2) * 1; a.vy += dy * f / Math.sqrt(d2); b.vx -= dx * f / Math.sqrt(d2); b.vy -= dy * f / Math.sqrt(d2);
+          }
+          edges.forEach(function (e) { var a = e[0], b = e[1], dx = b.x - a.x, dy = b.y - a.y, d = Math.sqrt(dx * dx + dy * dy) + 0.01, f = (d - 55) * 0.035; a.vx += dx / d * f; a.vy += dy / d * f; b.vx -= dx / d * f * 0.3; b.vy -= dy / d * f * 0.3; });
+          nodes.forEach(function (n) { n.vx -= n.x * 0.004; n.vy -= n.y * 0.004; n.x += n.vx * 0.5; n.y += n.vy * 0.5; n.vx *= 0.78; n.vy *= 0.78; });
+        }
+      }
+      simulate(420);
+      var W, H, sc, ox, oy, dpr, hover = null, sel = null, mood = null;
+      function fit() {
+        dpr = window.devicePixelRatio || 1; W = wrap.clientWidth; H = innerWidth < 760 ? 520 : 640;
+        cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        var x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; nodes.forEach(function (n) { x0 = Math.min(x0, n.x); x1 = Math.max(x1, n.x); y0 = Math.min(y0, n.y); y1 = Math.max(y1, n.y); });
+        var m = 46; sc = Math.min((W - m * 2) / (x1 - x0), (H - m * 2) / (y1 - y0)); ox = W / 2 - (x0 + x1) / 2 * sc; oy = H / 2 - (y0 + y1) / 2 * sc;
+        draw();
+      }
+      var X = function (n) { return n.x * sc + ox; }, Y = function (n) { return n.y * sc + oy; };
+      function on(n) { // il nodo è "acceso" in base a filtro e selezione
+        if (mood && n.type === 'poem' && n.m !== mood) return false;
+        if (sel) { if (n === sel) return true; if (sel.nb && sel.nb.indexOf(n) >= 0) return true; return false; }
+        return true;
+      }
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        edges.forEach(function (e) {
+          var lit = on(e[0]) && on(e[1]) && (!sel || e[0] === sel || e[1] === sel);
+          ctx.strokeStyle = lit ? (sel ? 'rgba(196,163,115,.7)' : 'rgba(196,163,115,.22)') : 'rgba(196,163,115,.04)'; ctx.lineWidth = lit && sel ? 1.2 : 0.8;
+          ctx.beginPath(); ctx.moveTo(X(e[0]), Y(e[0])); ctx.lineTo(X(e[1]), Y(e[1])); ctx.stroke();
+        });
+        nodes.forEach(function (n) {
+          var lit = on(n), x = X(n), y = Y(n), r = n.r * (touch && n.type === 'poem' ? 1.3 : 1) * (n === hover || n === sel ? 1.5 : 1);
+          ctx.globalAlpha = lit ? 1 : 0.14;
+          if (n.type === 'theme') { ctx.fillStyle = '#121110'; ctx.strokeStyle = '#c4a373'; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.arc(x, y, r + 3, 0, 7); ctx.fill(); ctx.stroke(); }
+          else { ctx.fillStyle = col[n.m] || '#ebe5d8'; ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.fill(); }
+          ctx.globalAlpha = 1;
+        });
+        ctx.font = '500 12px Jost Variable, system-ui, sans-serif'; ctx.textAlign = 'center';
+        nodes.forEach(function (n) { if (n.type !== 'theme') return; ctx.globalAlpha = on(n) ? 1 : 0.25; ctx.fillStyle = '#ebe5d8'; ctx.fillText(n.label, X(n), Y(n) - 17); });
+        ctx.globalAlpha = 1;
+        var t = hover || (touch ? sel : null);
+        if (t && t.type === 'poem') { var w = ctx.measureText(t.label).width + 14, x = Math.min(Math.max(X(t), w / 2 + 4), W - w / 2 - 4), y = Y(t) - 16; ctx.fillStyle = 'rgba(18,17,16,.92)'; ctx.fillRect(x - w / 2, y - 14, w, 20); ctx.fillStyle = '#ebe5d8'; ctx.fillText(t.label, x, y); }
+      }
+      function pick(ev) {
+        var r = cv.getBoundingClientRect(), mx = ev.clientX - r.left, my = ev.clientY - r.top, best = null, bd = (touch ? 22 : 12);
+        nodes.forEach(function (n) { if (mood && n.type === 'poem' && n.m !== mood) return; var d = Math.hypot(X(n) - mx, Y(n) - my) - (n.type === 'theme' ? 6 : 0); if (d < bd) { bd = d; best = n; } });
+        return best;
+      }
+      function show(n) {
+        pan.replaceChildren();
+        if (!n) { var s = document.createElement('span'); s.className = 'muted ui'; s.textContent = 'Passa su un punto o su un tema.'; pan.append(s); return; }
+        var h = document.createElement('p'); h.className = 'ui muted'; pan.append(h);
+        if (n.type === 'theme') {
+          h.textContent = 'Tema · ' + n.nb.length + ' poesie'; var t = document.createElement('h2'); t.textContent = n.label; pan.append(t);
+          var ul = document.createElement('ul'); ul.className = 'chips'; n.nb.slice(0, 60).forEach(function (p) { var li = document.createElement('li'), a = document.createElement('a'); a.className = 'chip'; a.href = p.d.h; a.textContent = p.label; li.append(a); ul.append(li); }); pan.append(ul);
+        } else {
+          var mm = D.moods.filter(function (x) { return x.k === n.m; })[0]; h.textContent = (mm ? mm.n : '') + ' · ' + n.d.th.map(function (k) { return byTheme[k].label; }).join(', ');
+          var t2 = document.createElement('h2'); t2.textContent = n.label; var q = document.createElement('p'); q.className = 'qq'; q.textContent = '«' + n.d.q + '»';
+          var a2 = document.createElement('a'); a2.className = 'btn solid'; a2.href = n.d.h; a2.textContent = 'Leggi la poesia'; pan.append(t2, q, a2);
+        }
+      }
+      cv.addEventListener('pointermove', function (e) { if (touch) return; var n = pick(e); if (n !== hover) { hover = n; cv.style.cursor = n ? 'pointer' : 'default'; if (!sel) show(n); draw(); } });
+      cv.addEventListener('pointerleave', function () { hover = null; draw(); });
+      cv.addEventListener('click', function (e) { var n = pick(e); if (n && n === sel && n.type === 'poem') { location.href = n.d.h; return; } sel = n === sel ? null : n; show(sel); draw(); });
+      var leg = document.getElementById('legenda');
+      D.moods.forEach(function (m) { var b = document.createElement('button'); b.className = 'chip'; b.type = 'button'; b.setAttribute('aria-pressed', 'false'); b.style.borderLeft = '4px solid ' + m.c; b.textContent = m.n;
+        b.addEventListener('click', function () { mood = mood === m.k ? null : m.k; sel = null; leg.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b && mood === m.k)); }); show(null); draw(); }); leg.append(b); });
+      addEventListener('resize', fit); fit(); window.__mappa = { nodes: nodes, X: X, Y: Y };
+    })();
+  </script>
+</Base>

@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { poems, meta, u, byId, stanzas, SITE, embedUrl } from '../../lib/data';
+import { poems, meta, u, byId, stanzas, SITE, embedUrl, ytId } from '../../lib/data';
 import Comments from '../../components/Comments.astro';
 export function getStaticPaths() {
   return poems.map((p, i) => ({ params: { slug: p.slug }, props: { p, prev: poems[i - 1], next: poems[i + 1] } }));
@@ -17,18 +17,35 @@ let n = 0;
 const jsonld = { '@context': 'https://schema.org', '@type': 'CreativeWork', genre: 'Poesia', name: p.titolo, text: p.testo, inLanguage: 'it',
   author: { '@type': 'Person', name: meta.autore }, keywords: [...p.temi, ...p.emozioni, ...p.parole].join(', '),
   image: new URL(u(`images/${p.immagine}`), SITE).href, url: new URL(u(`poesie/${p.slug}/`), SITE).href,
-  isPartOf: { '@type': 'Book', name: 'Il Libro dei Pensieri Muti', author: { '@type': 'Person', name: meta.autore } } };
-const emb = embedUrl(p.musica);
+  ...(p.mood !== 'nuovi' ? { isPartOf: { '@type': 'Book', name: 'Il Libro dei Pensieri Muti', author: { '@type': 'Person', name: meta.autore } } } : {}), ...(p.data ? { datePublished: p.data } : {}) };
+const yt = ytId(p.musica);
+const emb = yt ? null : embedUrl(p.musica);
 const short = new URL(u(`p/${p.id}/`), SITE).href;
 const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'Apple Music'], ['soundcloud', 'SoundCloud']] as const;
 ---
-<Base title={`${p.titolo}`} description={p.senso} image={`images/${p.immagine}`} type="article" jsonld={jsonld} current="poesie/">
+<Base title={`${p.titolo}`} description={(p.senso || p.testo.replace(/\s*\n+\s*/g, ' / ')).slice(0, 170).padEnd(25, '.')} image={`images/${p.immagine}`} type="article" jsonld={jsonld} current="poesie/">
   <article class="poem" style={`--c:${mood.color}`}>
+    <div class="side">
     <aside>
       <img src={u(`images/${p.immagine}`)} width="800" height="1000" alt={`Fotografia in bianco e nero associata alla poesia ${p.titolo}`} />
-      <p class="senso">{p.senso}</p>
+      {p.senso && <p class="senso">{p.senso}</p>}
       <p class="ui muted">{p.sezione} · <a href={u(`percorsi/${p.mood}/`)}>{mood.name}</a></p>
     </aside>
+    {p.musica.brano && <section class="player" aria-label="Brano della poesia" data-yt={yt ?? ''} data-sp={emb?.url ?? ''} data-title={p.musica.brano}>
+      <p class="ui tr"><strong>{p.musica.brano}</strong><br /><span class="muted">{p.musica.artista}</span></p>
+      {p.musica.perche && <p class="ui muted why">{p.musica.perche}</p>}
+      {(yt || emb) && <div class="stage" id="stage"><button class="btn solid" type="button" id="start">Accendi la traccia</button></div>}
+      {yt && <div class="ctl" id="ctl" hidden>
+        <button class="chip" type="button" id="pp">Pausa</button>
+        <button class="chip" type="button" id="un" hidden>Attiva l’audio</button>
+        <label class="ui vol">Volume <input id="vol" type="range" min="0" max="100" value="40" aria-label="Volume della musica" /></label>
+        <button class="chip" type="button" id="off">Spegni la musica</button>
+      </div>}
+      {p.musica.audio && <audio controls preload="none" src={u(p.musica.audio)}></audio>}
+      <p class="ui muted" id="mstat" role="status"></p>
+      <div class="cerca ui"><span class="muted">Cerca il brano:</span> {p.musica.cerca && plat.map(([k, l]) => <a class="chip" rel="noopener" target="_blank" href={(p.musica.cerca as any)[k]}>{l}</a>)}</div>
+    </section>}
+    </div>
     <div>
       <p class="ui muted">{p.numero} · {mood.name}</p>
       <h1 style="font-size:clamp(2.4rem,1.6rem + 4vw,4.6rem)">{p.titolo}</h1>
@@ -46,16 +63,7 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
 
       {Object.entries(nextTheme).map(([t, x]) => x && <p data-percorso={t} class="box"><span class="ui muted">Percorso {(meta.temi as any)[t]}</span><br /><a href={u(`poesie/${x.slug}/?p=${t}`)}>Prosegui con «{x.titolo}»</a></p>)}
 
-      <section class="box musica" aria-labelledby="mus">
-        <h2 id="mus">La traccia</h2>
-        <p>Il brano scelto è <em>{p.musica.brano}</em> di {p.musica.artista}: lascialo suonare sotto i versi.</p>
-        <p class="ui muted">Cuffie · luce bassa</p>
-        {p.musica.perche && <p class="ui muted">{p.musica.perche}</p>}
-        {emb && <div class="embed" data-url={emb.url} data-h={emb.h}><button class="btn" type="button">Accendi la traccia</button><span class="ui muted"> Caricando il lettore accetti i cookie di {emb.kind}.</span></div>}
-        {p.musica.audio && <audio controls preload="none" src={u(p.musica.audio)}></audio>}
-        <div class="platforms">{plat.map(([k, l]) => <a class="btn" rel="noopener" target="_blank" href={(p.musica as any)[k]}>{l}</a>)}</div>
-        <p class="ui muted" style="margin-top:.8rem">{emb ? 'Oppure aprilo sulla tua piattaforma.' : 'I link aprono la ricerca del brano sulla piattaforma scelta.'} Il silenzio dopo la musica fa parte della poesia.</p>
-      </section>
+      
 
       <section class="box" aria-labelledby="ig">
         <h2 id="ig">Su Instagram</h2>
@@ -92,18 +100,70 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
       document.addEventListener('astro:before-swap', function () { document.body.classList.remove('solo-testo'); }, { once: true });
       var cp = document.getElementById('cap');
       cp.addEventListener('click', function () { navigator.clipboard.writeText(cp.dataset.t).then(function () { document.getElementById('capfb').textContent = 'Didascalia copiata: incollala nel post.'; }); });
-      document.querySelectorAll('.embed').forEach(function (b) {
-        b.querySelector('button').addEventListener('click', function () {
-          var f = document.createElement('iframe'); f.src = b.dataset.url; f.height = b.dataset.h; f.width = '100%'; f.loading = 'lazy'; f.title = 'Lettore del brano';
-          f.allow = 'encrypted-media; autoplay; fullscreen'; f.style.border = '0'; b.replaceChildren(f);
-        });
-      });
       var s = document.getElementById('share');
       s.addEventListener('click', function () {
         var txt = '«' + s.dataset.q + '» — ' + s.dataset.t + ', Cuordivino';
         if (navigator.share) navigator.share({ title: s.dataset.t, text: txt, url: location.href.split('?')[0] }).catch(function () {});
         else navigator.clipboard.writeText(txt + ' ' + location.href.split('?')[0]).then(function () { document.getElementById('fb').textContent = 'Copiato negli appunti.'; });
       });
+    })();
+  </script>
+  <script is:inline>
+    (function () {
+      var pl = document.querySelector('.player'); if (!pl) return;
+      var yt = pl.dataset.yt, sp = pl.dataset.sp, stage = document.getElementById('stage'), stat = document.getElementById('mstat');
+      if (!stage) return;
+      var start = document.getElementById('start'), ctl = document.getElementById('ctl'), pp = document.getElementById('pp'), un = document.getElementById('un'), vol = document.getElementById('vol'), off = document.getElementById('off');
+      var pref = 'on', vv = 40, f = null, playing = false, muted = true, tm = null;
+      try { pref = localStorage.getItem('pm-musica') || 'on'; vv = parseInt(localStorage.getItem('pm-vol'), 10); if (isNaN(vv)) vv = 40; } catch (e) {}
+      if (vol) vol.value = vv;
+      var save = function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} };
+      var silent = function () { return document.body.classList.contains('solo-testo'); };
+      function send(func, args) { if (f && f.contentWindow) f.contentWindow.postMessage(JSON.stringify({ event: 'command', func: func, args: args || [] }), '*'); }
+      function fade(to) {
+        clearInterval(tm); var v = 0; send('setVolume', [0]); send('unMute'); muted = false; if (un) un.hidden = true;
+        tm = setInterval(function () { v += to / 20; if (v >= to) { v = to; clearInterval(tm); } send('setVolume', [Math.round(v)]); }, 120);
+      }
+      function labels() { if (!pp) return; pp.textContent = playing ? 'Pausa' : 'Riproduci'; off.textContent = pref === 'off' ? 'Accendi la musica' : 'Spegni la musica'; }
+      function load() {
+        if (sp && !yt) { var g = document.createElement('iframe'); g.src = sp; g.height = 152; g.width = '100%'; g.title = 'Lettore del brano'; g.allow = 'encrypted-media; autoplay'; g.style.border = '0'; stage.replaceChildren(g); stat.textContent = 'Premi play nel lettore per ascoltare.'; return; }
+        f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + yt + '?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&modestbranding=1&enablejsapi=1&origin=' + encodeURIComponent(location.origin);
+        f.title = 'Brano: ' + pl.dataset.title; f.allow = 'autoplay; encrypted-media'; f.referrerPolicy = 'strict-origin-when-cross-origin';
+        f.addEventListener('load', function () {
+          f.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 1, channel: 'widget' }), '*');
+          setTimeout(function () {
+            send('playVideo');
+            var act = navigator.userActivation && navigator.userActivation.hasBeenActive;
+            if (act && pref === 'on' && !silent()) { fade(parseInt(vol.value, 10)); stat.textContent = ''; }
+            else { un.hidden = false; stat.textContent = 'Il brano è in riproduzione senza audio: premi «Attiva l’audio».'; }
+          }, 700);
+        });
+        stage.replaceChildren(f); ctl.hidden = false; labels();
+      }
+      window.addEventListener('message', function (e) {
+        if (!f || e.source !== f.contentWindow) return; var d; try { d = JSON.parse(e.data); } catch (x) { return; }
+        if (d.event === 'infoDelivery' && d.info && d.info.playerState !== undefined) {
+          var s = d.info.playerState; playing = (s === 1 || s === 3);
+          if (s === 0) stat.textContent = 'Il silenzio dopo la musica fa parte della poesia.';
+          labels();
+        }
+      });
+      if (start) start.addEventListener('click', function () { pref = 'on'; save('pm-musica', 'on'); load(); if (yt) setTimeout(function () { fade(parseInt(vol.value, 10)); stat.textContent = ''; }, 900); });
+      if (!yt) { if (pref === 'on' && !silent() && sp) {} return; }
+      pp.addEventListener('click', function () { if (playing) send('pauseVideo'); else { send('playVideo'); if (muted) fade(parseInt(vol.value, 10)); } });
+      un.addEventListener('click', function () { fade(parseInt(vol.value, 10)); stat.textContent = ''; });
+      vol.addEventListener('input', function () { var v = parseInt(vol.value, 10); save('pm-vol', v); clearInterval(tm); send('setVolume', [v]); if (v > 0 && muted) { send('unMute'); muted = false; un.hidden = true; } if (v === 0) send('mute'); });
+      off.addEventListener('click', function () {
+        if (pref === 'on') { pref = 'off'; save('pm-musica', 'off'); clearInterval(tm); send('pauseVideo'); stat.textContent = 'Musica spenta: resta spenta anche nelle altre poesie.'; }
+        else { pref = 'on'; save('pm-musica', 'on'); send('playVideo'); fade(parseInt(vol.value, 10)); stat.textContent = ''; }
+        labels();
+      });
+      var modo = document.getElementById('modo');
+      if (modo) modo.addEventListener('click', function () { setTimeout(function () { if (silent()) { clearInterval(tm); send('pauseVideo'); } else if (pref === 'on') { send('playVideo'); fade(parseInt(vol.value, 10)); } }, 0); });
+      // parte da sola, salvo musica spenta o lettura in silenzio
+      if (pref === 'on' && !silent()) load();
+      else { stat.textContent = pref === 'off' ? 'La musica è spenta. Premi «Accendi la traccia» per ascoltare.' : ''; }
     })();
   </script>
 </Base>

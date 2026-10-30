@@ -1,49 +1,100 @@
-id,titolo,stato_animo,brano,artista,spotify,youtube,apple,soundcloud,perche,verificato
-1,Nel fondo,L'Ombra e il Pozzo,On the Nature of Daylight,Max Richter,,,,,,
-2,Imprigionato nel desio,L'Ombra e il Pozzo,Nuvole Bianche,Ludovico Einaudi,,,,,,
-3,Pigmento sottile,L'Ardore e la Carne,Apocalypse,Cigarettes After Sex,,,,,,
-4,Serpe,L'Ombra e il Pozzo,Written on the Sky,Max Richter,,,,,,
-5,Indaco di un dí,L'Ombra e il Pozzo,Near Light,Ólafur Arnalds,,,,,,
-6,Inquieto lenir,L'Ombra e il Pozzo,Una Mattina,Ludovico Einaudi,,,,,,
-7,Un sasso,L'Ombra e il Pozzo,Nocturne in C-Sharp Minor,Frédéric Chopin,,,,,,
-8,Apatia in un mondo irrequieto,L'Ombra e il Pozzo,Experience,Ludovico Einaudi,,,,,,
-9,Riflessi,L'Ardore e la Carne,Familiar,Agnes Obel,,,,,,
-10,S’inerpica ragione,L'Ardore e la Carne,Gymnopédie No. 1,Erik Satie,,,,,,
-11,Il banco,L'Ardore e la Carne,Says,Nils Frahm,,,,,,
-12,Io bramo,L'Ardore e la Carne,Saman,Ólafur Arnalds,,,,,,
-13,Ritornerò come unguento,L'Ardore e la Carne,Divenire,Ludovico Einaudi,,,,,,
-14,Tu donna perversa,L'Ardore e la Carne,Spiegel im Spiegel,Arvo Pärt,,,,,,
-15,Sii tu donna,L'Ardore e la Carne,Komorebi,Fabrizio Paterlini,,,,,,
-16,Ridesterò il mio morso,L'Ardore e la Carne,Riverside,Agnes Obel,,,,,,
-17,Vagavano i pensieri,L'Ardore e la Carne,Sunset Lover,Petit Biscuit,,,,,,
-18,Sei solo una foglia,La Maschera e il Fango,Leaves,Ben Lukas Boysen,,,,,,
-19,La corsa del bianco coniglio,La Maschera e il Fango,Time,Hans Zimmer,,,,,,
-20,La maschera,La Maschera e il Fango,Daylight,David Kushner,,,,,,
-21,Persuaso esita il tempo,La Maschera e il Fango,I'll Keep Coming,Low Roar,,,,,,
-22,Io rido,La Maschera e il Fango,Svefn-g-englar,Sigur Rós,,,,,,
-23,Nuvola nera,La Maschera e il Fango,Weightless,Marconi Union,,,,,,
-24,Giallo,La Maschera e il Fango,Petricor,Ludovico Einaudi,,,,,,
-25,In un muto campionario,La Maschera e il Fango,Comptine d'un autre été,Yann Tiersen,,,,,,
-26,Affogo,La Maschera e il Fango,River Flows in You,Yiruma,,,,,,
-27,"Riassaporo, nel lento divenire del giorno",La Quiete e il Ritrovo,The Night,Fabrizio Paterlini,,,,,,
-28,Sul filo,La Quiete e il Ritrovo,Breathe,Télépopmusik,,,,,,
-29,Pensiero,L'Ardore e la Carne,Elegy for the Arctic,Ludovico Einaudi,,,,,,
-30,Il respiro del tempo,La Quiete e il Ritrovo,Particles,Ólafur Arnalds,,,,,,
-31,Io sento,La Quiete e il Ritrovo,Avril 14th,Aphex Twin,,,,,,
-32,La soglia,La Quiete e il Ritrovo,Light of the Seven,Ramin Djawadi,,,,,,
-33,Ritrovo,La Quiete e il Ritrovo,Tomorrow's Song,Ólafur Arnalds,,,,,,
-34,Restai...,La Quiete e il Ritrovo,Flora,Ludovico Einaudi,,,,,,
-35,Nel preludio del giorno,La Quiete e il Ritrovo,Golden Hour,JVKE,,,,,,
-36,Attimo sfuggente,L'Ombra e il Pozzo,To Build a Home,The Cinematic Orchestra,,,,,,
-37,Faive,La Quiete e il Ritrovo,Oltremare,Ludovico Einaudi,,,,,,
-38,Del nuovo anno,La Quiete e il Ritrovo,Vivaldi Recomposed: Spring 1,Max Richter,,,,,,
-39,Parole ardenti,L'Ardore e la Carne,Midnight City (Acoustic),M83,,,,,,
-40,Anime perse,L'Ombra e il Pozzo,Sleeping at Last,Saturn,,,,,,
-41,Un pensiero profondo e leggero,La Quiete e il Ritrovo,A Walk,Tycho,,,,,,
-42,Assaporo il piacere del vento,L'Ardore e la Carne,Fly,Ludovico Einaudi,,,,,,
-43,Assaporo il colore del silenzio,L'Ombra e il Pozzo,Silence,Beethoven (Arr. Piano Noir),,,,,,
-44,Adoro nel divenire del tempo,La Quiete e il Ritrovo,Solemn Path,Cuordivino Soundtrack,,,,,,
-45,Dono il mio tempo,La Maschera e il Fango,The Winner Is,Mychael Danna,,,,,,
-46,"Immagini, pensieri, emozioni",La Quiete e il Ritrovo,An Ending (Ascent),Brian Eno,,,,,,
-47,Ho disegnato pensieri,L'Ardore e la Carne,Redemption,Zack Hemsey,,,,,,
-48,Ho versato,La Maschera e il Fango,Versi Muti,Refuso di Verso Theme,,,,,,
+id,titolo,stato_animo,brano,artista,spotify,youtube,apple,soundcloud,perche,verificato,cerca_youtube
+1,Nel fondo,L'Ombra e il Pozzo,On the Nature of Daylight,Max Richter,,,,,,,https://www.youtube.com/results?search_query=On%20the%20Nature%20of%20Daylight%20Max%20Richter
+2,Imprigionato nel desio,L'Ombra e il Pozzo,Nuvole Bianche,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Nuvole%20Bianche%20Ludovico%20Einaudi
+3,Pigmento sottile,L'Ardore e la Carne,Apocalypse,Cigarettes After Sex,,,,,,,https://www.youtube.com/results?search_query=Apocalypse%20Cigarettes%20After%20Sex
+4,Serpe,L'Ombra e il Pozzo,Written on the Sky,Max Richter,,,,,,,https://www.youtube.com/results?search_query=Written%20on%20the%20Sky%20Max%20Richter
+5,Indaco di un dí,L'Ombra e il Pozzo,Near Light,Ólafur Arnalds,,,,,,,https://www.youtube.com/results?search_query=Near%20Light%20%C3%93lafur%20Arnalds
+6,Inquieto lenir,L'Ombra e il Pozzo,Una Mattina,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Una%20Mattina%20Ludovico%20Einaudi
+7,Un sasso,L'Ombra e il Pozzo,Nocturne in C-Sharp Minor,Frédéric Chopin,,,,,,,https://www.youtube.com/results?search_query=Nocturne%20in%20C-Sharp%20Minor%20Fr%C3%A9d%C3%A9ric%20Chopin
+8,Apatia in un mondo irrequieto,L'Ombra e il Pozzo,Experience,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Experience%20Ludovico%20Einaudi
+9,Riflessi,L'Ardore e la Carne,Familiar,Agnes Obel,,,,,,,https://www.youtube.com/results?search_query=Familiar%20Agnes%20Obel
+10,S’inerpica ragione,L'Ardore e la Carne,Gymnopédie No. 1,Erik Satie,,,,,,,https://www.youtube.com/results?search_query=Gymnop%C3%A9die%20No.%201%20Erik%20Satie
+11,Il banco,L'Ardore e la Carne,Says,Nils Frahm,,,,,,,https://www.youtube.com/results?search_query=Says%20Nils%20Frahm
+12,Io bramo,L'Ardore e la Carne,Saman,Ólafur Arnalds,,,,,,,https://www.youtube.com/results?search_query=Saman%20%C3%93lafur%20Arnalds
+13,Ritornerò come unguento,L'Ardore e la Carne,Divenire,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Divenire%20Ludovico%20Einaudi
+14,Tu donna perversa,L'Ardore e la Carne,Spiegel im Spiegel,Arvo Pärt,,,,,,,https://www.youtube.com/results?search_query=Spiegel%20im%20Spiegel%20Arvo%20P%C3%A4rt
+15,Sii tu donna,L'Ardore e la Carne,Komorebi,Fabrizio Paterlini,,,,,,,https://www.youtube.com/results?search_query=Komorebi%20Fabrizio%20Paterlini
+16,Ridesterò il mio morso,L'Ardore e la Carne,Riverside,Agnes Obel,,,,,,,https://www.youtube.com/results?search_query=Riverside%20Agnes%20Obel
+17,Vagavano i pensieri,L'Ardore e la Carne,Sunset Lover,Petit Biscuit,,,,,,,https://www.youtube.com/results?search_query=Sunset%20Lover%20Petit%20Biscuit
+18,Sei solo una foglia,La Maschera e il Fango,Leaves,Ben Lukas Boysen,,,,,,,https://www.youtube.com/results?search_query=Leaves%20Ben%20Lukas%20Boysen
+19,La corsa del bianco coniglio,La Maschera e il Fango,Time,Hans Zimmer,,,,,,,https://www.youtube.com/results?search_query=Time%20Hans%20Zimmer
+20,La maschera,La Maschera e il Fango,Daylight,David Kushner,,,,,,,https://www.youtube.com/results?search_query=Daylight%20David%20Kushner
+21,Persuaso esita il tempo,La Maschera e il Fango,I'll Keep Coming,Low Roar,,,,,,,https://www.youtube.com/results?search_query=I%27ll%20Keep%20Coming%20Low%20Roar
+22,Io rido,La Maschera e il Fango,Svefn-g-englar,Sigur Rós,,,,,,,https://www.youtube.com/results?search_query=Svefn-g-englar%20Sigur%20R%C3%B3s
+23,Nuvola nera,La Maschera e il Fango,Weightless,Marconi Union,,,,,,,https://www.youtube.com/results?search_query=Weightless%20Marconi%20Union
+24,Giallo,La Maschera e il Fango,Petricor,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Petricor%20Ludovico%20Einaudi
+25,In un muto campionario,La Maschera e il Fango,Comptine d'un autre été,Yann Tiersen,,,,,,,https://www.youtube.com/results?search_query=Comptine%20d%27un%20autre%20%C3%A9t%C3%A9%20Yann%20Tiersen
+26,Affogo,La Maschera e il Fango,River Flows in You,Yiruma,,,,,,,https://www.youtube.com/results?search_query=River%20Flows%20in%20You%20Yiruma
+27,"Riassaporo, nel lento divenire del giorno",La Quiete e il Ritrovo,The Night,Fabrizio Paterlini,,,,,,,https://www.youtube.com/results?search_query=The%20Night%20Fabrizio%20Paterlini
+28,Sul filo,La Quiete e il Ritrovo,Breathe,Télépopmusik,,,,,,,https://www.youtube.com/results?search_query=Breathe%20T%C3%A9l%C3%A9popmusik
+29,Pensiero,L'Ardore e la Carne,Elegy for the Arctic,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Elegy%20for%20the%20Arctic%20Ludovico%20Einaudi
+30,Il respiro del tempo,La Quiete e il Ritrovo,Particles,Ólafur Arnalds,,,,,,,https://www.youtube.com/results?search_query=Particles%20%C3%93lafur%20Arnalds
+31,Io sento,La Quiete e il Ritrovo,Avril 14th,Aphex Twin,,,,,,,https://www.youtube.com/results?search_query=Avril%2014th%20Aphex%20Twin
+32,La soglia,La Quiete e il Ritrovo,Light of the Seven,Ramin Djawadi,,,,,,,https://www.youtube.com/results?search_query=Light%20of%20the%20Seven%20Ramin%20Djawadi
+33,Ritrovo,La Quiete e il Ritrovo,Tomorrow's Song,Ólafur Arnalds,,,,,,,https://www.youtube.com/results?search_query=Tomorrow%27s%20Song%20%C3%93lafur%20Arnalds
+34,Restai...,La Quiete e il Ritrovo,Flora,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Flora%20Ludovico%20Einaudi
+35,Nel preludio del giorno,La Quiete e il Ritrovo,Golden Hour,JVKE,,,,,,,https://www.youtube.com/results?search_query=Golden%20Hour%20JVKE
+36,Attimo sfuggente,L'Ombra e il Pozzo,To Build a Home,The Cinematic Orchestra,,,,,,,https://www.youtube.com/results?search_query=To%20Build%20a%20Home%20The%20Cinematic%20Orchestra
+37,Faive,La Quiete e il Ritrovo,Oltremare,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Oltremare%20Ludovico%20Einaudi
+38,Del nuovo anno,La Quiete e il Ritrovo,Vivaldi Recomposed: Spring 1,Max Richter,,,,,,,https://www.youtube.com/results?search_query=Vivaldi%20Recomposed%3A%20Spring%201%20Max%20Richter
+39,Parole ardenti,L'Ardore e la Carne,Midnight City (Acoustic),M83,,,,,,,https://www.youtube.com/results?search_query=Midnight%20City%20%28Acoustic%29%20M83
+40,Anime perse,L'Ombra e il Pozzo,Saturn,Sleeping At Last,,,,,,,https://www.youtube.com/results?search_query=Saturn+Sleeping+At+Last
+41,Un pensiero profondo e leggero,La Quiete e il Ritrovo,A Walk,Tycho,,,,,,,https://www.youtube.com/results?search_query=A%20Walk%20Tycho
+42,Assaporo il piacere del vento,L'Ardore e la Carne,Fly,Ludovico Einaudi,,,,,,,https://www.youtube.com/results?search_query=Fly%20Ludovico%20Einaudi
+43,Assaporo il colore del silenzio,L'Ombra e il Pozzo,Silence,Beethoven (Arr. Piano Noir),,,,,,,https://www.youtube.com/results?search_query=Silence%20Beethoven%20%28Arr.%20Piano%20Noir%29
+44,Adoro nel divenire del tempo,La Quiete e il Ritrovo,River Man,Nick Drake,,,,,Proposta dal testo: richiama tempo.,,https://www.youtube.com/results?search_query=River%20Man%20Nick%20Drake
+45,Dono il mio tempo,La Maschera e il Fango,The Winner Is,Mychael Danna,,,,,,,https://www.youtube.com/results?search_query=The%20Winner%20Is%20Mychael%20Danna
+46,"Immagini, pensieri, emozioni",La Quiete e il Ritrovo,An Ending (Ascent),Brian Eno,,,,,,,https://www.youtube.com/results?search_query=An%20Ending%20%28Ascent%29%20Brian%20Eno
+47,Ho disegnato pensieri,L'Ardore e la Carne,Redemption,Zack Hemsey,,,,,,,https://www.youtube.com/results?search_query=Redemption%20Zack%20Hemsey
+48,Ho versato,La Maschera e il Fango,Something I Can Never Have,Nine Inch Nails,,,,,Proposta dal testo: richiama rabbia.,,https://www.youtube.com/results?search_query=Something%20I%20Can%20Never%20Have%20Nine%20Inch%20Nails
+49,Pensiero,I Versi Nuovi,Sæglópur,Sigur Rós,,,,,"Proposta dal testo: richiama mare, perdita.",,https://www.youtube.com/results?search_query=S%C3%A6gl%C3%B3pur%20Sigur%20R%C3%B3s
+50,Un pensiero,I Versi Nuovi,Famous Blue Raincoat,Leonard Cohen,,,,,"Proposta dal testo: richiama perdita, memoria.",,https://www.youtube.com/results?search_query=Famous%20Blue%20Raincoat%20Leonard%20Cohen
+51,Non placa sete,I Versi Nuovi,Fuori dal mondo,Ludovico Einaudi,,,,,"Proposta dal testo: richiama assenza, silenzio.",,https://www.youtube.com/results?search_query=Fuori%20dal%20mondo%20Ludovico%20Einaudi
+52,Demoni e meraviglie,I Versi Nuovi,Porz Goret,Yann Tiersen,,,,,"Proposta dal testo: richiama mare, quiete.",,https://www.youtube.com/results?search_query=Porz%20Goret%20Yann%20Tiersen
+53,Nell’anima immonda di un uomo imperfetto,I Versi Nuovi,Your Hand in Mine,Explosions in the Sky,,,,,"Proposta dal testo: richiama amore, rinascita.",,https://www.youtube.com/results?search_query=Your%20Hand%20in%20Mine%20Explosions%20in%20the%20Sky
+54,La mia cappella chiede conforto,I Versi Nuovi,Requiem: In Paradisum,Gabriel Fauré,,,,,"Proposta dal testo: richiama sacro, rinascita.",,https://www.youtube.com/results?search_query=Requiem%3A%20In%20Paradisum%20Gabriel%20Faur%C3%A9
+55,"E sento, e vedo",I Versi Nuovi,Povera patria,Franco Battiato,,,,,Proposta dal testo: richiama rabbia.,,https://www.youtube.com/results?search_query=Povera%20patria%20Franco%20Battiato
+56,"Insisto, impavido ed indomito",I Versi Nuovi,Angel,Massive Attack,,,,,"Proposta dal testo: richiama carne, abisso, rabbia.",,https://www.youtube.com/results?search_query=Angel%20Massive%20Attack
+57,Rovinosamente,I Versi Nuovi,Pyramid Song,Radiohead,,,,,Proposta dal testo: richiama tempo.,,https://www.youtube.com/results?search_query=Pyramid%20Song%20Radiohead
+58,Dono il mio tempo,I Versi Nuovi,Life,Ludovico Einaudi,,,,,Proposta dal testo: richiama tempo.,,https://www.youtube.com/results?search_query=Life%20Ludovico%20Einaudi
+59,Pulsante riverbero di una mente,I Versi Nuovi,Nothing's Gonna Hurt You Baby,Cigarettes After Sex,,,,,"Proposta dal testo: richiama amore, carne.",,https://www.youtube.com/results?search_query=Nothing%27s%20Gonna%20Hurt%20You%20Baby%20Cigarettes%20After%20Sex
+60,Sì,I Versi Nuovi,,,,,,,,,
+61,Carne,I Versi Nuovi,Oblivion,Astor Piazzolla,,,,,"Proposta dal testo: richiama perdita, carne, memoria.",,https://www.youtube.com/results?search_query=Oblivion%20Astor%20Piazzolla
+62,Rimase reciso,I Versi Nuovi,,,,,,,,,
+63,Brucia nella mente,I Versi Nuovi,Hammers,Nils Frahm,,,,,"Proposta dal testo: richiama rabbia, carne.",,https://www.youtube.com/results?search_query=Hammers%20Nils%20Frahm
+64,"Me, tace",I Versi Nuovi,Dream 3 (in the midst of my life),Max Richter,,,,,"Proposta dal testo: richiama notte, quiete.",,https://www.youtube.com/results?search_query=Dream%203%20%28in%20the%20midst%20of%20my%20life%29%20Max%20Richter
+65,M’è grata,I Versi Nuovi,Libertango,Astor Piazzolla,,,,,"Proposta dal testo: richiama carne, rabbia.",,https://www.youtube.com/results?search_query=Libertango%20Astor%20Piazzolla
+66,Divaricherò,I Versi Nuovi,Atmosphere,Joy Division,,,,,"Proposta dal testo: richiama perdita, abisso, silenzio.",,https://www.youtube.com/results?search_query=Atmosphere%20Joy%20Division
+67,In un inchino,I Versi Nuovi,The Heart Asks Pleasure First,Michael Nyman,,,,,"Proposta dal testo: richiama amore, carne.",,https://www.youtube.com/results?search_query=The%20Heart%20Asks%20Pleasure%20First%20Michael%20Nyman
+68,Il pane e la pece,I Versi Nuovi,Miserere,Gregorio Allegri,,,,,Proposta dal testo: richiama sacro.,,https://www.youtube.com/results?search_query=Miserere%20Gregorio%20Allegri
+69,Volge al meriggio,I Versi Nuovi,Red Right Hand,Nick Cave & The Bad Seeds,,,,,"Proposta dal testo: richiama abisso, maschera.",,https://www.youtube.com/results?search_query=Red%20Right%20Hand%20Nick%20Cave%20%26%20The%20Bad%20Seeds
+70,Di ipocrisia e sibilo,I Versi Nuovi,Bocca di rosa,Fabrizio De André,,,,,Proposta dal testo: richiama maschera.,,https://www.youtube.com/results?search_query=Bocca%20di%20rosa%20Fabrizio%20De%20Andr%C3%A9
+71,Inquieto il mio lenir,I Versi Nuovi,Lacrimosa,Wolfgang Amadeus Mozart,,,,,Proposta dal testo: richiama sacro.,,https://www.youtube.com/results?search_query=Lacrimosa%20Wolfgang%20Amadeus%20Mozart
+72,Musa,I Versi Nuovi,Avalanche,Leonard Cohen,,,,,Proposta dal testo: richiama rabbia.,,https://www.youtube.com/results?search_query=Avalanche%20Leonard%20Cohen
+73,Respiri alati,I Versi Nuovi,Spells,Nils Frahm,,,,,"Proposta dal testo: richiama attesa, tempo.",,https://www.youtube.com/results?search_query=Spells%20Nils%20Frahm
+74,Il risveglio coatto,I Versi Nuovi,Fade Into You,Mazzy Star,,,,,Proposta dal testo: richiama attesa.,,https://www.youtube.com/results?search_query=Fade%20Into%20You%20Mazzy%20Star
+75,Il dio che grugnisce,I Versi Nuovi,Take Me to Church,Hozier,,,,,"Proposta dal testo: richiama sacro, carne, rabbia.",,https://www.youtube.com/results?search_query=Take%20Me%20to%20Church%20Hozier
+76,Neve di lava,I Versi Nuovi,Ancora tu,Lucio Battisti,,,,,Proposta dal testo: richiama rabbia.,,https://www.youtube.com/results?search_query=Ancora%20tu%20Lucio%20Battisti
+77,Fuorviante scompiglio,I Versi Nuovi,Laura Palmer's Theme,Angelo Badalamenti,,,,,"Proposta dal testo: richiama notte, carne.",,https://www.youtube.com/results?search_query=Laura%20Palmer%27s%20Theme%20Angelo%20Badalamenti
+78,Religioso disincantato,I Versi Nuovi,Lux Aeterna,Clint Mansell,,,,,"Proposta dal testo: richiama rabbia, sacro.",,https://www.youtube.com/results?search_query=Lux%20Aeterna%20Clint%20Mansell
+79,Oltre il bardiglio,I Versi Nuovi,Hotel Supramonte,Fabrizio De André,,,,,Proposta dal testo: richiama silenzio.,,https://www.youtube.com/results?search_query=Hotel%20Supramonte%20Fabrizio%20De%20Andr%C3%A9
+80,Tagliando di sudore,I Versi Nuovi,Wild Is the Wind,Nina Simone,,,,,"Proposta dal testo: richiama attesa, carne.",,https://www.youtube.com/results?search_query=Wild%20Is%20the%20Wind%20Nina%20Simone
+81,Legno di cembro,I Versi Nuovi,Music for Airports 1/1,Brian Eno,,,,,"Proposta dal testo: richiama silenzio, tempo.",,https://www.youtube.com/results?search_query=Music%20for%20Airports%201/1%20Brian%20Eno
+82,Gelido pentagramma,I Versi Nuovi,Gnossienne No. 1,Erik Satie,,,,,"Proposta dal testo: richiama attesa, maschera.",,https://www.youtube.com/results?search_query=Gnossienne%20No.%201%20Erik%20Satie
+83,Goti mozzati,I Versi Nuovi,Fratres,Arvo Pärt,,,,,"Proposta dal testo: richiama sacro, tempo.",,https://www.youtube.com/results?search_query=Fratres%20Arvo%20P%C3%A4rt
+84,Io rendo strada,I Versi Nuovi,How to Disappear Completely,Radiohead,,,,,"Proposta dal testo: richiama assenza, abisso, silenzio.",,https://www.youtube.com/results?search_query=How%20to%20Disappear%20Completely%20Radiohead
+85,Lo scudo e l’aurora,I Versi Nuovi,Prospettiva Nevski,Franco Battiato,,,,,"Proposta dal testo: richiama tempo, memoria, notte.",,https://www.youtube.com/results?search_query=Prospettiva%20Nevski%20Franco%20Battiato
+86,Il compito mai rinnegato,I Versi Nuovi,Metamorphosis Two,Philip Glass,,,,,"Proposta dal testo: richiama tempo, memoria.",,https://www.youtube.com/results?search_query=Metamorphosis%20Two%20Philip%20Glass
+87,Io rendo lode,I Versi Nuovi,Day One,Hans Zimmer,,,,,"Proposta dal testo: richiama tempo, memoria.",,https://www.youtube.com/results?search_query=Day%20One%20Hans%20Zimmer
+88,Il paladino assolto,I Versi Nuovi,I Giorni,Ludovico Einaudi,,,,,"Proposta dal testo: richiama memoria, tempo.",,https://www.youtube.com/results?search_query=I%20Giorni%20Ludovico%20Einaudi
+89,Fremito di felce,I Versi Nuovi,Sunset Mission,Bohren & der Club of Gore,,,,,Proposta dal testo: richiama carne.,,https://www.youtube.com/results?search_query=Sunset%20Mission%20Bohren%20%26%20der%20Club%20of%20Gore
+90,Sotto il vento di maestrale,I Versi Nuovi,Personal Jesus,Depeche Mode,,,,,"Proposta dal testo: richiama sacro, carne.",,https://www.youtube.com/results?search_query=Personal%20Jesus%20Depeche%20Mode
+91,Il sibilo del vento,I Versi Nuovi,Vladimir's Blues,Max Richter,,,,,Proposta dal testo: richiama assenza.,,https://www.youtube.com/results?search_query=Vladimir%27s%20Blues%20Max%20Richter
+92,Il pennon in monta,I Versi Nuovi,Glory Box,Portishead,,,,,Proposta dal testo: richiama carne.,,https://www.youtube.com/results?search_query=Glory%20Box%20Portishead
+93,Vomitar parole,I Versi Nuovi,Eros,Ludovico Einaudi,,,,,Proposta dal testo: richiama carne.,,https://www.youtube.com/results?search_query=Eros%20Ludovico%20Einaudi
+94,La livella non mente,I Versi Nuovi,Esja,Hania Rani,,,,,Proposta dal testo: richiama quiete.,,https://www.youtube.com/results?search_query=Esja%20Hania%20Rani
+95,Il viandar di maggio,I Versi Nuovi,Tom Traubert's Blues,Tom Waits,,,,,"Proposta dal testo: richiama maschera, memoria.",,https://www.youtube.com/results?search_query=Tom%20Traubert%27s%20Blues%20Tom%20Waits
+96,Esile fil d’erba,I Versi Nuovi,,,,,,,,,
+97,Vivere di poco,I Versi Nuovi,Cornfield Chase,Hans Zimmer,,,,,"Proposta dal testo: richiama rinascita, attesa, tempo.",,https://www.youtube.com/results?search_query=Cornfield%20Chase%20Hans%20Zimmer
+98,Il pensier mai tace,I Versi Nuovi,La cura,Franco Battiato,,,,,"Proposta dal testo: richiama amore, rinascita, sacro.",,https://www.youtube.com/results?search_query=La%20cura%20Franco%20Battiato
+99,Ignaro della perfidia,I Versi Nuovi,Love Will Tear Us Apart,Joy Division,,,,,"Proposta dal testo: richiama amore, rabbia.",,https://www.youtube.com/results?search_query=Love%20Will%20Tear%20Us%20Apart%20Joy%20Division
