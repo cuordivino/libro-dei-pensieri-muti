@@ -1,5 +1,8 @@
 name: Trova i brani su YouTube
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      rifai: { description: 'Rifai tutti i collegamenti (video e solo musica)', type: boolean, default: true }
 permissions: { contents: write, actions: write }
 jobs:
   brani:
@@ -10,7 +13,7 @@ jobs:
         with: { python-version: '3.12' }
       - run: pip install pillow yt-dlp
       - name: Cerca i video
-        env: { YT_API_KEY: '${{ secrets.YT_API_KEY }}' }  # facoltativa: senza, usa la ricerca pubblica
+        env: { YT_API_KEY: '${{ secrets.YT_API_KEY }}', RIFAI: '${{ inputs.rifai && 1 || 0 }}' }  # facoltativa: senza, usa la ricerca pubblica
         run: python3 scripts/musica_risolvi.py && python3 scripts/enrich.py
       - name: Salva e pubblica
         env: { GH_TOKEN: '${{ github.token }}' }

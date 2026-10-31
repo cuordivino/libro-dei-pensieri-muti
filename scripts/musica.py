@@ -9,13 +9,13 @@ poems = json.load(open(f'{ROOT}/src/data/poems.json', encoding='utf-8'))['poems'
 p = f'{HERE}/musica.csv'
 old = {r['id']: r for r in csv.DictReader(open(p, encoding='utf-8'))} if os.path.exists(p) else {}
 import urllib.parse as up
-cols = ['id', 'titolo', 'stato_animo', 'brano', 'artista', 'spotify', 'youtube', 'apple', 'soundcloud', 'perche', 'verificato', 'cerca_youtube']
+cols = ['id', 'titolo', 'stato_animo', 'brano', 'artista', 'spotify', 'youtube', 'apple', 'soundcloud', 'perche', 'verificato', 'cerca_youtube', 'youtube_audio']
 with open(p, 'w', encoding='utf-8', newline='') as f:
     w = csv.DictWriter(f, cols); w.writeheader()
     for x in poems:
         o = old.get(str(x['id']), {})
         w.writerow({'id': x['id'], 'titolo': x['titolo'], 'stato_animo': x['moodNome'],
                     'brano': o.get('brano') or x['musica']['brano'], 'artista': o.get('artista') or x['musica']['artista'],
-                    **{k: o.get(k, '') for k in ('spotify', 'youtube', 'apple', 'soundcloud', 'perche', 'verificato')},
+                    **{k: o.get(k, '') for k in ('spotify', 'youtube', 'youtube_audio', 'apple', 'soundcloud', 'perche', 'verificato')},
                     'cerca_youtube': ('https://www.youtube.com/results?search_query=' + up.quote(((o.get('brano') or x['musica']['brano']) + ' ' + (o.get('artista') or x['musica']['artista'])).strip())) if (o.get('brano') or x['musica']['brano']) else ''})
 print('scritto', p, '—', len(poems), 'righe')

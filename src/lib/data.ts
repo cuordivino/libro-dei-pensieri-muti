@@ -39,4 +39,4 @@ export function embedUrl(m: Record<string, any>) {
 }
 
 /** ID del video YouTube, se il brano ha un indirizzo diretto. */
-export const ytId = (m: Record<string, any>) => /(?:v=|youtu\.be\/)([A-Za-z0-9_-]{11})/.exec(m.youtube ?? '')?.[1] ?? null;
+export const ytId = (m: Record<string, any>, kind: 'video' | 'audio' = 'video') => /(?:v=|youtu\.be\/)([A-Za-z0-9_-]{11})/.exec((kind === 'audio' ? m.youtube_audio : m.youtube) ?? '')?.[1] ?? null;

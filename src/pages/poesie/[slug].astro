@@ -18,7 +18,7 @@ const jsonld = { '@context': 'https://schema.org', '@type': 'CreativeWork', genr
   author: { '@type': 'Person', name: meta.autore }, keywords: [...p.temi, ...p.emozioni, ...p.parole].join(', '),
   image: new URL(u(`images/${p.immagine}`), SITE).href, url: new URL(u(`poesie/${p.slug}/`), SITE).href,
   ...(p.mood !== 'nuovi' ? { isPartOf: { '@type': 'Book', name: 'Il Libro dei Pensieri Muti', author: { '@type': 'Person', name: meta.autore } } } : {}), ...(p.data ? { datePublished: p.data } : {}) };
-const yt = ytId(p.musica);
+const yv = ytId(p.musica, 'video'), ya = ytId(p.musica, 'audio'), yt = yv ?? ya;
 const emb = yt ? null : embedUrl(p.musica);
 const short = new URL(u(`p/${p.id}/`), SITE).href;
 const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'Apple Music'], ['soundcloud', 'SoundCloud']] as const;
@@ -31,10 +31,11 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
       {p.senso && <p class="senso">{p.senso}</p>}
       <p class="ui muted">{p.sezione} · <a href={u(`percorsi/${p.mood}/`)}>{mood.name}</a></p>
     </aside>
-    {p.musica.brano && <section class="player" aria-label="Brano della poesia" data-yt={yt ?? ''} data-sp={emb?.url ?? ''} data-title={p.musica.brano}>
+    {p.musica.brano && <section class="player" aria-label="Brano della poesia" data-yv={yv ?? ''} data-ya={ya ?? ''} data-sp={emb?.url ?? ''} data-title={p.musica.brano}>
       <p class="ui tr"><strong>{p.musica.brano}</strong><br /><span class="muted">{p.musica.artista}</span></p>
       {p.musica.perche && <p class="ui muted why">{p.musica.perche}</p>}
       {(yt || emb) && <div class="stage" id="stage"><button class="btn solid" type="button" id="start">Accendi la traccia</button></div>}
+      {yv && ya && <div class="ver" role="group" aria-label="Versione del brano"><button class="chip" type="button" data-ver="audio" aria-pressed="true">Solo musica</button><button class="chip" type="button" data-ver="video" aria-pressed="false">Video</button></div>}
       <div class="ctl" id="ctl" hidden={!!yt} data-spento={yt ? undefined : '1'}>
         <button class="chip" type="button" id="pp" disabled={!yt}>{yt ? 'Pausa' : 'Riproduci'}</button>
         <button class="chip" type="button" id="un" hidden>Attiva l’audio</button>
@@ -111,11 +112,11 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
   <script is:inline>
     (function () {
       var pl = document.querySelector('.player'); if (!pl) return;
-      var yt = pl.dataset.yt, sp = pl.dataset.sp, stage = document.getElementById('stage'), stat = document.getElementById('mstat');
+      var ids = { video: pl.dataset.yv, audio: pl.dataset.ya }, ver = 'audio', yt = ids.video || ids.audio, sp = pl.dataset.sp, stage = document.getElementById('stage'), stat = document.getElementById('mstat');
       if (!stage) return;
       var start = document.getElementById('start'), ctl = document.getElementById('ctl'), pp = document.getElementById('pp'), un = document.getElementById('un'), vol = document.getElementById('vol'), off = document.getElementById('off');
       var pref = 'on', vv = 40, f = null, playing = false, muted = true, tm = null;
-      try { pref = localStorage.getItem('pm-musica') || 'on'; vv = parseInt(localStorage.getItem('pm-vol'), 10); if (isNaN(vv)) vv = 40; } catch (e) {}
+      try { ver = localStorage.getItem('pm-versione') === 'video' ? 'video' : 'audio'; pref = localStorage.getItem('pm-musica') || 'on'; vv = parseInt(localStorage.getItem('pm-vol'), 10); if (isNaN(vv)) vv = 40; } catch (e) {}
       if (vol) vol.value = vv;
       var save = function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} };
       var silent = function () { return document.body.classList.contains('solo-testo'); };
@@ -125,7 +126,9 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
         tm = setInterval(function () { v += to / 20; if (v >= to) { v = to; clearInterval(tm); } send('setVolume', [Math.round(v)]); }, 120);
       }
       function labels() { if (!pp) return; pp.textContent = playing ? 'Pausa' : 'Riproduci'; off.textContent = pref === 'off' ? 'Accendi la musica' : 'Spegni la musica'; }
+      function cur() { return (ver === 'video' ? ids.video : ids.audio) || ids.video || ids.audio; }
       function load() {
+        yt = cur();
         if (sp && !yt) { var g = document.createElement('iframe'); g.src = sp; g.height = 152; g.width = '100%'; g.title = 'Lettore del brano'; g.allow = 'encrypted-media; autoplay'; g.style.border = '0'; stage.replaceChildren(g); stat.textContent = 'Premi play nel lettore per ascoltare.'; return; }
         f = document.createElement('iframe');
         f.src = 'https://www.youtube-nocookie.com/embed/' + yt + '?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&modestbranding=1&enablejsapi=1&origin=' + encodeURIComponent(location.origin);
@@ -141,6 +144,14 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
         });
         stage.replaceChildren(f); ctl.hidden = false; labels();
       }
+      var vb = document.querySelectorAll('[data-ver]');
+      function paintVer() { var v = (ver === 'video' ? ids.video : ids.audio) ? ver : (ids.video ? 'video' : 'audio'); vb.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.ver === v)); }); }
+      paintVer();
+      vb.forEach(function (b) { b.addEventListener('click', function () {
+        if (b.dataset.ver === ver) return; ver = b.dataset.ver; save('pm-versione', ver); paintVer();
+        var was = playing || pref === 'on'; if (f) { clearInterval(tm); f.remove(); f = null; playing = false; muted = true; }
+        if (was && pref === 'on' && !silent()) { load(); setTimeout(function () { fade(parseInt(vol.value, 10)); stat.textContent = ''; }, 900); }
+      }); });
       window.addEventListener('message', function (e) {
         if (!f || e.source !== f.contentWindow) return; var d; try { d = JSON.parse(e.data); } catch (x) { return; }
         if (d.event === 'infoDelivery' && d.info && d.info.playerState !== undefined) {

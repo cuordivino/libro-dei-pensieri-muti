@@ -77,8 +77,8 @@ for p in all_src:
     d.setdefault('miniatura', d['immagine'])
     m = mus.get(str(p['id']))
     if m:
-        for k in ('spotify', 'youtube', 'apple', 'soundcloud'):
-            if m.get(k, '').strip(): d['musica'][k] = m[k].strip()
+        for k in ('spotify', 'youtube', 'youtube_audio', 'apple', 'soundcloud'):
+            if (m.get(k) or '').strip(): d['musica'][k] = m[k].strip()
         if m.get('brano', '').strip(): d['musica']['brano'] = m['brano'].strip()
         if m.get('artista', '').strip(): d['musica']['artista'] = m['artista'].strip()
         d['musica']['verificato'] = m.get('verificato', '').strip().lower() in ('si', 'sì', 'x', '1')

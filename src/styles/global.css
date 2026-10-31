@@ -217,3 +217,5 @@ body.solo-testo .side{display:none}
 .lista section{margin-top:1rem}
 .lista h2{font-size:1.2rem}
 .lista ul{columns:2 14rem;padding-left:1.1rem}
+
+.ver{display:flex;gap:.4rem;margin:.6rem 0 0}

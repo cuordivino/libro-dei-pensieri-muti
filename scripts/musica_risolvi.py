@@ -10,8 +10,8 @@ FIX = os.environ.get('YT_FIXTURE')  # solo per le prove
 def norm(s):
     s = re.sub(r'\(.*?\)|\[.*?\]', ' ', s.lower()); s = s.replace('\u00f3', 'o').replace('\u00e9', 'e').replace('\u00e8', 'e').replace('\u00fc', 'u')
     return [w for w in re.findall(r'[a-z0-9]+', s) if w not in {'the', 'of', 'a', 'no', 'in', 'to', 'and', 'feat'}]
-def ranked(items, brano, artista):
-    """ID dei risultati accettabili, dal migliore al peggiore."""
+def ranked(items, brano, artista, kind='video'):
+    """ID dei risultati accettabili, dal migliore al peggiore. kind: 'video' (clip ufficiale) o 'audio' (traccia Topic / official audio)."""
     tb, ta = set(norm(brano)), set(norm(artista)); out = []
     for it in items:
         sn = it['snippet']; title = set(norm(sn['title'])); ch = set(norm(sn['channelTitle']))
@@ -20,8 +20,15 @@ def ranked(items, brano, artista):
         raw = set(re.findall(r'[a-z]+', (sn['title'] + ' ' + sn['channelTitle']).lower()))
         bad = {'cover', 'tutorial', 'lesson', 'remix', 'live', 'reaction', 'karaoke', 'sheet', 'lyrics'} & raw
         if 'piano' not in tb: bad |= {'piano'} & raw
-        score = (not bad) * 4 + ('topic' in ch) * 2 + (ta <= ch) * 1
-        if score >= 4: out.append((score, it['id']['videoId']))
+        if bad: continue
+        topic = 'topic' in ch
+        if kind == 'audio':
+            if not (topic or 'audio' in raw): continue
+            score = 4 + topic * 2 + ('official' in raw) * 1
+        else:
+            if topic: continue
+            score = 4 + ('official' in raw) * 1 + ('video' in raw) * 1 + (ta <= ch) * 1
+        out.append((score, it['id']['videoId']))
     return [v for _, v in sorted(out, key=lambda x: -x[0])]
 def search(q):
     if FIX:
@@ -41,11 +48,16 @@ def embeddable(vid):
     except Exception: return False
 rows = list(csv.DictReader(open(P, encoding='utf-8'))); n = 0; errori = 0
 for r in rows:
-    if r['youtube'].strip() or not r['brano'].strip(): continue
+    r.setdefault('youtube_audio', '')
+    if os.environ.get('RIFAI') == '1' and r['brano'].strip(): r['youtube'] = r['youtube_audio'] = ''
+    if not r['brano'].strip() or (r['youtube'].strip() and r['youtube_audio'].strip()): continue
     try: items = search(f"{r['brano']} {r['artista']}")
     except Exception as e: print('errore', r['id'], str(e)[:90]); errori += 1; continue
-    vid = next((v for v in ranked(items, r['brano'], r['artista']) if embeddable(v)), None)
-    print(f"{r['id']:>3} {r['brano'][:34]:34} -> {vid or 'DA SCEGLIERE A MANO'}")
-    if vid: r['youtube'] = f'https://www.youtube.com/watch?v={vid}'; n += 1
-w = csv.DictWriter(open(P, 'w', encoding='utf-8', newline=''), rows[0].keys()); w.writeheader(); w.writerows(rows)
-print(f'trovati {n} brani; errori di ricerca: {errori}')
+    got = []
+    for kind, col in (('video', 'youtube'), ('audio', 'youtube_audio')):
+        if r[col].strip(): continue
+        vid = next((v for v in ranked(items, r['brano'], r['artista'], kind) if embeddable(v)), None)
+        if vid: r[col] = f'https://www.youtube.com/watch?v={vid}'; n += 1; got.append(kind)
+    print(f"{r['id']:>3} {r['brano'][:34]:34} -> {', '.join(got) or 'DA SCEGLIERE A MANO'}")
+w = csv.DictWriter(open(P, 'w', encoding='utf-8', newline=''), list(rows[0].keys())); w.writeheader(); w.writerows(rows)
+print(f'trovati {n} collegamenti (video + solo musica); errori di ricerca: {errori}')
