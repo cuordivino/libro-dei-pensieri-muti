@@ -35,14 +35,14 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
       <p class="ui tr"><strong>{p.musica.brano}</strong><br /><span class="muted">{p.musica.artista}</span></p>
       {p.musica.perche && <p class="ui muted why">{p.musica.perche}</p>}
       {(yt || emb) && <div class="stage" id="stage"><button class="btn solid" type="button" id="start">Accendi la traccia</button></div>}
-      {yt && <div class="ctl" id="ctl" hidden>
-        <button class="chip" type="button" id="pp">Pausa</button>
+      <div class="ctl" id="ctl" hidden={!!yt} data-spento={yt ? undefined : '1'}>
+        <button class="chip" type="button" id="pp" disabled={!yt}>{yt ? 'Pausa' : 'Riproduci'}</button>
         <button class="chip" type="button" id="un" hidden>Attiva l’audio</button>
-        <label class="ui vol">Volume <input id="vol" type="range" min="0" max="100" value="40" aria-label="Volume della musica" /></label>
-        <button class="chip" type="button" id="off">Spegni la musica</button>
-      </div>}
+        <label class="ui vol">Volume <input id="vol" type="range" min="0" max="100" value="40" aria-label="Volume della musica" disabled={!yt} /></label>
+        <button class="chip" type="button" id="off" disabled={!yt}>Spegni la musica</button>
+      </div>
       {p.musica.audio && <audio controls preload="none" src={u(p.musica.audio)}></audio>}
-      <p class="ui muted" id="mstat" role="status"></p>
+      <p class="ui muted" id="mstat" role="status">{!yt && !emb ? 'Il lettore si accende appena il brano è collegato al suo video.' : ''}</p>
       <div class="cerca ui"><span class="muted">Cerca il brano:</span> {p.musica.cerca && plat.map(([k, l]) => <a class="chip" rel="noopener" target="_blank" href={(p.musica.cerca as any)[k]}>{l}</a>)}</div>
     </section>}
     </div>

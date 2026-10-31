@@ -8,9 +8,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - run: pip install pillow
+      - run: pip install pillow yt-dlp
       - name: Cerca i video
-        env: { YT_API_KEY: '${{ secrets.YT_API_KEY }}' }
+        env: { YT_API_KEY: '${{ secrets.YT_API_KEY }}' }  # facoltativa: senza, usa la ricerca pubblica
         run: python3 scripts/musica_risolvi.py && python3 scripts/enrich.py
       - name: Salva e pubblica
         env: { GH_TOKEN: '${{ github.token }}' }

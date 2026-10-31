@@ -36,7 +36,7 @@ Ogni poesia mostra il suo post e il pulsante "Copia didascalia con link"; la pag
 - **Limite dei browser:** l'audio parte da solo solo dopo che il lettore ha toccato qualcosa nel sito (per esempio entrando da una poesia all'altra). Se qualcuno apre direttamente la pagina di una poesia, il brano parte senza audio e compare "Attiva l'audio".
 - I **link di ricerca** (Spotify, YouTube Music, Apple Music, SoundCloud) restano sempre sotto il lettore.
 - `python3 scripts/proponi_brani.py` propone un brano per ogni poesia che ne e' priva, partendo dal testo (sono 50 proposte su 53 poesie, da ascoltare e confermare o cambiare in `musica.csv`; 3 poesie restano senza proposta).
-- **Trovare gli indirizzi:** a mano (colonna `cerca_youtube` del foglio) oppure in automatico con una chiave gratuita YouTube Data API v3 salvata come segreto `YT_API_KEY` (Settings > Secrets and variables > Actions), poi Actions > "Trova i brani su YouTube" > Run workflow. Scarta cover, dal vivo e tutorial; i casi incerti restano vuoti.
+- **Trovare gli indirizzi:** su GitHub, Actions > "Trova i brani su YouTube" > Run workflow. **Non serve nessuna chiave**: usa la ricerca pubblica di YouTube (se vuoi piu' affidabilita' puoi aggiungere la chiave gratuita YouTube Data API v3 come segreto `YT_API_KEY`). Sceglie solo video il cui titolo contiene brano e artista, scarta cover, dal vivo e tutorial, e controlla che il video sia incorporabile; i casi incerti restano vuoti. In alternativa si incollano a mano nella colonna `youtube` di `musica.csv` (la colonna `cerca_youtube` apre la ricerca gia' pronta).
 - La musica non si puo' esportare da Instagram (non e' un file ed e' su licenza): il lettore usa i video ufficiali.
 
 ## 3. Commenti e note
