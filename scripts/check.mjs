@@ -39,8 +39,9 @@ if (bigPage[1] > 200_000) warn(`Pagina pesante: ${bigPage[0]} (${Math.round(bigP
 
 // 3) cose da completare
 const cfg = JSON.parse(read(path.join(ROOT, 'src/data/config.json')));
-const noIg = P.filter((p) => !String(p.immagine).startsWith('ig/')).length;
-if (noIg) warn(`${noIg} poesie hanno ancora l'immagine segnaposto (mancano quelle di Instagram).`);
+const gen = P.filter((p) => String(p.immagine).startsWith('gen/')).length, noIg = P.filter((p) => !/^(ig|gen)\//.test(String(p.immagine))).length;
+if (gen) warn(`${gen} poesie usano un'immagine astratta generata (da sostituire con una foto quando vuoi).`);
+if (noIg) warn(`${noIg} poesie hanno ancora l'immagine segnaposto.`);
 const noUrl = P.filter((p) => !p.instagram?.url).length;
 if (noUrl) warn(`${noUrl} poesie senza indirizzo del post Instagram.`);
 const unv = P.filter((p) => !p.musica?.verificato).length;

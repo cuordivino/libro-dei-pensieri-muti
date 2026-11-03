@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { poems, meta, u, themeCounts } from '../lib/data';
 const first = poems[11];
-const pick = poems.map((p) => ({ q: p.citazione, t: p.titolo, h: u(`poesie/${p.slug}/`) }));
+const pick = poems.filter((p) => !(p as any).esplicito).map((p) => ({ q: p.citazione, t: p.titolo, h: u(`poesie/${p.slug}/`) }));
 const slugs = Object.fromEntries(poems.map((p) => [p.id, u(`poesie/${p.slug}/`)]));
 ---
 <Base current="">
@@ -31,11 +31,11 @@ const slugs = Object.fromEntries(poems.map((p) => [p.id, u(`poesie/${p.slug}/`)]
     <div class="passi">
       <div class="passo"><h3>Cuffie.</h3><p>Il suono sta dentro la poesia come l’incenso dentro la chiesa: dagli altoparlanti si perde. Cuffie, luce bassa.</p></div>
       <div class="passo"><h3>Una alla volta.</h3><p>Non c’è fretta e non c’è fine. Leggine una e fermati. Se ti brucia, restaci; se ti scivola addosso, vai avanti.</p></div>
-      <div class="passo"><h3>Cinque porte.</h3><p>L’Ombra e il Pozzo. L’Ardore e la Carne. La Maschera e il Fango. La Quiete e il Ritrovo. E i Versi Nuovi, ancora caldi. Scegli da dove cadere, oppure lascia decidere al caso.</p><p><a class="btn" data-rand href={u(`poesie/${first.slug}/`)}>Lascia decidere al caso</a></p></div>
+      <div class="passo"><h3>Sei porte.</h3><p>L’Ombra e il Pozzo. L’Ardore e la Carne. La Maschera e il Fango. La Quiete e il Ritrovo. I Versi Nuovi, ancora caldi. Il Quaderno, ancora in penombra. Scegli da dove cadere, oppure lascia decidere al caso.</p><p><a class="btn" data-rand href={u(`poesie/${first.slug}/`)}>Lascia decidere al caso</a></p></div>
     </div>
   </section>
 
-  <h2>Le cinque porte</h2>
+  <h2>Le sei porte</h2>
   <div class="moods">
     {meta.moods.map((m) => <a class="mood" style={`--c:${m.color}`} href={u(`percorsi/${m.key}/`)}><h3>{m.name}</h3><p>{m.desc}</p></a>)}
   </div>

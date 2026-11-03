@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import libro from '../data/libro.json';
+import { poems, meta, u } from '../lib/data';
+const byId = Object.fromEntries(poems.map((p) => [p.id, p]));
+const color = (k: string) => meta.moods.find((m) => m.key === k)?.color ?? '#c4a373';
+const paras = (t: string) => t.split(/\n\s*\n/).filter(Boolean);
+const extra = [['nuovi', 'I Versi Nuovi'], ['quaderno', 'Il Quaderno']].map(([k, n]) => ({ k, n, c: poems.filter((p) => p.mood === k).length })).filter((x) => x.c);
+---
+<Base title={libro.titolo} description={`${libro.titolo}: ${libro.sottotitolo}. L’indice del libro, la prefazione di ${libro.prefazione.firma} e la nota biografica di Cuordivino.`} current="libro/">
+  <p class="eyebrow ui">{libro.autore}</p>
+  <h1>{libro.titolo}</h1>
+  <p class="sottotitolo">{libro.sottotitolo}</p>
+
+  <section id="prefazione" class="prefazione" aria-labelledby="pf">
+    <p class="ui muted">Prefazione di {libro.prefazione.firma}</p>
+    <h2 id="pf">{libro.prefazione.titolo}</h2>
+    {paras(libro.prefazione.testo).map((t) => <p>{t}</p>)}
+    <p class="firma">{libro.prefazione.firma}</p>
+  </section>
+
+  <section class="indice-libro" aria-labelledby="ix">
+    <h2 id="ix">Indice</h2>
+    {libro.sezioni.map((s) => <section style={`--c:${color(s.mood)}`} aria-label={s.titolo}>
+      <h3><span class="ui muted">Sezione {s.numero}</span><br />{s.titolo}</h3>
+      <ol class="voci">{s.poesie.map((x) => byId[x.id] && <li><span class="rn">{x.num ?? ''}</span><a href={u(`poesie/${byId[x.id].slug}/`)}>{byId[x.id].titolo}</a></li>)}</ol>
+    </section>)}
+  </section>
+
+  <section class="oltre" aria-labelledby="ol">
+    <h2 id="ol">Oltre il libro</h2>
+    <p>Altri versi, nati dopo o rimasti nel quaderno.</p>
+    <ul class="chips">{extra.map((x) => <li><a class="chip" href={u(`percorsi/${x.k}/`)}>{x.n} · {x.c}</a></li>)}</ul>
+  </section>
+
+  <section id="nota" aria-labelledby="nb">
+    <h2 id="nb">Nota biografica</h2>
+    {paras(libro.nota).map((t) => <p>{t}</p>)}
+  </section>
+</Base>

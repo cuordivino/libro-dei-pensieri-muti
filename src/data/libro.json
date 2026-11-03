@@ -1,0 +1,233 @@
+{
+ "titolo": "Il vilipendio bramoso",
+ "sottotitolo": "Poesie dell'Ardore, del Sacrilegio e della Quiete",
+ "autore": "Cuordivino",
+ "nota": "Cuordivino è lo pseudonimo letterario di una voce rimasta a lungo nell'ombra dei riti consueti del quotidiano, prima di esplodere nel panorama della poesia contemporanea. Il nome d'arte fonde la sacralità del sangue (il vino dell'altare) con la fragilità e l'ardimento dell'organo cardiaco.\n\n    Cresciuto in un ambiente intriso di liturgie e silenzi, l'autore ha sviluppato una sensibilità unica nel cogliere le crepe della morale comune. Funambolo dell'anima, vive da ramingo tra la tempesta dei sensi e la solennità della memoria, custode di un pensiero mai morto che continua a fare della parola scritta il proprio sabba privato.",
+ "prefazione": {
+  "titolo": "La Carne e il Calice: l'eresia purificatrice di Cuordivino",
+  "firma": "Federico Barretta",
+  "testo": "La poesia contemporanea soffre spesso di un'anemia cronica: è controllata, accademica, priva di sangue e di spigoli. In questo panorama di versi tiepidi, l'opera d'esordio di Cuordivino, Il vilipendio bramoso, si abbatte come un fendente d'acciaio su un altare di legno.\n\nFin dalle prime pagine, il lettore si trova immerso in un universo poetico governato da un ossimoro assoluto: la profanazione intesa come atto d'amore supremo. Cuordivino non è un distruttore cinico; è un mistico alla rovescia. Se compie un vilipendio scuotendo il pennone della libertà blasfema sul banco di una cappella o strappando la tonaca su misura della morale lo fa perché è bramoso di assoluto. Cerca Dio nell'inferno della carne, convinto che solo toccando il fondo del \"pozzo di pece\" sia possibile scorgere un miraggio di luce autentica.\n\nLa raccolta vive di una struttura architettonica perfetta che si snoda attraverso quattro grandi movimenti spirituali. Si parte dal dramma claustrofobico dell'Io, prigioniero del desio e di bende che soffocano il canto; si attraversa la fase centrale del sacrilegio e della rivendicazione dionisiaca, in cui l'autore evoca l'unguento infame e la lussuria; si approda, infine, a una straordinaria e inaspettata catarsi. Nelle ultime tappe del viaggio, il fuoco si fa brace. Il poeta depone le armi della rabbia, si siede davanti al gorgoglio profondo di una moka usurata e scopre la sacralità del quotidiano. Diventa la foglia che accetta di cadere senza pudore, il merlo ferito che torna al nido, fino a raggiungere quel \"paco e solenne pensare\" in cui ogni tempesta trova la sua giustificazione.\n\nCon uno stile che unisce la densità aforistica dei simbolisti francesi al ritmo battente della ballata sacra, Cuordivino ci consegna un'opera di brutale onestà emotiva. Ci ricorda che siamo tutti funamboli sospesi tra la melma del porto e il respiro del tempo. E ci costringe, riga dopo riga, a riassaporare quel filo sottile che taglia il sorriso."
+ },
+ "sezioni": [
+  {
+   "numero": "I",
+   "titolo": "Il pozzo di pece",
+   "mood": "ombra",
+   "poesie": [
+    {
+     "id": 1,
+     "num": "I"
+    },
+    {
+     "id": 2,
+     "num": "II"
+    },
+    {
+     "id": 3,
+     "num": "III"
+    },
+    {
+     "id": 4,
+     "num": "IV"
+    },
+    {
+     "id": 5,
+     "num": "V"
+    },
+    {
+     "id": 6,
+     "num": null
+    },
+    {
+     "id": 7,
+     "num": null
+    },
+    {
+     "id": 8,
+     "num": null
+    }
+   ]
+  },
+  {
+   "numero": "II",
+   "titolo": "Il sabba della carne",
+   "mood": "ardore",
+   "poesie": [
+    {
+     "id": 9,
+     "num": "VI"
+    },
+    {
+     "id": 10,
+     "num": "VII"
+    },
+    {
+     "id": 11,
+     "num": "VIII"
+    },
+    {
+     "id": 12,
+     "num": "IX"
+    },
+    {
+     "id": 13,
+     "num": "X"
+    },
+    {
+     "id": 14,
+     "num": null
+    },
+    {
+     "id": 15,
+     "num": null
+    },
+    {
+     "id": 16,
+     "num": null
+    },
+    {
+     "id": 17,
+     "num": null
+    }
+   ]
+  },
+  {
+   "numero": "III",
+   "titolo": "La maschera e il fango",
+   "mood": "maschera",
+   "poesie": [
+    {
+     "id": 18,
+     "num": "XI"
+    },
+    {
+     "id": 19,
+     "num": "XII"
+    },
+    {
+     "id": 20,
+     "num": "XIII"
+    },
+    {
+     "id": 21,
+     "num": "XIV"
+    },
+    {
+     "id": 22,
+     "num": "XV"
+    },
+    {
+     "id": 23,
+     "num": null
+    },
+    {
+     "id": 24,
+     "num": null
+    },
+    {
+     "id": 25,
+     "num": null
+    },
+    {
+     "id": 26,
+     "num": null
+    }
+   ]
+  },
+  {
+   "numero": "IV",
+   "titolo": "Il sentiero lineare",
+   "mood": "quiete",
+   "poesie": [
+    {
+     "id": 27,
+     "num": "XVI"
+    },
+    {
+     "id": 28,
+     "num": "XVII"
+    },
+    {
+     "id": 29,
+     "num": "XVIII"
+    },
+    {
+     "id": 30,
+     "num": "XIX"
+    },
+    {
+     "id": 31,
+     "num": "XX"
+    },
+    {
+     "id": 32,
+     "num": "XXI"
+    },
+    {
+     "id": 33,
+     "num": "XXII"
+    },
+    {
+     "id": 34,
+     "num": null
+    },
+    {
+     "id": 35,
+     "num": null
+    },
+    {
+     "id": 36,
+     "num": null
+    },
+    {
+     "id": 37,
+     "num": null
+    },
+    {
+     "id": 38,
+     "num": null
+    },
+    {
+     "id": 39,
+     "num": null
+    },
+    {
+     "id": 40,
+     "num": null
+    },
+    {
+     "id": 41,
+     "num": null
+    },
+    {
+     "id": 42,
+     "num": null
+    },
+    {
+     "id": 43,
+     "num": null
+    },
+    {
+     "id": 44,
+     "num": null
+    },
+    {
+     "id": 45,
+     "num": null
+    },
+    {
+     "id": 46,
+     "num": null
+    },
+    {
+     "id": 47,
+     "num": null
+    },
+    {
+     "id": 48,
+     "num": null
+    }
+   ]
+  }
+ ]
+}

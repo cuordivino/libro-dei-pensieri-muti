@@ -14,7 +14,7 @@ jobs:
       - run: pip install pillow yt-dlp
       - name: Cerca i video
         env: { YT_API_KEY: '${{ secrets.YT_API_KEY }}', RIFAI: '${{ inputs.rifai && 1 || 0 }}' }  # facoltativa: senza, usa la ricerca pubblica
-        run: python3 scripts/musica_risolvi.py && python3 scripts/enrich.py
+        run: python3 scripts/enrich.py && python3 scripts/musica.py && python3 scripts/musica_risolvi.py && python3 scripts/enrich.py
       - name: Salva e pubblica
         env: { GH_TOKEN: '${{ github.token }}' }
         run: |

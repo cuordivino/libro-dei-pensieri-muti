@@ -7,6 +7,14 @@ Sito statico Astro (48 poesie, archivio, percorsi, galleria, pagina Instagram, c
     npm run build     # genera dist/
     npm run data      # rigenera src/data/poems.json (da eseguire dopo ogni modifica ai file sotto)
 
+## Il libro e il quaderno
+- `src/data/libro.json`: titolo, sottotitolo, nota biografica, prefazione (Federico Barretta) e indice delle 4 sezioni, dal PDF del libro. La pagina `/libro/` li mostra.
+- `scripts/integra_materiale.py quaderno.txt` importa le poesie del quaderno (**sempre tenendo il testo gia' presente** se un componimento e' doppio, anche solo per titolo) e scarta poesie di altri autori: elenco in `src/data/escluse.json`.
+- Le poesie del quaderno stanno in **Il Quaderno**; quelle del profilo non incluse nel libro in **I Versi Nuovi**. I dati si ricostruiscono da soli a ogni pubblicazione.
+- Immagini: `scripts/genera_immagini.py` crea immagini astratte in bianco e nero per le poesie senza immagine di Instagram (60 finora). Per metterne una vera, salva `public/images/gen/NUMERO.jpg` (1200x1500) e `NUMERO-800.webp` con lo stesso nome.
+- Brani: `scripts/proponi_brani.py` propone un brano per ogni poesia che ne e' priva (`src/data/brani-proposti.json`); il brano scritto in `scripts/musica.csv` ha sempre la precedenza.
+- Le poesie con linguaggio esplicito sono segnate "Versi espliciti" e non compaiono nella citazione casuale della home.
+
 ## La mappa
 La pagina `/mappa/` mostra le poesie come una costellazione: ogni punto e' una poesia (colore = movimento), ogni cerchio dorato un tema. Si aggiorna da sola con i dati; c'e' anche la versione in elenco per chi usa la tastiera o uno screen reader.
 

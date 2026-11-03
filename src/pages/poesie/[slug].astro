@@ -27,7 +27,7 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
   <article class="poem" style={`--c:${mood.color}`}>
     <div class="side">
     <aside>
-      <img src={u(`images/${p.immagine}`)} width="800" height="1000" alt={`Fotografia in bianco e nero associata alla poesia ${p.titolo}`} />
+      <img src={u(`images/${p.immagine}`)} width="800" height="1000" alt={(p as any).immagineGenerata ? `Immagine astratta in bianco e nero, creata per la poesia ${p.titolo}` : `Fotografia in bianco e nero associata alla poesia ${p.titolo}`} />
       {p.senso && <p class="senso">{p.senso}</p>}
       <p class="ui muted">{p.sezione} · <a href={u(`percorsi/${p.mood}/`)}>{mood.name}</a></p>
     </aside>
@@ -48,10 +48,10 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
     </section>}
     </div>
     <div>
-      <p class="ui muted">{p.numero} · {mood.name}</p>
+      <p class="ui muted">{p.numero ? `${p.numero} · ` : ''}{mood.name}</p>
       <h1 style="font-size:clamp(2.4rem,1.6rem + 4vw,4.6rem)">{p.titolo}</h1>
       <div class="meta-row">
-        <ul class="chips" style="margin:0">{p.temi.map((t) => <li><a class="chip" href={u(`percorsi/${t}/`)}>{(meta.temi as any)[t]}</a></li>)}{p.emozioni.map((e) => <li><span class="chip">{e}</span></li>)}</ul>
+        <ul class="chips" style="margin:0">{p.temi.map((t) => <li><a class="chip" href={u(`percorsi/${t}/`)}>{(meta.temi as any)[t]}</a></li>)}{p.emozioni.map((e) => <li><span class="chip">{e}</span></li>)}{(p as any).esplicito && <li><span class="chip">Versi espliciti</span></li>}</ul>
       </div>
       <p class="ui"><button class="chip" id="modo" aria-pressed="false">Leggi in silenzio</button></p>
 

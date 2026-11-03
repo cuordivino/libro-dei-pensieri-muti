@@ -219,3 +219,16 @@ body.solo-testo .side{display:none}
 .lista ul{columns:2 14rem;padding-left:1.1rem}
 
 .ver{display:flex;gap:.4rem;margin:.6rem 0 0}
+
+/* il libro */
+.sottotitolo{font-size:clamp(1.2rem,1.1rem + .6vw,1.6rem);font-style:italic;color:var(--ash);margin-bottom:2.5rem}
+.prefazione,.oltre,#nota{max-width:40rem;margin-block:3rem}
+.prefazione h2{font-size:clamp(1.6rem,1.2rem + 1.5vw,2.4rem);font-style:italic}
+.prefazione p{font-size:clamp(1.1rem,1.05rem + .3vw,1.3rem)}
+.firma{text-align:right;font-style:italic;color:var(--ash)}
+.indice-libro{margin-block:3rem}
+.indice-libro section{margin-bottom:2.2rem;border-left:3px solid var(--c);padding-left:1.1rem;max-width:40rem}
+.indice-libro h3{margin-bottom:.8rem}
+.voci{list-style:none;padding:0;margin:0}
+.voci li{display:grid;grid-template-columns:3.4rem 1fr;gap:.5rem;padding:.35rem 0;border-bottom:1px solid var(--line)}
+.voci .rn{font-style:italic;color:var(--dim);text-align:right}

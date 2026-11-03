@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Propone un brano per ogni poesia che ne e' priva, partendo dal TESTO della poesia (temi, immagini, lessico).
-Uso: python3 scripts/proponi_brani.py   poi  npm run data.  Scrive solo le righe vuote di scripts/musica.csv:
-brano, artista e `perche` (motivo). Sono PROPOSTE: ascoltale e conferma o cambia. Non tocca i brani gia' scelti."""
+Uso: python3 scripts/proponi_brani.py   poi  npm run data.  Scrive src/data/brani-proposti.json (non tocca musica.csv ne' i brani gia' scelti). Sono PROPOSTE: ascoltale e conferma o cambia
+scrivendo il brano in scripts/musica.csv (ha la precedenza)."""
 import os, re, csv, json, hashlib, unicodedata
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 P = json.load(open(f'{ROOT}/src/data/poems.json', encoding='utf-8'))['poems']
@@ -136,32 +136,150 @@ Philip Glass|Opening|tempo quiete
 Gustavo Santaolalla|Iguazu|quiete memoria
 Bill Evans|Peace Piece|quiete
 Miles Davis|Blue in Green|notte perdita attesa'''.split('\n')]
+POOL += [l.split('|') for l in '''Ludovico Einaudi|Time Lapse|tempo memoria quiete
+Ludovico Einaudi|Underwater|mare silenzio quiete
+Ludovico Einaudi|Run|rinascita rabbia
+Ludovico Einaudi|Orbit|tempo notte
+Ludovico Einaudi|Lady Labyrinth|notte attesa
+Max Richter|Infra 5|perdita silenzio abisso
+Max Richter|Shadow Journal|notte assenza
+Nils Frahm|More|tempo attesa rinascita
+Nils Frahm|Over There, It's Raining|mare silenzio
+Ólafur Arnalds|So Close|amore assenza
+Ólafur Arnalds|Ekki Hugsa|perdita notte
+Jóhann Jóhannsson|The Sun's Gone Dim and the Sky's Turned Black|abisso sacro perdita
+Hans Zimmer|Mountains|tempo attesa
+Hans Zimmer|S.T.A.Y.|amore tempo memoria
+Hans Zimmer|Dream Is Collapsing|abisso rabbia
+Hildur Guðnadóttir|Bathroom Dance|maschera carne
+Ryuichi Sakamoto|Merry Christmas Mr. Lawrence|memoria amore perdita
+Ryuichi Sakamoto|Energy Flow|quiete silenzio
+Joe Hisaishi|One Summer's Day|memoria rinascita
+Yiruma|Kiss the Rain|amore memoria
+Erik Satie|Gymnopédie No. 2|quiete memoria
+Frédéric Chopin|Prelude in E minor, Op. 28 No. 4|perdita abisso
+Claude Debussy|Arabesque No. 1|rinascita quiete
+Sergei Rachmaninoff|Piano Concerto No. 2 (Adagio sostenuto)|amore perdita attesa
+Johann Sebastian Bach|Cello Suite No. 1: Prélude|tempo quiete
+Johann Sebastian Bach|Jesu, Joy of Man's Desiring|sacro rinascita
+Antonio Vivaldi|Winter: Largo|quiete tempo
+Georg Friedrich Händel|Sarabande|perdita sacro
+Johann Pachelbel|Canon in D|amore tempo
+Wolfgang Amadeus Mozart|Piano Concerto No. 21: Andante|amore quiete
+Ludwig van Beethoven|Symphony No. 7: Allegretto|perdita tempo
+Franz Schubert|Impromptu No. 3 in G-flat major|quiete memoria
+Franz Liszt|Liebestraum No. 3|amore carne
+Giuseppe Verdi|Va, pensiero|sacro perdita rabbia
+Giacomo Puccini|Nessun dorma|rinascita attesa
+Giacomo Puccini|O mio babbino caro|amore
+Fabrizio De André|Khorakhanè (A forza di essere vento)|perdita rabbia
+Fabrizio De André|Via del Campo|carne amore maschera
+Fabrizio De André|Amico fragile|assenza maschera abisso
+Fabrizio De André|Un giudice|maschera rabbia
+Fabrizio De André|Dolcenera|mare rabbia perdita
+Fabrizio De André|La guerra di Piero|rabbia perdita
+Fabrizio De André|Il testamento di Tito|sacro maschera rabbia
+Fabrizio De André|Ave Maria|sacro amore quiete
+Franco Battiato|Centro di gravità permanente|maschera tempo
+Franco Battiato|E ti vengo a cercare|amore sacro attesa
+Franco Battiato|L'era del cinghiale bianco|tempo memoria
+Franco Battiato|Gli uccelli|rinascita silenzio
+Franco Battiato|Shackleton|abisso attesa
+Lucio Dalla|Caruso|amore perdita
+Lucio Dalla|L'anno che verrà|attesa rinascita
+Giorgio Gaber|Il conformista|maschera
+Luigi Tenco|Ciao amore ciao|perdita
+Mia Martini|Minuetto|carne perdita
+Mina|Il cielo in una stanza|amore
+Paolo Conte|Azzurro|attesa memoria
+Paolo Conte|Sparring Partner|maschera carne notte
+Vinicio Capossela|Il pumo|sacro maschera
+Afterhours|Hai paura del buio?|notte abisso rabbia
+Massimo Volume|Il primo dio|sacro abisso
+Carmen Consoli|Parole di burro|rabbia maschera
+Elisa|Luce (Tramonti a nord est)|rinascita
+Leonard Cohen|Suzanne|amore sacro mare
+Leonard Cohen|So Long, Marianne|perdita amore
+Leonard Cohen|Dance Me to the End of Love|amore carne
+Leonard Cohen|Bird on the Wire|perdita rabbia
+Leonard Cohen|Who by Fire|sacro tempo
+Nick Cave & The Bad Seeds|The Mercy Seat|sacro rabbia abisso
+Nick Cave & The Bad Seeds|Where the Wild Roses Grow|carne amore abisso
+Nick Cave & The Bad Seeds|Brompton Oratory|sacro carne
+Nick Cave & The Bad Seeds|Straight to You|amore attesa
+PJ Harvey|To Bring You My Love|carne sacro
+Tom Waits|Jersey Girl|amore carne
+Tom Waits|Downtown Train|attesa notte
+Nina Simone|Sinnerman|sacro rabbia
+Nina Simone|I Put a Spell on You|carne rabbia
+Nina Simone|Don't Let Me Be Misunderstood|maschera perdita
+Édith Piaf|Non, je ne regrette rien|rinascita memoria
+Jacques Brel|Ne me quitte pas|amore perdita attesa
+Léo Ferré|Avec le temps|tempo perdita memoria
+Barbara|Göttingen|memoria quiete
+Pink Floyd|Comfortably Numb|assenza abisso
+Pink Floyd|Wish You Were Here|assenza memoria
+Pink Floyd|Echoes|mare abisso tempo
+Led Zeppelin|Stairway to Heaven|sacro rinascita
+The Doors|The End|abisso rabbia carne
+The Doors|Riders on the Storm|notte mare
+The Velvet Underground|Venus in Furs|carne maschera
+The Velvet Underground|Sunday Morning|attesa quiete
+David Bowie|Space Oddity|assenza silenzio
+David Bowie|Heroes|rinascita amore
+The Cure|Lullaby|notte abisso
+The Cure|Disintegration|perdita abisso
+Bauhaus|Bela Lugosi's Dead|notte abisso maschera
+The Smiths|How Soon Is Now?|assenza maschera
+Cocteau Twins|Heaven or Las Vegas|rinascita amore
+This Mortal Coil|Song to the Siren|mare amore perdita
+Slowdive|When the Sun Hits|rinascita notte
+Mogwai|Take Me Somewhere Nice|quiete attesa
+Björk|Hyperballad|abisso amore
+Radiohead|Street Spirit (Fade Out)|abisso perdita
+Radiohead|Exit Music (For a Film)|perdita notte
+Portishead|Wandering Star|assenza abisso
+Massive Attack|Unfinished Sympathy|amore attesa
+Mazzy Star|Into Dust|perdita quiete
+Antony and the Johnsons|Hope There's Someone|assenza notte abisso
+Hozier|Work Song|amore perdita sacro
+Florence + The Machine|Dog Days Are Over|rinascita
+Bon Iver|Holocene|memoria quiete
+Bon Iver|re: Stacks|perdita quiete
+Fleet Foxes|White Winter Hymnal|silenzio memoria
+Nick Drake|Fruit Tree|perdita memoria
+Sinéad O'Connor|Nothing Compares 2 U|assenza perdita
+Fiona Apple|Criminal|maschera rabbia carne
+Tori Amos|Winter|memoria perdita
+Kate Bush|Wuthering Heights|amore abisso
+Kate Bush|This Woman's Work|perdita amore
+Peter Gabriel|Mercy Street|sacro perdita notte
+Peter Gabriel|Here Comes the Flood|mare rabbia
+Annie Lennox|Why|perdita rabbia
+Bill Evans|Waltz for Debby|amore quiete
+John Coltrane|Naima|amore quiete
+Keith Jarrett|The Köln Concert, Part I|tempo rinascita
+Thelonious Monk|'Round Midnight|notte attesa
+Chet Baker|Almost Blue|perdita notte'''.split('\n')]
 norm = lambda s: re.sub(r'[^a-z0-9]+', '', unicodedata.normalize('NFD', s.lower()).encode('ascii', 'ignore').decode())
 mp = f'{HERE}/musica.csv'; rows = list(csv.DictReader(open(mp, encoding='utf-8')))
-used = {norm(r['brano']) for r in rows if r['brano'].strip()}
-need = [r for r in rows if not r['brano'].strip()]
-poem = {str(p['id']): p for p in P}
+pj = f'{ROOT}/src/data/brani-proposti.json'; old = json.load(open(pj, encoding='utf-8')) if os.path.exists(pj) else {}
+used = {norm(r['brano']) for r in rows if r['brano'].strip()} | {norm(p['musica']['brano']) for p in P if p['musica']['brano']} | {norm(v['brano']) for v in old.values()}
+need = [p for p in P if not p['musica']['brano'].strip() and str(p['id']) not in old]
 def tags(p):
     t = (p['titolo'] + ' ' + p['testo']).lower()
     return {k: min(3, len(re.findall(rx, t))) for k, rx in LEX.items() if re.search(rx, t)}
 cand = []
-for r in need:
-    pt = tags(poem[r['id']])
+for p in need:
+    pt = tags(p) or {'silenzio': 1, 'quiete': 1, 'tempo': 1}
     for a, b, tg in POOL:
         if norm(b) in used: continue
         m = [x for x in tg.split() if x in pt]
-        sc = sum(pt[x] for x in m) + 0.01 * (int(hashlib.md5((r['id'] + b).encode()).hexdigest(), 16) % 100) / 100
-        if m: cand.append((sc, r['id'], a, b, m))
-cand.sort(reverse=True); done = {}; taken = set()
+        sc = sum(pt[x] for x in m) + 0.01 * (int(hashlib.md5((str(p['id']) + b).encode()).hexdigest(), 16) % 100) / 100
+        if m: cand.append((sc, str(p['id']), a, b, m))
+cand.sort(reverse=True); done = dict(old); taken = set()
 for sc, pid, a, b, m in cand:
     if pid in done or norm(b) in taken: continue
-    done[pid] = (a, b, m); taken.add(norm(b))
-import urllib.parse as up
-for r in need:
-    if r['id'] in done:
-        a, b, m = done[r['id']]
-        r['brano'], r['artista'] = b, a
-        r['perche'] = 'Proposta dal testo: richiama ' + ', '.join(m) + '.'
-        r['cerca_youtube'] = 'https://www.youtube.com/results?search_query=' + up.quote(f'{b} {a}')
-w = csv.DictWriter(open(mp, 'w', encoding='utf-8', newline=''), rows[0].keys()); w.writeheader(); w.writerows(rows)
-print(f'proposti {len(done)} brani su {len(need)} poesie senza brano; senza proposta: {[r["id"] for r in need if r["id"] not in done]}')
+    done[pid] = {'artista': a, 'brano': b, 'perche': 'Proposta dal testo: richiama ' + ', '.join(m) + '.'}; taken.add(norm(b))
+json.dump(done, open(pj, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+print(f'proposti {len(done) - len(old)} brani su {len(need)} poesie senza brano; senza proposta: {[p["id"] for p in need if str(p["id"]) not in done]}')

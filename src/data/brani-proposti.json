@@ -1,0 +1,322 @@
+{
+ "158": {
+  "artista": "Fabrizio De André",
+  "brano": "Il testamento di Tito",
+  "perche": "Proposta dal testo: richiama sacro, maschera, rabbia."
+ },
+ "146": {
+  "artista": "The Doors",
+  "brano": "The End",
+  "perche": "Proposta dal testo: richiama abisso, rabbia, carne."
+ },
+ "144": {
+  "artista": "Pink Floyd",
+  "brano": "Echoes",
+  "perche": "Proposta dal testo: richiama mare, abisso, tempo."
+ },
+ "145": {
+  "artista": "Hozier",
+  "brano": "Work Song",
+  "perche": "Proposta dal testo: richiama amore, perdita, sacro."
+ },
+ "152": {
+  "artista": "Nick Cave & The Bad Seeds",
+  "brano": "Brompton Oratory",
+  "perche": "Proposta dal testo: richiama sacro, carne."
+ },
+ "132": {
+  "artista": "Nils Frahm",
+  "brano": "More",
+  "perche": "Proposta dal testo: richiama tempo, rinascita."
+ },
+ "118": {
+  "artista": "Fabrizio De André",
+  "brano": "Ave Maria",
+  "perche": "Proposta dal testo: richiama sacro, amore, quiete."
+ },
+ "135": {
+  "artista": "Fiona Apple",
+  "brano": "Criminal",
+  "perche": "Proposta dal testo: richiama rabbia, carne."
+ },
+ "140": {
+  "artista": "Ryuichi Sakamoto",
+  "brano": "Merry Christmas Mr. Lawrence",
+  "perche": "Proposta dal testo: richiama memoria, amore, perdita."
+ },
+ "133": {
+  "artista": "Ludovico Einaudi",
+  "brano": "Time Lapse",
+  "perche": "Proposta dal testo: richiama tempo, quiete."
+ },
+ "126": {
+  "artista": "Nick Cave & The Bad Seeds",
+  "brano": "Where the Wild Roses Grow",
+  "perche": "Proposta dal testo: richiama carne, amore, abisso."
+ },
+ "153": {
+  "artista": "Bon Iver",
+  "brano": "Holocene",
+  "perche": "Proposta dal testo: richiama memoria, quiete."
+ },
+ "129": {
+  "artista": "Keith Jarrett",
+  "brano": "The Köln Concert, Part I",
+  "perche": "Proposta dal testo: richiama tempo, rinascita."
+ },
+ "134": {
+  "artista": "Cocteau Twins",
+  "brano": "Heaven or Las Vegas",
+  "perche": "Proposta dal testo: richiama rinascita, amore."
+ },
+ "147": {
+  "artista": "Tom Waits",
+  "brano": "Jersey Girl",
+  "perche": "Proposta dal testo: richiama amore, carne."
+ },
+ "142": {
+  "artista": "Fabrizio De André",
+  "brano": "Dolcenera",
+  "perche": "Proposta dal testo: richiama mare, rabbia, perdita."
+ },
+ "128": {
+  "artista": "Luigi Tenco",
+  "brano": "Vedrai, vedrai",
+  "perche": "Proposta dal testo: richiama attesa, rinascita."
+ },
+ "150": {
+  "artista": "PJ Harvey",
+  "brano": "To Bring You My Love",
+  "perche": "Proposta dal testo: richiama carne, sacro."
+ },
+ "137": {
+  "artista": "Led Zeppelin",
+  "brano": "Stairway to Heaven",
+  "perche": "Proposta dal testo: richiama sacro, rinascita."
+ },
+ "157": {
+  "artista": "Giuseppe Verdi",
+  "brano": "Va, pensiero",
+  "perche": "Proposta dal testo: richiama sacro, perdita, rabbia."
+ },
+ "131": {
+  "artista": "Mia Martini",
+  "brano": "Minuetto",
+  "perche": "Proposta dal testo: richiama carne, perdita."
+ },
+ "120": {
+  "artista": "Fabrizio De André",
+  "brano": "La canzone di Marinella",
+  "perche": "Proposta dal testo: richiama mare, perdita."
+ },
+ "148": {
+  "artista": "Afterhours",
+  "brano": "Hai paura del buio?",
+  "perche": "Proposta dal testo: richiama notte, rabbia."
+ },
+ "149": {
+  "artista": "Nick Cave & The Bad Seeds",
+  "brano": "The Mercy Seat",
+  "perche": "Proposta dal testo: richiama sacro, rabbia, abisso."
+ },
+ "123": {
+  "artista": "Leonard Cohen",
+  "brano": "Who by Fire",
+  "perche": "Proposta dal testo: richiama sacro, tempo."
+ },
+ "103": {
+  "artista": "David Bowie",
+  "brano": "Space Oddity",
+  "perche": "Proposta dal testo: richiama assenza, silenzio."
+ },
+ "102": {
+  "artista": "Leonard Cohen",
+  "brano": "Bird on the Wire",
+  "perche": "Proposta dal testo: richiama perdita, rabbia."
+ },
+ "108": {
+  "artista": "Hildur Guðnadóttir",
+  "brano": "Bathroom Dance",
+  "perche": "Proposta dal testo: richiama carne."
+ },
+ "113": {
+  "artista": "Miles Davis",
+  "brano": "Blue in Green",
+  "perche": "Proposta dal testo: richiama notte, perdita, attesa."
+ },
+ "44": {
+  "artista": "Franco Battiato",
+  "brano": "L'era del cinghiale bianco",
+  "perche": "Proposta dal testo: richiama tempo."
+ },
+ "112": {
+  "artista": "Johann Sebastian Bach",
+  "brano": "Cello Suite No. 1: Prélude",
+  "perche": "Proposta dal testo: richiama tempo, quiete."
+ },
+ "105": {
+  "artista": "Paolo Conte",
+  "brano": "Sparring Partner",
+  "perche": "Proposta dal testo: richiama carne, notte."
+ },
+ "136": {
+  "artista": "Bauhaus",
+  "brano": "Bela Lugosi's Dead",
+  "perche": "Proposta dal testo: richiama notte, abisso."
+ },
+ "122": {
+  "artista": "Sinéad O'Connor",
+  "brano": "Nothing Compares 2 U",
+  "perche": "Proposta dal testo: richiama assenza, perdita."
+ },
+ "116": {
+  "artista": "Radiohead",
+  "brano": "Motion Picture Soundtrack",
+  "perche": "Proposta dal testo: richiama perdita, quiete."
+ },
+ "143": {
+  "artista": "Leonard Cohen",
+  "brano": "Suzanne",
+  "perche": "Proposta dal testo: richiama amore, sacro, mare."
+ },
+ "106": {
+  "artista": "Max Richter",
+  "brano": "Infra 5",
+  "perche": "Proposta dal testo: richiama perdita, silenzio."
+ },
+ "125": {
+  "artista": "Philip Glass",
+  "brano": "Opening",
+  "perche": "Proposta dal testo: richiama tempo, quiete."
+ },
+ "155": {
+  "artista": "Antonio Vivaldi",
+  "brano": "Winter: Largo",
+  "perche": "Proposta dal testo: richiama quiete, tempo."
+ },
+ "109": {
+  "artista": "Claude Debussy",
+  "brano": "Arabesque No. 1",
+  "perche": "Proposta dal testo: richiama rinascita, quiete."
+ },
+ "156": {
+  "artista": "Peter Gabriel",
+  "brano": "Here Comes the Flood",
+  "perche": "Proposta dal testo: richiama mare, rabbia."
+ },
+ "60": {
+  "artista": "Nina Simone",
+  "brano": "I Put a Spell on You",
+  "perche": "Proposta dal testo: richiama carne, rabbia."
+ },
+ "111": {
+  "artista": "Antony and the Johnsons",
+  "brano": "Hope There's Someone",
+  "perche": "Proposta dal testo: richiama assenza, abisso."
+ },
+ "107": {
+  "artista": "Kate Bush",
+  "brano": "This Woman's Work",
+  "perche": "Proposta dal testo: richiama perdita, amore."
+ },
+ "138": {
+  "artista": "Ludwig van Beethoven",
+  "brano": "Symphony No. 7: Allegretto",
+  "perche": "Proposta dal testo: richiama tempo."
+ },
+ "151": {
+  "artista": "Johnny Cash",
+  "brano": "Hurt",
+  "perche": "Proposta dal testo: richiama perdita, memoria."
+ },
+ "115": {
+  "artista": "Hans Zimmer",
+  "brano": "Mountains",
+  "perche": "Proposta dal testo: richiama tempo, attesa."
+ },
+ "119": {
+  "artista": "Franco Battiato",
+  "brano": "E ti vengo a cercare",
+  "perche": "Proposta dal testo: richiama sacro, attesa."
+ },
+ "130": {
+  "artista": "Fabrizio De André",
+  "brano": "Via del Campo",
+  "perche": "Proposta dal testo: richiama carne, maschera."
+ },
+ "100": {
+  "artista": "Leonard Cohen",
+  "brano": "Dance Me to the End of Love",
+  "perche": "Proposta dal testo: richiama carne."
+ },
+ "104": {
+  "artista": "Portishead",
+  "brano": "Wandering Star",
+  "perche": "Proposta dal testo: richiama assenza."
+ },
+ "101": {
+  "artista": "Carmen Consoli",
+  "brano": "Parole di burro",
+  "perche": "Proposta dal testo: richiama rabbia."
+ },
+ "117": {
+  "artista": "Massive Attack",
+  "brano": "Teardrop",
+  "perche": "Proposta dal testo: richiama tempo, notte."
+ },
+ "48": {
+  "artista": "Nina Simone",
+  "brano": "Sinnerman",
+  "perche": "Proposta dal testo: richiama sacro, rabbia."
+ },
+ "127": {
+  "artista": "Annie Lennox",
+  "brano": "Why",
+  "perche": "Proposta dal testo: richiama rabbia."
+ },
+ "121": {
+  "artista": "Franco Battiato",
+  "brano": "Centro di gravità permanente",
+  "perche": "Proposta dal testo: richiama maschera, tempo."
+ },
+ "124": {
+  "artista": "Ludovico Einaudi",
+  "brano": "Orbit",
+  "perche": "Proposta dal testo: richiama tempo."
+ },
+ "154": {
+  "artista": "Damien Rice",
+  "brano": "The Blower's Daughter",
+  "perche": "Proposta dal testo: richiama amore."
+ },
+ "110": {
+  "artista": "Ludovico Einaudi",
+  "brano": "Run",
+  "perche": "Proposta dal testo: richiama rabbia."
+ },
+ "141": {
+  "artista": "Bill Evans",
+  "brano": "Waltz for Debby",
+  "perche": "Proposta dal testo: richiama amore."
+ },
+ "114": {
+  "artista": "Fabrizio De André",
+  "brano": "La guerra di Piero",
+  "perche": "Proposta dal testo: richiama rabbia."
+ },
+ "62": {
+  "artista": "The Velvet Underground",
+  "brano": "Venus in Furs",
+  "perche": "Proposta dal testo: richiama carne."
+ },
+ "139": {
+  "artista": "Arvo Pärt",
+  "brano": "Für Alina",
+  "perche": "Proposta dal testo: richiama silenzio, quiete."
+ },
+ "96": {
+  "artista": "Johann Sebastian Bach",
+  "brano": "Aria (Goldberg Variations)",
+  "perche": "Proposta dal testo: richiama quiete, tempo."
+ }
+}

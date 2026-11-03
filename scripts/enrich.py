@@ -21,7 +21,7 @@ THEMES = {
  'rinascita': r'\brinasc|\briaffior|\brisorg|\balba\b|\bgermogl|\britrov|\briassapor|\bluce|\blevigh',
 }
 THEME_LABEL = {k: k.capitalize() for k in THEMES}
-EMO = {'nuovi': [], 'ombra': ['malinconia','apatia','abisso'], 'ardore': ['desiderio','furore','estasi'],
+EMO = {'nuovi': [], 'quaderno': [], 'ombra': ['malinconia','apatia','abisso'], 'ardore': ['desiderio','furore','estasi'],
        'maschera': ['disprezzo','ribellione','ironia'], 'quiete': ['pace','ritrovo','consolazione']}
 STOP = set('come sono nella nelle degli delle dello della tutti tutto questo questa quello quella ancora anche senza dentro verso quando mentre perché poi così dove ogni molto altro altra altri sotto sopra fino tra fra più mio mia miei mie suo sua loro cosa solo ormai'.split())
 slug = lambda s: re.sub(r'[^a-z0-9]+','-', s.lower().replace('à','a').replace('è','e').replace('é','e').replace('ì','i').replace('ò','o').replace('ù','u')).strip('-')
@@ -45,8 +45,17 @@ def roman(n):
     return out
 nup = f'{ROOT}/src/data/nuove-poesie.json'
 nuove = json.load(open(nup, encoding='utf-8')) if os.path.exists(nup) else []
-all_src = list(src['poems']) + [{'id': n['id'], 'title': n['titolo'], 'number': roman(n['id']), 'sectionTitle': 'Versi nuovi', 'macroMoodKey': 'nuovi',
-    'macroMood': 'I Versi Nuovi', 'moodPrimary': '', 'moodSense': '', 'text': n['testo'], 'image': 'images/poesia_1.jpg', 'musicTrack': '', 'musicArtist': ''} for n in nuove]
+rim = set(json.load(open(f'{ROOT}/src/data/rimosse.json'))) if os.path.exists(f'{ROOT}/src/data/rimosse.json') else set()
+ip = f'{ROOT}/src/data/integrazioni.json'
+integ = json.load(open(ip, encoding='utf-8')) if os.path.exists(ip) else []
+prp = f'{ROOT}/src/data/brani-proposti.json'
+prop = json.load(open(prp, encoding='utf-8')) if os.path.exists(prp) else {}
+_mk = lambda n, key, name, sec: {'id': n['id'], 'title': n['titolo'], 'number': roman(n['id']) if key == 'nuovi' else '', 'sectionTitle': sec, 'macroMoodKey': key,
+    'macroMood': name, 'moodPrimary': '', 'moodSense': '', 'text': n['testo'], 'image': 'images/poesia_1.jpg', 'musicTrack': '', 'musicArtist': ''}
+all_src = list(src['poems']) + [_mk(n, 'nuovi', 'I Versi Nuovi', 'Versi nuovi') for n in nuove if n['id'] not in rim] + [_mk(n, 'quaderno', 'Il Quaderno', 'Dal quaderno') for n in integ]
+for _p in all_src:
+    _pr = prop.get(str(_p['id']))
+    if _pr and not _p['musicTrack']: _p['musicTrack'] = _pr['brano']; _p['musicArtist'] = _pr['artista']; _p['_perche'] = _pr.get('perche')
 poems = []
 for p in all_src:
     t = p['text']; low = t.lower()
@@ -74,6 +83,8 @@ for p in all_src:
         d['instagram'] = {'url': iglinks.get(str(p['id'])) or ig.get('url') or None, 'punteggio': ig['punteggio'], 'stato': ig['stato'], 'didascalia': ig['didascalia']}
     elif iglinks.get(str(p['id'])):
         d['instagram'] = {'url': iglinks[str(p['id'])], 'punteggio': None, 'stato': 'manuale', 'didascalia': None}
+    if not ig and os.path.exists(f"{ROOT}/public/images/gen/{p['id']}.jpg"):
+        d['immagine'] = f"gen/{p['id']}.jpg"; d['miniatura'] = f"gen/{p['id']}-800.webp"; d['immagineGenerata'] = True
     d.setdefault('miniatura', d['immagine'])
     m = mus.get(str(p['id']))
     if m:
@@ -84,6 +95,8 @@ for p in all_src:
         d['musica']['verificato'] = m.get('verificato', '').strip().lower() in ('si', 'sì', 'x', '1')
         d['musica']['perche'] = m.get('perche', '').strip() or None
     d.update(ovr.get(str(p['id']), {}))
+    if p.get('_perche') and not d['musica'].get('perche'): d['musica']['perche'] = p['_perche']
+    d['esplicito'] = bool(re.search(r"\bfigh?a\b|\bmona\b|\bcazz|\btroi[ae]\b|\bputtan|\bculo\b|\bscopa|\bpene\b|\bvulva|\bporc[oa]\b|\bcagna\b|\bpompin|\bgodere|\bmerda", (p['title'] + ' ' + p['text']).lower()))
     mm = d['musica']; qq = up.quote(f"{mm['brano']} {mm['artista']}".strip())
     mm['cerca'] = ({'spotify': f'https://open.spotify.com/search/{qq}', 'youtube': f'https://music.youtube.com/search?q={qq}',
                     'apple': f'https://music.apple.com/it/search?term={qq}', 'soundcloud': f'https://soundcloud.com/search?q={qq}'} if mm['brano'] else None)
@@ -99,6 +112,6 @@ m = src['meta']
 meta = {'titolo': m['title'].title().replace('Dei','dei'), 'sottotitolo': m['subtitle'], 'autore': m['authorPseudonym'],
         'instagram': m['instagramUrl'], 'handle': m['instagramHandle'], 'opera': m['originalWork'],
         'prefazione': m.get('preface'), 'notaAutore': m.get('authorNote'),
-        'moods': [x for x in m['macroMoods'] if x['key'] != 'all'] + ([{'key': 'nuovi', 'name': 'I Versi Nuovi', 'desc': 'Le poesie nate dopo il libro e pubblicate su Instagram: ancora senza stanza, ancora calde.', 'color': '#8fa6a0'}] if nuove else []), 'temi': THEME_LABEL}
+        'moods': [x for x in m['macroMoods'] if x['key'] != 'all'] + ([{'key': 'nuovi', 'name': 'I Versi Nuovi', 'desc': 'Le poesie nate dopo il libro e pubblicate su Instagram: ancora senza stanza, ancora calde.', 'color': '#8fa6a0'}] if nuove else []) + ([{'key': 'quaderno', 'name': 'Il Quaderno', 'color': '#a99bc0', 'desc': 'Versi trascritti dal quaderno, non ancora usciti: piu\' nudi, piu\' vicini all\'impulso.'}] if integ else []), 'temi': THEME_LABEL}
 json.dump({'meta': meta, 'poems': poems}, open(f'{ROOT}/src/data/poems.json','w',encoding='utf-8'), ensure_ascii=False, indent=1)
 print(len(poems), 'poesie;', Counter(t for p in poems for t in p['temi']))

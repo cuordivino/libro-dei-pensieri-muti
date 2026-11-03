@@ -12,7 +12,7 @@ const { title, description = `${poems.length} poesie di Cuordivino, un suono per
 const full = title ? `${title} — Il Libro dei Pensieri Muti` : 'Il Libro dei Pensieri Muti — poesie di Cuordivino';
 const canonical = new URL(Astro.url.pathname, SITE).href;
 const img = new URL(u(image), SITE).href;
-const nav = [['poesie/', 'Archivio'], ['percorsi/', 'Percorsi'], ['mappa/', 'Mappa'], ['galleria/', 'Galleria'], ['autore/', 'Autore']];
+const nav = [['poesie/', 'Archivio'], ['libro/', 'Il libro'], ['percorsi/', 'Percorsi'], ['mappa/', 'Mappa'], ['galleria/', 'Galleria'], ['autore/', 'Autore']];
 const site = { '@context': 'https://schema.org', '@type': 'WebSite', name: 'Il Libro dei Pensieri Muti', url: new URL(u(), SITE).href, inLanguage: 'it', author: { '@type': 'Person', name: 'Cuordivino', sameAs: [meta.instagram] } };
 ---
 <!doctype html>
