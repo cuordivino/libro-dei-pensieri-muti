@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { config, meta, u } from '../lib/data';
+const mail = config.email;
+const subj = encodeURIComponent('Segnalazione: copia non autorizzata o falsa attribuzione');
+const body = encodeURIComponent('Indirizzo della copia o dell’uso non autorizzato:\n\nPoesia originale (indirizzo o titolo):\n\nDove l’ho trovata e quando:\n\nAllego screenshot: sì / no\n');
+---
+<Base title="Diritto d’autore e segnalazioni" description="Paternità, usi consentiti e vietati dei testi di Cuordivino, riferimenti normativi e come segnalare copie non autorizzate o false attribuzioni." current="">
+  <h1>Diritto d’autore</h1>
+  <p class="muted">Come sono tutelati i testi di questo sito, che cosa è consentito, che cosa no, e come segnalare un abuso.</p>
+
+  <h2>Paternità</h2>
+  <p>Tutte le poesie pubblicate in questo sito sono opere originali di <strong>Cuordivino</strong>, pseudonimo letterario dell’autore. Su ogni poesia è riportata la nota «© Cuordivino. Tutti i diritti riservati». Chi è indicato come autore nell’opera, anche con pseudonimo, è considerato tale fino a prova contraria (art. 8 L. 633/1941). L’autore conserva in ogni caso il diritto di rivendicare la paternità dell’opera e di opporsi a deformazioni e modificazioni che ne danneggino l’onore o la reputazione (art. 20 L. 633/1941).</p>
+
+  <h2>Che cosa è consentito</h2>
+  <ul class="elenco">
+    <li>Leggere, condividere il <strong>link</strong> a una poesia e usare il pulsante «Condividi questo verso».</li>
+    <li>Citare brevemente un verso o una parte, <strong>indicando sempre autore e fonte</strong>, per scopi di critica, discussione o studio e nei limiti giustificati da tali fini (art. 70 L. 633/1941).</li>
+  </ul>
+
+  <h2>Che cosa non è consentito senza autorizzazione scritta</h2>
+  <ul class="elenco">
+    <li>Copiare, ripubblicare o diffondere le poesie, per intero o in parte rilevante, su altri siti, social, libri, stampe, prodotti o video.</li>
+    <li>Tradurle, adattarle, musicarle, leggerle in pubblico a fini commerciali o modificarle.</li>
+    <li>Attribuirsi la paternità di un testo o presentarlo come opera di altri, anche con piccole modifiche.</li>
+    <li>Usare i testi per addestrare sistemi di intelligenza artificiale o per l’estrazione automatica di testo e dati. L’autore <strong>riserva espressamente</strong> tali usi (art. 70-quater L. 633/1941 e art. 4 Direttiva (UE) 2019/790); la riserva è espressa anche in forma leggibile dalle macchine nel file robots.txt del sito.</li>
+  </ul>
+
+  <h2>Immagini e musiche</h2>
+  <p>Le immagini e i brani musicali presenti nelle pagine appartengono ai rispettivi titolari e non rientrano nella nota di paternità dei testi. I brani sono riprodotti tramite i lettori incorporati di YouTube; le immagini astratte sono create per questo sito.</p>
+
+  <h2>Come chiedere un’autorizzazione</h2>
+  <p>Per riprodurre, tradurre, mettere in musica o leggere pubblicamente un testo, scrivi all’autore indicando quale poesia, per quale uso e con quali tempi.{mail ? <> Contatto: <a href={`mailto:${mail}`}>{mail}</a>.</> : ''} L’autorizzazione vale solo se concessa per iscritto.</p>
+
+  <h2>Come segnalare una copia non autorizzata o una falsa attribuzione</h2>
+  <ol class="elenco">
+    <li>Salva l’indirizzo della pagina in cui hai trovato la copia e, se puoi, uno screenshot con la data.</li>
+    <li>Scrivi all’autore con l’indirizzo della copia e della poesia originale.{mail ? <> <a href={`mailto:${mail}?subject=${subj}&body=${body}`}>Apri un messaggio già pronto</a>.</> : ''}</li>
+    <li>L’autore potrà chiedere la rimozione al gestore della piattaforma che ospita la copia e, se necessario, agire per le vie legali.</li>
+  </ol>
+  <p>La riproduzione, la diffusione o l’attribuzione abusiva o falsa di un’opera può comportare responsabilità civile (inibitoria e risarcimento del danno) e penale.</p>
+
+  <h2>Riferimenti normativi</h2>
+  <ul class="elenco">
+    <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1941-04-22;633" rel="noopener" target="_blank">Legge 22 aprile 1941, n. 633</a> «Protezione del diritto d’autore e di altri diritti connessi al suo esercizio»: in particolare artt. 1-2 (opere tutelate), 8 (paternità), 12 ss. (diritti di utilizzazione economica), 20 (diritti morali), 70 (citazione), 70-quater (estrazione di testo e dati), 156-158 (tutela civile) e 171 ss. (sanzioni penali).</li>
+    <li>Codice civile, artt. 2575-2583 (diritto d’autore).</li>
+    <li>Convenzione di Berna per la protezione delle opere letterarie e artistiche.</li>
+    <li>Direttiva (UE) 2019/790 sul diritto d’autore nel mercato unico digitale.</li>
+  </ul>
+  <p class="muted ui">Questa pagina ha scopo informativo e non costituisce consulenza legale: prima di agire in caso di abuso conviene sentire un professionista.</p>
+</Base>

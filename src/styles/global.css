@@ -232,3 +232,28 @@ body.solo-testo .side{display:none}
 .voci{list-style:none;padding:0;margin:0}
 .voci li{display:grid;grid-template-columns:3.4rem 1fr;gap:.5rem;padding:.35rem 0;border-bottom:1px solid var(--line)}
 .voci .rn{font-style:italic;color:var(--dim);text-align:right}
+
+/* diritti */
+.diritti{max-width:40rem;margin:1.6rem 0;padding:.9rem 1rem;border:1px solid var(--line);color:var(--ash);line-height:1.5}
+.diritti strong{color:var(--bone)}
+.elenco{max-width:46rem;padding-left:1.3rem}
+.elenco li{margin-bottom:.6rem}
+
+/* voti e classifica */
+.voto{max-width:40rem;margin:1.6rem 0}
+.voto h2{font-size:1.2rem;margin-bottom:.3rem}
+.stelle{display:flex;gap:.1rem}
+.stelle button{background:none;border:0;font-size:2.1rem;line-height:1;padding:.1rem .25rem;color:var(--line);cursor:pointer;min-width:44px;min-height:44px}
+.stelle button.on{color:var(--bronze)}
+.stelle button:disabled{cursor:not-allowed;opacity:.6}
+.due{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:2rem;margin-top:1.5rem}
+.class{padding-left:1.4rem}
+.class li{padding:.35rem 0;border-bottom:1px solid var(--line)}
+.rep{display:grid;grid-template-columns:repeat(auto-fit,minmax(10rem,1fr));gap:1rem;margin:1rem 0}
+.rep .k{border:1px solid var(--line);padding:.8rem 1rem}
+.rep .k b{display:block;font-size:1.8rem;font-weight:500}
+.bar{display:grid;grid-template-columns:6rem 1fr 5rem;gap:.6rem;align-items:center;font:var(--step--1) var(--sans);padding:.1rem 0}
+.bar i{display:block;height:.7rem;background:var(--bronze)}
+table.tb{border-collapse:collapse;width:100%;font:var(--step--1) var(--sans)}
+table.tb th,table.tb td{text-align:left;padding:.45rem .6rem;border-bottom:1px solid var(--line)}
+table.tb th{cursor:pointer;color:var(--ash)}

@@ -7,11 +7,16 @@ Sito statico Astro (48 poesie, archivio, percorsi, galleria, pagina Instagram, c
     npm run build     # genera dist/
     npm run data      # rigenera src/data/poems.json (da eseguire dopo ogni modifica ai file sotto)
 
+## Diritto d'autore, visite e voti
+- Ogni poesia riporta la nota «© Cuordivino. Tutti i diritti riservati», il richiamo all'art. 70 L. 633/1941 (citazione) e un link per **segnalare una copia non autorizzata** (apre un'e-mail gia' pronta). La pagina `/diritti/` spiega paternita', usi consentiti e vietati, come chiedere un'autorizzazione e i riferimenti normativi. Quando si copia un brano di una poesia, il testo copiato include l'attribuzione. `robots.txt` esprime la riserva dei diritti di estrazione di testo e dati. Il controllo di pubblicazione blocca l'uscita se una poesia non ha la nota.
+- **Visite e voti** usano lo stesso servizio dei commenti (cartella `worker/`: ricordati di rieseguire `schema.sql`, ci sono tre tabelle nuove). Le visite sono anonime (niente cookie, niente IP salvato; "Do Not Track" rispettato). Ogni poesia ha un voto da 1 a 5 stelle; `/classifica/` mostra le piu' votate e le piu' lette; il report completo (visite per giorno e per poesia, voti, medie) sta in `/admin/` > Statistiche. Finche' il servizio non e' collegato, le stelle e la classifica restano spente con un messaggio.
+
 ## Il libro e il quaderno
 - `src/data/libro.json`: titolo, sottotitolo, nota biografica, prefazione (Federico Barretta) e indice delle 4 sezioni, dal PDF del libro. La pagina `/libro/` li mostra.
 - `scripts/integra_materiale.py quaderno.txt` importa le poesie del quaderno (**sempre tenendo il testo gia' presente** se un componimento e' doppio, anche solo per titolo) e scarta poesie di altri autori: elenco in `src/data/escluse.json`.
 - Le poesie del quaderno stanno in **Il Quaderno**; quelle del profilo non incluse nel libro in **I Versi Nuovi**. I dati si ricostruiscono da soli a ogni pubblicazione.
-- Immagini: `scripts/genera_immagini.py` crea immagini astratte in bianco e nero per le poesie senza immagine di Instagram (60 finora). Per metterne una vera, salva `public/images/gen/NUMERO.jpg` (1200x1500) e `NUMERO-800.webp` con lo stesso nome.
+- **Foto:** `python3 scripts/importa_foto.py cartella` importa foto nominate con il titolo della poesia (es. `Il lembo.jpg`, oppure `36 - Attimo sfuggente.jpg`); le dubbie (somiglianza < 0.9) non si importano e vengono elencate. Le foto hanno la precedenza su quelle generate. Gia' importate: 60.
+- Immagini generate (solo come ripiego): `scripts/genera_immagini.py` crea immagini astratte in bianco e nero per le poesie senza immagine di Instagram (60 finora). Per metterne una vera, salva `public/images/gen/NUMERO.jpg` (1200x1500) e `NUMERO-800.webp` con lo stesso nome.
 - Brani: `scripts/proponi_brani.py` propone un brano per ogni poesia che ne e' priva (`src/data/brani-proposti.json`); il brano scritto in `scripts/musica.csv` ha sempre la precedenza.
 - Le poesie con linguaggio esplicito sono segnate "Versi espliciti" e non compaiono nella citazione casuale della home.
 

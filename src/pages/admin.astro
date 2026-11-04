@@ -1,16 +1,23 @@
 ---
 import Base from '../layouts/Base.astro';
-import { config } from '../lib/data';
+import { config, poems } from '../lib/data';
 ---
 <Base title="Moderazione" description="Area riservata all’autore per moderare i commenti e rispondere ai lettori."><meta slot="head" name="robots" content="noindex" />
   <h1>Moderazione</h1>
   <p class="muted ui">Area riservata all’autore. Il codice di accesso resta solo in questa scheda del browser.</p>
   <form id="login" class="form" style="max-width:24rem"><label>Codice di accesso<input type="password" id="tok" autocomplete="current-password" /></label><button class="btn solid" type="submit">Entra</button></form>
   <div id="app" hidden>
-    <div class="chips"><button class="chip" data-s="pending" aria-pressed="true">Da approvare</button><button class="chip" data-s="approved" aria-pressed="false">Approvati</button><button class="chip" data-s="all" aria-pressed="false">Tutti</button></div>
+    <div class="chips" id="tabs"><button class="chip" data-t="com" aria-pressed="true">Commenti</button><button class="chip" data-t="st" aria-pressed="false">Statistiche</button></div>
+    <div id="pane-com">
+    <div class="chips" id="status"><button class="chip" data-s="pending" aria-pressed="true">Da approvare</button><button class="chip" data-s="approved" aria-pressed="false">Approvati</button><button class="chip" data-s="all" aria-pressed="false">Tutti</button></div>
     <div id="items" aria-live="polite"></div>
+    </div>
+    <div id="pane-st" hidden>
+      <div class="chips" id="giorni"><button class="chip" data-d="7" aria-pressed="false">7 giorni</button><button class="chip" data-d="30" aria-pressed="true">30 giorni</button><button class="chip" data-d="90" aria-pressed="false">90 giorni</button></div>
+      <div id="rep" aria-live="polite"></div>
+    </div>
   </div>
-  <script is:inline define:vars={{ api: config.api, ig: config.instagram }}>
+  <script is:inline define:vars={{ api: config.api, ig: config.instagram, T: Object.fromEntries(poems.map((p) => [p.id, p.titolo])) }}>
     (function () {
       var tok = sessionStorage.getItem('pm-admin') || '', st = 'pending', items = document.getElementById('items');
       if (!api) { document.getElementById('login').outerHTML = '<p>Il servizio dei commenti non è ancora collegato: imposta <code>api</code> in src/data/config.json.</p>'; return; }
@@ -43,7 +50,28 @@ import { config } from '../lib/data';
       function load() { call('/admin/comments?status=' + st).then(function (d) { render(d.comments); }).catch(function (e) { sessionStorage.removeItem('pm-admin'); document.getElementById('app').hidden = true; document.getElementById('login').hidden = false; }); }
       function enter() { document.getElementById('login').hidden = true; document.getElementById('app').hidden = false; load(); }
       document.getElementById('login').addEventListener('submit', function (e) { e.preventDefault(); tok = document.getElementById('tok').value; sessionStorage.setItem('pm-admin', tok); enter(); });
-      document.querySelector('.chips').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; st = b.dataset.s; document.querySelectorAll('.chips button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); load(); });
+      document.getElementById('status').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; st = b.dataset.s; document.querySelectorAll('#status button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); load(); });
+      // ---- statistiche
+      var gg = 30, sortBy = 'views';
+      function fmt(n) { return n == null ? '–' : String(Math.round(n * 10) / 10).replace('.', ','); }
+      function loadStats() {
+        call('/admin/stats?days=' + gg).then(function (d) {
+          var rep = document.getElementById('rep'); rep.replaceChildren();
+          var vis = d.giorni.reduce(function (s, x) { return s + x.n; }, 0), un = d.giorni.reduce(function (s, x) { return s + x.u; }, 0), nv = d.voti.reduce(function (s, x) { return s + x.n; }, 0), tv = d.voti.reduce(function (s, x) { return s + x.avg * x.n; }, 0);
+          var k = el('div', 'rep'); [['Visite (' + gg + ' g)', vis], ['Visitatori unici (somma giorni)', un], ['Voti totali', nv], ['Voto medio', nv ? fmt(tv / nv) + ' / 5' : '–'], ['Visite totali dall’inizio', d.totali.visite]].forEach(function (x) { var c = el('div', 'k'); c.append(el('span', 'ui muted', x[0]), Object.assign(el('b'), { textContent: String(x[1]) })); k.append(c); }); rep.append(k);
+          rep.append(el('h2', '', 'Visite al giorno')); var mx = Math.max.apply(null, d.giorni.map(function (x) { return x.n; }).concat([1]));
+          if (!d.giorni.length) rep.append(el('p', 'muted', 'Ancora nessuna visita registrata.'));
+          d.giorni.slice(-31).forEach(function (x) { var r = el('div', 'bar'); var i = el('i'); i.style.width = Math.max(2, x.n / mx * 100) + '%'; r.append(el('span', '', x.day.slice(5)), i, el('span', '', x.n + ' · ' + x.u + ' un.')); rep.append(r); });
+          rep.append(el('h2', '', 'Poesie')); var rows = {}; d.poesie.forEach(function (x) { rows[x.poem_id] = { id: x.poem_id, views: x.views, uniq: x.uniq, avg: null, n: 0 }; });
+          d.voti.forEach(function (x) { rows[x.poem_id] = Object.assign(rows[x.poem_id] || { id: x.poem_id, views: 0, uniq: 0 }, { avg: x.avg, n: x.n }); });
+          var list = Object.keys(rows).map(function (k2) { return rows[k2]; }).sort(function (a, b) { return (b[sortBy] || 0) - (a[sortBy] || 0); });
+          var t = el('table', 'tb'), th = el('tr'); [['', 'Poesia'], ['views', 'Visite'], ['uniq', 'Unici'], ['avg', 'Voto'], ['n', 'N. voti']].forEach(function (c) { var h = el('th', '', c[1]); if (c[0]) { h.tabIndex = 0; h.addEventListener('click', function () { sortBy = c[0]; loadStats(); }); h.addEventListener('keydown', function (e) { if (e.key === 'Enter') { sortBy = c[0]; loadStats(); } }); } th.append(h); }); t.append(th);
+          list.forEach(function (x) { var tr = el('tr'); tr.append(el('td', '', T[x.id] || ('#' + x.id)), el('td', '', String(x.views)), el('td', '', String(x.uniq)), el('td', '', fmt(x.avg)), el('td', '', String(x.n))); t.append(tr); });
+          rep.append(t); if (!list.length) rep.append(el('p', 'muted', 'Ancora nessun dato per le poesie.'));
+        }).catch(function () { document.getElementById('rep').textContent = 'Non riesco a caricare le statistiche (accesso scaduto?).'; });
+      }
+      document.getElementById('tabs').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; document.querySelectorAll('#tabs button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); var st = b.dataset.t === 'st'; document.getElementById('pane-com').hidden = st; document.getElementById('pane-st').hidden = !st; if (st) loadStats(); });
+      document.getElementById('giorni').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; gg = +b.dataset.d; document.querySelectorAll('#giorni button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); }); loadStats(); });
       if (tok) enter();
     })();
   </script>

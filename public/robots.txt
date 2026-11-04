@@ -1,4 +1,26 @@
 User-agent: *
 Allow: /
 
+# Riserva dei diritti di estrazione di testo e dati (art. 70-quater L. 633/1941; art. 4 Dir. UE 2019/790)
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /
+
 Sitemap: https://cuordivino.github.io/libro-dei-pensieri-muti/sitemap-index.xml

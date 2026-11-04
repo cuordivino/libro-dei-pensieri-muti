@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { poems, config, u } from '../lib/data';
+const lista = Object.fromEntries(poems.map((p) => [p.id, { t: p.titolo, h: u(`poesie/${p.slug}/`) }]));
+---
+<Base title="Le più amate" description="Le poesie più votate e più lette del Libro dei Pensieri Muti, secondo i lettori." current="">
+  <h1>Le più amate</h1>
+  <p class="muted">Le poesie scelte dai lettori: i voti vanno da 1 a 5 stelle e la classifica tiene conto anche del numero di voti. Sono conteggi anonimi.</p>
+  <p class="ui muted" id="tot" role="status"></p>
+  <div class="due">
+    <section aria-labelledby="a"><h2 id="a">Le più votate</h2><ol class="class" id="amate"><li class="muted ui">Caricamento…</li></ol></section>
+    <section aria-labelledby="l"><h2 id="l">Le più lette</h2><ol class="class" id="lette"><li class="muted ui">Caricamento…</li></ol></section>
+  </div>
+  <script type="application/json" id="pl" set:html={JSON.stringify(lista)} />
+  <script is:inline define:vars={{ api: config.api }}>
+    (function () {
+      var L = JSON.parse(document.getElementById('pl').textContent), A = document.getElementById('amate'), E = document.getElementById('lette'), T = document.getElementById('tot');
+      function row(id, extra) { var li = document.createElement('li'), a = document.createElement('a'), p = L[id]; if (!p) return null; a.href = p.h; a.textContent = p.t; li.append(a); var s = document.createElement('span'); s.className = 'ui muted'; s.textContent = ' ' + extra; li.append(s); return li; }
+      if (!api) { A.innerHTML = E.innerHTML = '<li class="muted ui">La classifica si attiva appena il servizio di visite e voti è collegato.</li>'; return; }
+      fetch(api + '/stats/public').then(function (r) { return r.json(); }).then(function (d) {
+        T.textContent = d.visite + ' visite al sito · ' + d.voti + ' voti';
+        A.replaceChildren(); E.replaceChildren();
+        d.amate.forEach(function (x) { var li = row(x.poem, '★ ' + String(x.avg).replace('.', ',') + ' · ' + x.n + (x.n === 1 ? ' voto' : ' voti')); if (li) A.append(li); });
+        d.lette.forEach(function (x) { var li = row(x.poem, x.views + (x.views === 1 ? ' lettura' : ' letture')); if (li) E.append(li); });
+        if (!A.children.length) A.innerHTML = '<li class="muted ui">Ancora nessun voto.</li>'; if (!E.children.length) E.innerHTML = '<li class="muted ui">Ancora nessuna lettura.</li>';
+      }).catch(function () { A.innerHTML = E.innerHTML = '<li class="muted ui">Non riesco a caricare la classifica in questo momento.</li>'; });
+    })();
+  </script>
+</Base>

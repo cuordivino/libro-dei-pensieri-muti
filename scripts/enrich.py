@@ -83,7 +83,9 @@ for p in all_src:
         d['instagram'] = {'url': iglinks.get(str(p['id'])) or ig.get('url') or None, 'punteggio': ig['punteggio'], 'stato': ig['stato'], 'didascalia': ig['didascalia']}
     elif iglinks.get(str(p['id'])):
         d['instagram'] = {'url': iglinks[str(p['id'])], 'punteggio': None, 'stato': 'manuale', 'didascalia': None}
-    if not ig and os.path.exists(f"{ROOT}/public/images/gen/{p['id']}.jpg"):
+    if not ig and os.path.exists(f"{ROOT}/public/images/foto/{p['id']}.jpg"):
+        d['immagine'] = f"foto/{p['id']}.jpg"; d['miniatura'] = f"foto/{p['id']}-800.webp"
+    elif not ig and os.path.exists(f"{ROOT}/public/images/gen/{p['id']}.jpg"):
         d['immagine'] = f"gen/{p['id']}.jpg"; d['miniatura'] = f"gen/{p['id']}-800.webp"; d['immagineGenerata'] = True
     d.setdefault('miniatura', d['immagine'])
     m = mus.get(str(p['id']))

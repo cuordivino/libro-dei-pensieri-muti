@@ -10,3 +10,8 @@ CREATE TABLE IF NOT EXISTS comments (
 );
 CREATE INDEX IF NOT EXISTS idx_poem_status ON comments (poem_id, status);
 CREATE INDEX IF NOT EXISTS idx_ip ON comments (ip_hash, created_at);
+
+-- visite e voti
+CREATE TABLE IF NOT EXISTS views (poem_id INTEGER NOT NULL, day TEXT NOT NULL, n INTEGER NOT NULL DEFAULT 0, u INTEGER NOT NULL DEFAULT 0, PRIMARY KEY (poem_id, day));
+CREATE TABLE IF NOT EXISTS seen (day TEXT NOT NULL, poem_id INTEGER NOT NULL, h TEXT NOT NULL, PRIMARY KEY (day, poem_id, h));
+CREATE TABLE IF NOT EXISTS votes (poem_id INTEGER NOT NULL, voter TEXT NOT NULL, value INTEGER NOT NULL, created_at TEXT NOT NULL, PRIMARY KEY (poem_id, voter));

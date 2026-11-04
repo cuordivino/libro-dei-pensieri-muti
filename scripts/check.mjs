@@ -29,6 +29,7 @@ for (const f of htmls) {
   if (!/<meta name="description" content="[^"]{20,}/.test(h)) err(`${rel}: descrizione mancante o troppo corta`);
   if (!/<link rel="canonical" href="https:\/\/cuordivino\.github\.io\//.test(h)) err(`${rel}: canonical mancante`);
   if (rel !== '404.html' && (h.match(/<h1[ >]/g) || []).length !== 1) err(`${rel}: deve avere un solo <h1>`);
+  if (/\/poesie\/[^/]+\/index\.html$/.test(rel.replace(/\\/g, '/')) && !/Tutti i diritti riservati/.test(h)) err(`${rel}: manca la nota di paternità`);
   for (const m of h.matchAll(/<img\b[^>]*>/g)) if (!/\balt=/.test(m[0])) err(`${rel}: immagine senza attributo alt`);
   for (const m of h.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) { try { JSON.parse(m[1]); } catch { err(`${rel}: JSON-LD non valido`); } }
   if (/noindex/.test(h) === false && !/<meta property="og:image"/.test(h)) err(`${rel}: manca og:image`);
@@ -39,7 +40,7 @@ if (bigPage[1] > 200_000) warn(`Pagina pesante: ${bigPage[0]} (${Math.round(bigP
 
 // 3) cose da completare
 const cfg = JSON.parse(read(path.join(ROOT, 'src/data/config.json')));
-const gen = P.filter((p) => String(p.immagine).startsWith('gen/')).length, noIg = P.filter((p) => !/^(ig|gen)\//.test(String(p.immagine))).length;
+const gen = P.filter((p) => String(p.immagine).startsWith('gen/')).length, noIg = P.filter((p) => !/^(ig|gen|foto)\//.test(String(p.immagine))).length;
 if (gen) warn(`${gen} poesie usano un'immagine astratta generata (da sostituire con una foto quando vuoi).`);
 if (noIg) warn(`${noIg} poesie hanno ancora l'immagine segnaposto.`);
 const noUrl = P.filter((p) => !p.instagram?.url).length;

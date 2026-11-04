@@ -1,6 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { poems, meta, u, byId, stanzas, SITE, embedUrl, ytId } from '../../lib/data';
+import { poems, meta, u, byId, stanzas, SITE, embedUrl, ytId, config } from '../../lib/data';
 import Comments from '../../components/Comments.astro';
 export function getStaticPaths() {
   return poems.map((p, i) => ({ params: { slug: p.slug }, props: { p, prev: poems[i - 1], next: poems[i + 1] } }));
@@ -15,7 +15,7 @@ const nextTheme = Object.fromEntries(p.temi.map((t) => {
 }));
 let n = 0;
 const jsonld = { '@context': 'https://schema.org', '@type': 'CreativeWork', genre: 'Poesia', name: p.titolo, text: p.testo, inLanguage: 'it',
-  author: { '@type': 'Person', name: meta.autore }, keywords: [...p.temi, ...p.emozioni, ...p.parole].join(', '),
+  author: { '@type': 'Person', name: meta.autore }, copyrightHolder: { '@type': 'Person', name: meta.autore }, copyrightNotice: '© Cuordivino. Tutti i diritti riservati.', creditText: 'Cuordivino', keywords: [...p.temi, ...p.emozioni, ...p.parole].join(', '),
   image: new URL(u(`images/${p.immagine}`), SITE).href, url: new URL(u(`poesie/${p.slug}/`), SITE).href,
   ...(p.mood !== 'nuovi' ? { isPartOf: { '@type': 'Book', name: 'Il Libro dei Pensieri Muti', author: { '@type': 'Person', name: meta.autore } } } : {}), ...(p.data ? { datePublished: p.data } : {}) };
 const yv = ytId(p.musica, 'video'), ya = ytId(p.musica, 'audio'), yt = yv ?? ya;
@@ -24,10 +24,11 @@ const short = new URL(u(`p/${p.id}/`), SITE).href;
 const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'Apple Music'], ['soundcloud', 'SoundCloud']] as const;
 ---
 <Base title={`${p.titolo}`} description={(p.senso || p.testo.replace(/\s*\n+\s*/g, ' / ')).slice(0, 170).padEnd(25, '.')} image={`images/${p.immagine}`} type="article" jsonld={jsonld} current="poesie/">
+  <meta slot="head" name="poem-id" content={String(p.id)} />
   <article class="poem" style={`--c:${mood.color}`}>
     <div class="side">
     <aside>
-      <img src={u(`images/${p.immagine}`)} width="800" height="1000" alt={(p as any).immagineGenerata ? `Immagine astratta in bianco e nero, creata per la poesia ${p.titolo}` : `Fotografia in bianco e nero associata alla poesia ${p.titolo}`} />
+      <img src={u(`images/${p.immagine}`)} width="800" height="1000" alt={(p as any).immagineGenerata ? `Immagine astratta in bianco e nero, creata per la poesia ${p.titolo}` : `Immagine associata alla poesia ${p.titolo}`} />
       {p.senso && <p class="senso">{p.senso}</p>}
       <p class="ui muted">{p.sezione} · <a href={u(`percorsi/${p.mood}/`)}>{mood.name}</a></p>
     </aside>
@@ -59,7 +60,14 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
         {stanzas(p.testo).map((s) => <p>{s.map((l) => <span class="v" style={`--i:${Math.min(n++, 28)}`}>{l}</span>)}</p>)}
       </div>
 
+      <p class="diritti ui" id="diritti">
+        <strong>© Cuordivino.</strong> Tutti i diritti riservati. Testo originale di Cuordivino, pseudonimo letterario dell’autore{p.data ? `, pubblicato il ${new Date(p.data).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' })}` : ''}.
+        È vietata la riproduzione, anche parziale, la diffusione, la traduzione e ogni uso senza autorizzazione scritta dell’autore; è consentita la citazione breve con indicazione dell’autore e della fonte (art. 70 L. 633/1941).
+        <a href={u('diritti/')}>Diritto d’autore e segnalazioni</a> · <a href={`mailto:${config.email || ''}?subject=${encodeURIComponent('Segnalazione: copia non autorizzata di «' + p.titolo + '»')}&body=${encodeURIComponent('Pagina originale: ' + new URL(u(`poesie/${p.slug}/`), SITE).href + '\n\nDove ho trovato la copia (indirizzo):\n\nData della segnalazione:\n')}`}>Segnala una copia non autorizzata</a>
+      </p>
+
       <blockquote class="est">{p.citazione}</blockquote>
+      <section class="voto" aria-labelledby="vt"><h2 id="vt">Quanto ti ha emozionato?</h2><div class="stelle" role="group" aria-label="Voto da 1 a 5" id="stelle">{[1, 2, 3, 4, 5].map((n) => <button type="button" data-v={n} aria-label={`${n} su 5`} aria-pressed="false">★</button>)}</div><p class="ui muted" id="votostat" role="status"></p></section>
       <p class="ui"><button class="btn" id="share" data-t={p.titolo} data-q={p.citazione}>Condividi questo verso</button> <span id="fb" class="muted" role="status"></span></p>
 
       {Object.entries(nextTheme).map(([t, x]) => x && <p data-percorso={t} class="box"><span class="ui muted">Percorso {(meta.temi as any)[t]}</span><br /><a href={u(`poesie/${x.slug}/?p=${t}`)}>Prosegui con «{x.titolo}»</a></p>)}
@@ -175,6 +183,27 @@ const plat = [['spotify', 'Spotify'], ['youtube', 'YouTube Music'], ['apple', 'A
       // parte da sola, salvo musica spenta o lettura in silenzio
       if (pref === 'on' && !silent()) load();
       else { stat.textContent = pref === 'off' ? 'La musica è spenta. Premi «Accendi la traccia» per ascoltare.' : ''; }
+    })();
+  </script>
+  <script is:inline define:vars={{ api: config.api, pid: p.id }}>
+    (function () {
+      var box = document.getElementById('stelle'); if (!box) return; var st = document.getElementById('votostat'), bt = box.querySelectorAll('button'), mine = 0;
+      var key = 'pm-voto-' + pid, voter = ''; try { voter = localStorage.getItem('pm-voter') || ''; mine = parseInt(localStorage.getItem(key), 10) || 0; if (!voter) { var a = new Uint8Array(18); crypto.getRandomValues(a); voter = Array.prototype.map.call(a, function (x) { return ('0' + x.toString(16)).slice(-2); }).join(''); localStorage.setItem('pm-voter', voter); } } catch (e) {}
+      function paint(v) { bt.forEach(function (b) { var on = +b.dataset.v <= v; b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(+b.dataset.v === mine)); }); }
+      function txt(r) { return r && r.n ? 'Media ' + String(r.avg).replace('.', ',') + ' su 5 · ' + r.n + (r.n === 1 ? ' voto' : ' voti') + (mine ? ' · il tuo voto: ' + mine : '') : 'Ancora nessun voto: sii il primo.'; }
+      paint(mine);
+      if (!api || !voter) { bt.forEach(function (b) { b.disabled = true; }); st.textContent = 'I voti si attivano appena il servizio è collegato.'; return; }
+      fetch(api + '/rating?poem=' + pid).then(function (r) { return r.json(); }).then(function (r) { st.textContent = txt(r); }).catch(function () { st.textContent = ''; });
+      bt.forEach(function (b) {
+        b.addEventListener('mouseenter', function () { paint(+b.dataset.v); }); b.addEventListener('focus', function () { paint(+b.dataset.v); });
+        b.addEventListener('mouseleave', function () { paint(mine); }); b.addEventListener('blur', function () { paint(mine); });
+        b.addEventListener('click', function () {
+          var v = +b.dataset.v; st.textContent = 'Invio…';
+          fetch(api + '/vote', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: JSON.stringify({ poem: pid, voter: voter, value: v }) }).then(function (r) { return r.json(); })
+            .then(function (r) { if (r.error) throw new Error(r.error); mine = v; try { localStorage.setItem(key, String(v)); } catch (e) {} paint(v); st.textContent = 'Grazie. ' + txt(r); })
+            .catch(function () { st.textContent = 'Voto non inviato: riprova tra poco.'; });
+        });
+      });
     })();
   </script>
 </Base>
